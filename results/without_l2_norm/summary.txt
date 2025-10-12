@@ -1,0 +1,16 @@
+cone	0.339926
+cup	0.353243
+curtain	0.336824
+desk	0.358407
+door	0.345625
+dresser	0.350381
+flower_pot	0.338819
+glass_box	0.362771
+guitar	0.321484
+keyboard	0.353476
+lamp	0.318892
+laptop	0.364819
+mantel	0.337443
+monitor	0.222234
+night_stand	0.352710
+person	0.339036

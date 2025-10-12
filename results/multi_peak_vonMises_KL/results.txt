@@ -1,0 +1,17 @@
+=== Multi-Peak von Mises KL Summary ===
+Best Total Val Epoch: 55
+Test KL: 0.077724
+
+-- Per-Category (last epoch) --
+[TOTAL] Train=0.084364 Val=0.083457
+[bathtub] Train=0.713420 Val=0.772143
+[bottle] Train=0.000000 Val=0.000000
+[bowl] Train=0.000000 Val=0.000000
+[chair] Train=0.000000 Val=0.000000
+[cone] Train=0.000000 Val=0.000000
+[curtain] Train=0.000000 Val=0.000000
+[door] Train=0.000000 Val=0.000000
+[glass_box] Train=0.788210 Val=0.841222
+[plant] Train=0.000000 Val=0.000000
+[sofa] Train=0.000000 Val=0.000000
+[toilet] Train=0.000000 Val=0.000000

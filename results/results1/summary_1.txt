@@ -1,0 +1,7 @@
+bathtub	0.588582
+bed	0.371156
+bench	0.586450
+bookshelf	0.563402
+bottle	0.451022
+bowl	0.462737
+car	0.391554

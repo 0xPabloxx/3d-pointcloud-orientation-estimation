@@ -1,0 +1,7 @@
+bottle	2.080060
+bowl	2.080530
+chair	1.295801
+plant	2.096918
+sofa	1.294793
+toilet	1.312500
+Overall	1.523665
