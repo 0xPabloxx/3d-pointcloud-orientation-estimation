@@ -1,8 +1,34 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-GlassBox专用训练脚本 - 4峰von Mises混合分布
-目标：训练出loss < 0.5的glassbox模型
+训练PointNet++ + MvM模型在glassbox类别上（带12旋转增强）
+
+详细说明：
+- 模型/方法: PointNet++ backbone + MvM预测头（K=4峰，固定）
+- 数据集: ModelNet40 glassbox类别 (271样本，train:val:test = 217:54:271)
+- 数据增强: 12旋转增强（30°间隔：0°, 30°, ..., 330°）+ 点云抖动
+- 训练策略: KL散度loss + Hungarian匹配，Adam优化器，学习率衰减
+- 输出: 模型checkpoints、训练日志、可视化（极坐标图）
+
+核心特性：
+1. 预设角度初始化 [0°, 90°, 180°, 270°] 打破对称性
+2. 每10个epoch保存可视化，追踪训练进度
+3. Best model保存（基于验证集loss）
+
+使用方法：
+    python train_pointnetpp_mvm_glassbox_augmented.py
+
+输出位置：
+    results/glassbox_only_YYYYMMDD_HHMMSS/
+    ├── checkpoints/best_model.pth
+    ├── figs/predictions_epoch_*.png
+    └── (训练日志在终端输出，可用tee重定向)
+
+作者: Claude
+创建日期: 2025-11-09
+最后修改: 2025-11-09
+关联文档: experiment_20251109_init_fix_results.md
+实验ID: exp_20251109_init_fix
 """
 import time
 import random

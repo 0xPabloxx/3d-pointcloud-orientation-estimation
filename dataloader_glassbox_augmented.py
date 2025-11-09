@@ -1,7 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-GlassBox专用数据加载器 - 带旋转数据增强
+GlassBox数据加载器 - 支持旋转数据增强（用于MvM训练）
+
+详细说明：
+- 数据源: ModelNet40 glassbox类别的PLY点云 + 预生成的MvM GT
+- 数据增强: 12旋转（30°间隔）+ 可选点云抖动
+- GT格式: MvM分布参数 (μ, κ, π) × K=4
+- 返回: (点云xyz, K, GT_pi, GT_mu, GT_kappa, 类别ID)
+
+核心功能：
+1. rotate_pointcloud_y(): Y轴旋转（保持upright不变）
+2. GlassBoxDatasetAugmented: 数据集类，自动应用旋转增强
+
+使用方法：
+    from dataloader_glassbox_augmented import GlassBoxDatasetAugmented
+    dataset = GlassBoxDatasetAugmented(
+        gt_root="data/MN40_multi_peak_vM_gt/glass_box",
+        ply_root="data/full_mn40_normal_resampled_2d_rotated_ply/glass_box",
+        split="train",
+        rotation_angles=[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
+    )
+
+作者: Claude
+创建日期: 2025-11-09
+最后修改: 2025-11-09
+关联文档: experiment_20251109_init_fix_results.md
+配套训练脚本: train_pointnetpp_mvm_glassbox_augmented.py
 """
 import os
 import math
