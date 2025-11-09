@@ -66,10 +66,25 @@ class PointNetPPMvM(nn.Module):
         self.head_kappa = nn.Linear(hidden, max_K)
 
         # **注意**：这里 bias 和 weight 的初始化可以微调
+        # head_pi保持zeros初始化（对softmax是合理的）
         nn.init.zeros_(self.head_pi.weight)
         nn.init.zeros_(self.head_pi.bias)
+
+        # head_mu: 预设4个方向初始化，打破对称性
+        # 预设角度：0°, 90°, 180°, 270°
+        initial_angles = [0, math.pi/2, math.pi, 3*math.pi/2]
+
+        # weight保持零初始化（让初始偏差主要来自bias）
         nn.init.zeros_(self.head_mu.weight)
-        nn.init.zeros_(self.head_mu.bias)
+
+        # bias设置为预设的4个方向对应的单位向量
+        with torch.no_grad():
+            for i, angle in enumerate(initial_angles):
+                # 将角度转为2D单位向量 [cos(θ), sin(θ)]
+                self.head_mu.bias[2*i]   = math.cos(angle)
+                self.head_mu.bias[2*i+1] = math.sin(angle)
+
+        # head_kappa保持原有初始化
         nn.init.constant_(self.head_kappa.bias, 0.0)
 
     def _global_feat(self, xyz: torch.Tensor) -> torch.Tensor:
