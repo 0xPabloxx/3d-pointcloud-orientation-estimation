@@ -2,6 +2,87 @@
 # 东京大学 M2 毕业论文实验项目
 # 当前任务：训练glassbox模型，输出4峰MvM分布
 
+## 🚨 强制工作规范（必须遵守）
+
+### 规则1: 工作目录约束
+**你必须始终在 claude worktree 中工作**
+
+```bash
+工作目录: /home/pablo/ForwardNet-claude/
+分支: claude
+```
+
+**为什么这条规则存在：**
+- 项目有多个worktree（main, claude, codex），各自独立
+- claude分支是你的专属实验分支，避免影响主分支
+- 所有配置、文档、实验都基于claude worktree路径
+
+**Claude的反思（为什么我刚才违反了这条规则）：**
+我在第一次创建文档时，在主worktree `/home/pablo/ForwardNet/` 创建了文档，然后才复制到claude worktree。这是错误的！
+
+**正确做法：**
+1. ✅ 始终 `cd /home/pablo/ForwardNet-claude` 后再工作
+2. ✅ 创建任何文件前，确认当前目录是claude worktree
+3. ✅ 提交和推送都在claude分支进行
+
+**违反此规则的后果：**
+- 文件可能被创建在错误的worktree
+- git提交到错误的分支
+- 路径混乱，难以追踪
+
+---
+
+### 规则2: 文档存储位置约束
+**所有分析、实验、方法论文档必须存放在 `docs/` 目录下**
+
+```
+/home/pablo/ForwardNet-claude/
+├── claude.md              # 仅此文件和project_structure.md放根目录
+├── project_structure.md
+│
+└── docs/                  # 所有其他markdown文档必须放这里
+    ├── 离散方向向量预测实现文档.md  # 方法论文档
+    ├── analysis/           # 分析文档
+    ├── experiments/        # 实验报告
+    └── methods/            # 方法论（可选子目录）
+```
+
+**为什么这条规则存在：**
+- 根目录只放核心配置文件，保持简洁
+- docs/统一管理所有知识文档
+- 便于后续整理成论文材料
+- 避免根目录杂乱
+
+**Claude的反思（为什么我刚才违反了这条规则）：**
+我在创建"离散方向向量预测实现文档.md"时，直接放在了根目录，而不是`docs/`目录。虽然claude.md第455-476行明确规定了文档存储规范，但我没有仔细遵守！
+
+**正确做法：**
+1. ✅ 创建文档前，先 `mkdir -p docs`
+2. ✅ 文档直接创建在 `docs/离散方向向量预测实现文档.md`
+3. ✅ 如果误放根目录，立即 `mv xxx.md docs/`
+
+**文档分类：**
+- `analysis_YYYYMMDD_*.md` → `docs/analysis/`
+- `experiment_YYYYMMDD_*.md` → `docs/experiments/`
+- `method_*.md` 或技术文档 → `docs/` 或 `docs/methods/`
+
+**违反此规则的后果：**
+- 根目录混乱，难以管理
+- 后续整理文档时需要额外工作
+- 可能导致文档丢失或重复
+
+---
+
+**这两条规则的优先级高于本文档中的其他所有内容！**
+
+如果Claude违反了这两条规则，必须：
+1. 立即停止当前操作
+2. 反思为什么违反（写在claude.md中）
+3. 修正错误（移动文件、切换目录等）
+4. 重新执行正确的操作
+
+---
+
 ## 🎯 核心研究目标
 
 用混合von Mises (MvM)分布来表示3D点云模型的正面方向概率分布。需要能同时处理：
