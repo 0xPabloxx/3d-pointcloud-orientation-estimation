@@ -41,7 +41,7 @@ class PointNetPPMvM(nn.Module):
         max_K: int = 4,
         kappa_max: float = 80.0,
         p_drop: float = 0.4,
-        temp: float = 0.7,
+        temp: float = 2.0,  # 改为2.0平滑权重分布（之前0.7导致权重集中）
     ):
         super().__init__()
         self.max_K = max_K
