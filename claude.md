@@ -73,12 +73,138 @@
 
 ---
 
-**这两条规则的优先级高于本文档中的其他所有内容！**
+---
 
-如果Claude违反了这两条规则，必须：
+### 规则3: 数据集划分与防止数据泄露（强制要求）
+**机器学习实验的基本准则：训练集、验证集、测试集必须严格分离**
+
+```
+数据集划分规范：
+- Train Set:  用于模型训练，可以使用数据增强
+- Val Set:    用于超参数调优和early stopping，不使用增强
+- Test Set:   只在最终评估时使用一次，不使用增强
+```
+
+**为什么这条规则存在：**
+- 数据泄露会导致过高估计模型性能
+- 在训练集上评估 = 作弊，结果无效
+- 在全数据集上验证 = 包含了训练数据，结果不可信
+- 测试集必须是"未见过的数据"，只用于最终报告
+
+**Claude的反思（为什么我刚才违反了这条规则）：**
+在`verify_weight_fix.py`中，我使用了全部271个样本来验证weight分布，这包括了189个训练样本！这是严重的数据泄露错误。虽然后来用独立测试集(28样本)重新验证了，但暴露了流程问题。
+
+**正确做法：**
+
+1. **✅ 数据集划分（实验开始时）**：
+   ```python
+   # 必须使用固定的随机种子
+   random.seed(42)
+   np.random.seed(42)
+   torch.manual_seed(42)
+
+   # 划分比例：7:2:1（或根据数据量调整）
+   n_total = len(samples)
+   n_train = int(0.7 * n_total)
+   n_val = int(0.2 * n_total)
+
+   train_samples = samples[:n_train]
+   val_samples = samples[n_train:n_train + n_val]
+   test_samples = samples[n_train + n_val:]
+
+   # 明确打印数据集大小
+   print(f"[Data Split] Train: {len(train_samples)}, "
+         f"Val: {len(val_samples)}, Test: {len(test_samples)}")
+   ```
+
+2. **✅ 数据增强（只在训练集）**：
+   ```python
+   # 训练集：使用增强
+   train_ds = Dataset(train_samples, augment=True, n_rotations=12)
+
+   # 验证/测试集：不使用增强
+   val_ds = Dataset(val_samples, augment=False)
+   test_ds = Dataset(test_samples, augment=False)
+   ```
+
+3. **✅ 验证/评估脚本（必须明确指定数据集）**：
+   ```python
+   # ❌ 错误：使用全数据集
+   all_samples = load_all_samples()  # 包含训练集！
+   verify(model, all_samples)
+
+   # ✅ 正确：明确使用测试集
+   test_samples = load_test_split_only()  # 只加载测试集
+   verify(model, test_samples)
+
+   # 验证数据集大小
+   assert len(test_samples) == 28, "Test set size mismatch!"
+   ```
+
+4. **✅ 训练过程中的监控**：
+   ```python
+   # 训练循环
+   for epoch in range(epochs):
+       train_loss = train_one_epoch(model, train_loader)  # 只用训练集
+       val_loss = validate(model, val_loader)             # 用验证集
+
+       # 保存最佳模型（基于验证集）
+       if val_loss < best_val_loss:
+           save_checkpoint(model, "best_model.pth")
+
+   # 最终测试（只运行一次！）
+   test_loss = test(model, test_loader)
+   print(f"Final Test Loss: {test_loss}")
+   ```
+
+**检查清单（每次评估前必查）：**
+- [ ] 确认使用的是哪个数据集（train/val/test）
+- [ ] 验证数据集大小是否正确（打印出来检查）
+- [ ] 确认没有加载全数据集
+- [ ] 确认测试集没有用于超参数调优
+- [ ] 确认训练/验证/测试集使用相同的随机种子划分
+
+**常见数据泄露场景：**
+
+| 错误场景 | 为什么错误 | 正确做法 |
+|---------|-----------|---------|
+| 在全数据集上评估 | 包含训练集数据 | 只在测试集评估 |
+| 用测试集调超参数 | 测试集变成验证集 | 用验证集调参 |
+| 数据增强用在测试集 | 改变了数据分布 | 测试集不增强 |
+| 多次在测试集上评估 | 间接地"优化"测试集 | 测试集只用一次 |
+| 验证脚本没指定数据集 | 默认可能加载全数据 | 显式指定test_samples |
+
+**报告实验结果时：**
+```markdown
+## 实验结果
+
+**数据集划分**（seed=42）：
+- Train: 189 samples (×12 rotation augmentation = 2268)
+- Val: 54 samples (no augmentation)
+- Test: 28 samples (no augmentation)
+
+**验证集表现**（用于模型选择）：
+- Best Val Loss: 0.0012 @ Epoch 47
+
+**测试集表现**（最终评估，仅运行一次）：
+- Test Loss: 0.0019
+- Weight accuracy: [0.250, 0.250, 0.250, 0.250]
+```
+
+**违反此规则的后果：**
+- 实验结果不可信，无法发表
+- 过度估计模型性能
+- 无法正确评估泛化能力
+- 可能需要重新训练和评估
+
+---
+
+**这三条规则的优先级高于本文档中的其他所有内容！**
+
+如果Claude违反了这些规则，必须：
 1. 立即停止当前操作
 2. 反思为什么违反（写在claude.md中）
-3. 修正错误（移动文件、切换目录等）
+3. 修正错误（重新划分数据、重新评估等）
 4. 重新执行正确的操作
 
 ---
