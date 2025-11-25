@@ -36,3 +36,5 @@ __pycache__/
 # Images (optional - uncomment if needed)
 # *.png
 # *.jpg
+# Ignore dataset directory
+/data/

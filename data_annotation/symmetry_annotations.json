@@ -1,0 +1,882 @@
+{
+  "airplane/airplane_0001.ply": {
+    "file": "airplane/airplane_0001.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 0,
+    "aligned": false
+  },
+  "airplane/airplane_0002.ply": {
+    "file": "airplane/airplane_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 1,
+    "aligned": false
+  },
+  "airplane/airplane_0003.ply": {
+    "file": "airplane/airplane_0003.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "airplane/airplane_0004.ply": {
+    "file": "airplane/airplane_0004.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 3,
+    "aligned": false
+  },
+  "airplane/airplane_0005.ply": {
+    "file": "airplane/airplane_0005.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 4,
+    "aligned": false
+  },
+  "airplane/airplane_0006.ply": {
+    "file": "airplane/airplane_0006.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 5,
+    "aligned": true
+  },
+  "airplane/airplane_0007.ply": {
+    "file": "airplane/airplane_0007.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 6,
+    "aligned": false
+  },
+  "airplane/airplane_0008.ply": {
+    "file": "airplane/airplane_0008.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 7,
+    "aligned": true
+  },
+  "airplane/airplane_0009.ply": {
+    "file": "airplane/airplane_0009.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 8,
+    "aligned": false
+  },
+  "airplane/airplane_0010.ply": {
+    "file": "airplane/airplane_0010.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 9,
+    "aligned": true
+  },
+  "airplane/airplane_0011.ply": {
+    "file": "airplane/airplane_0011.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 10,
+    "aligned": false
+  },
+  "airplane/airplane_0012.ply": {
+    "file": "airplane/airplane_0012.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 11,
+    "aligned": false
+  },
+  "airplane/airplane_0013.ply": {
+    "file": "airplane/airplane_0013.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "airplane/airplane_0014.ply": {
+    "file": "airplane/airplane_0014.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 13,
+    "aligned": true
+  },
+  "airplane/airplane_0015.ply": {
+    "file": "airplane/airplane_0015.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 14,
+    "aligned": true
+  },
+  "airplane/airplane_0016.ply": {
+    "file": "airplane/airplane_0016.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 15,
+    "aligned": false
+  },
+  "airplane/airplane_0017.ply": {
+    "file": "airplane/airplane_0017.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 16,
+    "aligned": false
+  },
+  "airplane/airplane_0018.ply": {
+    "file": "airplane/airplane_0018.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "airplane/airplane_0019.ply": {
+    "file": "airplane/airplane_0019.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 18,
+    "aligned": true
+  },
+  "airplane/airplane_0020.ply": {
+    "file": "airplane/airplane_0020.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 19,
+    "aligned": false
+  },
+  "airplane/airplane_0021.ply": {
+    "file": "airplane/airplane_0021.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 20,
+    "aligned": true
+  },
+  "airplane/airplane_0022.ply": {
+    "file": "airplane/airplane_0022.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 21,
+    "aligned": true
+  },
+  "airplane/airplane_0023.ply": {
+    "file": "airplane/airplane_0023.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 22,
+    "aligned": false
+  },
+  "airplane/airplane_0024.ply": {
+    "file": "airplane/airplane_0024.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 23,
+    "aligned": false
+  },
+  "airplane/airplane_0025.ply": {
+    "file": "airplane/airplane_0025.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 24,
+    "aligned": true
+  },
+  "airplane/airplane_0026.ply": {
+    "file": "airplane/airplane_0026.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 25,
+    "aligned": true
+  },
+  "airplane/airplane_0027.ply": {
+    "file": "airplane/airplane_0027.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "airplane/airplane_0028.ply": {
+    "file": "airplane/airplane_0028.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 27,
+    "aligned": false
+  },
+  "airplane/airplane_0029.ply": {
+    "file": "airplane/airplane_0029.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 28,
+    "aligned": true
+  },
+  "airplane/airplane_0030.ply": {
+    "file": "airplane/airplane_0030.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 29,
+    "aligned": true
+  },
+  "airplane/airplane_0031.ply": {
+    "file": "airplane/airplane_0031.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "airplane/airplane_0032.ply": {
+    "file": "airplane/airplane_0032.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 31,
+    "aligned": false
+  },
+  "airplane/airplane_0033.ply": {
+    "file": "airplane/airplane_0033.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 32,
+    "aligned": true
+  },
+  "airplane/airplane_0034.ply": {
+    "file": "airplane/airplane_0034.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 33,
+    "aligned": true
+  },
+  "airplane/airplane_0035.ply": {
+    "file": "airplane/airplane_0035.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 34,
+    "aligned": true
+  },
+  "airplane/airplane_0036.ply": {
+    "file": "airplane/airplane_0036.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 35,
+    "aligned": true
+  },
+  "airplane/airplane_0037.ply": {
+    "file": "airplane/airplane_0037.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 36,
+    "aligned": false
+  },
+  "airplane/airplane_0038.ply": {
+    "file": "airplane/airplane_0038.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 37,
+    "aligned": true
+  },
+  "airplane/airplane_0039.ply": {
+    "file": "airplane/airplane_0039.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 38,
+    "aligned": false
+  },
+  "airplane/airplane_0040.ply": {
+    "file": "airplane/airplane_0040.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 39,
+    "aligned": true
+  },
+  "airplane/airplane_0041.ply": {
+    "file": "airplane/airplane_0041.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 40,
+    "aligned": true
+  },
+  "airplane/airplane_0042.ply": {
+    "file": "airplane/airplane_0042.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 41,
+    "aligned": true
+  },
+  "airplane/airplane_0043.ply": {
+    "file": "airplane/airplane_0043.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 42,
+    "aligned": true
+  },
+  "airplane/airplane_0044.ply": {
+    "file": "airplane/airplane_0044.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 43,
+    "aligned": true
+  },
+  "airplane/airplane_0045.ply": {
+    "file": "airplane/airplane_0045.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 44,
+    "aligned": true
+  },
+  "airplane/airplane_0046.ply": {
+    "file": "airplane/airplane_0046.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 45,
+    "aligned": true
+  },
+  "airplane/airplane_0047.ply": {
+    "file": "airplane/airplane_0047.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 46,
+    "aligned": true
+  },
+  "airplane/airplane_0048.ply": {
+    "file": "airplane/airplane_0048.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 47,
+    "aligned": false
+  },
+  "airplane/airplane_0049.ply": {
+    "file": "airplane/airplane_0049.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 48,
+    "aligned": true
+  },
+  "airplane/airplane_0050.ply": {
+    "file": "airplane/airplane_0050.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 49,
+    "aligned": true
+  },
+  "airplane/airplane_0051.ply": {
+    "file": "airplane/airplane_0051.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 50,
+    "aligned": true
+  },
+  "airplane/airplane_0052.ply": {
+    "file": "airplane/airplane_0052.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 51,
+    "aligned": false
+  },
+  "airplane/airplane_0053.ply": {
+    "file": "airplane/airplane_0053.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 52,
+    "aligned": true
+  },
+  "airplane/airplane_0054.ply": {
+    "file": "airplane/airplane_0054.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 53,
+    "aligned": false
+  },
+  "airplane/airplane_0055.ply": {
+    "file": "airplane/airplane_0055.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 54,
+    "aligned": false
+  },
+  "airplane/airplane_0056.ply": {
+    "file": "airplane/airplane_0056.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 55,
+    "aligned": false
+  },
+  "airplane/airplane_0057.ply": {
+    "file": "airplane/airplane_0057.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 56,
+    "aligned": true
+  },
+  "airplane/airplane_0058.ply": {
+    "file": "airplane/airplane_0058.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 57,
+    "aligned": false
+  },
+  "airplane/airplane_0059.ply": {
+    "file": "airplane/airplane_0059.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 58,
+    "aligned": false
+  },
+  "airplane/airplane_0060.ply": {
+    "file": "airplane/airplane_0060.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 59,
+    "aligned": false
+  },
+  "airplane/airplane_0061.ply": {
+    "file": "airplane/airplane_0061.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 60,
+    "aligned": true
+  },
+  "airplane/airplane_0062.ply": {
+    "file": "airplane/airplane_0062.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 61,
+    "aligned": true
+  },
+  "airplane/airplane_0063.ply": {
+    "file": "airplane/airplane_0063.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 62,
+    "aligned": true
+  },
+  "airplane/airplane_0064.ply": {
+    "file": "airplane/airplane_0064.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 63,
+    "aligned": false
+  },
+  "airplane/airplane_0065.ply": {
+    "file": "airplane/airplane_0065.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 64,
+    "aligned": false
+  },
+  "airplane/airplane_0066.ply": {
+    "file": "airplane/airplane_0066.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 65,
+    "aligned": false
+  },
+  "airplane/airplane_0067.ply": {
+    "file": "airplane/airplane_0067.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 66,
+    "aligned": false
+  },
+  "airplane/airplane_0068.ply": {
+    "file": "airplane/airplane_0068.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 67,
+    "aligned": false
+  },
+  "airplane/airplane_0069.ply": {
+    "file": "airplane/airplane_0069.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 68,
+    "aligned": true
+  },
+  "airplane/airplane_0070.ply": {
+    "file": "airplane/airplane_0070.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 69,
+    "aligned": true
+  },
+  "airplane/airplane_0071.ply": {
+    "file": "airplane/airplane_0071.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 70,
+    "aligned": false
+  },
+  "airplane/airplane_0072.ply": {
+    "file": "airplane/airplane_0072.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 71,
+    "aligned": true
+  },
+  "airplane/airplane_0073.ply": {
+    "file": "airplane/airplane_0073.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 72,
+    "aligned": true
+  },
+  "airplane/airplane_0074.ply": {
+    "file": "airplane/airplane_0074.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 73,
+    "aligned": true
+  },
+  "airplane/airplane_0075.ply": {
+    "file": "airplane/airplane_0075.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 74,
+    "aligned": false
+  },
+  "airplane/airplane_0076.ply": {
+    "file": "airplane/airplane_0076.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 75,
+    "aligned": false
+  },
+  "airplane/airplane_0077.ply": {
+    "file": "airplane/airplane_0077.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 76,
+    "aligned": false
+  },
+  "airplane/airplane_0078.ply": {
+    "file": "airplane/airplane_0078.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 77,
+    "aligned": true
+  },
+  "airplane/airplane_0079.ply": {
+    "file": "airplane/airplane_0079.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 78,
+    "aligned": true
+  },
+  "airplane/airplane_0080.ply": {
+    "file": "airplane/airplane_0080.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 79,
+    "aligned": true
+  },
+  "airplane/airplane_0081.ply": {
+    "file": "airplane/airplane_0081.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 80,
+    "aligned": true
+  },
+  "airplane/airplane_0082.ply": {
+    "file": "airplane/airplane_0082.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 81,
+    "aligned": false
+  },
+  "airplane/airplane_0083.ply": {
+    "file": "airplane/airplane_0083.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 82,
+    "aligned": true
+  },
+  "airplane/airplane_0084.ply": {
+    "file": "airplane/airplane_0084.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 83,
+    "aligned": true
+  },
+  "airplane/airplane_0085.ply": {
+    "file": "airplane/airplane_0085.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 84,
+    "aligned": false
+  },
+  "airplane/airplane_0086.ply": {
+    "file": "airplane/airplane_0086.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 85,
+    "aligned": false
+  },
+  "airplane/airplane_0087.ply": {
+    "file": "airplane/airplane_0087.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 86,
+    "aligned": true
+  },
+  "airplane/airplane_0088.ply": {
+    "file": "airplane/airplane_0088.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 87,
+    "aligned": true
+  },
+  "airplane/airplane_0089.ply": {
+    "file": "airplane/airplane_0089.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 88,
+    "aligned": false
+  },
+  "airplane/airplane_0090.ply": {
+    "file": "airplane/airplane_0090.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 89,
+    "aligned": true
+  },
+  "airplane/airplane_0091.ply": {
+    "file": "airplane/airplane_0091.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 90,
+    "aligned": true
+  },
+  "airplane/airplane_0092.ply": {
+    "file": "airplane/airplane_0092.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 91,
+    "aligned": true
+  },
+  "airplane/airplane_0093.ply": {
+    "file": "airplane/airplane_0093.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 92,
+    "aligned": true
+  },
+  "airplane/airplane_0094.ply": {
+    "file": "airplane/airplane_0094.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 93,
+    "aligned": true
+  },
+  "airplane/airplane_0095.ply": {
+    "file": "airplane/airplane_0095.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 94,
+    "aligned": true
+  },
+  "airplane/airplane_0096.ply": {
+    "file": "airplane/airplane_0096.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 95,
+    "aligned": true
+  },
+  "airplane/airplane_0097.ply": {
+    "file": "airplane/airplane_0097.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 96,
+    "aligned": false
+  },
+  "airplane/airplane_0098.ply": {
+    "file": "airplane/airplane_0098.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 97,
+    "aligned": false
+  },
+  "airplane/airplane_0099.ply": {
+    "file": "airplane/airplane_0099.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 98,
+    "aligned": true
+  },
+  "airplane/airplane_0100.ply": {
+    "file": "airplane/airplane_0100.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 99,
+    "aligned": true
+  },
+  "chair/chair_0001.ply": {
+    "file": "chair/chair_0001.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "chair/chair_0002.ply": {
+    "file": "chair/chair_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "airplane/airplane_0101.ply": {
+    "file": "airplane/airplane_0101.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 100,
+    "aligned": false
+  },
+  "glass_box/glass_box_0102.ply": {
+    "file": "glass_box/glass_box_0102.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-X",
+    "index": 101,
+    "aligned": false
+  },
+  "glass_box/glass_box_0103.ply": {
+    "file": "glass_box/glass_box_0103.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-X",
+    "index": 102,
+    "aligned": false
+  },
+  "glass_box/glass_box_0104.ply": {
+    "file": "glass_box/glass_box_0104.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 103,
+    "aligned": true
+  },
+  "bowl/bowl_0001.ply": {
+    "file": "bowl/bowl_0001.ply",
+    "K": 0,
+    "symmetry_name": "完全对称",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "bowl/bowl_0002.ply": {
+    "file": "bowl/bowl_0002.ply",
+    "K": 0,
+    "symmetry_name": "完全对称",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "bench/bench_0001.ply": {
+    "file": "bench/bench_0001.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "bench/bench_0002.ply": {
+    "file": "bench/bench_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 1,
+    "aligned": false
+  }
+}
