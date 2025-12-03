@@ -199,6 +199,175 @@
 
 ---
 
+### 🚨 Phase 2 对称性分类的数据集划分实现（必须遵守！）
+
+**当前实现**（`dataloader_symmetry.py`）：
+
+```python
+# 固定随机种子（确保可复现）
+np.random.seed(42)
+
+# 划分比例：70% / 15% / 15%
+# - Train: 用于训练，使用旋转增强
+# - Val:   用于超参数调优和模型选择，不使用增强
+# - Test:  最终评估，只运行一次，不使用增强
+
+# 分层采样（按K值类别）
+for K, samples in K_to_samples.items():
+    np.random.shuffle(samples)
+    n = len(samples)
+    n_train = int(n * 0.7)
+    n_val = int(n * 0.15)
+
+    train_samples.extend(samples[:n_train])
+    val_samples.extend(samples[n_train:n_train+n_val])
+    test_samples.extend(samples[n_train+n_val:])
+```
+
+**关键点**：
+1. ✅ **固定随机种子 seed=42** - 确保每次运行划分相同
+2. ✅ **分层采样** - 每个K值类别按相同比例划分（处理不平衡数据）
+3. ✅ **训练时增强，验证/测试时不增强**
+4. ✅ **自动打印数据集大小** - 每次加载都会显示train/val/test数量
+
+**验证数据集划分正确性**：
+
+```python
+# 运行数据集测试
+python dataloader_symmetry.py
+
+# 应该看到类似输出：
+# [TRAIN] 数据集大小: 75
+# [TRAIN] 类别分布:
+#   K= 0 (class 1):    1 (  1.3%)
+#   K= 1 (class 2):   72 ( 96.0%)
+#   K= 4 (class 4):    2 (  2.7%)
+#
+# [VAL] 数据集大小: 15
+# [VAL] 类别分布:
+#   K= 1 (class 2):   15 (100.0%)
+#
+# [TEST] 数据集大小: 20
+# [TEST] 类别分布:
+#   K= 0 (class 1):    1 (  5.0%)
+#   K= 1 (class 2):   17 ( 85.0%)
+#   K= 2 (class 3):    1 (  5.0%)
+#   K= 4 (class 4):    1 (  5.0%)
+
+# ✅ 验证：75 + 15 + 20 = 110 (总标注数)
+# ✅ 验证：没有样本重复出现在多个集合中
+```
+
+**训练脚本中的使用**（`train_symmetry_classifier.py`）：
+
+```python
+# 自动划分数据集
+train_loader, val_loader, test_loader = get_symmetry_dataloaders(
+    annotation_file='data_annotation/symmetry_annotations.json',
+    data_dir='data/full_mn40_normal_resampled_ply',
+    batch_size=16,
+    num_workers=4,
+    num_points=10000
+)
+
+# 训练循环
+for epoch in range(epochs):
+    # 只在训练集上训练
+    train_loss, train_acc = train_epoch(model, train_loader, ...)
+
+    # 只在验证集上评估（用于模型选择）
+    val_loss, val_acc, _, _ = evaluate(model, val_loader, ...)
+
+    # 保存最佳模型（基于验证集）
+    if val_acc > best_acc:
+        save_checkpoint(model, 'best_model.pth')
+
+# 最终测试（只运行一次！加载最佳模型后）
+model.load_state_dict(torch.load('best_model.pth'))
+test_loss, test_acc, confusion_matrix, class_acc = evaluate(
+    model, test_loader, ...
+)
+```
+
+**⚠️ 绝对禁止的操作**：
+
+```python
+# ❌ 错误1：在全数据集上训练
+all_data = load_all_annotations()  # 包含测试集！
+train(model, all_data)  # 数据泄露！
+
+# ❌ 错误2：在测试集上调参
+for lr in [1e-3, 1e-4, 1e-5]:
+    train(model, train_loader)
+    acc = evaluate(model, test_loader)  # 测试集变验证集了！
+    if acc > best_acc:
+        best_lr = lr
+
+# ❌ 错误3：测试集多次评估
+test_acc_1 = evaluate(model_v1, test_loader)
+# 调整模型...
+test_acc_2 = evaluate(model_v2, test_loader)  # 间接优化测试集！
+
+# ❌ 错误4：没有固定随机种子
+# 每次运行划分不同，无法复现！
+```
+
+**✅ 正确的实验流程**：
+
+```python
+# 1. 数据集划分（固定seed=42）
+train_loader, val_loader, test_loader = get_symmetry_dataloaders(...)
+
+# 2. 训练 + 验证（可以多次）
+for experiment in [exp1, exp2, exp3]:
+    model = create_model(experiment.config)
+
+    for epoch in range(200):
+        train_loss = train(model, train_loader)  # 只用训练集
+        val_loss = validate(model, val_loader)   # 只用验证集
+
+        if val_loss < best_val_loss:
+            save_best_model(model)
+
+    # 记录验证集最佳性能（用于对比实验）
+    best_val_acc = load_and_evaluate(best_model, val_loader)
+
+# 3. 最终测试（只运行一次！）
+best_experiment = select_best_from_validation_results()
+final_model = load_checkpoint(best_experiment.best_model_path)
+test_acc = evaluate(final_model, test_loader)  # ← 只此一次！
+
+# 4. 报告结果
+print(f"Test Accuracy: {test_acc}")  # 这是论文中报告的数字
+```
+
+**报告实验结果模板**：
+
+```markdown
+## Phase 2 对称性分类实验结果
+
+**数据集划分**（seed=42，分层采样）：
+- Train: 75 samples (70%)
+  - 使用旋转增强（θ ∈ [0, 2π)）
+- Val: 15 samples (15%)
+  - 不使用增强
+- Test: 20 samples (15%)
+  - 不使用增强
+
+**验证集表现**（用于模型选择）：
+- Exp 1.1 (GlobalConcat): Val Acc = 0.95
+- Exp 1.2 (PointConcat):  Val Acc = 0.93
+- Exp 1.3 (NoUpright):    Val Acc = 0.90
+
+**最终测试集表现**（仅运行一次）：
+- Best Model: Exp 1.1 (GlobalConcat)
+- Test Accuracy: 0.92
+- Per-class Accuracy: {K=-1: 0.0, K=0: 1.0, K=1: 0.95, K=2: 0.0, K=4: 1.0}
+- Confusion Matrix: ...
+```
+
+---
+
 **这三条规则的优先级高于本文档中的其他所有内容！**
 
 如果Claude违反了这些规则，必须：
@@ -526,6 +695,71 @@ if epoch % 50 == 0:
 - 如果标注成本过高：探索自监督对称性检测
 
 **数据标注规范**（见下方标注工具部分）
+
+---
+
+## 🚀 启动时自动提醒：常用工具
+
+**每次打开此项目时，Claude应主动提醒用户以下工具：**
+
+### 1. 点云截图展示器（论文图片用）
+
+**用途**：为论文截取高质量的点云3D图片
+
+**启动命令**：
+```bash
+python pointcloud_screenshot_viewer.py
+# 浏览器打开 http://localhost:8051
+```
+
+**核心功能**：
+- 7种背景颜色（白/灰/黑/浅蓝/奶油色等）
+- 12种点云颜色（纯色：蓝/黑/白/红/黄/紫等）
+- 6种渐变色（Blues/Grays/Viridis/Jet/Plasma/Turbo）
+- 12种相机预设（正面/侧面/俯视/等轴测等）
+- **一键对齐功能**：勾选"Apply alignment"后根据标注自动旋转到标准姿态
+- **快捷视角按钮**：Front / Side / Top 快速切换
+- **批量截图**：一键保存3视图（正/侧/顶）或4个等轴测视角
+- 输出位置：`paper/figures/pointclouds/`
+
+**依赖标注文件**：`data_annotation/symmetry_annotations.json`（用于一键对齐）
+
+---
+
+### 2. 对称性标注工具 v3（数据标注用）
+
+**用途**：标注点云的对称类型和前向方向
+
+**启动命令**：
+```bash
+python data_annotation/annotate_symmetry_web_v3.py
+# 浏览器打开 http://localhost:8052
+```
+
+**核心功能**：
+- 5种对称类型：1个正面 / 2个正面 / 4个正面 / 完全对称 / 没有正面
+- 6个方向标注：-Z / +Z / -X / +X / -Y / +Y
+- **矫正后预览**：选择方向后实时显示旋转矫正效果
+- 类别选择和进度追踪
+- 自动保存到 JSON / CSV / Markdown
+- 断点续标
+
+**输出文件**：
+- `data_annotation/symmetry_annotations.json`
+- `data_annotation/symmetry_annotations.csv`
+- `data_annotation/symmetry_annotations.md`
+
+---
+
+### 提醒模板
+
+当用户打开项目时，Claude可以说：
+
+> **工具提醒**：检测到你在ForwardNet项目中。以下工具可用：
+> 1. `python pointcloud_screenshot_viewer.py` → 论文截图工具 (端口8051)
+> 2. `python data_annotation/annotate_symmetry_web_v3.py` → 标注工具 (端口8052)
+>
+> 需要我启动哪个吗？
 
 ---
 
@@ -1172,3 +1406,198 @@ KAPPA_INIT = 0.0         # kappa初始化值（通过bias控制）
 **核心任务**: Glassbox 4峰MvM → 成功 → 扩展到其他物体
 
 がんばろう！💪
+---
+
+## 📝 标注工具开发日志（2025-11-25）
+
+### 本次更新内容
+
+**背景**：为Phase 2实验准备数据，需要对ModelNet40数据集进行对称性标注。
+
+### 1. 文件重组
+
+**问题**：标注相关文件散落在根目录，且data/文件夹包含数据集，不应上传GitHub
+
+**解决方案**：
+- 创建`data_annotation/`专用文件夹
+- 移动所有标注工具到`data_annotation/`
+- 移动标注结果文件到`data_annotation/`
+- 更新`.gitignore`排除`data/`目录
+
+**文件结构**：
+```
+ForwardNet-claude/
+├── data_annotation/           # 新增：标注相关文件
+│   ├── README.md             # 文件夹说明
+│   ├── ANNOTATION_GUIDE.md   # 使用指南
+│   │
+│   ├── annotate_symmetry_web_v2.py    # 主工具（Web版v2）
+│   ├── category_progress_viewer.py    # 进度查看器
+│   ├── annotation_stats.py            # 速度统计工具（新增）
+│   ├── annotate_by_category.py        # 按类别标注
+│   ├── process_annotations.py         # 数据处理
+│   │
+│   ├── symmetry_annotations.json      # 标注数据
+│   ├── symmetry_annotations.csv       # Excel格式
+│   └── symmetry_annotations.md        # Markdown报告
+│
+└── data/                      # 数据集（不上传GitHub）
+    ├── full_mn40_normal_resampled_ply/
+    └── ...
+```
+
+### 2. Web标注工具v2核心功能
+
+**主要改进**：
+1. **类别选择器**：
+   - 在Web界面顶部添加下拉菜单
+   - 显示所有40个类别及其进度（如`airplane (101/726)`）
+   - 自动从剩余样本最多的类别开始
+
+2. **实时进度显示**：
+   - 当前类别进度（X/Y已标注，百分比，进度条）
+   - 全局进度统计
+   - 类别进度实时更新
+
+3. **进度显示修复**：
+   - **Bug**：之前显示全局已标注数/当前类别总数（如108/84，错误）
+   - **修复**：现在正确显示当前类别已标注数/当前类别总数（如2/84）
+   - **实现**：使用`self.category_progress[self.current_category]`获取当前类别数据
+
+4. **技术实现**：
+   ```python
+   # 新增方法
+   _scan_categories()              # 扫描所有类别
+   _calculate_all_category_progress()  # 计算各类别进度
+   _load_category_files(category)  # 加载指定类别文件
+   _get_category_progress_display()   # 生成进度显示HTML
+   
+   # 新增回调
+   - 类别切换回调：切换类别时重新加载文件并跳转
+   - 主回调增强：保存后更新类别进度显示
+   ```
+
+### 3. 标注速度统计工具
+
+**文件**：`data_annotation/annotation_stats.py`
+
+**功能**：
+- 显示整体标注进度（已标注/总数/百分比）
+- 估算完成时间（基于不同标注速度）
+- 显示各类别剩余数量排名
+- 轻量级，不占用资源
+
+**使用方法**：
+```bash
+cd data_annotation
+python annotation_stats.py
+```
+
+**输出示例**：
+```
+📊 标注进度与速度统计
+══════════════════════════════════════════
+
+🎯 整体进度
+  总样本数: 12,311
+  已标注: 110 (0.89%)
+  剩余: 12,201 (99.11%)
+
+💡 完成时间估算（基于标注速度）:
+    @  10 样本/小时 →  1220.1 小时 ( 50.84 天)
+    @  20 样本/小时 →   610.0 小时 ( 25.42 天)
+    @  30 样本/小时 →   406.7 小时 ( 16.95 天)
+    @  50 样本/小时 →   244.0 小时 ( 10.17 天)
+    @ 100 样本/小时 →   122.0 小时 (  5.08 天)
+
+📋 类别进度（剩余最多的前10个）
+  chair       2/989    (0.2%)
+  sofa        0/780    (0.0%)
+  airplane  101/726  (13.9%)
+  ...
+```
+
+### 4. 数据安全保证
+
+**关键点**：
+1. **不丢失进度**：
+   - 所有类别共享同一个JSON文件
+   - 切换类别不会清空已有标注
+   - 每次保存都追加而非覆盖
+
+2. **三重备份**：
+   - JSON（程序读取）
+   - CSV（Excel可读）
+   - Markdown（人类可读报告）
+
+3. **断点续标**：
+   - 启动时自动加载已有标注
+   - 自动从第一个未标注样本继续
+   - 可随时关闭，下次继续
+
+### 5. Git提交
+
+**提交内容**：
+- 添加`data_annotation/`文件夹及所有工具
+- 更新claude.md文件路径
+- 更新.gitignore排除data/
+
+**提交信息**：`Add symmetry annotation tools and reorganize data`
+
+**Remote branch**：`claude`
+
+### 关键代码位置
+
+**Web工具v2核心逻辑**：
+- 文件：`data_annotation/annotate_symmetry_web_v2.py`
+- 类别扫描：`_scan_categories()` (第69-80行)
+- 进度计算：`_calculate_all_category_progress()` (第82-103行)
+- 类别切换回调：`switch_category()` (第555-565行)
+- 进度显示修复：第672-686行（显示当前类别进度而非全局）
+
+**进度统计工具**：
+- 文件：`data_annotation/annotation_stats.py`
+- 整体进度计算：`display_stats()` (第88-150行)
+- 完成时间估算：`estimate_completion_time()` (第73-77行)
+
+### 后续LLM快速上手指南
+
+**如果需要修改标注工具**：
+1. 主文件：`data_annotation/annotate_symmetry_web_v2.py`
+2. 关键类：`WebSymmetryAnnotatorV2`
+3. 布局定义：`_build_layout()` (第296行)
+4. 回调逻辑：`_setup_callbacks()` (第543行)
+
+**如果需要处理标注数据**：
+1. 标注文件：`data_annotation/symmetry_annotations.json`
+2. 处理工具：`data_annotation/process_annotations.py`
+3. 数据格式：
+   ```json
+   {
+     "category/filename.ply": {
+       "K": -1/0/1/2/4,
+       "symmetry_name": "1个正面",
+       "front_direction": "-Z",
+       "aligned": true/false
+     }
+   }
+   ```
+
+**如果需要查看进度**：
+```bash
+# 快速查看
+python data_annotation/annotation_stats.py
+
+# 详细查看
+python data_annotation/category_progress_viewer.py
+```
+
+**如果需要启动标注工具**：
+```bash
+# 推荐：Web版v2（支持类别选择）
+python data_annotation/annotate_symmetry_web_v2.py --port 8051
+# 浏览器访问 http://localhost:8051
+```
+
+---
+

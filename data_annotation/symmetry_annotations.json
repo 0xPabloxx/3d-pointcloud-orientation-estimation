@@ -824,20 +824,18 @@
     "aligned": false
   },
   "glass_box/glass_box_0102.ply": {
-    "file": "glass_box/glass_box_0102.ply",
     "K": 4,
     "symmetry_name": "4个正面",
-    "front_direction": "-X",
-    "index": 101,
-    "aligned": false
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0102.ply"
   },
   "glass_box/glass_box_0103.ply": {
-    "file": "glass_box/glass_box_0103.ply",
     "K": 4,
     "symmetry_name": "4个正面",
-    "front_direction": "-X",
-    "index": 102,
-    "aligned": false
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0103.ply"
   },
   "glass_box/glass_box_0104.ply": {
     "file": "glass_box/glass_box_0104.ply",
@@ -877,6 +875,1906 @@
     "symmetry_name": "1个正面",
     "front_direction": "+X",
     "index": 1,
+    "aligned": false
+  },
+  "glass_box/glass_box_0001.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0001.ply"
+  },
+  "glass_box/glass_box_0002.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0002.ply"
+  },
+  "glass_box/glass_box_0003.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0003.ply"
+  },
+  "glass_box/glass_box_0004.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0004.ply"
+  },
+  "glass_box/glass_box_0005.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0005.ply"
+  },
+  "glass_box/glass_box_0006.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0006.ply"
+  },
+  "glass_box/glass_box_0007.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0007.ply"
+  },
+  "glass_box/glass_box_0008.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0008.ply"
+  },
+  "glass_box/glass_box_0009.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0009.ply"
+  },
+  "glass_box/glass_box_0010.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0010.ply"
+  },
+  "glass_box/glass_box_0011.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0011.ply"
+  },
+  "glass_box/glass_box_0012.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0012.ply"
+  },
+  "glass_box/glass_box_0013.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0013.ply"
+  },
+  "glass_box/glass_box_0014.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0014.ply"
+  },
+  "glass_box/glass_box_0015.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0015.ply"
+  },
+  "glass_box/glass_box_0016.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0016.ply"
+  },
+  "glass_box/glass_box_0017.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0017.ply"
+  },
+  "glass_box/glass_box_0018.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0018.ply"
+  },
+  "glass_box/glass_box_0019.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0019.ply"
+  },
+  "glass_box/glass_box_0020.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0020.ply"
+  },
+  "glass_box/glass_box_0021.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0021.ply"
+  },
+  "glass_box/glass_box_0022.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0022.ply"
+  },
+  "glass_box/glass_box_0023.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0023.ply"
+  },
+  "glass_box/glass_box_0024.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0024.ply"
+  },
+  "glass_box/glass_box_0025.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0025.ply"
+  },
+  "glass_box/glass_box_0026.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0026.ply"
+  },
+  "glass_box/glass_box_0027.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0027.ply"
+  },
+  "glass_box/glass_box_0028.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0028.ply"
+  },
+  "glass_box/glass_box_0029.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0029.ply"
+  },
+  "glass_box/glass_box_0030.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0030.ply"
+  },
+  "glass_box/glass_box_0031.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0031.ply"
+  },
+  "glass_box/glass_box_0032.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0032.ply"
+  },
+  "glass_box/glass_box_0033.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0033.ply"
+  },
+  "glass_box/glass_box_0034.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0034.ply"
+  },
+  "glass_box/glass_box_0035.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0035.ply"
+  },
+  "glass_box/glass_box_0036.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0036.ply"
+  },
+  "glass_box/glass_box_0037.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0037.ply"
+  },
+  "glass_box/glass_box_0038.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0038.ply"
+  },
+  "glass_box/glass_box_0039.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0039.ply"
+  },
+  "glass_box/glass_box_0040.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0040.ply"
+  },
+  "glass_box/glass_box_0041.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0041.ply"
+  },
+  "glass_box/glass_box_0042.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0042.ply"
+  },
+  "glass_box/glass_box_0043.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0043.ply"
+  },
+  "glass_box/glass_box_0044.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0044.ply"
+  },
+  "glass_box/glass_box_0045.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0045.ply"
+  },
+  "glass_box/glass_box_0046.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0046.ply"
+  },
+  "glass_box/glass_box_0047.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0047.ply"
+  },
+  "glass_box/glass_box_0048.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0048.ply"
+  },
+  "glass_box/glass_box_0049.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0049.ply"
+  },
+  "glass_box/glass_box_0050.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0050.ply"
+  },
+  "glass_box/glass_box_0051.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0051.ply"
+  },
+  "glass_box/glass_box_0052.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0052.ply"
+  },
+  "glass_box/glass_box_0053.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0053.ply"
+  },
+  "glass_box/glass_box_0054.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0054.ply"
+  },
+  "glass_box/glass_box_0055.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0055.ply"
+  },
+  "glass_box/glass_box_0056.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0056.ply"
+  },
+  "glass_box/glass_box_0057.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0057.ply"
+  },
+  "glass_box/glass_box_0058.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0058.ply"
+  },
+  "glass_box/glass_box_0059.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0059.ply"
+  },
+  "glass_box/glass_box_0060.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0060.ply"
+  },
+  "glass_box/glass_box_0061.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0061.ply"
+  },
+  "glass_box/glass_box_0062.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0062.ply"
+  },
+  "glass_box/glass_box_0063.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0063.ply"
+  },
+  "glass_box/glass_box_0064.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0064.ply"
+  },
+  "glass_box/glass_box_0065.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0065.ply"
+  },
+  "glass_box/glass_box_0066.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0066.ply"
+  },
+  "glass_box/glass_box_0067.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0067.ply"
+  },
+  "glass_box/glass_box_0068.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0068.ply"
+  },
+  "glass_box/glass_box_0069.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0069.ply"
+  },
+  "glass_box/glass_box_0070.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0070.ply"
+  },
+  "glass_box/glass_box_0071.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0071.ply"
+  },
+  "glass_box/glass_box_0072.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0072.ply"
+  },
+  "glass_box/glass_box_0073.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0073.ply"
+  },
+  "glass_box/glass_box_0074.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0074.ply"
+  },
+  "glass_box/glass_box_0075.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0075.ply"
+  },
+  "glass_box/glass_box_0076.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0076.ply"
+  },
+  "glass_box/glass_box_0077.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0077.ply"
+  },
+  "glass_box/glass_box_0078.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0078.ply"
+  },
+  "glass_box/glass_box_0079.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0079.ply"
+  },
+  "glass_box/glass_box_0080.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0080.ply"
+  },
+  "glass_box/glass_box_0081.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0081.ply"
+  },
+  "glass_box/glass_box_0082.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0082.ply"
+  },
+  "glass_box/glass_box_0083.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0083.ply"
+  },
+  "glass_box/glass_box_0084.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0084.ply"
+  },
+  "glass_box/glass_box_0085.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0085.ply"
+  },
+  "glass_box/glass_box_0086.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0086.ply"
+  },
+  "glass_box/glass_box_0087.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0087.ply"
+  },
+  "glass_box/glass_box_0088.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0088.ply"
+  },
+  "glass_box/glass_box_0089.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0089.ply"
+  },
+  "glass_box/glass_box_0090.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0090.ply"
+  },
+  "glass_box/glass_box_0091.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0091.ply"
+  },
+  "glass_box/glass_box_0092.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0092.ply"
+  },
+  "glass_box/glass_box_0093.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0093.ply"
+  },
+  "glass_box/glass_box_0094.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0094.ply"
+  },
+  "glass_box/glass_box_0095.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0095.ply"
+  },
+  "glass_box/glass_box_0096.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0096.ply"
+  },
+  "glass_box/glass_box_0097.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0097.ply"
+  },
+  "glass_box/glass_box_0098.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0098.ply"
+  },
+  "glass_box/glass_box_0099.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0099.ply"
+  },
+  "glass_box/glass_box_0100.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0100.ply"
+  },
+  "glass_box/glass_box_0101.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0101.ply"
+  },
+  "glass_box/glass_box_0105.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0105.ply"
+  },
+  "glass_box/glass_box_0106.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0106.ply"
+  },
+  "glass_box/glass_box_0107.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0107.ply"
+  },
+  "glass_box/glass_box_0108.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0108.ply"
+  },
+  "glass_box/glass_box_0109.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0109.ply"
+  },
+  "glass_box/glass_box_0110.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0110.ply"
+  },
+  "glass_box/glass_box_0111.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0111.ply"
+  },
+  "glass_box/glass_box_0112.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0112.ply"
+  },
+  "glass_box/glass_box_0113.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0113.ply"
+  },
+  "glass_box/glass_box_0114.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0114.ply"
+  },
+  "glass_box/glass_box_0115.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0115.ply"
+  },
+  "glass_box/glass_box_0116.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0116.ply"
+  },
+  "glass_box/glass_box_0117.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0117.ply"
+  },
+  "glass_box/glass_box_0118.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0118.ply"
+  },
+  "glass_box/glass_box_0119.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0119.ply"
+  },
+  "glass_box/glass_box_0120.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0120.ply"
+  },
+  "glass_box/glass_box_0121.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0121.ply"
+  },
+  "glass_box/glass_box_0122.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0122.ply"
+  },
+  "glass_box/glass_box_0123.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0123.ply"
+  },
+  "glass_box/glass_box_0124.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0124.ply"
+  },
+  "glass_box/glass_box_0125.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0125.ply"
+  },
+  "glass_box/glass_box_0126.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0126.ply"
+  },
+  "glass_box/glass_box_0127.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0127.ply"
+  },
+  "glass_box/glass_box_0128.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0128.ply"
+  },
+  "glass_box/glass_box_0129.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0129.ply"
+  },
+  "glass_box/glass_box_0130.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0130.ply"
+  },
+  "glass_box/glass_box_0131.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0131.ply"
+  },
+  "glass_box/glass_box_0132.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0132.ply"
+  },
+  "glass_box/glass_box_0133.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0133.ply"
+  },
+  "glass_box/glass_box_0134.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0134.ply"
+  },
+  "glass_box/glass_box_0135.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0135.ply"
+  },
+  "glass_box/glass_box_0136.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0136.ply"
+  },
+  "glass_box/glass_box_0137.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0137.ply"
+  },
+  "glass_box/glass_box_0138.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0138.ply"
+  },
+  "glass_box/glass_box_0139.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0139.ply"
+  },
+  "glass_box/glass_box_0140.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0140.ply"
+  },
+  "glass_box/glass_box_0141.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0141.ply"
+  },
+  "glass_box/glass_box_0142.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0142.ply"
+  },
+  "glass_box/glass_box_0143.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0143.ply"
+  },
+  "glass_box/glass_box_0144.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0144.ply"
+  },
+  "glass_box/glass_box_0145.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0145.ply"
+  },
+  "glass_box/glass_box_0146.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0146.ply"
+  },
+  "glass_box/glass_box_0147.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0147.ply"
+  },
+  "glass_box/glass_box_0148.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0148.ply"
+  },
+  "glass_box/glass_box_0149.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0149.ply"
+  },
+  "glass_box/glass_box_0150.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0150.ply"
+  },
+  "glass_box/glass_box_0151.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0151.ply"
+  },
+  "glass_box/glass_box_0152.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0152.ply"
+  },
+  "glass_box/glass_box_0153.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0153.ply"
+  },
+  "glass_box/glass_box_0154.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0154.ply"
+  },
+  "glass_box/glass_box_0155.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0155.ply"
+  },
+  "glass_box/glass_box_0156.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0156.ply"
+  },
+  "glass_box/glass_box_0157.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0157.ply"
+  },
+  "glass_box/glass_box_0158.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0158.ply"
+  },
+  "glass_box/glass_box_0159.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0159.ply"
+  },
+  "glass_box/glass_box_0160.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0160.ply"
+  },
+  "glass_box/glass_box_0161.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0161.ply"
+  },
+  "glass_box/glass_box_0162.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0162.ply"
+  },
+  "glass_box/glass_box_0163.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0163.ply"
+  },
+  "glass_box/glass_box_0164.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0164.ply"
+  },
+  "glass_box/glass_box_0165.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0165.ply"
+  },
+  "glass_box/glass_box_0166.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0166.ply"
+  },
+  "glass_box/glass_box_0167.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0167.ply"
+  },
+  "glass_box/glass_box_0168.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0168.ply"
+  },
+  "glass_box/glass_box_0169.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0169.ply"
+  },
+  "glass_box/glass_box_0170.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0170.ply"
+  },
+  "glass_box/glass_box_0171.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0171.ply"
+  },
+  "glass_box/glass_box_0172.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0172.ply"
+  },
+  "glass_box/glass_box_0173.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0173.ply"
+  },
+  "glass_box/glass_box_0174.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0174.ply"
+  },
+  "glass_box/glass_box_0175.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0175.ply"
+  },
+  "glass_box/glass_box_0176.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0176.ply"
+  },
+  "glass_box/glass_box_0177.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0177.ply"
+  },
+  "glass_box/glass_box_0178.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0178.ply"
+  },
+  "glass_box/glass_box_0179.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0179.ply"
+  },
+  "glass_box/glass_box_0180.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0180.ply"
+  },
+  "glass_box/glass_box_0181.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0181.ply"
+  },
+  "glass_box/glass_box_0182.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0182.ply"
+  },
+  "glass_box/glass_box_0183.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0183.ply"
+  },
+  "glass_box/glass_box_0184.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0184.ply"
+  },
+  "glass_box/glass_box_0185.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0185.ply"
+  },
+  "glass_box/glass_box_0186.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0186.ply"
+  },
+  "glass_box/glass_box_0187.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0187.ply"
+  },
+  "glass_box/glass_box_0188.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0188.ply"
+  },
+  "glass_box/glass_box_0189.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0189.ply"
+  },
+  "glass_box/glass_box_0190.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0190.ply"
+  },
+  "glass_box/glass_box_0191.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0191.ply"
+  },
+  "glass_box/glass_box_0192.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0192.ply"
+  },
+  "glass_box/glass_box_0193.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0193.ply"
+  },
+  "glass_box/glass_box_0194.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0194.ply"
+  },
+  "glass_box/glass_box_0195.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0195.ply"
+  },
+  "glass_box/glass_box_0196.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0196.ply"
+  },
+  "glass_box/glass_box_0197.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0197.ply"
+  },
+  "glass_box/glass_box_0198.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0198.ply"
+  },
+  "glass_box/glass_box_0199.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0199.ply"
+  },
+  "glass_box/glass_box_0200.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0200.ply"
+  },
+  "glass_box/glass_box_0201.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0201.ply"
+  },
+  "glass_box/glass_box_0202.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0202.ply"
+  },
+  "glass_box/glass_box_0203.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0203.ply"
+  },
+  "glass_box/glass_box_0204.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0204.ply"
+  },
+  "glass_box/glass_box_0205.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0205.ply"
+  },
+  "glass_box/glass_box_0206.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0206.ply"
+  },
+  "glass_box/glass_box_0207.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0207.ply"
+  },
+  "glass_box/glass_box_0208.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0208.ply"
+  },
+  "glass_box/glass_box_0209.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0209.ply"
+  },
+  "glass_box/glass_box_0210.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0210.ply"
+  },
+  "glass_box/glass_box_0211.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0211.ply"
+  },
+  "glass_box/glass_box_0212.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0212.ply"
+  },
+  "glass_box/glass_box_0213.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0213.ply"
+  },
+  "glass_box/glass_box_0214.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0214.ply"
+  },
+  "glass_box/glass_box_0215.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0215.ply"
+  },
+  "glass_box/glass_box_0216.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0216.ply"
+  },
+  "glass_box/glass_box_0217.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0217.ply"
+  },
+  "glass_box/glass_box_0218.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0218.ply"
+  },
+  "glass_box/glass_box_0219.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0219.ply"
+  },
+  "glass_box/glass_box_0220.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0220.ply"
+  },
+  "glass_box/glass_box_0221.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0221.ply"
+  },
+  "glass_box/glass_box_0222.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0222.ply"
+  },
+  "glass_box/glass_box_0223.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0223.ply"
+  },
+  "glass_box/glass_box_0224.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0224.ply"
+  },
+  "glass_box/glass_box_0225.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0225.ply"
+  },
+  "glass_box/glass_box_0226.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0226.ply"
+  },
+  "glass_box/glass_box_0227.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0227.ply"
+  },
+  "glass_box/glass_box_0228.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0228.ply"
+  },
+  "glass_box/glass_box_0229.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0229.ply"
+  },
+  "glass_box/glass_box_0230.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0230.ply"
+  },
+  "glass_box/glass_box_0231.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0231.ply"
+  },
+  "glass_box/glass_box_0232.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0232.ply"
+  },
+  "glass_box/glass_box_0233.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0233.ply"
+  },
+  "glass_box/glass_box_0234.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0234.ply"
+  },
+  "glass_box/glass_box_0235.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0235.ply"
+  },
+  "glass_box/glass_box_0236.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0236.ply"
+  },
+  "glass_box/glass_box_0237.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0237.ply"
+  },
+  "glass_box/glass_box_0238.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0238.ply"
+  },
+  "glass_box/glass_box_0239.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0239.ply"
+  },
+  "glass_box/glass_box_0240.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0240.ply"
+  },
+  "glass_box/glass_box_0241.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0241.ply"
+  },
+  "glass_box/glass_box_0242.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0242.ply"
+  },
+  "glass_box/glass_box_0243.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0243.ply"
+  },
+  "glass_box/glass_box_0244.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0244.ply"
+  },
+  "glass_box/glass_box_0245.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0245.ply"
+  },
+  "glass_box/glass_box_0246.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0246.ply"
+  },
+  "glass_box/glass_box_0247.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0247.ply"
+  },
+  "glass_box/glass_box_0248.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0248.ply"
+  },
+  "glass_box/glass_box_0249.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0249.ply"
+  },
+  "glass_box/glass_box_0250.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0250.ply"
+  },
+  "glass_box/glass_box_0251.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0251.ply"
+  },
+  "glass_box/glass_box_0252.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0252.ply"
+  },
+  "glass_box/glass_box_0253.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0253.ply"
+  },
+  "glass_box/glass_box_0254.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0254.ply"
+  },
+  "glass_box/glass_box_0255.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0255.ply"
+  },
+  "glass_box/glass_box_0256.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0256.ply"
+  },
+  "glass_box/glass_box_0257.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0257.ply"
+  },
+  "glass_box/glass_box_0258.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0258.ply"
+  },
+  "glass_box/glass_box_0259.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0259.ply"
+  },
+  "glass_box/glass_box_0260.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0260.ply"
+  },
+  "glass_box/glass_box_0261.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0261.ply"
+  },
+  "glass_box/glass_box_0262.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0262.ply"
+  },
+  "glass_box/glass_box_0263.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0263.ply"
+  },
+  "glass_box/glass_box_0264.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0264.ply"
+  },
+  "glass_box/glass_box_0265.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0265.ply"
+  },
+  "glass_box/glass_box_0266.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0266.ply"
+  },
+  "glass_box/glass_box_0267.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0267.ply"
+  },
+  "glass_box/glass_box_0268.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0268.ply"
+  },
+  "glass_box/glass_box_0269.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0269.ply"
+  },
+  "glass_box/glass_box_0270.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0270.ply"
+  },
+  "glass_box/glass_box_0271.ply": {
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "aligned": true,
+    "file": "glass_box/glass_box_0271.ply"
+  },
+  "airplane/airplane_0102.ply": {
+    "file": "airplane/airplane_0102.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 101,
+    "aligned": true
+  },
+  "airplane/airplane_0103.ply": {
+    "file": "airplane/airplane_0103.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 102,
+    "aligned": false
+  },
+  "airplane/airplane_0104.ply": {
+    "file": "airplane/airplane_0104.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 103,
     "aligned": false
   }
 }

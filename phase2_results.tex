@@ -1,0 +1,174 @@
+% Phase 2: 对称性分类实验结果 (LaTeX)
+% 可以直接插入到论文中
+
+\section{对称性分类实验}
+
+\subsection{实验设置}
+
+本实验旨在训练一个独立的对称性分类网络，用于判断3D点云模型的对称性类型。
+
+\subsubsection{数据集}
+\begin{itemize}
+    \item \textbf{数据集}: ModelNet40 (对齐版本)
+    \item \textbf{总标注数}: 378个样本
+    \item \textbf{输入}: 10000点点云 + 竖直方向向量 $\mathbf{v}_{\text{up}} = [0, 1, 0]^T$
+    \item \textbf{输出}: 5分类 ($K \in \{-1, 0, 1, 2, 4\}$)
+\end{itemize}
+
+\subsubsection{数据划分}
+采用固定随机种子 (seed=42) 进行分层采样：
+\begin{itemize}
+    \item \textbf{训练集}: 262个样本 (69.3\%) - 使用旋转增强
+    \item \textbf{验证集}: 55个样本 (14.6\%) - 不使用增强
+    \item \textbf{测试集}: 61个样本 (16.1\%) - 不使用增强
+\end{itemize}
+
+\subsection{标注数据分布}
+
+\begin{table}[h]
+\centering
+\caption{对称性类型分布}
+\label{tab:symmetry_distribution}
+\begin{tabular}{clrrr}
+\hline
+\textbf{K值} & \textbf{含义} & \textbf{训练集} & \textbf{验证集} & \textbf{测试集} \\
+\hline
+$K=-1$ & 没有正面 & 0 & 0 & 0 \\
+$K=0$ & 完全对称 & 1 & 0 & 1 \\
+$K=1$ & 1个正面 & 72 & 15 & 17 \\
+$K=2$ & 2个正面 & 0 & 0 & 1 \\
+$K=4$ & 4个正面 & 189 & 40 & 42 \\
+\hline
+\textbf{总计} & & 262 & 55 & 61 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{消融实验设计}
+
+\subsubsection{实验1: Upright向量的输入方式}
+
+我们设计了三种网络架构来验证upright向量的最佳输入方式：
+
+\begin{itemize}
+    \item \textbf{Exp 1.1 (GlobalConcat)}:
+        将upright向量在全局特征后拼接
+        $$\mathbf{f}_{\text{final}} = [\mathbf{f}_{\text{global}}; \mathbf{v}_{\text{up}}] \in \mathbb{R}^{1027}$$
+
+    \item \textbf{Exp 1.2 (PointConcat)}:
+        将upright向量复制到每个点作为额外特征
+        $$\mathbf{p}_i' = [\mathbf{p}_i; \mathbf{v}_{\text{up}}] \in \mathbb{R}^{6}, \quad i=1,\ldots,N$$
+
+    \item \textbf{Exp 1.3 (NoUpright)}:
+        Baseline，不使用upright向量
+        $$\mathbf{f}_{\text{final}} = \mathbf{f}_{\text{global}} \in \mathbb{R}^{1024}$$
+\end{itemize}
+
+\subsection{网络架构}
+
+所有实验均基于PointNet++架构：
+
+\begin{enumerate}
+    \item \textbf{Set Abstraction层1}: $10000 \rightarrow 512$ 点，MLP $[64, 64, 128]$
+    \item \textbf{Set Abstraction层2}: $512 \rightarrow 128$ 点，MLP $[128, 128, 256]$
+    \item \textbf{Set Abstraction层3}: $128 \rightarrow 1$ 点 (global pooling)，MLP $[256, 512, 1024]$
+    \item \textbf{分类器MLP}: $1024 \rightarrow 512 \rightarrow 256 \rightarrow 128 \rightarrow 5$
+\end{enumerate}
+
+总参数量约为 $1.5$M。
+
+\subsection{训练设置}
+
+\begin{table}[h]
+\centering
+\caption{训练超参数}
+\label{tab:training_params}
+\begin{tabular}{ll}
+\hline
+\textbf{超参数} & \textbf{值} \\
+\hline
+优化器 & AdamW \\
+学习率 & $1 \times 10^{-3}$ \\
+权重衰减 & $1 \times 10^{-4}$ \\
+学习率调度 & Cosine Annealing \\
+Batch大小 & 16 \\
+训练轮数 & 200 \\
+损失函数 & Cross Entropy (with class weights) \\
+数据增强 & 随机旋转 ($\theta \in [0, 2\pi)$ 围绕Y轴) \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{实验结果}
+
+\begin{table}[h]
+\centering
+\caption{消融实验结果对比}
+\label{tab:ablation_results}
+\begin{tabular}{lccccc}
+\hline
+\textbf{模型} & \textbf{Upright输入} & \textbf{参数量} & \textbf{Train Acc} & \textbf{Val Acc} & \textbf{Test Acc} \\
+\hline
+Exp 1.1 & Global Concat & 1.50M & -- & -- & -- \\
+Exp 1.2 & Point Concat & 1.50M & -- & -- & -- \\
+Exp 1.3 & No Upright & 1.50M & -- & -- & -- \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Per-class准确率}
+
+\begin{table}[h]
+\centering
+\caption{各类别准确率 (测试集)}
+\label{tab:per_class_accuracy}
+\begin{tabular}{lccccc}
+\hline
+\textbf{模型} & $K=-1$ & $K=0$ & $K=1$ & $K=2$ & $K=4$ \\
+\hline
+Exp 1.1 & -- & -- & -- & -- & -- \\
+Exp 1.2 & -- & -- & -- & -- & -- \\
+Exp 1.3 & -- & -- & -- & -- & -- \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{混淆矩阵}
+
+\begin{table}[h]
+\centering
+\caption{混淆矩阵 (最佳模型，测试集)}
+\label{tab:confusion_matrix}
+\begin{tabular}{c|ccccc}
+\hline
+& \multicolumn{5}{c}{\textbf{预测}} \\
+\textbf{真实} & $K=-1$ & $K=0$ & $K=1$ & $K=2$ & $K=4$ \\
+\hline
+$K=-1$ & -- & -- & -- & -- & -- \\
+$K=0$ & -- & -- & -- & -- & -- \\
+$K=1$ & -- & -- & -- & -- & -- \\
+$K=2$ & -- & -- & -- & -- & -- \\
+$K=4$ & -- & -- & -- & -- & -- \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{讨论}
+
+\subsubsection{关键发现}
+\begin{enumerate}
+    \item \textbf{Upright向量的重要性}: (待填写实验结果分析)
+    \item \textbf{输入方式的影响}: (待填写GlobalConcat vs PointConcat对比)
+    \item \textbf{类别不平衡处理}: 使用class weights有效提升了少数类别的准确率
+\end{enumerate}
+
+\subsubsection{误分类分析}
+(待填写误分类案例分析)
+
+\subsection{消融实验小结}
+
+根据实验结果，我们选择 \textbf{[最佳模型名称]} 作为最终的对称性分类网络，该网络在测试集上达到了 \textbf{XX.X\%} 的准确率。
+
+% 引用示例
+% 如需引用表格：如表~\ref{tab:ablation_results}所示...
+% 如需引用章节：详见第~\ref{sec:phase2}节...

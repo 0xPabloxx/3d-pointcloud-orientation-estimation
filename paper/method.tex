@@ -1,0 +1,101 @@
+\chapter{Method}
+% 我希望的结果：多峰冯米塞斯分布能同时处理多个可疑正面和单一正面的物体、完全对称的物体（都是已经已经知道upright 方向向量，仅在平面内旋转的point cloud模型，modelnet40中采样的）
+% 但是难点有很多 第一，训练数据怎么标注 第二，怎么设计网络结构（尤其是是否继续pointnet++作为baseline，怎么输出 第三 MvM的kappa怎么处理 第四，用什么loss？kl divergence还是likelihood 第五，怎么证明没有overfitting？  第六，有没有更好的方法？一定要用MvM吗
+% 可以只处理modelnet中的某几个物体，不需要训练统一的物体
+% 目前的目标是先把glassbox这种四面差不多的点云模型使其训练结果能显示4个峰的MVM
+% 直接回归一个方向向量 -》输出基础方向离散方向向量 -》输出连续方向向量 -》输出MVM/GVM
+% To-dos ： loss的数值分析
+\section{Overview of Our Method}
+Our method aims to predict the front-facing orientation of 3D objects from point cloud data. The input is an upright-aligned point cloud (the vertical axis is already known), and we need to predict which horizontal direction should be considered as the front.
+
+The main challenge is that not all objects have just one front face. When we already know the upright direction, different objects show different patterns:
+\begin{itemize}
+    \item Some objects have one clear front face (like a chair)
+    \item Some objects have multiple front faces (like a box lying flat - it has four similar sides that could all be considered as front)
+    \item Some objects can be considered as having front in every direction (like a sphere or a bowl)
+    \item Some objects have no meaningful front at all (like a plant or a pile of rocks)
+\end{itemize}
+To handle this ambiguity in front-facing orientation, we design a series of methods:
+
+Discrete direction prediction. We start with the most basic approach: we project the original ground truth front-facing vectors onto 8 evenly-spaced base directions. This projection converts continuous orientations into discrete probabilities. For objects with one front, most probability goes to the closest base direction. For objects with multiple fronts, we project each front vector separately, so multiple directions get high probabilities. For objects without any specific front, we assign equal probability to all eight directions. 
+
+Single-peak von Mises distribution. Next, we move to continuous representation. A von Mises distribution has two parameters: μ (mu) represents the predicted front-facing direction vector, and κ (kappa) represents how confident we are about this direction. The key insight is that when κ = 0, the distribution becomes uniform - this means we think the object has no specific front, or equivalently, every direction can be considered as front. This single distribution can naturally represent both objects with one clear front (high κ) and objects without any front (κ = 0).
+
+Mixture of von Mises (MvM) distribution. To handle objects with multiple distinct front faces, we use a mixture of several von Mises distributions. First, we collect all objects that have multiple front faces from our dataset and group them by the number of fronts they have (2 fronts, 4 fronts, etc.). Then we run separate experiments for each group: we use a 2-peak MvM distribution for objects with 2 fronts, and a 4-peak MvM distribution for objects with 4 fronts. 
+
+Unified prediction network. Finally, we build a single network that can handle all these cases. No matter whether the input object has one front, multiple fronts, or no specific front at all, the same network learns to extract features and predict the appropriate distribution - including how many fronts the object has and the direction of each front. 
+\section{Dataset Construction and Annotation}
+%手动标注所有4个面都为对称方向的dataset，混合存储，而不局限于glassbox
+%todos: add some figures 
+We use the ModelNet40 normal resampled dataset as our base dataset. This dataset contains 40 different object categories, with each category having between 84 to 989 point cloud models. Some models in the original dataset are already aligned with their front-facing direction, but many are not consistently oriented.
+
+For our research purpose, we manually annotate the front-facing orientations for each model based on their geometric characteristics. During annotation, we record two pieces of information: the number of valid front-facing directions and the corresponding direction vectors for each front face. This annotation process considers the geometric symmetry of objects. For example, most glassbox models can be viewed as having four equivalent front faces due to their rectangular symmetry. Similarly, some table models also have four valid front-facing directions. Other objects like chairs typically have a single dominant front face, while completely symmetric objects like spheres may have infinite or no meaningful front-facing direction.
+
+After completing the manual annotation, we apply random rotations to all models in the dataset. Each model is rotated by a randomly sampled rotation matrix. To maintain the validity of our ground truth labels, we apply the same rotation matrix to all annotated front-facing direction vectors. These rotated direction vectors serve as the new ground truth labels for training and evaluation. This random rotation step ensures that our network learns to predict front-facing orientations independent of the initial model alignment, making the learned features more robust and generalizable.
+\section{Front-Facing Orientation Representation with a Discrete Probability Distribution}
+We first explored a simpler baseline method using discrete probability distributions. The core idea is to discretize the continuous orientation space into a finite set of directions, then train a neural network to predict the probability distribution of the object's front-facing orientation over these discrete directions.This approach has several advantages as a baseline: First, it can reflect the symmetry of objects to some extent. For example, a ball should have equal probability distribution across 8 or more base directions. Second, it is conceptually simple, easy to implement, and easy to visualize.The method consists of three main components: (1) defining a discrete set of base directions on the horizontal plane, (2) converting continuous ground truth annotations into soft probability distributions over these discrete directions, and (3) training a PointNet++ model with an appropriate loss function to predict these distributions.
+
+Handling Symmetric Objects. Some object categories have rotational symmetry and lack a well-defined front direction. For these categories (bottles, bowls, and plants in our dataset), we use a uniform probability distribution as the ground truth:
+p = [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+\subsection{Discrete Direction Space Definition}
+
+\section{Front-Facing Orientation Representation with a Single-Peak von Mises Distribution}
+
+\section{Multi-Peak Mixture of von Mises}
+% why fix peaks?
+In Section 4.2, we manually labeled objects with multiple equivalent front-facing directions. We identified two groups: objects with 2 front faces (like wardrobs) and objects with 4 front faces (like glassboxes). A natural question is: how should we represent these multiple fronts in our model output?
+
+One straightforward approach is to treat this as a standard classification or regression problem - just predict one of the valid fronts. For example, for a chair with front directions at 0° and 180°, we could train the model to predict either one. The problem with this approach is ambiguity during training. When the same object appears rotated, the model sees conflicting labels - sometimes 0° is correct, sometimes 180° is correct. This creates unstable gradients and makes training difficult.
+
+Our solution is to use a Mixture of von Mises (MvM) distribution to explicitly represent all valid fronts as a probability distribution. For 2-front objects, we use a 2-peak MvM; for 4-front objects, we use a 4-peak MvM. This has several advantages:
+
+Better loss behavior: Instead of forcing the model to pick one "correct" answer, we let it learn the full distribution. The KL divergence loss measures how well the predicted distribution matches the ground truth, which is much more stable than trying to hit one specific angle.
+
+Clear visualization: We can directly visualize the predicted MvM distribution in polar coordinates. This makes it obvious whether the model learned 2 peaks or 4 peaks, and whether they are in the right positions.
+
+To validate this approach, we conduct experiments on two fixed-K settings: K=2 for symmetric objects with 2 fronts, and K=4 for symmetric objects with 4 fronts. By fixing K, we can focus on whether the model can learn multiple peaks correctly, before moving to the more complex variable-K setting.
+
+\subsection{Fixed 4 peaks}
+\subsubsection{Pre-set Initialization:}
+The symmetric initialization trap: Our initial training attempts completely failed. The model predicted only 1 peak instead of 4, with training loss stuck at 0.74(KL divergence loss). After analysis, we found the root cause was the initialization of μ prediction head.
+
+When we initialized all 4 peaks to the same angle (using zeros initialization), the gradients during training canceled out. Each peak received conflicting signals about which direction to move, so they never separated. This is what we call the "symmetry trap" - the network cannot break the symmetry by itself.
+Solution: We pre-set the 4 peaks to start at different angles:
+【figure to show the pre-set initialization】
+
+%peak = 2 和 peak = 4
+
+
+% 大量loss陷入0.74问题的发现和解决：
+
+% problem:
+% μ初始化以及加权loss导致的问题
+% 好的，我理解你的情况了！毕业论文确实是件大事，我会全力帮你。让我先看看这个训练分析文件。看完这个分析了，问题诊断得非常清楚！简单说就是：**你的模型学会了"偷懒"** - 它没有真正学会预测4个峰，而是找到了一个捷径：只预测1个峰，然后把其他3个峰的权重调到接近0。
+
+% ## 核心问题
+
+% ### 1. **初始化是最致命的问题**
+% 你的4个μ都初始化为0（`nn.init.zeros_`），这导致：
+% - 4个峰从一开始就完全重叠在同一个位置
+% - 训练时每个峰收到的梯度信号互相矛盾（一个要往-2.95走，一个要往0.19走...）
+% - **对称性陷阱**：网络根本不知道该让哪个峰往哪个方向移动
+% - 结果就是μ完全动不了，训练前后都是[0, 0, 0, 0]
+
+% ### 2. **Loss函数允许"作弊"**
+% 你现在的loss是加权的：
+% ```python
+% loss = sum(w_matched * KL_matched) / sum(w_matched)
+% ```
+
+% 这就给了模型一个漏洞：
+% - 模型发现只要把1个峰的weight调到0.9999
+% - 其他3个峰的weight调到1e-6
+% - 那些预测错的峰因为weight太小，对loss几乎没影响
+% - 所以loss可以稳定在0.74
+
+% ### 3. **模型陷入局部最优**
+% - 第1个epoch：模型快速发现"单峰策略"有效（0.94→0.74）
+% - 第2个epoch后：完全停滞，因为已经找到了局部最优解
+% - 没有动力去学真正的4峰分布
+
+\section{Unified Mixture Network}

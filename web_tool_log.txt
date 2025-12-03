@@ -1,0 +1,63 @@
+[Data] Found 200 PLY files
+[Annotation] No existing annotations found
+
+============================================================
+  Web版点云对称性与方向标注工具
+============================================================
+
+🌐 在浏览器中打开: http://localhost:8050
+
+使用说明:
+1. 左侧3D图可以用鼠标拖动旋转、滚轮缩放
+2. 观察点云，判断对称性和正面朝向
+3. 右侧选择对称类型（1/2/4峰/完全对称）
+4. 选择当前正面方向（理论应为-Z）
+5. 点击'下一个'继续，或'保存'手动保存
+6. 标注会自动保存
+
+提示：如果正面不是-Z方向，说明数据需要矫正！
+============================================================
+
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'annotate_symmetry_web'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://172.24.79.105:8050
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [25/Nov/2025 09:36:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/deps/polyfill@7.v3_3_0m1764030580.12.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/deps/react@18.v3_3_0m1764030580.3.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/deps/react-dom@18.v3_3_0m1764030580.3.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/deps/prop-types@15.v3_3_0m1764030580.8.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v2_0_4m1764030580.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v3_3_0m1764030580.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/dcc/dash_core_components.v3_3_0m1764030580.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v3_3_0m1764030580.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/html/dash_html_components.v3_0_5m1764030580.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-component-suites/dash/dash_table/bundle.v6_0_5m1764030580.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-layout HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_dash-dependencies HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:19] "GET /_favicon.ico?v=3.3.0 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:20] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:20] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:20] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:51] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:55] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:36:57] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:20] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:21] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:22] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:23] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:28] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:37:29] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:08] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:09] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:10] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:10] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:11] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:11] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:12] "POST /_dash-update-component HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2025 09:42:12] "POST /_dash-update-component HTTP/1.1" 200 -

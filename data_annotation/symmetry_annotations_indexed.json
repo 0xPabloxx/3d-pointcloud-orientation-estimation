@@ -1,0 +1,4012 @@
+{
+  "version": "2.0",
+  "annotations": {
+    "airplane/airplane_0001.ply": {
+      "file": "airplane/airplane_0001.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+Z",
+      "index": 0,
+      "aligned": false
+    },
+    "airplane/airplane_0002.ply": {
+      "file": "airplane/airplane_0002.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 1,
+      "aligned": false
+    },
+    "airplane/airplane_0003.ply": {
+      "file": "airplane/airplane_0003.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 2,
+      "aligned": true
+    },
+    "airplane/airplane_0004.ply": {
+      "file": "airplane/airplane_0004.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 3,
+      "aligned": false
+    },
+    "airplane/airplane_0005.ply": {
+      "file": "airplane/airplane_0005.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 4,
+      "aligned": false
+    },
+    "airplane/airplane_0006.ply": {
+      "file": "airplane/airplane_0006.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 5,
+      "aligned": true
+    },
+    "airplane/airplane_0007.ply": {
+      "file": "airplane/airplane_0007.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 6,
+      "aligned": false
+    },
+    "airplane/airplane_0008.ply": {
+      "file": "airplane/airplane_0008.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 7,
+      "aligned": true
+    },
+    "airplane/airplane_0009.ply": {
+      "file": "airplane/airplane_0009.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 8,
+      "aligned": false
+    },
+    "airplane/airplane_0010.ply": {
+      "file": "airplane/airplane_0010.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 9,
+      "aligned": true
+    },
+    "airplane/airplane_0011.ply": {
+      "file": "airplane/airplane_0011.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 10,
+      "aligned": false
+    },
+    "airplane/airplane_0012.ply": {
+      "file": "airplane/airplane_0012.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 11,
+      "aligned": false
+    },
+    "airplane/airplane_0013.ply": {
+      "file": "airplane/airplane_0013.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 12,
+      "aligned": true
+    },
+    "airplane/airplane_0014.ply": {
+      "file": "airplane/airplane_0014.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 13,
+      "aligned": true
+    },
+    "airplane/airplane_0015.ply": {
+      "file": "airplane/airplane_0015.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 14,
+      "aligned": true
+    },
+    "airplane/airplane_0016.ply": {
+      "file": "airplane/airplane_0016.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 15,
+      "aligned": false
+    },
+    "airplane/airplane_0017.ply": {
+      "file": "airplane/airplane_0017.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 16,
+      "aligned": false
+    },
+    "airplane/airplane_0018.ply": {
+      "file": "airplane/airplane_0018.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 17,
+      "aligned": true
+    },
+    "airplane/airplane_0019.ply": {
+      "file": "airplane/airplane_0019.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 18,
+      "aligned": true
+    },
+    "airplane/airplane_0020.ply": {
+      "file": "airplane/airplane_0020.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 19,
+      "aligned": false
+    },
+    "airplane/airplane_0021.ply": {
+      "file": "airplane/airplane_0021.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 20,
+      "aligned": true
+    },
+    "airplane/airplane_0022.ply": {
+      "file": "airplane/airplane_0022.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 21,
+      "aligned": true
+    },
+    "airplane/airplane_0023.ply": {
+      "file": "airplane/airplane_0023.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+Z",
+      "index": 22,
+      "aligned": false
+    },
+    "airplane/airplane_0024.ply": {
+      "file": "airplane/airplane_0024.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 23,
+      "aligned": false
+    },
+    "airplane/airplane_0025.ply": {
+      "file": "airplane/airplane_0025.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 24,
+      "aligned": true
+    },
+    "airplane/airplane_0026.ply": {
+      "file": "airplane/airplane_0026.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 25,
+      "aligned": true
+    },
+    "airplane/airplane_0027.ply": {
+      "file": "airplane/airplane_0027.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 26,
+      "aligned": true
+    },
+    "airplane/airplane_0028.ply": {
+      "file": "airplane/airplane_0028.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 27,
+      "aligned": false
+    },
+    "airplane/airplane_0029.ply": {
+      "file": "airplane/airplane_0029.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 28,
+      "aligned": true
+    },
+    "airplane/airplane_0030.ply": {
+      "file": "airplane/airplane_0030.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 29,
+      "aligned": true
+    },
+    "airplane/airplane_0031.ply": {
+      "file": "airplane/airplane_0031.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 30,
+      "aligned": true
+    },
+    "airplane/airplane_0032.ply": {
+      "file": "airplane/airplane_0032.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 31,
+      "aligned": false
+    },
+    "airplane/airplane_0033.ply": {
+      "file": "airplane/airplane_0033.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 32,
+      "aligned": true
+    },
+    "airplane/airplane_0034.ply": {
+      "file": "airplane/airplane_0034.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 33,
+      "aligned": true
+    },
+    "airplane/airplane_0035.ply": {
+      "file": "airplane/airplane_0035.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 34,
+      "aligned": true
+    },
+    "airplane/airplane_0036.ply": {
+      "file": "airplane/airplane_0036.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 35,
+      "aligned": true
+    },
+    "airplane/airplane_0037.ply": {
+      "file": "airplane/airplane_0037.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 36,
+      "aligned": false
+    },
+    "airplane/airplane_0038.ply": {
+      "file": "airplane/airplane_0038.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 37,
+      "aligned": true
+    },
+    "airplane/airplane_0039.ply": {
+      "file": "airplane/airplane_0039.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 38,
+      "aligned": false
+    },
+    "airplane/airplane_0040.ply": {
+      "file": "airplane/airplane_0040.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 39,
+      "aligned": true
+    },
+    "airplane/airplane_0041.ply": {
+      "file": "airplane/airplane_0041.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 40,
+      "aligned": true
+    },
+    "airplane/airplane_0042.ply": {
+      "file": "airplane/airplane_0042.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 41,
+      "aligned": true
+    },
+    "airplane/airplane_0043.ply": {
+      "file": "airplane/airplane_0043.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 42,
+      "aligned": true
+    },
+    "airplane/airplane_0044.ply": {
+      "file": "airplane/airplane_0044.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 43,
+      "aligned": true
+    },
+    "airplane/airplane_0045.ply": {
+      "file": "airplane/airplane_0045.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 44,
+      "aligned": true
+    },
+    "airplane/airplane_0046.ply": {
+      "file": "airplane/airplane_0046.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 45,
+      "aligned": true
+    },
+    "airplane/airplane_0047.ply": {
+      "file": "airplane/airplane_0047.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 46,
+      "aligned": true
+    },
+    "airplane/airplane_0048.ply": {
+      "file": "airplane/airplane_0048.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 47,
+      "aligned": false
+    },
+    "airplane/airplane_0049.ply": {
+      "file": "airplane/airplane_0049.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 48,
+      "aligned": true
+    },
+    "airplane/airplane_0050.ply": {
+      "file": "airplane/airplane_0050.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 49,
+      "aligned": true
+    },
+    "airplane/airplane_0051.ply": {
+      "file": "airplane/airplane_0051.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 50,
+      "aligned": true
+    },
+    "airplane/airplane_0052.ply": {
+      "file": "airplane/airplane_0052.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 51,
+      "aligned": false
+    },
+    "airplane/airplane_0053.ply": {
+      "file": "airplane/airplane_0053.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 52,
+      "aligned": true
+    },
+    "airplane/airplane_0054.ply": {
+      "file": "airplane/airplane_0054.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+Z",
+      "index": 53,
+      "aligned": false
+    },
+    "airplane/airplane_0055.ply": {
+      "file": "airplane/airplane_0055.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 54,
+      "aligned": false
+    },
+    "airplane/airplane_0056.ply": {
+      "file": "airplane/airplane_0056.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 55,
+      "aligned": false
+    },
+    "airplane/airplane_0057.ply": {
+      "file": "airplane/airplane_0057.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 56,
+      "aligned": true
+    },
+    "airplane/airplane_0058.ply": {
+      "file": "airplane/airplane_0058.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 57,
+      "aligned": false
+    },
+    "airplane/airplane_0059.ply": {
+      "file": "airplane/airplane_0059.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 58,
+      "aligned": false
+    },
+    "airplane/airplane_0060.ply": {
+      "file": "airplane/airplane_0060.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 59,
+      "aligned": false
+    },
+    "airplane/airplane_0061.ply": {
+      "file": "airplane/airplane_0061.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 60,
+      "aligned": true
+    },
+    "airplane/airplane_0062.ply": {
+      "file": "airplane/airplane_0062.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 61,
+      "aligned": true
+    },
+    "airplane/airplane_0063.ply": {
+      "file": "airplane/airplane_0063.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 62,
+      "aligned": true
+    },
+    "airplane/airplane_0064.ply": {
+      "file": "airplane/airplane_0064.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 63,
+      "aligned": false
+    },
+    "airplane/airplane_0065.ply": {
+      "file": "airplane/airplane_0065.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 64,
+      "aligned": false
+    },
+    "airplane/airplane_0066.ply": {
+      "file": "airplane/airplane_0066.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 65,
+      "aligned": false
+    },
+    "airplane/airplane_0067.ply": {
+      "file": "airplane/airplane_0067.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 66,
+      "aligned": false
+    },
+    "airplane/airplane_0068.ply": {
+      "file": "airplane/airplane_0068.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 67,
+      "aligned": false
+    },
+    "airplane/airplane_0069.ply": {
+      "file": "airplane/airplane_0069.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 68,
+      "aligned": true
+    },
+    "airplane/airplane_0070.ply": {
+      "file": "airplane/airplane_0070.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 69,
+      "aligned": true
+    },
+    "airplane/airplane_0071.ply": {
+      "file": "airplane/airplane_0071.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 70,
+      "aligned": false
+    },
+    "airplane/airplane_0072.ply": {
+      "file": "airplane/airplane_0072.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 71,
+      "aligned": true
+    },
+    "airplane/airplane_0073.ply": {
+      "file": "airplane/airplane_0073.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 72,
+      "aligned": true
+    },
+    "airplane/airplane_0074.ply": {
+      "file": "airplane/airplane_0074.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 73,
+      "aligned": true
+    },
+    "airplane/airplane_0075.ply": {
+      "file": "airplane/airplane_0075.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 74,
+      "aligned": false
+    },
+    "airplane/airplane_0076.ply": {
+      "file": "airplane/airplane_0076.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 75,
+      "aligned": false
+    },
+    "airplane/airplane_0077.ply": {
+      "file": "airplane/airplane_0077.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 76,
+      "aligned": false
+    },
+    "airplane/airplane_0078.ply": {
+      "file": "airplane/airplane_0078.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 77,
+      "aligned": true
+    },
+    "airplane/airplane_0079.ply": {
+      "file": "airplane/airplane_0079.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 78,
+      "aligned": true
+    },
+    "airplane/airplane_0080.ply": {
+      "file": "airplane/airplane_0080.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 79,
+      "aligned": true
+    },
+    "airplane/airplane_0081.ply": {
+      "file": "airplane/airplane_0081.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 80,
+      "aligned": true
+    },
+    "airplane/airplane_0082.ply": {
+      "file": "airplane/airplane_0082.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 81,
+      "aligned": false
+    },
+    "airplane/airplane_0083.ply": {
+      "file": "airplane/airplane_0083.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 82,
+      "aligned": true
+    },
+    "airplane/airplane_0084.ply": {
+      "file": "airplane/airplane_0084.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 83,
+      "aligned": true
+    },
+    "airplane/airplane_0085.ply": {
+      "file": "airplane/airplane_0085.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 84,
+      "aligned": false
+    },
+    "airplane/airplane_0086.ply": {
+      "file": "airplane/airplane_0086.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+Z",
+      "index": 85,
+      "aligned": false
+    },
+    "airplane/airplane_0087.ply": {
+      "file": "airplane/airplane_0087.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 86,
+      "aligned": true
+    },
+    "airplane/airplane_0088.ply": {
+      "file": "airplane/airplane_0088.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 87,
+      "aligned": true
+    },
+    "airplane/airplane_0089.ply": {
+      "file": "airplane/airplane_0089.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 88,
+      "aligned": false
+    },
+    "airplane/airplane_0090.ply": {
+      "file": "airplane/airplane_0090.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 89,
+      "aligned": true
+    },
+    "airplane/airplane_0091.ply": {
+      "file": "airplane/airplane_0091.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 90,
+      "aligned": true
+    },
+    "airplane/airplane_0092.ply": {
+      "file": "airplane/airplane_0092.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 91,
+      "aligned": true
+    },
+    "airplane/airplane_0093.ply": {
+      "file": "airplane/airplane_0093.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 92,
+      "aligned": true
+    },
+    "airplane/airplane_0094.ply": {
+      "file": "airplane/airplane_0094.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 93,
+      "aligned": true
+    },
+    "airplane/airplane_0095.ply": {
+      "file": "airplane/airplane_0095.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 94,
+      "aligned": true
+    },
+    "airplane/airplane_0096.ply": {
+      "file": "airplane/airplane_0096.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 95,
+      "aligned": true
+    },
+    "airplane/airplane_0097.ply": {
+      "file": "airplane/airplane_0097.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 96,
+      "aligned": false
+    },
+    "airplane/airplane_0098.ply": {
+      "file": "airplane/airplane_0098.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-X",
+      "index": 97,
+      "aligned": false
+    },
+    "airplane/airplane_0099.ply": {
+      "file": "airplane/airplane_0099.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 98,
+      "aligned": true
+    },
+    "airplane/airplane_0100.ply": {
+      "file": "airplane/airplane_0100.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 99,
+      "aligned": true
+    },
+    "chair/chair_0001.ply": {
+      "file": "chair/chair_0001.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 0,
+      "aligned": true
+    },
+    "chair/chair_0002.ply": {
+      "file": "chair/chair_0002.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "-Z",
+      "index": 1,
+      "aligned": true
+    },
+    "airplane/airplane_0101.ply": {
+      "file": "airplane/airplane_0101.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+Z",
+      "index": 100,
+      "aligned": false
+    },
+    "glass_box/glass_box_0102.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0102.ply"
+    },
+    "glass_box/glass_box_0103.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0103.ply"
+    },
+    "glass_box/glass_box_0104.ply": {
+      "file": "glass_box/glass_box_0104.ply",
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "index": 103,
+      "aligned": true
+    },
+    "bowl/bowl_0001.ply": {
+      "file": "bowl/bowl_0001.ply",
+      "K": 0,
+      "symmetry_name": "完全对称",
+      "front_direction": "-Z",
+      "index": 0,
+      "aligned": true
+    },
+    "bowl/bowl_0002.ply": {
+      "file": "bowl/bowl_0002.ply",
+      "K": 0,
+      "symmetry_name": "完全对称",
+      "front_direction": "-Z",
+      "index": 1,
+      "aligned": true
+    },
+    "bench/bench_0001.ply": {
+      "file": "bench/bench_0001.ply",
+      "K": 2,
+      "symmetry_name": "2个正面",
+      "front_direction": "-Z",
+      "index": 0,
+      "aligned": true
+    },
+    "bench/bench_0002.ply": {
+      "file": "bench/bench_0002.ply",
+      "K": 1,
+      "symmetry_name": "1个正面",
+      "front_direction": "+X",
+      "index": 1,
+      "aligned": false
+    },
+    "glass_box/glass_box_0001.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0001.ply"
+    },
+    "glass_box/glass_box_0002.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0002.ply"
+    },
+    "glass_box/glass_box_0003.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0003.ply"
+    },
+    "glass_box/glass_box_0004.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0004.ply"
+    },
+    "glass_box/glass_box_0005.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0005.ply"
+    },
+    "glass_box/glass_box_0006.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0006.ply"
+    },
+    "glass_box/glass_box_0007.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0007.ply"
+    },
+    "glass_box/glass_box_0008.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0008.ply"
+    },
+    "glass_box/glass_box_0009.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0009.ply"
+    },
+    "glass_box/glass_box_0010.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0010.ply"
+    },
+    "glass_box/glass_box_0011.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0011.ply"
+    },
+    "glass_box/glass_box_0012.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0012.ply"
+    },
+    "glass_box/glass_box_0013.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0013.ply"
+    },
+    "glass_box/glass_box_0014.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0014.ply"
+    },
+    "glass_box/glass_box_0015.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0015.ply"
+    },
+    "glass_box/glass_box_0016.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0016.ply"
+    },
+    "glass_box/glass_box_0017.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0017.ply"
+    },
+    "glass_box/glass_box_0018.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0018.ply"
+    },
+    "glass_box/glass_box_0019.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0019.ply"
+    },
+    "glass_box/glass_box_0020.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0020.ply"
+    },
+    "glass_box/glass_box_0021.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0021.ply"
+    },
+    "glass_box/glass_box_0022.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0022.ply"
+    },
+    "glass_box/glass_box_0023.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0023.ply"
+    },
+    "glass_box/glass_box_0024.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0024.ply"
+    },
+    "glass_box/glass_box_0025.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0025.ply"
+    },
+    "glass_box/glass_box_0026.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0026.ply"
+    },
+    "glass_box/glass_box_0027.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0027.ply"
+    },
+    "glass_box/glass_box_0028.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0028.ply"
+    },
+    "glass_box/glass_box_0029.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0029.ply"
+    },
+    "glass_box/glass_box_0030.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0030.ply"
+    },
+    "glass_box/glass_box_0031.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0031.ply"
+    },
+    "glass_box/glass_box_0032.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0032.ply"
+    },
+    "glass_box/glass_box_0033.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0033.ply"
+    },
+    "glass_box/glass_box_0034.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0034.ply"
+    },
+    "glass_box/glass_box_0035.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0035.ply"
+    },
+    "glass_box/glass_box_0036.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0036.ply"
+    },
+    "glass_box/glass_box_0037.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0037.ply"
+    },
+    "glass_box/glass_box_0038.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0038.ply"
+    },
+    "glass_box/glass_box_0039.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0039.ply"
+    },
+    "glass_box/glass_box_0040.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0040.ply"
+    },
+    "glass_box/glass_box_0041.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0041.ply"
+    },
+    "glass_box/glass_box_0042.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0042.ply"
+    },
+    "glass_box/glass_box_0043.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0043.ply"
+    },
+    "glass_box/glass_box_0044.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0044.ply"
+    },
+    "glass_box/glass_box_0045.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0045.ply"
+    },
+    "glass_box/glass_box_0046.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0046.ply"
+    },
+    "glass_box/glass_box_0047.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0047.ply"
+    },
+    "glass_box/glass_box_0048.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0048.ply"
+    },
+    "glass_box/glass_box_0049.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0049.ply"
+    },
+    "glass_box/glass_box_0050.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0050.ply"
+    },
+    "glass_box/glass_box_0051.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0051.ply"
+    },
+    "glass_box/glass_box_0052.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0052.ply"
+    },
+    "glass_box/glass_box_0053.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0053.ply"
+    },
+    "glass_box/glass_box_0054.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0054.ply"
+    },
+    "glass_box/glass_box_0055.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0055.ply"
+    },
+    "glass_box/glass_box_0056.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0056.ply"
+    },
+    "glass_box/glass_box_0057.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0057.ply"
+    },
+    "glass_box/glass_box_0058.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0058.ply"
+    },
+    "glass_box/glass_box_0059.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0059.ply"
+    },
+    "glass_box/glass_box_0060.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0060.ply"
+    },
+    "glass_box/glass_box_0061.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0061.ply"
+    },
+    "glass_box/glass_box_0062.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0062.ply"
+    },
+    "glass_box/glass_box_0063.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0063.ply"
+    },
+    "glass_box/glass_box_0064.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0064.ply"
+    },
+    "glass_box/glass_box_0065.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0065.ply"
+    },
+    "glass_box/glass_box_0066.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0066.ply"
+    },
+    "glass_box/glass_box_0067.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0067.ply"
+    },
+    "glass_box/glass_box_0068.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0068.ply"
+    },
+    "glass_box/glass_box_0069.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0069.ply"
+    },
+    "glass_box/glass_box_0070.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0070.ply"
+    },
+    "glass_box/glass_box_0071.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0071.ply"
+    },
+    "glass_box/glass_box_0072.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0072.ply"
+    },
+    "glass_box/glass_box_0073.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0073.ply"
+    },
+    "glass_box/glass_box_0074.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0074.ply"
+    },
+    "glass_box/glass_box_0075.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0075.ply"
+    },
+    "glass_box/glass_box_0076.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0076.ply"
+    },
+    "glass_box/glass_box_0077.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0077.ply"
+    },
+    "glass_box/glass_box_0078.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0078.ply"
+    },
+    "glass_box/glass_box_0079.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0079.ply"
+    },
+    "glass_box/glass_box_0080.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0080.ply"
+    },
+    "glass_box/glass_box_0081.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0081.ply"
+    },
+    "glass_box/glass_box_0082.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0082.ply"
+    },
+    "glass_box/glass_box_0083.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0083.ply"
+    },
+    "glass_box/glass_box_0084.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0084.ply"
+    },
+    "glass_box/glass_box_0085.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0085.ply"
+    },
+    "glass_box/glass_box_0086.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0086.ply"
+    },
+    "glass_box/glass_box_0087.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0087.ply"
+    },
+    "glass_box/glass_box_0088.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0088.ply"
+    },
+    "glass_box/glass_box_0089.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0089.ply"
+    },
+    "glass_box/glass_box_0090.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0090.ply"
+    },
+    "glass_box/glass_box_0091.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0091.ply"
+    },
+    "glass_box/glass_box_0092.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0092.ply"
+    },
+    "glass_box/glass_box_0093.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0093.ply"
+    },
+    "glass_box/glass_box_0094.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0094.ply"
+    },
+    "glass_box/glass_box_0095.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0095.ply"
+    },
+    "glass_box/glass_box_0096.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0096.ply"
+    },
+    "glass_box/glass_box_0097.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0097.ply"
+    },
+    "glass_box/glass_box_0098.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0098.ply"
+    },
+    "glass_box/glass_box_0099.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0099.ply"
+    },
+    "glass_box/glass_box_0100.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0100.ply"
+    },
+    "glass_box/glass_box_0101.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0101.ply"
+    },
+    "glass_box/glass_box_0105.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0105.ply"
+    },
+    "glass_box/glass_box_0106.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0106.ply"
+    },
+    "glass_box/glass_box_0107.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0107.ply"
+    },
+    "glass_box/glass_box_0108.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0108.ply"
+    },
+    "glass_box/glass_box_0109.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0109.ply"
+    },
+    "glass_box/glass_box_0110.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0110.ply"
+    },
+    "glass_box/glass_box_0111.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0111.ply"
+    },
+    "glass_box/glass_box_0112.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0112.ply"
+    },
+    "glass_box/glass_box_0113.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0113.ply"
+    },
+    "glass_box/glass_box_0114.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0114.ply"
+    },
+    "glass_box/glass_box_0115.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0115.ply"
+    },
+    "glass_box/glass_box_0116.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0116.ply"
+    },
+    "glass_box/glass_box_0117.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0117.ply"
+    },
+    "glass_box/glass_box_0118.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0118.ply"
+    },
+    "glass_box/glass_box_0119.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0119.ply"
+    },
+    "glass_box/glass_box_0120.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0120.ply"
+    },
+    "glass_box/glass_box_0121.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0121.ply"
+    },
+    "glass_box/glass_box_0122.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0122.ply"
+    },
+    "glass_box/glass_box_0123.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0123.ply"
+    },
+    "glass_box/glass_box_0124.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0124.ply"
+    },
+    "glass_box/glass_box_0125.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0125.ply"
+    },
+    "glass_box/glass_box_0126.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0126.ply"
+    },
+    "glass_box/glass_box_0127.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0127.ply"
+    },
+    "glass_box/glass_box_0128.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0128.ply"
+    },
+    "glass_box/glass_box_0129.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0129.ply"
+    },
+    "glass_box/glass_box_0130.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0130.ply"
+    },
+    "glass_box/glass_box_0131.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0131.ply"
+    },
+    "glass_box/glass_box_0132.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0132.ply"
+    },
+    "glass_box/glass_box_0133.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0133.ply"
+    },
+    "glass_box/glass_box_0134.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0134.ply"
+    },
+    "glass_box/glass_box_0135.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0135.ply"
+    },
+    "glass_box/glass_box_0136.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0136.ply"
+    },
+    "glass_box/glass_box_0137.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0137.ply"
+    },
+    "glass_box/glass_box_0138.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0138.ply"
+    },
+    "glass_box/glass_box_0139.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0139.ply"
+    },
+    "glass_box/glass_box_0140.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0140.ply"
+    },
+    "glass_box/glass_box_0141.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0141.ply"
+    },
+    "glass_box/glass_box_0142.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0142.ply"
+    },
+    "glass_box/glass_box_0143.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0143.ply"
+    },
+    "glass_box/glass_box_0144.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0144.ply"
+    },
+    "glass_box/glass_box_0145.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0145.ply"
+    },
+    "glass_box/glass_box_0146.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0146.ply"
+    },
+    "glass_box/glass_box_0147.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0147.ply"
+    },
+    "glass_box/glass_box_0148.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0148.ply"
+    },
+    "glass_box/glass_box_0149.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0149.ply"
+    },
+    "glass_box/glass_box_0150.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0150.ply"
+    },
+    "glass_box/glass_box_0151.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0151.ply"
+    },
+    "glass_box/glass_box_0152.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0152.ply"
+    },
+    "glass_box/glass_box_0153.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0153.ply"
+    },
+    "glass_box/glass_box_0154.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0154.ply"
+    },
+    "glass_box/glass_box_0155.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0155.ply"
+    },
+    "glass_box/glass_box_0156.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0156.ply"
+    },
+    "glass_box/glass_box_0157.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0157.ply"
+    },
+    "glass_box/glass_box_0158.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0158.ply"
+    },
+    "glass_box/glass_box_0159.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0159.ply"
+    },
+    "glass_box/glass_box_0160.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0160.ply"
+    },
+    "glass_box/glass_box_0161.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0161.ply"
+    },
+    "glass_box/glass_box_0162.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0162.ply"
+    },
+    "glass_box/glass_box_0163.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0163.ply"
+    },
+    "glass_box/glass_box_0164.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0164.ply"
+    },
+    "glass_box/glass_box_0165.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0165.ply"
+    },
+    "glass_box/glass_box_0166.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0166.ply"
+    },
+    "glass_box/glass_box_0167.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0167.ply"
+    },
+    "glass_box/glass_box_0168.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0168.ply"
+    },
+    "glass_box/glass_box_0169.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0169.ply"
+    },
+    "glass_box/glass_box_0170.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0170.ply"
+    },
+    "glass_box/glass_box_0171.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0171.ply"
+    },
+    "glass_box/glass_box_0172.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0172.ply"
+    },
+    "glass_box/glass_box_0173.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0173.ply"
+    },
+    "glass_box/glass_box_0174.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0174.ply"
+    },
+    "glass_box/glass_box_0175.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0175.ply"
+    },
+    "glass_box/glass_box_0176.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0176.ply"
+    },
+    "glass_box/glass_box_0177.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0177.ply"
+    },
+    "glass_box/glass_box_0178.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0178.ply"
+    },
+    "glass_box/glass_box_0179.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0179.ply"
+    },
+    "glass_box/glass_box_0180.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0180.ply"
+    },
+    "glass_box/glass_box_0181.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0181.ply"
+    },
+    "glass_box/glass_box_0182.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0182.ply"
+    },
+    "glass_box/glass_box_0183.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0183.ply"
+    },
+    "glass_box/glass_box_0184.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0184.ply"
+    },
+    "glass_box/glass_box_0185.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0185.ply"
+    },
+    "glass_box/glass_box_0186.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0186.ply"
+    },
+    "glass_box/glass_box_0187.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0187.ply"
+    },
+    "glass_box/glass_box_0188.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0188.ply"
+    },
+    "glass_box/glass_box_0189.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0189.ply"
+    },
+    "glass_box/glass_box_0190.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0190.ply"
+    },
+    "glass_box/glass_box_0191.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0191.ply"
+    },
+    "glass_box/glass_box_0192.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0192.ply"
+    },
+    "glass_box/glass_box_0193.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0193.ply"
+    },
+    "glass_box/glass_box_0194.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0194.ply"
+    },
+    "glass_box/glass_box_0195.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0195.ply"
+    },
+    "glass_box/glass_box_0196.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0196.ply"
+    },
+    "glass_box/glass_box_0197.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0197.ply"
+    },
+    "glass_box/glass_box_0198.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0198.ply"
+    },
+    "glass_box/glass_box_0199.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0199.ply"
+    },
+    "glass_box/glass_box_0200.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0200.ply"
+    },
+    "glass_box/glass_box_0201.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0201.ply"
+    },
+    "glass_box/glass_box_0202.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0202.ply"
+    },
+    "glass_box/glass_box_0203.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0203.ply"
+    },
+    "glass_box/glass_box_0204.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0204.ply"
+    },
+    "glass_box/glass_box_0205.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0205.ply"
+    },
+    "glass_box/glass_box_0206.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0206.ply"
+    },
+    "glass_box/glass_box_0207.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0207.ply"
+    },
+    "glass_box/glass_box_0208.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0208.ply"
+    },
+    "glass_box/glass_box_0209.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0209.ply"
+    },
+    "glass_box/glass_box_0210.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0210.ply"
+    },
+    "glass_box/glass_box_0211.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0211.ply"
+    },
+    "glass_box/glass_box_0212.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0212.ply"
+    },
+    "glass_box/glass_box_0213.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0213.ply"
+    },
+    "glass_box/glass_box_0214.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0214.ply"
+    },
+    "glass_box/glass_box_0215.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0215.ply"
+    },
+    "glass_box/glass_box_0216.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0216.ply"
+    },
+    "glass_box/glass_box_0217.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0217.ply"
+    },
+    "glass_box/glass_box_0218.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0218.ply"
+    },
+    "glass_box/glass_box_0219.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0219.ply"
+    },
+    "glass_box/glass_box_0220.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0220.ply"
+    },
+    "glass_box/glass_box_0221.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0221.ply"
+    },
+    "glass_box/glass_box_0222.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0222.ply"
+    },
+    "glass_box/glass_box_0223.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0223.ply"
+    },
+    "glass_box/glass_box_0224.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0224.ply"
+    },
+    "glass_box/glass_box_0225.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0225.ply"
+    },
+    "glass_box/glass_box_0226.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0226.ply"
+    },
+    "glass_box/glass_box_0227.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0227.ply"
+    },
+    "glass_box/glass_box_0228.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0228.ply"
+    },
+    "glass_box/glass_box_0229.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0229.ply"
+    },
+    "glass_box/glass_box_0230.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0230.ply"
+    },
+    "glass_box/glass_box_0231.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0231.ply"
+    },
+    "glass_box/glass_box_0232.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0232.ply"
+    },
+    "glass_box/glass_box_0233.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0233.ply"
+    },
+    "glass_box/glass_box_0234.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0234.ply"
+    },
+    "glass_box/glass_box_0235.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0235.ply"
+    },
+    "glass_box/glass_box_0236.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0236.ply"
+    },
+    "glass_box/glass_box_0237.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0237.ply"
+    },
+    "glass_box/glass_box_0238.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0238.ply"
+    },
+    "glass_box/glass_box_0239.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0239.ply"
+    },
+    "glass_box/glass_box_0240.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0240.ply"
+    },
+    "glass_box/glass_box_0241.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0241.ply"
+    },
+    "glass_box/glass_box_0242.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0242.ply"
+    },
+    "glass_box/glass_box_0243.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0243.ply"
+    },
+    "glass_box/glass_box_0244.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0244.ply"
+    },
+    "glass_box/glass_box_0245.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0245.ply"
+    },
+    "glass_box/glass_box_0246.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0246.ply"
+    },
+    "glass_box/glass_box_0247.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0247.ply"
+    },
+    "glass_box/glass_box_0248.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0248.ply"
+    },
+    "glass_box/glass_box_0249.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0249.ply"
+    },
+    "glass_box/glass_box_0250.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0250.ply"
+    },
+    "glass_box/glass_box_0251.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0251.ply"
+    },
+    "glass_box/glass_box_0252.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0252.ply"
+    },
+    "glass_box/glass_box_0253.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0253.ply"
+    },
+    "glass_box/glass_box_0254.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0254.ply"
+    },
+    "glass_box/glass_box_0255.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0255.ply"
+    },
+    "glass_box/glass_box_0256.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0256.ply"
+    },
+    "glass_box/glass_box_0257.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0257.ply"
+    },
+    "glass_box/glass_box_0258.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0258.ply"
+    },
+    "glass_box/glass_box_0259.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0259.ply"
+    },
+    "glass_box/glass_box_0260.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0260.ply"
+    },
+    "glass_box/glass_box_0261.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0261.ply"
+    },
+    "glass_box/glass_box_0262.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0262.ply"
+    },
+    "glass_box/glass_box_0263.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0263.ply"
+    },
+    "glass_box/glass_box_0264.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0264.ply"
+    },
+    "glass_box/glass_box_0265.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0265.ply"
+    },
+    "glass_box/glass_box_0266.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0266.ply"
+    },
+    "glass_box/glass_box_0267.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0267.ply"
+    },
+    "glass_box/glass_box_0268.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0268.ply"
+    },
+    "glass_box/glass_box_0269.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0269.ply"
+    },
+    "glass_box/glass_box_0270.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0270.ply"
+    },
+    "glass_box/glass_box_0271.ply": {
+      "K": 4,
+      "symmetry_name": "4个正面",
+      "front_direction": "-Z",
+      "aligned": true,
+      "file": "glass_box/glass_box_0271.ply"
+    }
+  },
+  "indices": {
+    "by_category": {
+      "airplane": [
+        "airplane/airplane_0001.ply",
+        "airplane/airplane_0002.ply",
+        "airplane/airplane_0003.ply",
+        "airplane/airplane_0004.ply",
+        "airplane/airplane_0005.ply",
+        "airplane/airplane_0006.ply",
+        "airplane/airplane_0007.ply",
+        "airplane/airplane_0008.ply",
+        "airplane/airplane_0009.ply",
+        "airplane/airplane_0010.ply",
+        "airplane/airplane_0011.ply",
+        "airplane/airplane_0012.ply",
+        "airplane/airplane_0013.ply",
+        "airplane/airplane_0014.ply",
+        "airplane/airplane_0015.ply",
+        "airplane/airplane_0016.ply",
+        "airplane/airplane_0017.ply",
+        "airplane/airplane_0018.ply",
+        "airplane/airplane_0019.ply",
+        "airplane/airplane_0020.ply",
+        "airplane/airplane_0021.ply",
+        "airplane/airplane_0022.ply",
+        "airplane/airplane_0023.ply",
+        "airplane/airplane_0024.ply",
+        "airplane/airplane_0025.ply",
+        "airplane/airplane_0026.ply",
+        "airplane/airplane_0027.ply",
+        "airplane/airplane_0028.ply",
+        "airplane/airplane_0029.ply",
+        "airplane/airplane_0030.ply",
+        "airplane/airplane_0031.ply",
+        "airplane/airplane_0032.ply",
+        "airplane/airplane_0033.ply",
+        "airplane/airplane_0034.ply",
+        "airplane/airplane_0035.ply",
+        "airplane/airplane_0036.ply",
+        "airplane/airplane_0037.ply",
+        "airplane/airplane_0038.ply",
+        "airplane/airplane_0039.ply",
+        "airplane/airplane_0040.ply",
+        "airplane/airplane_0041.ply",
+        "airplane/airplane_0042.ply",
+        "airplane/airplane_0043.ply",
+        "airplane/airplane_0044.ply",
+        "airplane/airplane_0045.ply",
+        "airplane/airplane_0046.ply",
+        "airplane/airplane_0047.ply",
+        "airplane/airplane_0048.ply",
+        "airplane/airplane_0049.ply",
+        "airplane/airplane_0050.ply",
+        "airplane/airplane_0051.ply",
+        "airplane/airplane_0052.ply",
+        "airplane/airplane_0053.ply",
+        "airplane/airplane_0054.ply",
+        "airplane/airplane_0055.ply",
+        "airplane/airplane_0056.ply",
+        "airplane/airplane_0057.ply",
+        "airplane/airplane_0058.ply",
+        "airplane/airplane_0059.ply",
+        "airplane/airplane_0060.ply",
+        "airplane/airplane_0061.ply",
+        "airplane/airplane_0062.ply",
+        "airplane/airplane_0063.ply",
+        "airplane/airplane_0064.ply",
+        "airplane/airplane_0065.ply",
+        "airplane/airplane_0066.ply",
+        "airplane/airplane_0067.ply",
+        "airplane/airplane_0068.ply",
+        "airplane/airplane_0069.ply",
+        "airplane/airplane_0070.ply",
+        "airplane/airplane_0071.ply",
+        "airplane/airplane_0072.ply",
+        "airplane/airplane_0073.ply",
+        "airplane/airplane_0074.ply",
+        "airplane/airplane_0075.ply",
+        "airplane/airplane_0076.ply",
+        "airplane/airplane_0077.ply",
+        "airplane/airplane_0078.ply",
+        "airplane/airplane_0079.ply",
+        "airplane/airplane_0080.ply",
+        "airplane/airplane_0081.ply",
+        "airplane/airplane_0082.ply",
+        "airplane/airplane_0083.ply",
+        "airplane/airplane_0084.ply",
+        "airplane/airplane_0085.ply",
+        "airplane/airplane_0086.ply",
+        "airplane/airplane_0087.ply",
+        "airplane/airplane_0088.ply",
+        "airplane/airplane_0089.ply",
+        "airplane/airplane_0090.ply",
+        "airplane/airplane_0091.ply",
+        "airplane/airplane_0092.ply",
+        "airplane/airplane_0093.ply",
+        "airplane/airplane_0094.ply",
+        "airplane/airplane_0095.ply",
+        "airplane/airplane_0096.ply",
+        "airplane/airplane_0097.ply",
+        "airplane/airplane_0098.ply",
+        "airplane/airplane_0099.ply",
+        "airplane/airplane_0100.ply",
+        "airplane/airplane_0101.ply"
+      ],
+      "chair": [
+        "chair/chair_0001.ply",
+        "chair/chair_0002.ply"
+      ],
+      "glass_box": [
+        "glass_box/glass_box_0102.ply",
+        "glass_box/glass_box_0103.ply",
+        "glass_box/glass_box_0104.ply",
+        "glass_box/glass_box_0001.ply",
+        "glass_box/glass_box_0002.ply",
+        "glass_box/glass_box_0003.ply",
+        "glass_box/glass_box_0004.ply",
+        "glass_box/glass_box_0005.ply",
+        "glass_box/glass_box_0006.ply",
+        "glass_box/glass_box_0007.ply",
+        "glass_box/glass_box_0008.ply",
+        "glass_box/glass_box_0009.ply",
+        "glass_box/glass_box_0010.ply",
+        "glass_box/glass_box_0011.ply",
+        "glass_box/glass_box_0012.ply",
+        "glass_box/glass_box_0013.ply",
+        "glass_box/glass_box_0014.ply",
+        "glass_box/glass_box_0015.ply",
+        "glass_box/glass_box_0016.ply",
+        "glass_box/glass_box_0017.ply",
+        "glass_box/glass_box_0018.ply",
+        "glass_box/glass_box_0019.ply",
+        "glass_box/glass_box_0020.ply",
+        "glass_box/glass_box_0021.ply",
+        "glass_box/glass_box_0022.ply",
+        "glass_box/glass_box_0023.ply",
+        "glass_box/glass_box_0024.ply",
+        "glass_box/glass_box_0025.ply",
+        "glass_box/glass_box_0026.ply",
+        "glass_box/glass_box_0027.ply",
+        "glass_box/glass_box_0028.ply",
+        "glass_box/glass_box_0029.ply",
+        "glass_box/glass_box_0030.ply",
+        "glass_box/glass_box_0031.ply",
+        "glass_box/glass_box_0032.ply",
+        "glass_box/glass_box_0033.ply",
+        "glass_box/glass_box_0034.ply",
+        "glass_box/glass_box_0035.ply",
+        "glass_box/glass_box_0036.ply",
+        "glass_box/glass_box_0037.ply",
+        "glass_box/glass_box_0038.ply",
+        "glass_box/glass_box_0039.ply",
+        "glass_box/glass_box_0040.ply",
+        "glass_box/glass_box_0041.ply",
+        "glass_box/glass_box_0042.ply",
+        "glass_box/glass_box_0043.ply",
+        "glass_box/glass_box_0044.ply",
+        "glass_box/glass_box_0045.ply",
+        "glass_box/glass_box_0046.ply",
+        "glass_box/glass_box_0047.ply",
+        "glass_box/glass_box_0048.ply",
+        "glass_box/glass_box_0049.ply",
+        "glass_box/glass_box_0050.ply",
+        "glass_box/glass_box_0051.ply",
+        "glass_box/glass_box_0052.ply",
+        "glass_box/glass_box_0053.ply",
+        "glass_box/glass_box_0054.ply",
+        "glass_box/glass_box_0055.ply",
+        "glass_box/glass_box_0056.ply",
+        "glass_box/glass_box_0057.ply",
+        "glass_box/glass_box_0058.ply",
+        "glass_box/glass_box_0059.ply",
+        "glass_box/glass_box_0060.ply",
+        "glass_box/glass_box_0061.ply",
+        "glass_box/glass_box_0062.ply",
+        "glass_box/glass_box_0063.ply",
+        "glass_box/glass_box_0064.ply",
+        "glass_box/glass_box_0065.ply",
+        "glass_box/glass_box_0066.ply",
+        "glass_box/glass_box_0067.ply",
+        "glass_box/glass_box_0068.ply",
+        "glass_box/glass_box_0069.ply",
+        "glass_box/glass_box_0070.ply",
+        "glass_box/glass_box_0071.ply",
+        "glass_box/glass_box_0072.ply",
+        "glass_box/glass_box_0073.ply",
+        "glass_box/glass_box_0074.ply",
+        "glass_box/glass_box_0075.ply",
+        "glass_box/glass_box_0076.ply",
+        "glass_box/glass_box_0077.ply",
+        "glass_box/glass_box_0078.ply",
+        "glass_box/glass_box_0079.ply",
+        "glass_box/glass_box_0080.ply",
+        "glass_box/glass_box_0081.ply",
+        "glass_box/glass_box_0082.ply",
+        "glass_box/glass_box_0083.ply",
+        "glass_box/glass_box_0084.ply",
+        "glass_box/glass_box_0085.ply",
+        "glass_box/glass_box_0086.ply",
+        "glass_box/glass_box_0087.ply",
+        "glass_box/glass_box_0088.ply",
+        "glass_box/glass_box_0089.ply",
+        "glass_box/glass_box_0090.ply",
+        "glass_box/glass_box_0091.ply",
+        "glass_box/glass_box_0092.ply",
+        "glass_box/glass_box_0093.ply",
+        "glass_box/glass_box_0094.ply",
+        "glass_box/glass_box_0095.ply",
+        "glass_box/glass_box_0096.ply",
+        "glass_box/glass_box_0097.ply",
+        "glass_box/glass_box_0098.ply",
+        "glass_box/glass_box_0099.ply",
+        "glass_box/glass_box_0100.ply",
+        "glass_box/glass_box_0101.ply",
+        "glass_box/glass_box_0105.ply",
+        "glass_box/glass_box_0106.ply",
+        "glass_box/glass_box_0107.ply",
+        "glass_box/glass_box_0108.ply",
+        "glass_box/glass_box_0109.ply",
+        "glass_box/glass_box_0110.ply",
+        "glass_box/glass_box_0111.ply",
+        "glass_box/glass_box_0112.ply",
+        "glass_box/glass_box_0113.ply",
+        "glass_box/glass_box_0114.ply",
+        "glass_box/glass_box_0115.ply",
+        "glass_box/glass_box_0116.ply",
+        "glass_box/glass_box_0117.ply",
+        "glass_box/glass_box_0118.ply",
+        "glass_box/glass_box_0119.ply",
+        "glass_box/glass_box_0120.ply",
+        "glass_box/glass_box_0121.ply",
+        "glass_box/glass_box_0122.ply",
+        "glass_box/glass_box_0123.ply",
+        "glass_box/glass_box_0124.ply",
+        "glass_box/glass_box_0125.ply",
+        "glass_box/glass_box_0126.ply",
+        "glass_box/glass_box_0127.ply",
+        "glass_box/glass_box_0128.ply",
+        "glass_box/glass_box_0129.ply",
+        "glass_box/glass_box_0130.ply",
+        "glass_box/glass_box_0131.ply",
+        "glass_box/glass_box_0132.ply",
+        "glass_box/glass_box_0133.ply",
+        "glass_box/glass_box_0134.ply",
+        "glass_box/glass_box_0135.ply",
+        "glass_box/glass_box_0136.ply",
+        "glass_box/glass_box_0137.ply",
+        "glass_box/glass_box_0138.ply",
+        "glass_box/glass_box_0139.ply",
+        "glass_box/glass_box_0140.ply",
+        "glass_box/glass_box_0141.ply",
+        "glass_box/glass_box_0142.ply",
+        "glass_box/glass_box_0143.ply",
+        "glass_box/glass_box_0144.ply",
+        "glass_box/glass_box_0145.ply",
+        "glass_box/glass_box_0146.ply",
+        "glass_box/glass_box_0147.ply",
+        "glass_box/glass_box_0148.ply",
+        "glass_box/glass_box_0149.ply",
+        "glass_box/glass_box_0150.ply",
+        "glass_box/glass_box_0151.ply",
+        "glass_box/glass_box_0152.ply",
+        "glass_box/glass_box_0153.ply",
+        "glass_box/glass_box_0154.ply",
+        "glass_box/glass_box_0155.ply",
+        "glass_box/glass_box_0156.ply",
+        "glass_box/glass_box_0157.ply",
+        "glass_box/glass_box_0158.ply",
+        "glass_box/glass_box_0159.ply",
+        "glass_box/glass_box_0160.ply",
+        "glass_box/glass_box_0161.ply",
+        "glass_box/glass_box_0162.ply",
+        "glass_box/glass_box_0163.ply",
+        "glass_box/glass_box_0164.ply",
+        "glass_box/glass_box_0165.ply",
+        "glass_box/glass_box_0166.ply",
+        "glass_box/glass_box_0167.ply",
+        "glass_box/glass_box_0168.ply",
+        "glass_box/glass_box_0169.ply",
+        "glass_box/glass_box_0170.ply",
+        "glass_box/glass_box_0171.ply",
+        "glass_box/glass_box_0172.ply",
+        "glass_box/glass_box_0173.ply",
+        "glass_box/glass_box_0174.ply",
+        "glass_box/glass_box_0175.ply",
+        "glass_box/glass_box_0176.ply",
+        "glass_box/glass_box_0177.ply",
+        "glass_box/glass_box_0178.ply",
+        "glass_box/glass_box_0179.ply",
+        "glass_box/glass_box_0180.ply",
+        "glass_box/glass_box_0181.ply",
+        "glass_box/glass_box_0182.ply",
+        "glass_box/glass_box_0183.ply",
+        "glass_box/glass_box_0184.ply",
+        "glass_box/glass_box_0185.ply",
+        "glass_box/glass_box_0186.ply",
+        "glass_box/glass_box_0187.ply",
+        "glass_box/glass_box_0188.ply",
+        "glass_box/glass_box_0189.ply",
+        "glass_box/glass_box_0190.ply",
+        "glass_box/glass_box_0191.ply",
+        "glass_box/glass_box_0192.ply",
+        "glass_box/glass_box_0193.ply",
+        "glass_box/glass_box_0194.ply",
+        "glass_box/glass_box_0195.ply",
+        "glass_box/glass_box_0196.ply",
+        "glass_box/glass_box_0197.ply",
+        "glass_box/glass_box_0198.ply",
+        "glass_box/glass_box_0199.ply",
+        "glass_box/glass_box_0200.ply",
+        "glass_box/glass_box_0201.ply",
+        "glass_box/glass_box_0202.ply",
+        "glass_box/glass_box_0203.ply",
+        "glass_box/glass_box_0204.ply",
+        "glass_box/glass_box_0205.ply",
+        "glass_box/glass_box_0206.ply",
+        "glass_box/glass_box_0207.ply",
+        "glass_box/glass_box_0208.ply",
+        "glass_box/glass_box_0209.ply",
+        "glass_box/glass_box_0210.ply",
+        "glass_box/glass_box_0211.ply",
+        "glass_box/glass_box_0212.ply",
+        "glass_box/glass_box_0213.ply",
+        "glass_box/glass_box_0214.ply",
+        "glass_box/glass_box_0215.ply",
+        "glass_box/glass_box_0216.ply",
+        "glass_box/glass_box_0217.ply",
+        "glass_box/glass_box_0218.ply",
+        "glass_box/glass_box_0219.ply",
+        "glass_box/glass_box_0220.ply",
+        "glass_box/glass_box_0221.ply",
+        "glass_box/glass_box_0222.ply",
+        "glass_box/glass_box_0223.ply",
+        "glass_box/glass_box_0224.ply",
+        "glass_box/glass_box_0225.ply",
+        "glass_box/glass_box_0226.ply",
+        "glass_box/glass_box_0227.ply",
+        "glass_box/glass_box_0228.ply",
+        "glass_box/glass_box_0229.ply",
+        "glass_box/glass_box_0230.ply",
+        "glass_box/glass_box_0231.ply",
+        "glass_box/glass_box_0232.ply",
+        "glass_box/glass_box_0233.ply",
+        "glass_box/glass_box_0234.ply",
+        "glass_box/glass_box_0235.ply",
+        "glass_box/glass_box_0236.ply",
+        "glass_box/glass_box_0237.ply",
+        "glass_box/glass_box_0238.ply",
+        "glass_box/glass_box_0239.ply",
+        "glass_box/glass_box_0240.ply",
+        "glass_box/glass_box_0241.ply",
+        "glass_box/glass_box_0242.ply",
+        "glass_box/glass_box_0243.ply",
+        "glass_box/glass_box_0244.ply",
+        "glass_box/glass_box_0245.ply",
+        "glass_box/glass_box_0246.ply",
+        "glass_box/glass_box_0247.ply",
+        "glass_box/glass_box_0248.ply",
+        "glass_box/glass_box_0249.ply",
+        "glass_box/glass_box_0250.ply",
+        "glass_box/glass_box_0251.ply",
+        "glass_box/glass_box_0252.ply",
+        "glass_box/glass_box_0253.ply",
+        "glass_box/glass_box_0254.ply",
+        "glass_box/glass_box_0255.ply",
+        "glass_box/glass_box_0256.ply",
+        "glass_box/glass_box_0257.ply",
+        "glass_box/glass_box_0258.ply",
+        "glass_box/glass_box_0259.ply",
+        "glass_box/glass_box_0260.ply",
+        "glass_box/glass_box_0261.ply",
+        "glass_box/glass_box_0262.ply",
+        "glass_box/glass_box_0263.ply",
+        "glass_box/glass_box_0264.ply",
+        "glass_box/glass_box_0265.ply",
+        "glass_box/glass_box_0266.ply",
+        "glass_box/glass_box_0267.ply",
+        "glass_box/glass_box_0268.ply",
+        "glass_box/glass_box_0269.ply",
+        "glass_box/glass_box_0270.ply",
+        "glass_box/glass_box_0271.ply"
+      ],
+      "bowl": [
+        "bowl/bowl_0001.ply",
+        "bowl/bowl_0002.ply"
+      ],
+      "bench": [
+        "bench/bench_0001.ply",
+        "bench/bench_0002.ply"
+      ]
+    },
+    "by_K": {
+      "1": [
+        "airplane/airplane_0001.ply",
+        "airplane/airplane_0002.ply",
+        "airplane/airplane_0003.ply",
+        "airplane/airplane_0004.ply",
+        "airplane/airplane_0005.ply",
+        "airplane/airplane_0006.ply",
+        "airplane/airplane_0007.ply",
+        "airplane/airplane_0008.ply",
+        "airplane/airplane_0009.ply",
+        "airplane/airplane_0010.ply",
+        "airplane/airplane_0011.ply",
+        "airplane/airplane_0012.ply",
+        "airplane/airplane_0013.ply",
+        "airplane/airplane_0014.ply",
+        "airplane/airplane_0015.ply",
+        "airplane/airplane_0016.ply",
+        "airplane/airplane_0017.ply",
+        "airplane/airplane_0018.ply",
+        "airplane/airplane_0019.ply",
+        "airplane/airplane_0020.ply",
+        "airplane/airplane_0021.ply",
+        "airplane/airplane_0022.ply",
+        "airplane/airplane_0023.ply",
+        "airplane/airplane_0024.ply",
+        "airplane/airplane_0025.ply",
+        "airplane/airplane_0026.ply",
+        "airplane/airplane_0027.ply",
+        "airplane/airplane_0028.ply",
+        "airplane/airplane_0029.ply",
+        "airplane/airplane_0030.ply",
+        "airplane/airplane_0031.ply",
+        "airplane/airplane_0032.ply",
+        "airplane/airplane_0033.ply",
+        "airplane/airplane_0034.ply",
+        "airplane/airplane_0035.ply",
+        "airplane/airplane_0036.ply",
+        "airplane/airplane_0037.ply",
+        "airplane/airplane_0038.ply",
+        "airplane/airplane_0039.ply",
+        "airplane/airplane_0040.ply",
+        "airplane/airplane_0041.ply",
+        "airplane/airplane_0042.ply",
+        "airplane/airplane_0043.ply",
+        "airplane/airplane_0044.ply",
+        "airplane/airplane_0045.ply",
+        "airplane/airplane_0046.ply",
+        "airplane/airplane_0047.ply",
+        "airplane/airplane_0048.ply",
+        "airplane/airplane_0049.ply",
+        "airplane/airplane_0050.ply",
+        "airplane/airplane_0051.ply",
+        "airplane/airplane_0052.ply",
+        "airplane/airplane_0053.ply",
+        "airplane/airplane_0054.ply",
+        "airplane/airplane_0055.ply",
+        "airplane/airplane_0056.ply",
+        "airplane/airplane_0057.ply",
+        "airplane/airplane_0058.ply",
+        "airplane/airplane_0059.ply",
+        "airplane/airplane_0060.ply",
+        "airplane/airplane_0061.ply",
+        "airplane/airplane_0062.ply",
+        "airplane/airplane_0063.ply",
+        "airplane/airplane_0064.ply",
+        "airplane/airplane_0065.ply",
+        "airplane/airplane_0066.ply",
+        "airplane/airplane_0067.ply",
+        "airplane/airplane_0068.ply",
+        "airplane/airplane_0069.ply",
+        "airplane/airplane_0070.ply",
+        "airplane/airplane_0071.ply",
+        "airplane/airplane_0072.ply",
+        "airplane/airplane_0073.ply",
+        "airplane/airplane_0074.ply",
+        "airplane/airplane_0075.ply",
+        "airplane/airplane_0076.ply",
+        "airplane/airplane_0077.ply",
+        "airplane/airplane_0078.ply",
+        "airplane/airplane_0079.ply",
+        "airplane/airplane_0080.ply",
+        "airplane/airplane_0081.ply",
+        "airplane/airplane_0082.ply",
+        "airplane/airplane_0083.ply",
+        "airplane/airplane_0084.ply",
+        "airplane/airplane_0085.ply",
+        "airplane/airplane_0086.ply",
+        "airplane/airplane_0087.ply",
+        "airplane/airplane_0088.ply",
+        "airplane/airplane_0089.ply",
+        "airplane/airplane_0090.ply",
+        "airplane/airplane_0091.ply",
+        "airplane/airplane_0092.ply",
+        "airplane/airplane_0093.ply",
+        "airplane/airplane_0094.ply",
+        "airplane/airplane_0095.ply",
+        "airplane/airplane_0096.ply",
+        "airplane/airplane_0097.ply",
+        "airplane/airplane_0098.ply",
+        "airplane/airplane_0099.ply",
+        "airplane/airplane_0100.ply",
+        "chair/chair_0001.ply",
+        "chair/chair_0002.ply",
+        "airplane/airplane_0101.ply",
+        "bench/bench_0002.ply"
+      ],
+      "4": [
+        "glass_box/glass_box_0102.ply",
+        "glass_box/glass_box_0103.ply",
+        "glass_box/glass_box_0104.ply",
+        "glass_box/glass_box_0001.ply",
+        "glass_box/glass_box_0002.ply",
+        "glass_box/glass_box_0003.ply",
+        "glass_box/glass_box_0004.ply",
+        "glass_box/glass_box_0005.ply",
+        "glass_box/glass_box_0006.ply",
+        "glass_box/glass_box_0007.ply",
+        "glass_box/glass_box_0008.ply",
+        "glass_box/glass_box_0009.ply",
+        "glass_box/glass_box_0010.ply",
+        "glass_box/glass_box_0011.ply",
+        "glass_box/glass_box_0012.ply",
+        "glass_box/glass_box_0013.ply",
+        "glass_box/glass_box_0014.ply",
+        "glass_box/glass_box_0015.ply",
+        "glass_box/glass_box_0016.ply",
+        "glass_box/glass_box_0017.ply",
+        "glass_box/glass_box_0018.ply",
+        "glass_box/glass_box_0019.ply",
+        "glass_box/glass_box_0020.ply",
+        "glass_box/glass_box_0021.ply",
+        "glass_box/glass_box_0022.ply",
+        "glass_box/glass_box_0023.ply",
+        "glass_box/glass_box_0024.ply",
+        "glass_box/glass_box_0025.ply",
+        "glass_box/glass_box_0026.ply",
+        "glass_box/glass_box_0027.ply",
+        "glass_box/glass_box_0028.ply",
+        "glass_box/glass_box_0029.ply",
+        "glass_box/glass_box_0030.ply",
+        "glass_box/glass_box_0031.ply",
+        "glass_box/glass_box_0032.ply",
+        "glass_box/glass_box_0033.ply",
+        "glass_box/glass_box_0034.ply",
+        "glass_box/glass_box_0035.ply",
+        "glass_box/glass_box_0036.ply",
+        "glass_box/glass_box_0037.ply",
+        "glass_box/glass_box_0038.ply",
+        "glass_box/glass_box_0039.ply",
+        "glass_box/glass_box_0040.ply",
+        "glass_box/glass_box_0041.ply",
+        "glass_box/glass_box_0042.ply",
+        "glass_box/glass_box_0043.ply",
+        "glass_box/glass_box_0044.ply",
+        "glass_box/glass_box_0045.ply",
+        "glass_box/glass_box_0046.ply",
+        "glass_box/glass_box_0047.ply",
+        "glass_box/glass_box_0048.ply",
+        "glass_box/glass_box_0049.ply",
+        "glass_box/glass_box_0050.ply",
+        "glass_box/glass_box_0051.ply",
+        "glass_box/glass_box_0052.ply",
+        "glass_box/glass_box_0053.ply",
+        "glass_box/glass_box_0054.ply",
+        "glass_box/glass_box_0055.ply",
+        "glass_box/glass_box_0056.ply",
+        "glass_box/glass_box_0057.ply",
+        "glass_box/glass_box_0058.ply",
+        "glass_box/glass_box_0059.ply",
+        "glass_box/glass_box_0060.ply",
+        "glass_box/glass_box_0061.ply",
+        "glass_box/glass_box_0062.ply",
+        "glass_box/glass_box_0063.ply",
+        "glass_box/glass_box_0064.ply",
+        "glass_box/glass_box_0065.ply",
+        "glass_box/glass_box_0066.ply",
+        "glass_box/glass_box_0067.ply",
+        "glass_box/glass_box_0068.ply",
+        "glass_box/glass_box_0069.ply",
+        "glass_box/glass_box_0070.ply",
+        "glass_box/glass_box_0071.ply",
+        "glass_box/glass_box_0072.ply",
+        "glass_box/glass_box_0073.ply",
+        "glass_box/glass_box_0074.ply",
+        "glass_box/glass_box_0075.ply",
+        "glass_box/glass_box_0076.ply",
+        "glass_box/glass_box_0077.ply",
+        "glass_box/glass_box_0078.ply",
+        "glass_box/glass_box_0079.ply",
+        "glass_box/glass_box_0080.ply",
+        "glass_box/glass_box_0081.ply",
+        "glass_box/glass_box_0082.ply",
+        "glass_box/glass_box_0083.ply",
+        "glass_box/glass_box_0084.ply",
+        "glass_box/glass_box_0085.ply",
+        "glass_box/glass_box_0086.ply",
+        "glass_box/glass_box_0087.ply",
+        "glass_box/glass_box_0088.ply",
+        "glass_box/glass_box_0089.ply",
+        "glass_box/glass_box_0090.ply",
+        "glass_box/glass_box_0091.ply",
+        "glass_box/glass_box_0092.ply",
+        "glass_box/glass_box_0093.ply",
+        "glass_box/glass_box_0094.ply",
+        "glass_box/glass_box_0095.ply",
+        "glass_box/glass_box_0096.ply",
+        "glass_box/glass_box_0097.ply",
+        "glass_box/glass_box_0098.ply",
+        "glass_box/glass_box_0099.ply",
+        "glass_box/glass_box_0100.ply",
+        "glass_box/glass_box_0101.ply",
+        "glass_box/glass_box_0105.ply",
+        "glass_box/glass_box_0106.ply",
+        "glass_box/glass_box_0107.ply",
+        "glass_box/glass_box_0108.ply",
+        "glass_box/glass_box_0109.ply",
+        "glass_box/glass_box_0110.ply",
+        "glass_box/glass_box_0111.ply",
+        "glass_box/glass_box_0112.ply",
+        "glass_box/glass_box_0113.ply",
+        "glass_box/glass_box_0114.ply",
+        "glass_box/glass_box_0115.ply",
+        "glass_box/glass_box_0116.ply",
+        "glass_box/glass_box_0117.ply",
+        "glass_box/glass_box_0118.ply",
+        "glass_box/glass_box_0119.ply",
+        "glass_box/glass_box_0120.ply",
+        "glass_box/glass_box_0121.ply",
+        "glass_box/glass_box_0122.ply",
+        "glass_box/glass_box_0123.ply",
+        "glass_box/glass_box_0124.ply",
+        "glass_box/glass_box_0125.ply",
+        "glass_box/glass_box_0126.ply",
+        "glass_box/glass_box_0127.ply",
+        "glass_box/glass_box_0128.ply",
+        "glass_box/glass_box_0129.ply",
+        "glass_box/glass_box_0130.ply",
+        "glass_box/glass_box_0131.ply",
+        "glass_box/glass_box_0132.ply",
+        "glass_box/glass_box_0133.ply",
+        "glass_box/glass_box_0134.ply",
+        "glass_box/glass_box_0135.ply",
+        "glass_box/glass_box_0136.ply",
+        "glass_box/glass_box_0137.ply",
+        "glass_box/glass_box_0138.ply",
+        "glass_box/glass_box_0139.ply",
+        "glass_box/glass_box_0140.ply",
+        "glass_box/glass_box_0141.ply",
+        "glass_box/glass_box_0142.ply",
+        "glass_box/glass_box_0143.ply",
+        "glass_box/glass_box_0144.ply",
+        "glass_box/glass_box_0145.ply",
+        "glass_box/glass_box_0146.ply",
+        "glass_box/glass_box_0147.ply",
+        "glass_box/glass_box_0148.ply",
+        "glass_box/glass_box_0149.ply",
+        "glass_box/glass_box_0150.ply",
+        "glass_box/glass_box_0151.ply",
+        "glass_box/glass_box_0152.ply",
+        "glass_box/glass_box_0153.ply",
+        "glass_box/glass_box_0154.ply",
+        "glass_box/glass_box_0155.ply",
+        "glass_box/glass_box_0156.ply",
+        "glass_box/glass_box_0157.ply",
+        "glass_box/glass_box_0158.ply",
+        "glass_box/glass_box_0159.ply",
+        "glass_box/glass_box_0160.ply",
+        "glass_box/glass_box_0161.ply",
+        "glass_box/glass_box_0162.ply",
+        "glass_box/glass_box_0163.ply",
+        "glass_box/glass_box_0164.ply",
+        "glass_box/glass_box_0165.ply",
+        "glass_box/glass_box_0166.ply",
+        "glass_box/glass_box_0167.ply",
+        "glass_box/glass_box_0168.ply",
+        "glass_box/glass_box_0169.ply",
+        "glass_box/glass_box_0170.ply",
+        "glass_box/glass_box_0171.ply",
+        "glass_box/glass_box_0172.ply",
+        "glass_box/glass_box_0173.ply",
+        "glass_box/glass_box_0174.ply",
+        "glass_box/glass_box_0175.ply",
+        "glass_box/glass_box_0176.ply",
+        "glass_box/glass_box_0177.ply",
+        "glass_box/glass_box_0178.ply",
+        "glass_box/glass_box_0179.ply",
+        "glass_box/glass_box_0180.ply",
+        "glass_box/glass_box_0181.ply",
+        "glass_box/glass_box_0182.ply",
+        "glass_box/glass_box_0183.ply",
+        "glass_box/glass_box_0184.ply",
+        "glass_box/glass_box_0185.ply",
+        "glass_box/glass_box_0186.ply",
+        "glass_box/glass_box_0187.ply",
+        "glass_box/glass_box_0188.ply",
+        "glass_box/glass_box_0189.ply",
+        "glass_box/glass_box_0190.ply",
+        "glass_box/glass_box_0191.ply",
+        "glass_box/glass_box_0192.ply",
+        "glass_box/glass_box_0193.ply",
+        "glass_box/glass_box_0194.ply",
+        "glass_box/glass_box_0195.ply",
+        "glass_box/glass_box_0196.ply",
+        "glass_box/glass_box_0197.ply",
+        "glass_box/glass_box_0198.ply",
+        "glass_box/glass_box_0199.ply",
+        "glass_box/glass_box_0200.ply",
+        "glass_box/glass_box_0201.ply",
+        "glass_box/glass_box_0202.ply",
+        "glass_box/glass_box_0203.ply",
+        "glass_box/glass_box_0204.ply",
+        "glass_box/glass_box_0205.ply",
+        "glass_box/glass_box_0206.ply",
+        "glass_box/glass_box_0207.ply",
+        "glass_box/glass_box_0208.ply",
+        "glass_box/glass_box_0209.ply",
+        "glass_box/glass_box_0210.ply",
+        "glass_box/glass_box_0211.ply",
+        "glass_box/glass_box_0212.ply",
+        "glass_box/glass_box_0213.ply",
+        "glass_box/glass_box_0214.ply",
+        "glass_box/glass_box_0215.ply",
+        "glass_box/glass_box_0216.ply",
+        "glass_box/glass_box_0217.ply",
+        "glass_box/glass_box_0218.ply",
+        "glass_box/glass_box_0219.ply",
+        "glass_box/glass_box_0220.ply",
+        "glass_box/glass_box_0221.ply",
+        "glass_box/glass_box_0222.ply",
+        "glass_box/glass_box_0223.ply",
+        "glass_box/glass_box_0224.ply",
+        "glass_box/glass_box_0225.ply",
+        "glass_box/glass_box_0226.ply",
+        "glass_box/glass_box_0227.ply",
+        "glass_box/glass_box_0228.ply",
+        "glass_box/glass_box_0229.ply",
+        "glass_box/glass_box_0230.ply",
+        "glass_box/glass_box_0231.ply",
+        "glass_box/glass_box_0232.ply",
+        "glass_box/glass_box_0233.ply",
+        "glass_box/glass_box_0234.ply",
+        "glass_box/glass_box_0235.ply",
+        "glass_box/glass_box_0236.ply",
+        "glass_box/glass_box_0237.ply",
+        "glass_box/glass_box_0238.ply",
+        "glass_box/glass_box_0239.ply",
+        "glass_box/glass_box_0240.ply",
+        "glass_box/glass_box_0241.ply",
+        "glass_box/glass_box_0242.ply",
+        "glass_box/glass_box_0243.ply",
+        "glass_box/glass_box_0244.ply",
+        "glass_box/glass_box_0245.ply",
+        "glass_box/glass_box_0246.ply",
+        "glass_box/glass_box_0247.ply",
+        "glass_box/glass_box_0248.ply",
+        "glass_box/glass_box_0249.ply",
+        "glass_box/glass_box_0250.ply",
+        "glass_box/glass_box_0251.ply",
+        "glass_box/glass_box_0252.ply",
+        "glass_box/glass_box_0253.ply",
+        "glass_box/glass_box_0254.ply",
+        "glass_box/glass_box_0255.ply",
+        "glass_box/glass_box_0256.ply",
+        "glass_box/glass_box_0257.ply",
+        "glass_box/glass_box_0258.ply",
+        "glass_box/glass_box_0259.ply",
+        "glass_box/glass_box_0260.ply",
+        "glass_box/glass_box_0261.ply",
+        "glass_box/glass_box_0262.ply",
+        "glass_box/glass_box_0263.ply",
+        "glass_box/glass_box_0264.ply",
+        "glass_box/glass_box_0265.ply",
+        "glass_box/glass_box_0266.ply",
+        "glass_box/glass_box_0267.ply",
+        "glass_box/glass_box_0268.ply",
+        "glass_box/glass_box_0269.ply",
+        "glass_box/glass_box_0270.ply",
+        "glass_box/glass_box_0271.ply"
+      ],
+      "0": [
+        "bowl/bowl_0001.ply",
+        "bowl/bowl_0002.ply"
+      ],
+      "2": [
+        "bench/bench_0001.ply"
+      ]
+    },
+    "by_aligned": {
+      "true": [
+        "airplane/airplane_0003.ply",
+        "airplane/airplane_0006.ply",
+        "airplane/airplane_0008.ply",
+        "airplane/airplane_0010.ply",
+        "airplane/airplane_0013.ply",
+        "airplane/airplane_0014.ply",
+        "airplane/airplane_0015.ply",
+        "airplane/airplane_0018.ply",
+        "airplane/airplane_0019.ply",
+        "airplane/airplane_0021.ply",
+        "airplane/airplane_0022.ply",
+        "airplane/airplane_0025.ply",
+        "airplane/airplane_0026.ply",
+        "airplane/airplane_0027.ply",
+        "airplane/airplane_0029.ply",
+        "airplane/airplane_0030.ply",
+        "airplane/airplane_0031.ply",
+        "airplane/airplane_0033.ply",
+        "airplane/airplane_0034.ply",
+        "airplane/airplane_0035.ply",
+        "airplane/airplane_0036.ply",
+        "airplane/airplane_0038.ply",
+        "airplane/airplane_0040.ply",
+        "airplane/airplane_0041.ply",
+        "airplane/airplane_0042.ply",
+        "airplane/airplane_0043.ply",
+        "airplane/airplane_0044.ply",
+        "airplane/airplane_0045.ply",
+        "airplane/airplane_0046.ply",
+        "airplane/airplane_0047.ply",
+        "airplane/airplane_0049.ply",
+        "airplane/airplane_0050.ply",
+        "airplane/airplane_0051.ply",
+        "airplane/airplane_0053.ply",
+        "airplane/airplane_0057.ply",
+        "airplane/airplane_0061.ply",
+        "airplane/airplane_0062.ply",
+        "airplane/airplane_0063.ply",
+        "airplane/airplane_0069.ply",
+        "airplane/airplane_0070.ply",
+        "airplane/airplane_0072.ply",
+        "airplane/airplane_0073.ply",
+        "airplane/airplane_0074.ply",
+        "airplane/airplane_0078.ply",
+        "airplane/airplane_0079.ply",
+        "airplane/airplane_0080.ply",
+        "airplane/airplane_0081.ply",
+        "airplane/airplane_0083.ply",
+        "airplane/airplane_0084.ply",
+        "airplane/airplane_0087.ply",
+        "airplane/airplane_0088.ply",
+        "airplane/airplane_0090.ply",
+        "airplane/airplane_0091.ply",
+        "airplane/airplane_0092.ply",
+        "airplane/airplane_0093.ply",
+        "airplane/airplane_0094.ply",
+        "airplane/airplane_0095.ply",
+        "airplane/airplane_0096.ply",
+        "airplane/airplane_0099.ply",
+        "airplane/airplane_0100.ply",
+        "chair/chair_0001.ply",
+        "chair/chair_0002.ply",
+        "glass_box/glass_box_0102.ply",
+        "glass_box/glass_box_0103.ply",
+        "glass_box/glass_box_0104.ply",
+        "bowl/bowl_0001.ply",
+        "bowl/bowl_0002.ply",
+        "bench/bench_0001.ply",
+        "glass_box/glass_box_0001.ply",
+        "glass_box/glass_box_0002.ply",
+        "glass_box/glass_box_0003.ply",
+        "glass_box/glass_box_0004.ply",
+        "glass_box/glass_box_0005.ply",
+        "glass_box/glass_box_0006.ply",
+        "glass_box/glass_box_0007.ply",
+        "glass_box/glass_box_0008.ply",
+        "glass_box/glass_box_0009.ply",
+        "glass_box/glass_box_0010.ply",
+        "glass_box/glass_box_0011.ply",
+        "glass_box/glass_box_0012.ply",
+        "glass_box/glass_box_0013.ply",
+        "glass_box/glass_box_0014.ply",
+        "glass_box/glass_box_0015.ply",
+        "glass_box/glass_box_0016.ply",
+        "glass_box/glass_box_0017.ply",
+        "glass_box/glass_box_0018.ply",
+        "glass_box/glass_box_0019.ply",
+        "glass_box/glass_box_0020.ply",
+        "glass_box/glass_box_0021.ply",
+        "glass_box/glass_box_0022.ply",
+        "glass_box/glass_box_0023.ply",
+        "glass_box/glass_box_0024.ply",
+        "glass_box/glass_box_0025.ply",
+        "glass_box/glass_box_0026.ply",
+        "glass_box/glass_box_0027.ply",
+        "glass_box/glass_box_0028.ply",
+        "glass_box/glass_box_0029.ply",
+        "glass_box/glass_box_0030.ply",
+        "glass_box/glass_box_0031.ply",
+        "glass_box/glass_box_0032.ply",
+        "glass_box/glass_box_0033.ply",
+        "glass_box/glass_box_0034.ply",
+        "glass_box/glass_box_0035.ply",
+        "glass_box/glass_box_0036.ply",
+        "glass_box/glass_box_0037.ply",
+        "glass_box/glass_box_0038.ply",
+        "glass_box/glass_box_0039.ply",
+        "glass_box/glass_box_0040.ply",
+        "glass_box/glass_box_0041.ply",
+        "glass_box/glass_box_0042.ply",
+        "glass_box/glass_box_0043.ply",
+        "glass_box/glass_box_0044.ply",
+        "glass_box/glass_box_0045.ply",
+        "glass_box/glass_box_0046.ply",
+        "glass_box/glass_box_0047.ply",
+        "glass_box/glass_box_0048.ply",
+        "glass_box/glass_box_0049.ply",
+        "glass_box/glass_box_0050.ply",
+        "glass_box/glass_box_0051.ply",
+        "glass_box/glass_box_0052.ply",
+        "glass_box/glass_box_0053.ply",
+        "glass_box/glass_box_0054.ply",
+        "glass_box/glass_box_0055.ply",
+        "glass_box/glass_box_0056.ply",
+        "glass_box/glass_box_0057.ply",
+        "glass_box/glass_box_0058.ply",
+        "glass_box/glass_box_0059.ply",
+        "glass_box/glass_box_0060.ply",
+        "glass_box/glass_box_0061.ply",
+        "glass_box/glass_box_0062.ply",
+        "glass_box/glass_box_0063.ply",
+        "glass_box/glass_box_0064.ply",
+        "glass_box/glass_box_0065.ply",
+        "glass_box/glass_box_0066.ply",
+        "glass_box/glass_box_0067.ply",
+        "glass_box/glass_box_0068.ply",
+        "glass_box/glass_box_0069.ply",
+        "glass_box/glass_box_0070.ply",
+        "glass_box/glass_box_0071.ply",
+        "glass_box/glass_box_0072.ply",
+        "glass_box/glass_box_0073.ply",
+        "glass_box/glass_box_0074.ply",
+        "glass_box/glass_box_0075.ply",
+        "glass_box/glass_box_0076.ply",
+        "glass_box/glass_box_0077.ply",
+        "glass_box/glass_box_0078.ply",
+        "glass_box/glass_box_0079.ply",
+        "glass_box/glass_box_0080.ply",
+        "glass_box/glass_box_0081.ply",
+        "glass_box/glass_box_0082.ply",
+        "glass_box/glass_box_0083.ply",
+        "glass_box/glass_box_0084.ply",
+        "glass_box/glass_box_0085.ply",
+        "glass_box/glass_box_0086.ply",
+        "glass_box/glass_box_0087.ply",
+        "glass_box/glass_box_0088.ply",
+        "glass_box/glass_box_0089.ply",
+        "glass_box/glass_box_0090.ply",
+        "glass_box/glass_box_0091.ply",
+        "glass_box/glass_box_0092.ply",
+        "glass_box/glass_box_0093.ply",
+        "glass_box/glass_box_0094.ply",
+        "glass_box/glass_box_0095.ply",
+        "glass_box/glass_box_0096.ply",
+        "glass_box/glass_box_0097.ply",
+        "glass_box/glass_box_0098.ply",
+        "glass_box/glass_box_0099.ply",
+        "glass_box/glass_box_0100.ply",
+        "glass_box/glass_box_0101.ply",
+        "glass_box/glass_box_0105.ply",
+        "glass_box/glass_box_0106.ply",
+        "glass_box/glass_box_0107.ply",
+        "glass_box/glass_box_0108.ply",
+        "glass_box/glass_box_0109.ply",
+        "glass_box/glass_box_0110.ply",
+        "glass_box/glass_box_0111.ply",
+        "glass_box/glass_box_0112.ply",
+        "glass_box/glass_box_0113.ply",
+        "glass_box/glass_box_0114.ply",
+        "glass_box/glass_box_0115.ply",
+        "glass_box/glass_box_0116.ply",
+        "glass_box/glass_box_0117.ply",
+        "glass_box/glass_box_0118.ply",
+        "glass_box/glass_box_0119.ply",
+        "glass_box/glass_box_0120.ply",
+        "glass_box/glass_box_0121.ply",
+        "glass_box/glass_box_0122.ply",
+        "glass_box/glass_box_0123.ply",
+        "glass_box/glass_box_0124.ply",
+        "glass_box/glass_box_0125.ply",
+        "glass_box/glass_box_0126.ply",
+        "glass_box/glass_box_0127.ply",
+        "glass_box/glass_box_0128.ply",
+        "glass_box/glass_box_0129.ply",
+        "glass_box/glass_box_0130.ply",
+        "glass_box/glass_box_0131.ply",
+        "glass_box/glass_box_0132.ply",
+        "glass_box/glass_box_0133.ply",
+        "glass_box/glass_box_0134.ply",
+        "glass_box/glass_box_0135.ply",
+        "glass_box/glass_box_0136.ply",
+        "glass_box/glass_box_0137.ply",
+        "glass_box/glass_box_0138.ply",
+        "glass_box/glass_box_0139.ply",
+        "glass_box/glass_box_0140.ply",
+        "glass_box/glass_box_0141.ply",
+        "glass_box/glass_box_0142.ply",
+        "glass_box/glass_box_0143.ply",
+        "glass_box/glass_box_0144.ply",
+        "glass_box/glass_box_0145.ply",
+        "glass_box/glass_box_0146.ply",
+        "glass_box/glass_box_0147.ply",
+        "glass_box/glass_box_0148.ply",
+        "glass_box/glass_box_0149.ply",
+        "glass_box/glass_box_0150.ply",
+        "glass_box/glass_box_0151.ply",
+        "glass_box/glass_box_0152.ply",
+        "glass_box/glass_box_0153.ply",
+        "glass_box/glass_box_0154.ply",
+        "glass_box/glass_box_0155.ply",
+        "glass_box/glass_box_0156.ply",
+        "glass_box/glass_box_0157.ply",
+        "glass_box/glass_box_0158.ply",
+        "glass_box/glass_box_0159.ply",
+        "glass_box/glass_box_0160.ply",
+        "glass_box/glass_box_0161.ply",
+        "glass_box/glass_box_0162.ply",
+        "glass_box/glass_box_0163.ply",
+        "glass_box/glass_box_0164.ply",
+        "glass_box/glass_box_0165.ply",
+        "glass_box/glass_box_0166.ply",
+        "glass_box/glass_box_0167.ply",
+        "glass_box/glass_box_0168.ply",
+        "glass_box/glass_box_0169.ply",
+        "glass_box/glass_box_0170.ply",
+        "glass_box/glass_box_0171.ply",
+        "glass_box/glass_box_0172.ply",
+        "glass_box/glass_box_0173.ply",
+        "glass_box/glass_box_0174.ply",
+        "glass_box/glass_box_0175.ply",
+        "glass_box/glass_box_0176.ply",
+        "glass_box/glass_box_0177.ply",
+        "glass_box/glass_box_0178.ply",
+        "glass_box/glass_box_0179.ply",
+        "glass_box/glass_box_0180.ply",
+        "glass_box/glass_box_0181.ply",
+        "glass_box/glass_box_0182.ply",
+        "glass_box/glass_box_0183.ply",
+        "glass_box/glass_box_0184.ply",
+        "glass_box/glass_box_0185.ply",
+        "glass_box/glass_box_0186.ply",
+        "glass_box/glass_box_0187.ply",
+        "glass_box/glass_box_0188.ply",
+        "glass_box/glass_box_0189.ply",
+        "glass_box/glass_box_0190.ply",
+        "glass_box/glass_box_0191.ply",
+        "glass_box/glass_box_0192.ply",
+        "glass_box/glass_box_0193.ply",
+        "glass_box/glass_box_0194.ply",
+        "glass_box/glass_box_0195.ply",
+        "glass_box/glass_box_0196.ply",
+        "glass_box/glass_box_0197.ply",
+        "glass_box/glass_box_0198.ply",
+        "glass_box/glass_box_0199.ply",
+        "glass_box/glass_box_0200.ply",
+        "glass_box/glass_box_0201.ply",
+        "glass_box/glass_box_0202.ply",
+        "glass_box/glass_box_0203.ply",
+        "glass_box/glass_box_0204.ply",
+        "glass_box/glass_box_0205.ply",
+        "glass_box/glass_box_0206.ply",
+        "glass_box/glass_box_0207.ply",
+        "glass_box/glass_box_0208.ply",
+        "glass_box/glass_box_0209.ply",
+        "glass_box/glass_box_0210.ply",
+        "glass_box/glass_box_0211.ply",
+        "glass_box/glass_box_0212.ply",
+        "glass_box/glass_box_0213.ply",
+        "glass_box/glass_box_0214.ply",
+        "glass_box/glass_box_0215.ply",
+        "glass_box/glass_box_0216.ply",
+        "glass_box/glass_box_0217.ply",
+        "glass_box/glass_box_0218.ply",
+        "glass_box/glass_box_0219.ply",
+        "glass_box/glass_box_0220.ply",
+        "glass_box/glass_box_0221.ply",
+        "glass_box/glass_box_0222.ply",
+        "glass_box/glass_box_0223.ply",
+        "glass_box/glass_box_0224.ply",
+        "glass_box/glass_box_0225.ply",
+        "glass_box/glass_box_0226.ply",
+        "glass_box/glass_box_0227.ply",
+        "glass_box/glass_box_0228.ply",
+        "glass_box/glass_box_0229.ply",
+        "glass_box/glass_box_0230.ply",
+        "glass_box/glass_box_0231.ply",
+        "glass_box/glass_box_0232.ply",
+        "glass_box/glass_box_0233.ply",
+        "glass_box/glass_box_0234.ply",
+        "glass_box/glass_box_0235.ply",
+        "glass_box/glass_box_0236.ply",
+        "glass_box/glass_box_0237.ply",
+        "glass_box/glass_box_0238.ply",
+        "glass_box/glass_box_0239.ply",
+        "glass_box/glass_box_0240.ply",
+        "glass_box/glass_box_0241.ply",
+        "glass_box/glass_box_0242.ply",
+        "glass_box/glass_box_0243.ply",
+        "glass_box/glass_box_0244.ply",
+        "glass_box/glass_box_0245.ply",
+        "glass_box/glass_box_0246.ply",
+        "glass_box/glass_box_0247.ply",
+        "glass_box/glass_box_0248.ply",
+        "glass_box/glass_box_0249.ply",
+        "glass_box/glass_box_0250.ply",
+        "glass_box/glass_box_0251.ply",
+        "glass_box/glass_box_0252.ply",
+        "glass_box/glass_box_0253.ply",
+        "glass_box/glass_box_0254.ply",
+        "glass_box/glass_box_0255.ply",
+        "glass_box/glass_box_0256.ply",
+        "glass_box/glass_box_0257.ply",
+        "glass_box/glass_box_0258.ply",
+        "glass_box/glass_box_0259.ply",
+        "glass_box/glass_box_0260.ply",
+        "glass_box/glass_box_0261.ply",
+        "glass_box/glass_box_0262.ply",
+        "glass_box/glass_box_0263.ply",
+        "glass_box/glass_box_0264.ply",
+        "glass_box/glass_box_0265.ply",
+        "glass_box/glass_box_0266.ply",
+        "glass_box/glass_box_0267.ply",
+        "glass_box/glass_box_0268.ply",
+        "glass_box/glass_box_0269.ply",
+        "glass_box/glass_box_0270.ply",
+        "glass_box/glass_box_0271.ply"
+      ],
+      "false": [
+        "airplane/airplane_0001.ply",
+        "airplane/airplane_0002.ply",
+        "airplane/airplane_0004.ply",
+        "airplane/airplane_0005.ply",
+        "airplane/airplane_0007.ply",
+        "airplane/airplane_0009.ply",
+        "airplane/airplane_0011.ply",
+        "airplane/airplane_0012.ply",
+        "airplane/airplane_0016.ply",
+        "airplane/airplane_0017.ply",
+        "airplane/airplane_0020.ply",
+        "airplane/airplane_0023.ply",
+        "airplane/airplane_0024.ply",
+        "airplane/airplane_0028.ply",
+        "airplane/airplane_0032.ply",
+        "airplane/airplane_0037.ply",
+        "airplane/airplane_0039.ply",
+        "airplane/airplane_0048.ply",
+        "airplane/airplane_0052.ply",
+        "airplane/airplane_0054.ply",
+        "airplane/airplane_0055.ply",
+        "airplane/airplane_0056.ply",
+        "airplane/airplane_0058.ply",
+        "airplane/airplane_0059.ply",
+        "airplane/airplane_0060.ply",
+        "airplane/airplane_0064.ply",
+        "airplane/airplane_0065.ply",
+        "airplane/airplane_0066.ply",
+        "airplane/airplane_0067.ply",
+        "airplane/airplane_0068.ply",
+        "airplane/airplane_0071.ply",
+        "airplane/airplane_0075.ply",
+        "airplane/airplane_0076.ply",
+        "airplane/airplane_0077.ply",
+        "airplane/airplane_0082.ply",
+        "airplane/airplane_0085.ply",
+        "airplane/airplane_0086.ply",
+        "airplane/airplane_0089.ply",
+        "airplane/airplane_0097.ply",
+        "airplane/airplane_0098.ply",
+        "airplane/airplane_0101.ply",
+        "bench/bench_0002.ply"
+      ]
+    },
+    "need_correction": [
+      "airplane/airplane_0001.ply",
+      "airplane/airplane_0002.ply",
+      "airplane/airplane_0004.ply",
+      "airplane/airplane_0005.ply",
+      "airplane/airplane_0007.ply",
+      "airplane/airplane_0009.ply",
+      "airplane/airplane_0011.ply",
+      "airplane/airplane_0012.ply",
+      "airplane/airplane_0016.ply",
+      "airplane/airplane_0017.ply",
+      "airplane/airplane_0020.ply",
+      "airplane/airplane_0023.ply",
+      "airplane/airplane_0024.ply",
+      "airplane/airplane_0028.ply",
+      "airplane/airplane_0032.ply",
+      "airplane/airplane_0037.ply",
+      "airplane/airplane_0039.ply",
+      "airplane/airplane_0048.ply",
+      "airplane/airplane_0052.ply",
+      "airplane/airplane_0054.ply",
+      "airplane/airplane_0055.ply",
+      "airplane/airplane_0056.ply",
+      "airplane/airplane_0058.ply",
+      "airplane/airplane_0059.ply",
+      "airplane/airplane_0060.ply",
+      "airplane/airplane_0064.ply",
+      "airplane/airplane_0065.ply",
+      "airplane/airplane_0066.ply",
+      "airplane/airplane_0067.ply",
+      "airplane/airplane_0068.ply",
+      "airplane/airplane_0071.ply",
+      "airplane/airplane_0075.ply",
+      "airplane/airplane_0076.ply",
+      "airplane/airplane_0077.ply",
+      "airplane/airplane_0082.ply",
+      "airplane/airplane_0085.ply",
+      "airplane/airplane_0086.ply",
+      "airplane/airplane_0089.ply",
+      "airplane/airplane_0097.ply",
+      "airplane/airplane_0098.ply",
+      "airplane/airplane_0101.ply",
+      "bench/bench_0002.ply"
+    ]
+  },
+  "stats": {
+    "total": 378,
+    "version": "2.0",
+    "by_category": {
+      "airplane": {
+        "total": 101,
+        "K_distribution": {
+          "1": 101
+        }
+      },
+      "chair": {
+        "total": 2,
+        "K_distribution": {
+          "1": 2
+        }
+      },
+      "glass_box": {
+        "total": 271,
+        "K_distribution": {
+          "4": 271
+        }
+      },
+      "bowl": {
+        "total": 2,
+        "K_distribution": {
+          "0": 2
+        }
+      },
+      "bench": {
+        "total": 2,
+        "K_distribution": {
+          "2": 1,
+          "1": 1
+        }
+      }
+    },
+    "by_K": {
+      "1": 104,
+      "4": 271,
+      "0": 2,
+      "2": 1
+    },
+    "aligned_count": 336,
+    "need_correction_count": 42
+  }
+}
