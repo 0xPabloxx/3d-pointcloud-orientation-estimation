@@ -1697,3 +1697,303 @@ python data_annotation/annotate_symmetry_web_v2.py --port 8051
 
 ---
 
+## 🧮 Von Mises 分布工具函数（PyTorch 实现）
+
+> 参考来源：deep_direct_stat (ECCV 2018)，已转换为 PyTorch
+
+### 1. 角度表示转换
+
+```python
+import torch
+import numpy as np
+
+def deg2bit(angles_deg: torch.Tensor) -> torch.Tensor:
+    """度数 → biternion (cos, sin)
+
+    Args:
+        angles_deg: 角度（度），shape (*)
+    Returns:
+        biternion 表示，shape (*, 2)
+    """
+    angles_rad = torch.deg2rad(angles_deg)
+    return torch.stack([torch.cos(angles_rad), torch.sin(angles_rad)], dim=-1)
+
+def bit2deg(angles_bit: torch.Tensor) -> torch.Tensor:
+    """biternion (cos, sin) → 度数 [0, 360)
+
+    Args:
+        angles_bit: biternion 表示，shape (*, 2)
+    Returns:
+        角度（度），shape (*)
+    """
+    return (torch.rad2deg(torch.atan2(angles_bit[..., 1], angles_bit[..., 0])) + 360) % 360
+
+def rad2bit(angles_rad: torch.Tensor) -> torch.Tensor:
+    """弧度 → biternion (cos, sin)"""
+    return torch.stack([torch.cos(angles_rad), torch.sin(angles_rad)], dim=-1)
+
+def bit2rad(angles_bit: torch.Tensor) -> torch.Tensor:
+    """biternion (cos, sin) → 弧度 [-π, π]"""
+    return torch.atan2(angles_bit[..., 1], angles_bit[..., 0])
+```
+
+### 2. Mean Absolute Angular Deviation (MAAD)
+
+```python
+def maad_from_deg(pred_deg: torch.Tensor, target_deg: torch.Tensor) -> torch.Tensor:
+    """计算平均绝对角度偏差（处理周期性边界）
+
+    Args:
+        pred_deg: 预测角度（度），shape (*)
+        target_deg: 目标角度（度），shape (*)
+    Returns:
+        角度误差（度），shape (*)，范围 [0, 180]
+    """
+    diff_rad = torch.deg2rad(target_deg - pred_deg)
+    # 用 atan2(sin, cos) 处理周期性，结果在 [-π, π]
+    wrapped_diff = torch.atan2(torch.sin(diff_rad), torch.cos(diff_rad))
+    return torch.rad2deg(torch.abs(wrapped_diff))
+
+def maad_from_bit(pred_bit: torch.Tensor, target_bit: torch.Tensor) -> torch.Tensor:
+    """从 biternion 表示计算 MAAD
+
+    Args:
+        pred_bit: 预测 (cos, sin)，shape (*, 2)，需归一化
+        target_bit: 目标 (cos, sin)，shape (*, 2)，需归一化
+    Returns:
+        角度误差（度），shape (*)
+    """
+    # 用点积计算 cos(θ_pred - θ_target)
+    cos_diff = (pred_bit * target_bit).sum(dim=-1).clamp(-1, 1)
+    return torch.rad2deg(torch.acos(cos_diff))
+```
+
+### 3. Kappa 参数解释
+
+```python
+from scipy.special import i0 as bessel_i0, i1 as bessel_i1
+
+def kappa_to_stddev_deg(kappa: float) -> float:
+    """将 von Mises 的 kappa 转换为等效标准差（度）
+
+    公式: σ = sqrt(1 - I₁(κ)/I₀(κ))，结果为弧度
+
+    Args:
+        kappa: 集中度参数（越大越集中）
+    Returns:
+        等效标准差（度）
+
+    常用参考值:
+        kappa=1   → σ ≈ 40.5°（很分散）
+        kappa=5   → σ ≈ 18.7°
+        kappa=10  → σ ≈ 13.1°
+        kappa=20  → σ ≈ 9.2°
+        kappa=50  → σ ≈ 5.8°
+        kappa=100 → σ ≈ 4.1°（很集中）
+    """
+    if kappa < 1e-6:
+        return 180.0 / np.sqrt(3)  # 均匀分布的标准差
+    ratio = bessel_i1(kappa) / bessel_i0(kappa)
+    std_rad = np.sqrt(1 - ratio)
+    return np.rad2deg(std_rad)
+
+# PyTorch 版本（用于训练时监控）
+def kappa_to_stddev_deg_torch(kappa: torch.Tensor) -> torch.Tensor:
+    """PyTorch 版本的 kappa → stddev 转换（近似）
+
+    使用近似公式: σ ≈ 1/sqrt(kappa) （对 kappa > 2 较准确）
+    """
+    # 防止除零
+    kappa_safe = kappa.clamp(min=0.1)
+    std_rad = 1.0 / torch.sqrt(kappa_safe)
+    return torch.rad2deg(std_rad)
+```
+
+### 4. 混合 von Mises 采样
+
+```python
+def sample_von_mises_mixture(
+    mu_rad: torch.Tensor,
+    kappa: torch.Tensor,
+    weights: torch.Tensor,
+    n_samples: int = 100
+) -> torch.Tensor:
+    """从混合 von Mises 分布采样
+
+    Args:
+        mu_rad: 各峰均值（弧度），shape (K,)
+        kappa: 各峰集中度，shape (K,)
+        weights: 混合权重（和为1），shape (K,)
+        n_samples: 采样数量
+
+    Returns:
+        采样角度（弧度），shape (n_samples,)
+    """
+    # 转为 numpy 进行采样（torch 没有 von Mises 采样）
+    mu_np = mu_rad.detach().cpu().numpy()
+    kappa_np = kappa.detach().cpu().numpy()
+    weights_np = weights.detach().cpu().numpy()
+
+    # 根据权重选择峰
+    weights_np = np.clip(weights_np - 1e-4, 0, 1)  # 防止数值问题
+    weights_np = weights_np / weights_np.sum()
+    component_ids = np.random.choice(len(weights_np), size=n_samples, p=weights_np)
+
+    # 从选中的峰采样
+    samples = np.array([
+        np.random.vonmises(mu_np[cid], kappa_np[cid])
+        for cid in component_ids
+    ])
+
+    return torch.from_numpy(samples).float()
+
+def sample_von_mises_mixture_batch(
+    mu_rad: torch.Tensor,
+    kappa: torch.Tensor,
+    weights: torch.Tensor,
+    n_samples: int = 100
+) -> torch.Tensor:
+    """批量版本：为每个样本采样
+
+    Args:
+        mu_rad: shape (B, K)
+        kappa: shape (B, K)
+        weights: shape (B, K)
+        n_samples: 每个样本的采样数
+
+    Returns:
+        采样角度，shape (B, n_samples)
+    """
+    B = mu_rad.shape[0]
+    samples = []
+    for b in range(B):
+        s = sample_von_mises_mixture(
+            mu_rad[b], kappa[b], weights[b], n_samples
+        )
+        samples.append(s)
+    return torch.stack(samples, dim=0)
+```
+
+### 5. Maximum Expected Utility (MEU) 点估计
+
+```python
+def maximum_expected_utility(samples_deg: torch.Tensor) -> torch.Tensor:
+    """从多个采样中选择最优点估计
+
+    思路：选择与其他所有采样的平均角度距离最小的那个
+
+    Args:
+        samples_deg: 采样角度（度），shape (B, n_samples) 或 (n_samples,)
+
+    Returns:
+        MEU 点估计（度），shape (B,) 或 scalar
+    """
+    if samples_deg.dim() == 1:
+        # 单样本情况
+        n = samples_deg.shape[0]
+        # 计算所有配对的 MAAD
+        samples_expanded = samples_deg.unsqueeze(0).expand(n, -1)  # (n, n)
+        samples_t = samples_deg.unsqueeze(1).expand(-1, n)          # (n, n)
+        maad_matrix = maad_from_deg(samples_expanded, samples_t)    # (n, n)
+        # 每个采样到其他所有采样的平均距离
+        mean_dist = maad_matrix.mean(dim=1)
+        # 选择距离最小的
+        best_idx = mean_dist.argmin()
+        return samples_deg[best_idx]
+    else:
+        # 批量情况
+        return torch.stack([
+            maximum_expected_utility(samples_deg[b])
+            for b in range(samples_deg.shape[0])
+        ])
+
+def mvm_to_point_estimate(
+    mu: torch.Tensor,
+    kappa: torch.Tensor,
+    weights: torch.Tensor,
+    n_samples: int = 100
+) -> torch.Tensor:
+    """从 MvM 预测获得点估计
+
+    Args:
+        mu: 预测均值 (cos, sin)，shape (B, K, 2)
+        kappa: 预测集中度，shape (B, K)
+        weights: 混合权重，shape (B, K)
+        n_samples: MEU 采样数
+
+    Returns:
+        点估计角度（度），shape (B,)
+    """
+    # 转换为弧度
+    mu_rad = torch.atan2(mu[..., 1], mu[..., 0])  # (B, K)
+
+    # 采样
+    samples_rad = sample_von_mises_mixture_batch(mu_rad, kappa, weights, n_samples)
+    samples_deg = torch.rad2deg(samples_rad)
+
+    # MEU 估计
+    return maximum_expected_utility(samples_deg)
+```
+
+### 6. 评估 MvM 预测的完整流程
+
+```python
+def evaluate_mvm_predictions(
+    mu: torch.Tensor,
+    kappa: torch.Tensor,
+    weights: torch.Tensor,
+    target_bit: torch.Tensor,
+    n_samples: int = 100
+) -> dict:
+    """评估 MvM 预测质量
+
+    Args:
+        mu: 预测均值 (cos, sin)，shape (B, K, 2)
+        kappa: 预测集中度，shape (B, K)
+        weights: 混合权重，shape (B, K)
+        target_bit: GT (cos, sin)，shape (B, 2)
+        n_samples: MEU 采样数
+
+    Returns:
+        dict: {
+            'maad_mean': 平均角度误差（度）,
+            'maad_std': 标准差,
+            'kappa_mean': 平均 kappa,
+            'equiv_stddev': 等效标准差（度）
+        }
+    """
+    # 获得点估计
+    pred_deg = mvm_to_point_estimate(mu, kappa, weights, n_samples)
+    target_deg = bit2deg(target_bit)
+
+    # 计算 MAAD
+    maad = maad_from_deg(pred_deg, target_deg)
+
+    # Kappa 统计
+    mean_kappa = kappa.mean().item()
+
+    return {
+        'maad_mean': maad.mean().item(),
+        'maad_std': maad.std().item(),
+        'kappa_mean': mean_kappa,
+        'equiv_stddev': kappa_to_stddev_deg(mean_kappa)
+    }
+```
+
+### 使用示例
+
+```python
+# 假设模型输出
+mu = model_output['mu']           # (B, K, 2)，已归一化
+kappa = model_output['kappa']     # (B, K)
+weights = model_output['weights'] # (B, K)，softmax 后
+
+# 评估
+target_bit = batch['target']  # (B, 2)
+metrics = evaluate_mvm_predictions(mu, kappa, weights, target_bit)
+print(f"MAAD: {metrics['maad_mean']:.2f}° ± {metrics['maad_std']:.2f}°")
+print(f"Mean κ: {metrics['kappa_mean']:.1f} (≈ {metrics['equiv_stddev']:.1f}° std)")
+```
+
+---
+
