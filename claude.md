@@ -2,6 +2,48 @@
 # 东京大学 M2 毕业论文实验项目
 # 当前任务：训练glassbox模型，输出4峰MvM分布
 
+---
+
+## 📋 精简版速查 (TL;DR)
+
+### 🚨 强制规则（违反必停！）
+1. **工作目录**：始终在 `/home/pablo/ForwardNet-claude/`，分支 `claude`
+2. **文档位置**：只有 `claude.md` 和 `project_structure.md` 放根目录，其他 markdown 放 `docs/`
+3. **数据集划分**：seed=42，train/val/test 严格分离，增强只用于训练集，测试集只评估一次
+
+### 🎯 核心目标
+用混合 von Mises (MvM) 分布预测 3D 点云的正面方向概率分布，处理多峰/单峰/完全对称物体。
+
+### 🔧 常用工具
+```bash
+# 论文截图工具
+python pointcloud_screenshot_viewer.py  # http://localhost:8051
+
+# 对称性标注工具
+python data_annotation/annotate_symmetry_web_v3.py  # http://localhost:8052
+```
+
+### 📁 关键文件
+- 标注数据：`data_annotation/symmetry_annotations.json`
+- 数据集：`data/full_mn40_normal_resampled_ply/`
+- 训练脚本：`train_*.py`
+
+### ⚠️ 训练前必须
+1. 告知用户：训练内容、预计时间、资源占用
+2. **等待确认后再开始**
+3. 有可视化输出（loss曲线、定期checkpoint）
+4. 发现异常立即停止报告
+
+### 📝 命名规范
+- 文档：`analysis_YYYYMMDD_<topic>.md`、`experiment_YYYYMMDD_<name>_results.md`
+- Python：`<功能>_<模型>_<数据>.py`（如 `train_pointnetpp_mvm_glassbox.py`）
+- 文件头必须有 docstring（模型/数据/loss/用法）
+
+### 🗣️ 语言
+如果用户没有特别要求其他语言，请用中文回答。
+
+---
+
 ## 🚨 强制工作规范（必须遵守）
 
 ### 规则1: 工作目录约束
