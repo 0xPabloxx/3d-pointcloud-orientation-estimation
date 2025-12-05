@@ -1,0 +1,46 @@
+# Baseline: Direct regression of (cos θ, sin θ)
+# No von Mises distribution, simplest approach
+
+name: baseline_direct
+seed: 42
+
+# Model configuration
+backbone:
+  type: pointnet++
+  output_dim: 1024
+
+head:
+  type: direct
+  hidden_dim: 256
+
+# Loss configuration
+loss:
+  type: direct_cosine  # or 'direct_mse'
+
+# Data configuration
+data:
+  annotation_file: data_annotation/symmetry_annotations.json
+  data_dir: data/full_mn40_normal_resampled_ply
+  num_points: 1024
+  k_filter: null  # null = all K values; [1] = only K=1; [1, 4] = K=1 or K=4
+  align_pointcloud: true
+  augment: true
+  num_rotations: 12
+  num_workers: 4
+
+# Training configuration
+training:
+  batch_size: 16
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.0001
+  save_every: 50
+  scheduler:
+    enabled: true
+    step_size: 50
+    gamma: 0.5
+
+# WandB configuration
+wandb:
+  enabled: true
+  project: forwardnet

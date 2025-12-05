@@ -1,0 +1,48 @@
+# 4-peak von Mises distribution with learnable weights
+# For objects with 90° symmetry, but allowing the network to learn
+# which peaks are more important
+
+name: vm_4peak_learnable
+seed: 42
+
+# Model configuration
+backbone:
+  type: pointnet++
+  output_dim: 1024
+
+head:
+  type: vm_4peak_learnable
+  hidden_dim: 256
+  kappa_init: 5.0  # Initial concentration parameter
+
+# Loss configuration
+loss:
+  type: mvm_nll  # Mixture von Mises NLL
+
+# Data configuration
+data:
+  annotation_file: data_annotation/symmetry_annotations.json
+  data_dir: data/full_mn40_normal_resampled_ply
+  num_points: 1024
+  k_filter: [4]  # Only 4-front objects
+  align_pointcloud: true
+  augment: true
+  num_rotations: 12
+  num_workers: 4
+
+# Training configuration
+training:
+  batch_size: 16
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.0001
+  save_every: 50
+  scheduler:
+    enabled: true
+    step_size: 50
+    gamma: 0.5
+
+# WandB configuration
+wandb:
+  enabled: true
+  project: forwardnet
