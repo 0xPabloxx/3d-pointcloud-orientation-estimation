@@ -341,7 +341,7 @@ python train_fixed_4peak.py \
 | Exp-1 | Pure KL (λ_KL=1, λ_κ=0, λ_μ=0) | `fixed4peak_pn++_paired-init_kl_1140samples` | **0.32** | **0.98** | ✅ 完成 |
 | Exp-2 | KL + κ (λ_KL=1, λ_κ=5, λ_μ=0) | `fixed4peak_pn++_kl+kappa_20251210_164456` | 0.45 | 1.52 | ✅ 完成 |
 | Exp-3 | KL + κ + μ (λ_KL=1, λ_κ=5, λ_μ=2) | `fixed4peak_pn++_kl+kappa+mu_20251210_170618` | 0.40 | 1.24 | ✅ 完成 |
-| Exp-4 | **μ + κ only** (λ_KL=0, λ_κ=5, λ_μ=2) | TBD | - | - | 📋 待运行 |
+| Exp-4 | **μ + κ only** (λ_KL=0, λ_κ=5, λ_μ=2) | `fixed4peak_pn++_kappa5.0_mu2.0_20251210_175008` | N/A | N/A | ✅ 完成 |
 
 ### 关键发现
 
@@ -360,25 +360,24 @@ python train_fixed_4peak.py \
 - 但仍不如 Pure KL (0.98)
 - **原因**: KL Loss 和参数监督目标冲突
 
-### 下一步计划
+### Exp-4 结果 (μ + κ only)
 
-**Exp-4: μ + κ only (移除 KL)**
-```bash
-python train_fixed_4peak.py --epochs 100 --lambda_kl 0 --lambda_kappa 5 --lambda_mu 2
-```
+**最终 metrics (100 epochs)**:
+- Val κ_loss: **0.042**
+- Val μ_loss: **0.082**
+- Best val loss: **0.352**
 
-**假设**: 移除 KL Loss 后：
-1. 消除 κ→0 的倾向
-2. 直接监督峰参数
-3. 简化优化目标
+**结论**: 移除 KL Loss 后训练稳定，κ 和 μ 都能正常学习。
+
+详细分析见 `docs/fixed_4peak_experiments_20251210.md`
 
 ### Checkpoints 目录结构
 ```
 checkpoints/
-├── fixed4peak_pn++_paired-init_kl_1140samples/   # Exp-1
-├── fixed4peak_pn++_kl+kappa_20251210_164456/     # Exp-2
-├── fixed4peak_pn++_kl+kappa+mu_20251210_170618/  # Exp-3
-└── fixed4peak_pn++_kappa5.0_mu2.0_YYYYMMDD_*/    # Exp-4 (待运行)
+├── fixed4peak_pn++_paired-init_kl_1140samples/      # Exp-1
+├── fixed4peak_pn++_kl+kappa_20251210_164456/        # Exp-2
+├── fixed4peak_pn++_kl+kappa+mu_20251210_170618/     # Exp-3
+└── fixed4peak_pn++_kappa5.0_mu2.0_20251210_175008/  # Exp-4
 ```
 
 ---
