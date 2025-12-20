@@ -63,7 +63,8 @@ class FixedWeightDiscretizedKLLoss(nn.Module):
         eps: float = 1e-10,
         lambda_kl: float = 1.0,     # KL 权重 (设为 0 则不使用 KL)
         lambda_kappa: float = 5.0,  # κ 监督权重
-        lambda_mu: float = 2.0      # μ 监督权重 (角度 loss 范围 [0, 2])
+        lambda_mu: float = 2.0,     # μ 监督权重 (角度 loss 范围 [0, 2])
+        reverse_kl: bool = False    # 新增：使用 Reverse KL
     ):
         super().__init__()
         self.n_bins = n_bins
@@ -72,6 +73,7 @@ class FixedWeightDiscretizedKLLoss(nn.Module):
         self.lambda_kl = lambda_kl
         self.lambda_kappa = lambda_kappa
         self.lambda_mu = lambda_mu
+        self.reverse_kl = reverse_kl
 
         # 预计算网格点 [0, 2π)
         grid = torch.linspace(0, 2 * np.pi, n_bins + 1)[:-1]  # 不包含 2π (与0重复)
@@ -211,7 +213,7 @@ class FixedWeightDiscretizedKLLoss(nn.Module):
             angle_cost = 1 - torch.cos(angle_diff)  # [0, 2]
 
             # κ 差异作为辅助 cost (归一化到 [0, 1])
-            kappa_diff = torch.abs(pred_kappas[b].unsqueeze(1) - gt_kappas[b].unsqueeze(0)) / 50.0
+            kappa_diff = torch.abs(pred_kappas[b].unsqueeze(1) - gt_kappas[b].unsqueeze(0)) / 10.0
 
             # 总 cost
             cost_matrix = angle_cost + 0.1 * kappa_diff
@@ -277,8 +279,13 @@ class FixedWeightDiscretizedKLLoss(nn.Module):
             pred_pdf = pred_pdf + self.eps
             gt_pdf = gt_pdf + self.eps
 
-            # KL(GT || Pred)
-            kl_per_bin = gt_pdf * (torch.log(gt_pdf) - torch.log(pred_pdf))
+            if self.reverse_kl:
+                # Reverse KL: KL(Pred || GT) - 倾向于mode-seeking
+                kl_per_bin = pred_pdf * (torch.log(pred_pdf) - torch.log(gt_pdf))
+            else:
+                # Forward KL: KL(GT || Pred) - 倾向于mode-covering
+                kl_per_bin = gt_pdf * (torch.log(gt_pdf) - torch.log(pred_pdf))
+
             kl_div = kl_per_bin.sum(dim=1) * self.bin_width
             kl_loss = kl_div.mean()
         else:
@@ -290,8 +297,8 @@ class FixedWeightDiscretizedKLLoss(nn.Module):
 
         # === 3. κ 监督 Loss ===
         # Smooth L1 loss for κ (对大误差更鲁棒)
-        # 归一化到 [0, 1] 范围 (GT κ 最大为 50)
-        kappa_loss = F.smooth_l1_loss(matched_pred_kappas / 50.0, matched_gt_kappas / 50.0)
+        # 归一化到 [0, 1] 范围 (GT κ 最大为 10)
+        kappa_loss = F.smooth_l1_loss(matched_pred_kappas / 10.0, matched_gt_kappas / 10.0)
 
         # === 4. μ 监督 Loss ===
         # 角度距离: 1 - cos(θ_pred - θ_gt), 范围 [0, 2]
@@ -635,26 +642,15 @@ class Fixed4PeakHead(nn.Module):
         结构：
         - Peak 1: θ1 (随机)
         - Peak 2: θ2 = θ1 + 90° (与 Peak 1 垂直)
-        - Peak 3: θ1 + 180° (与 Peak 1 相对)
-        - Peak 4: θ2 + 180° (与 Peak 2 相对)
+        - Peak 3: 180° (与 Peak 1 相对)
+        - Peak 4: 270° (与 Peak 2 相对)
+
+        使用固定角度以确保实验可重现性。
         """
         with torch.no_grad():
-            # 随机选择第一对的基础角度
-            theta1 = torch.rand(1).item() * 360  # [0, 360)
-
-            # 第二对与第一对垂直
-            theta2 = theta1 + 90
-
-            # 4 个峰的角度：成对相对
-            angles_deg = torch.tensor([
-                theta1,           # Peak 1
-                theta2,           # Peak 2 (与 Peak 1 垂直)
-                theta1 + 180,     # Peak 3 (与 Peak 1 相对)
-                theta2 + 180,     # Peak 4 (与 Peak 2 相对)
-            ], dtype=torch.float32)
-
-            # 归一化到 [0, 360)
-            angles_deg = angles_deg % 360
+            # 固定角度初始化: [0°, 90°, 180°, 270°]
+            # 确保消融实验的可重现性
+            angles_deg = torch.tensor([0.0, 90.0, 180.0, 270.0], dtype=torch.float32)
 
             # 转换为弧度
             angles_rad = torch.deg2rad(angles_deg)
@@ -675,37 +671,46 @@ class Fixed4PeakHead(nn.Module):
             # 将 weight 初始化为较小的值，让 bias 主导初始输出
             nn.init.xavier_uniform_(self.mu_head.weight, gain=0.1)
 
-            print(f"  μ head initialized with PAIRED directions:")
-            print(f"    Pair A (Peak 1 & 3): {angles_deg[0].item():.1f}° ↔ {angles_deg[2].item():.1f}°")
-            print(f"    Pair B (Peak 2 & 4): {angles_deg[1].item():.1f}° ↔ {angles_deg[3].item():.1f}°")
-            for i in range(4):
-                print(f"    Peak {i+1}: {angles_deg[i].item():.1f}° "
-                      f"(cos={cos_vals[i].item():.3f}, sin={sin_vals[i].item():.3f})")
+            print(f"  μ head initialized with FIXED directions: [0°, 90°, 180°, 270°]")
 
         # 初始化 κ head
-        # GT κ 范围: 0 (uniform) 到 50 (集中)
-        # softplus(x) ≈ x for x >> 0
-        # 初始化 bias 为 25，让初始输出接近 GT 的中间值
+        # GT κ 范围: 0 (无方向) 到 10 (有方向)
+        # 初始化 bias=5，使初始 κ≈5，偏向多数样本
         self._init_kappa_bias()
 
     def _init_kappa_bias(self):
         """
-        初始化 κ head 的 bias，使初始输出在合理范围内
+        初始化 κ head 的 bias，使初始输出 κ≈5
 
-        GT κ 范围: 0-50
-        softplus(x) ≈ x for x >> 0
-        设置 bias = 25，让初始输出 ≈ 25
+        GT分布: 60%样本需要κ=10 (1_front/2_fronts/4_fronts)
+                40%样本需要κ=0  (symmetric/no_front)
+
+        选择 bias=5 的理由:
+        - softplus(5) ≈ 5.01，初始 κ≈5
+        - 到 κ=10 只需调整 +5
+        - 偏向多数样本(60%需要高κ)
+        - 简单直观: bias值 ≈ 期望的初始κ值
         """
         with torch.no_grad():
-            # 设置 bias 为 25
-            self.kappa_head.bias.data.fill_(25.0)
+            self.kappa_head.bias.data.fill_(5.0)
 
             # 将 weight 初始化为较小的值，让 bias 主导初始输出
             nn.init.xavier_uniform_(self.kappa_head.weight, gain=0.1)
 
-            print(f"  κ head initialized with bias=25.0 (initial output ≈ 25)")
+            print(f"  κ head initialized with bias=5.0 (initial κ≈5)")
 
-    def forward(self, x):
+    def forward(self, x, min_kappa: float = 0.0):
+        """
+        Forward pass
+
+        Args:
+            x: (B, in_channels) - 编码器输出特征
+            min_kappa: κ 的硬性下限 (默认 0，设为 5.0 可强制尖峰分布)
+
+        Returns:
+            mu: (B, 4, 2) - 4个峰的方向
+            kappa: (B, 4) - 4个峰的集中度 (≥ min_kappa)
+        """
         # x: (B, in_channels)
         x = F.relu(self.bn1(self.fc1(x)))
         x = self.dropout(x)
@@ -715,8 +720,9 @@ class Fixed4PeakHead(nn.Module):
         mu = self.mu_head(x).view(-1, 4, 2)
         mu = F.normalize(mu, dim=-1)
 
-        # κ: (B, 4) -> softplus确保非负
-        kappa = F.softplus(self.kappa_head(x))
+        # κ: (B, 4) -> softplus确保非负 + 硬性下限
+        # 当 min_kappa > 0 时，强制分布始终尖峰，避免 κ 坍塌
+        kappa = F.softplus(self.kappa_head(x)) + min_kappa
 
         return mu, kappa
 
@@ -724,11 +730,20 @@ class Fixed4PeakHead(nn.Module):
 class Fixed4PeakModel(nn.Module):
     """完整的Fixed 4-Peak模型 (使用PointNet++编码器)"""
 
-    def __init__(self, encoder_dim: int = 1024):
+    def __init__(self, encoder_dim: int = 1024, min_kappa: float = 0.0):
+        """
+        Args:
+            encoder_dim: 编码器输出维度
+            min_kappa: κ 的硬性下限 (默认 0，设为 5.0 可强制尖峰分布防止坍塌)
+        """
         super().__init__()
+        self.min_kappa = min_kappa
         # 使用 PointNet++ 编码器 (层级特征学习)
         self.encoder = PointNetPlusPlusEncoder(in_channels=3, out_channels=encoder_dim)
         self.head = Fixed4PeakHead(in_channels=encoder_dim)
+
+        if min_kappa > 0:
+            print(f"  κ 硬性下限: {min_kappa} (强制尖峰分布，防止 κ 坍塌)")
 
     def forward(self, points):
         """
@@ -737,10 +752,10 @@ class Fixed4PeakModel(nn.Module):
 
         Returns:
             mu: (B, 4, 2)
-            kappa: (B, 4)
+            kappa: (B, 4) - 值 ≥ min_kappa
         """
         features = self.encoder(points)
-        mu, kappa = self.head(features)
+        mu, kappa = self.head(features, min_kappa=self.min_kappa)
         return mu, kappa
 
 
@@ -752,18 +767,24 @@ class Trainer:
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         # 生成清晰的实验名称
-        # 格式: fixed4peak_pn++_{loss_config}_{timestamp}
+        # 如果指定了exp_name则使用，否则自动生成
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        loss_parts = []
-        if args.lambda_kl > 0:
-            loss_parts.append(f"kl{args.lambda_kl}")
-        if args.lambda_kappa > 0:
-            loss_parts.append(f"kappa{args.lambda_kappa}")
-        if args.lambda_mu > 0:
-            loss_parts.append(f"mu{args.lambda_mu}")
-        loss_config = "_".join(loss_parts) if loss_parts else "no_loss"
+        if args.exp_name:
+            self.exp_name = f"{args.exp_name}_{timestamp}"
+        else:
+            # 格式: fixed4peak_pn++_{loss_config}_{timestamp}
+            loss_parts = []
+            if args.lambda_kl > 0:
+                loss_parts.append(f"kl{args.lambda_kl}")
+            if args.lambda_kappa > 0:
+                loss_parts.append(f"kappa{args.lambda_kappa}")
+            if args.lambda_mu > 0:
+                loss_parts.append(f"mu{args.lambda_mu}")
+            if args.min_kappa > 0:
+                loss_parts.append(f"minK{args.min_kappa}")
+            loss_config = "_".join(loss_parts) if loss_parts else "no_loss"
+            self.exp_name = f"fixed4peak_pn++_{loss_config}_{timestamp}"
 
-        self.exp_name = f"fixed4peak_pn++_{loss_config}_{timestamp}"
         self.output_dir = os.path.join('checkpoints', self.exp_name)
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -777,13 +798,15 @@ class Trainer:
             split='train',
             num_points=args.num_points,
             augment=True,
-            augment_factor=args.augment_factor
+            augment_factor=args.augment_factor,
+            categories=args.categories  # 类别过滤
         )
         self.val_dataset = Fixed4PeakDataset(
             mode='random',
             split='val',
             num_points=args.num_points,
-            augment=False  # 验证集不增强
+            augment=False,  # 验证集不增强
+            categories=args.categories  # 类别过滤
         )
 
         # DataLoader
@@ -805,14 +828,18 @@ class Trainer:
         )
 
         # 模型
-        self.model = Fixed4PeakModel(encoder_dim=args.encoder_dim).to(self.device)
+        self.model = Fixed4PeakModel(
+            encoder_dim=args.encoder_dim,
+            min_kappa=args.min_kappa
+        ).to(self.device)
 
         # Loss: 可配置的 loss 组合
         self.criterion = FixedWeightDiscretizedKLLoss(
             n_bins=360,
             lambda_kl=args.lambda_kl,
             lambda_kappa=args.lambda_kappa,
-            lambda_mu=args.lambda_mu
+            lambda_mu=args.lambda_mu,
+            reverse_kl=args.reverse_kl
         ).to(self.device)
 
         # Optimizer
@@ -829,21 +856,28 @@ class Trainer:
             eta_min=args.lr * 0.01
         )
 
-        # TensorBoard
-        self.writer = SummaryWriter(os.path.join(self.output_dir, 'tensorboard'))
-
-        # WandB
-        wandb.init(
-            project="forwardnet",
-            name=self.exp_name,
-            config=vars(args),
-            dir=self.output_dir
-        )
-        wandb.watch(self.model, log='all', log_freq=100)
-
         # 训练状态
         self.start_epoch = 0
         self.best_val_loss = float('inf')
+
+        # Resume from checkpoint (if specified)
+        if args.resume:
+            self._load_checkpoint(args.resume)
+
+        # TensorBoard
+        self.writer = SummaryWriter(os.path.join(self.output_dir, 'tensorboard'))
+
+        # WandB (可选)
+        self.use_wandb = args.wandb
+        if self.use_wandb:
+            wandb.init(
+                project=args.wandb_project,
+                name=self.exp_name,
+                config=vars(args),
+                dir=self.output_dir,
+                resume="allow" if args.resume else None
+            )
+            wandb.watch(self.model, log='all', log_freq=100)
 
         print(f"Device: {self.device}")
         print(f"Encoder: PointNet++ (SSG)")
@@ -854,7 +888,8 @@ class Trainer:
         loss_desc = f"λ_KL={args.lambda_kl}, λ_κ={args.lambda_kappa}, λ_μ={args.lambda_mu}"
         print(f"Loss: {loss_desc}")
         print(f"Output dir: {self.output_dir}")
-        print(f"WandB: {wandb.run.url}")
+        if self.use_wandb:
+            print(f"WandB: {wandb.run.url}")
 
     def train_epoch(self, epoch: int) -> dict:
         self.model.train()
@@ -922,14 +957,20 @@ class Trainer:
         # 平均
         avg_metrics = {k: np.mean(v) for k, v in metrics.items()}
 
-        # 打印按类别的结果
-        print("\n  Per-category KL divergence:")
+        # 计算per-category平均
+        avg_category_metrics = {}
+        print("\n  Per-category metrics:")
         for cat in Fixed4PeakDataset.CATEGORIES:
             if cat in category_metrics:
-                cat_kl = np.mean(category_metrics[cat]['kl_div'])
-                print(f"    {cat:12s}: KL={cat_kl:.4f}")
+                avg_category_metrics[cat] = {
+                    k: np.mean(v) for k, v in category_metrics[cat].items()
+                }
+                cat_kl = avg_category_metrics[cat]['kl_div']
+                cat_kappa = avg_category_metrics[cat]['kappa_loss']
+                cat_mu = avg_category_metrics[cat]['mu_loss']
+                print(f"    {cat:12s}: KL={cat_kl:.4f}, κ={cat_kappa:.4f}, μ={cat_mu:.4f}")
 
-        return avg_metrics
+        return avg_metrics, avg_category_metrics
 
     def train(self):
         print("\n" + "=" * 60)
@@ -949,7 +990,7 @@ class Trainer:
             train_time = time.time() - t0
 
             # Validate
-            val_metrics = self.validate()
+            val_metrics, val_category_metrics = self.validate()
             epoch_total_time = time.time() - t0
             epoch_times.append(epoch_total_time)
 
@@ -988,18 +1029,25 @@ class Trainer:
             self.writer.add_scalar('lr', lr, epoch)
 
             # WandB
-            wandb.log({
-                'epoch': epoch + 1,
-                'train/loss': train_metrics['loss'],
-                'train/kl_div': train_metrics['kl_div'],
-                'train/mu_loss': train_metrics['mu_loss'],
-                'train/kappa_loss': train_metrics['kappa_loss'],
-                'val/loss': val_metrics['loss'],
-                'val/kl_div': val_metrics['kl_div'],
-                'val/mu_loss': val_metrics['mu_loss'],
-                'val/kappa_loss': val_metrics['kappa_loss'],
-                'lr': lr
-            })
+            if self.use_wandb:
+                log_dict = {
+                    'epoch': epoch + 1,
+                    'train/loss': train_metrics['loss'],
+                    'train/kl_div': train_metrics['kl_div'],
+                    'train/mu_loss': train_metrics['mu_loss'],
+                    'train/kappa_loss': train_metrics['kappa_loss'],
+                    'val/loss': val_metrics['loss'],
+                    'val/kl_div': val_metrics['kl_div'],
+                    'val/mu_loss': val_metrics['mu_loss'],
+                    'val/kappa_loss': val_metrics['kappa_loss'],
+                    'lr': lr
+                }
+                # Per-category metrics
+                for cat, cat_metrics in val_category_metrics.items():
+                    log_dict[f'val/{cat}/kl_div'] = cat_metrics['kl_div']
+                    log_dict[f'val/{cat}/kappa_loss'] = cat_metrics['kappa_loss']
+                    log_dict[f'val/{cat}/mu_loss'] = cat_metrics['mu_loss']
+                wandb.log(log_dict)
 
             # Save checkpoint
             is_best = val_metrics['loss'] < self.best_val_loss
@@ -1015,7 +1063,26 @@ class Trainer:
         print("=" * 60)
 
         self.writer.close()
-        wandb.finish()
+        if self.use_wandb:
+            wandb.finish()
+
+    def _load_checkpoint(self, checkpoint_path: str):
+        """从checkpoint恢复训练状态"""
+        print(f"Loading checkpoint from: {checkpoint_path}")
+        checkpoint = torch.load(checkpoint_path, map_location=self.device)
+
+        self.model.load_state_dict(checkpoint['model_state_dict'])
+        self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+
+        # Scheduler state可选（新训练可能不需要）
+        if 'scheduler_state_dict' in checkpoint:
+            self.scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+
+        self.start_epoch = checkpoint.get('epoch', 0) + 1  # 从下一个epoch开始
+        self.best_val_loss = checkpoint.get('best_val_loss', float('inf'))
+
+        print(f"  Resumed from epoch {checkpoint.get('epoch', 'unknown')}")
+        print(f"  Best val loss so far: {self.best_val_loss:.6f}")
 
     def save_checkpoint(self, epoch: int, is_best: bool = False):
         checkpoint = {
@@ -1130,9 +1197,33 @@ def parse_args():
     parser.add_argument('--lambda_mu', type=float, default=2.0,
                         help='μ supervision weight')
 
+    # Model constraints
+    parser.add_argument('--min_kappa', type=float, default=0.0,
+                        help='κ 硬性下限 (设为 5.0 强制尖峰分布，防止 κ 坍塌)')
+
     # Test
     parser.add_argument('--test', action='store_true', help='Run test only')
     parser.add_argument('--checkpoint', type=str, default=None, help='Checkpoint for testing')
+
+    # Data filtering
+    parser.add_argument('--categories', type=str, nargs='+', default=None,
+                        help='只使用指定类别 (e.g., --categories 4_fronts 2_fronts)')
+
+    # KL direction
+    parser.add_argument('--reverse_kl', action='store_true',
+                        help='使用 Reverse KL: KL(Pred||GT) 而非 Forward KL: KL(GT||Pred)')
+
+    # Resume training
+    parser.add_argument('--resume', type=str, default=None,
+                        help='从checkpoint恢复训练')
+
+    # WandB logging
+    parser.add_argument('--wandb', action='store_true',
+                        help='启用WandB日志')
+    parser.add_argument('--wandb_project', type=str, default='forwardnet',
+                        help='WandB项目名')
+    parser.add_argument('--exp_name', type=str, default=None,
+                        help='实验名称 (默认自动生成)')
 
     return parser.parse_args()
 

@@ -33,6 +33,10 @@ __pycache__/
 # Logs
 *.log
 
+# Training outputs
+checkpoints/
+wandb/
+
 # Images (optional - uncomment if needed)
 # *.png
 # *.jpg

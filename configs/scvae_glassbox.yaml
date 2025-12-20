@@ -1,0 +1,54 @@
+# sCVAE (Stochastic CVAE) for implicit multi-peak prediction
+# Based on "Deep Directional Statistics" (Prokudin et al., ECCV 2018)
+# Goal: See if sCVAE can automatically learn 4 peaks on glassbox data
+
+name: scvae_glassbox
+seed: 42
+
+# Model configuration
+backbone:
+  type: pointnet++
+  output_dim: 1024
+
+head:
+  type: scvae
+  hidden_dim: 256
+  n_samples: 8          # Number of stochastic samples (implicit peaks)
+  noise_std: 1.0        # Noise injection strength (controls diversity)
+  share_decoder: true   # Share decoder across samples (original sCVAE design)
+  kappa_init: 5.0       # Initial concentration parameter
+
+# Loss configuration
+loss:
+  type: scvae_mc_multi_gt  # Monte Carlo NLL with multiple valid GTs
+  gamma: 0.1               # Uniform distribution mixture weight (robustness)
+  K: 4                     # Number of symmetric directions (90° symmetry)
+  mode: max                # 'max': best GT wins, 'sum': average over all GTs
+
+# Data configuration
+data:
+  annotation_file: data_annotation/symmetry_annotations.json
+  data_dir: data/full_mn40_normal_resampled_ply
+  num_points: 1024
+  k_filter: [4]         # Only 4-front objects (glassbox, nightstand, etc.)
+  align_pointcloud: true
+  augment: true
+  num_rotations: 12
+  num_workers: 4
+
+# Training configuration
+training:
+  batch_size: 16
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  save_every: 50
+  scheduler:
+    enabled: true
+    step_size: 50
+    gamma: 0.5
+
+# WandB configuration
+wandb:
+  enabled: true
+  project: forwardnet

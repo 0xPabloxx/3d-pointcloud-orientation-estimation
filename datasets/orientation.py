@@ -242,9 +242,9 @@ class OrientationDataset(Dataset):
                 - 'K': scalar, number of symmetric fronts
                 - 'file': file path string
         """
-        # Map index to sample and rotation
+        # Map index to sample (num_rotations expands the dataset size)
         sample_idx = idx // self.num_rotations
-        rot_idx = idx % self.num_rotations
+        # Note: rot_idx not used since rotation is now random
 
         sample = self.samples[sample_idx]
         file_path = self.data_dir / sample['file']
@@ -267,10 +267,12 @@ class OrientationDataset(Dataset):
             # Use original direction as GT
             gt_cos, gt_sin = direction_to_cossin(front_direction)
 
-        # Augmentation rotation (random rotation around Y)
+        # Augmentation rotation (random rotation around Y axis)
+        # Each sample gets a random rotation, making the dataset more diverse
         aug_angle = 0.0
-        if self.augment and rot_idx > 0:
-            aug_angle = 2 * math.pi * rot_idx / self.num_rotations
+        if self.augment:
+            # Random rotation angle sampled uniformly from [0, 2π)
+            aug_angle = np.random.uniform(0, 2 * math.pi)
             points = rotate_point_cloud_y(points, aug_angle)
             # Rotate GT direction accordingly
             new_angle = math.atan2(gt_sin, gt_cos) - aug_angle  # Note: negative because we rotate the points
