@@ -1,6 +1,6 @@
 # 点云对称性与方向标注报告
 
-**生成时间**: 2025-11-27 20:02:29
+**生成时间**: 2025-12-29 16:17:48
 
 **数据集**: /home/pablo/ForwardNet-claude/data/full_mn40_normal_resampled_ply
 
@@ -8,30 +8,36 @@
 
 ## 📊 标注统计
 
-- **总标注数**: 381
-- **需矫正数**: 44
+- **总标注数**: 3393
+- **需矫正数**: 382
 
 ### 对称性分布
 
 | 对称类型 | 数量 | 占比 |
 |---------|------|------|
-| 1个正面 | 107 | 28.1% |
-| 2个正面 | 1 | 0.3% |
-| 4个正面 | 271 | 71.1% |
-| 完全对称 | 2 | 0.5% |
+| 1个正面 | 1563 | 46.1% |
+| 2个正面 | 410 | 12.1% |
+| 4个正面 | 273 | 8.0% |
+| 完全对称 | 1 | 0.0% |
+| 旋转对称 | 805 | 23.7% |
+| 无正面 | 340 | 10.0% |
+| 没有正面 | 1 | 0.0% |
 
 ### 正面方向分布
 
 | 方向 | 数量 | 占比 | 状态 |
 |------|------|------|------|
-| +X | 8 | 2.1% | ⚠️ 需矫正 |
-| +Z | 5 | 1.3% | ⚠️ 需矫正 |
-| -X | 31 | 8.1% | ⚠️ 需矫正 |
-| -Z | 337 | 88.5% | ✅ 已对齐 |
+| +X | 93 | 2.7% | ⚠️ 需矫正 |
+| +Z | 45 | 1.3% | ⚠️ 需矫正 |
+| -X | 220 | 6.5% | ⚠️ 需矫正 |
+| -Z | 1866 | 55.0% | ✅ 已对齐 |
+| MULTI | 3 | 0.1% | ⚠️ 需矫正 |
+| N/A | 1145 | 33.7% | ⚠️ 需矫正 |
+| OBLIQUE | 21 | 0.6% | ⚠️ 需矫正 |
 
 ---
 
-## ⚠️ 需要矫正的数据（共44个）
+## ⚠️ 需要矫正的数据（共382个）
 
 | 文件 | 对称类型 | 当前方向 | 需要旋转 |
 |------|---------|----------|----------|
@@ -78,4 +84,342 @@
 | `airplane/airplane_0101.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
 | `airplane/airplane_0103.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
 | `airplane/airplane_0104.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0106.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0107.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0108.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0109.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0110.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0114.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0115.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0116.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0118.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0120.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0129.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0130.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0134.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0137.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0138.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0139.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0141.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0150.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0151.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0152.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0157.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0158.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0159.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0160.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0161.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0165.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0168.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0169.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0171.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0173.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0175.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0177.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0179.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `airplane/airplane_0184.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0188.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0190.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0205.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0207.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0212.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `airplane/airplane_0219.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `airplane/airplane_0220.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `airplane/airplane_0226.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0230.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0232.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `airplane/airplane_0233.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `airplane/airplane_0238.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `airplane/airplane_0239.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0001.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0002.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0003.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0004.ply` | 2个正面 | MULTI | 未知方向 |
+| `bathtub/bathtub_0005.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0006.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0007.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0008.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0009.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0010.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0011.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0012.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0013.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0014.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0015.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0016.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0017.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0018.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0019.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0020.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0021.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0022.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0023.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0024.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0025.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0026.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0027.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0028.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0029.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0030.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0031.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0032.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0033.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0034.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0035.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0036.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0037.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0038.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0039.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0040.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0041.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0042.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0043.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0044.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0045.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0046.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0047.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0048.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0049.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0050.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0051.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0052.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0053.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0054.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0055.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0056.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0057.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0058.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0059.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0060.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0061.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0062.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0063.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0064.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0065.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0066.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0067.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0068.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0069.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0070.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0071.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0072.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0073.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0074.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0075.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0076.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0077.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0078.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0079.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0080.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0081.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0082.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0083.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0084.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0085.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0086.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0087.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0088.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0089.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0090.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0091.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0092.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0093.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0094.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0095.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0096.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0097.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0098.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0099.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0100.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0101.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0102.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0103.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0104.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0105.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0106.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0107.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0108.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0109.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0110.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0111.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0112.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0113.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0114.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0115.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0116.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0117.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0118.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0119.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0120.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0121.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0122.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0123.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0124.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0125.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0126.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0128.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0129.ply` | 2个正面 | MULTI | 未知方向 |
+| `bathtub/bathtub_0130.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0131.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0132.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0133.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0134.ply` | 2个正面 | MULTI | 未知方向 |
+| `bathtub/bathtub_0135.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0136.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0137.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0138.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0139.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0140.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0141.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0142.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0143.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0144.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0145.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0146.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0147.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0148.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0149.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0150.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0151.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bathtub/bathtub_0152.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0153.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bathtub/bathtub_0154.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0155.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bathtub/bathtub_0156.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
 | `bench/bench_0002.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0004.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0005.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bench/bench_0007.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0009.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0010.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0011.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0017.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0019.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0020.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `bench/bench_0022.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0026.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0030.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0034.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0035.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0040.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0044.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0048.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0052.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0055.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0056.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0060.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0062.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0063.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0065.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0066.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0067.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0071.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0074.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0076.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0078.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0079.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0080.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0084.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0085.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0087.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0092.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0093.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0094.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0095.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0099.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0100.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0103.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0106.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0107.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0113.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bench/bench_0116.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0117.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0118.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0120.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0122.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `bench/bench_0123.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0124.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0127.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0129.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0130.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0131.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0133.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0138.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0141.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0142.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0143.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0144.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0149.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0151.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0152.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0153.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0154.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0155.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0156.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0157.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0158.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0159.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0160.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0161.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0162.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0163.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0166.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0169.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0173.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0177.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0181.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0183.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0184.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0188.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0189.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0190.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `bench/bench_0191.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `bench/bench_0192.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bench/bench_0193.ply` | 没有正面 | OBLIQUE | 未知方向 |
+| `bookshelf/bookshelf_0073.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0074.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0089.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0116.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0246.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0248.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0254.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `bookshelf/bookshelf_0272.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0281.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `bookshelf/bookshelf_0285.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
+| `chair/chair_0298.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `chair/chair_0739.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `desk/desk_0001.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `desk/desk_0002.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `desk/desk_0003.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
+| `desk/desk_0004.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `desk/desk_0005.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `wardrobe/wardrobe_0012.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0013.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0014.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0016.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0017.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0024.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0025.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0026.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0028.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `wardrobe/wardrobe_0034.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0035.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0036.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0037.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0038.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0047.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `wardrobe/wardrobe_0048.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0049.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
+| `wardrobe/wardrobe_0050.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `wardrobe/wardrobe_0051.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0056.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0059.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `wardrobe/wardrobe_0065.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0068.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0073.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0075.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0081.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0098.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0099.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `wardrobe/wardrobe_0101.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `wardrobe/wardrobe_0105.ply` | 2个正面 | -X | 绕Y轴旋转+90° |

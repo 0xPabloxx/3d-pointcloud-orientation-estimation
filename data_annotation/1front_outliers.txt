@@ -1,0 +1,208 @@
+================================================================================
+1-front 方向预测异常值清单
+模型: P2v2_SoftGate_20251229_183118
+评估日期: 2025-12-29
+================================================================================
+
+【统计摘要】
+总1-front样本数: 465
+严重异常 (>=90°): 77 个
+主要异常 (>=45°): 96 个
+中等异常 (>=15°): 155 个
+
+【按类别统计】
+类别                  总数    >=90°    >=45°    >=15°
+--------------------------------------------------
+airplane            66        4        4       27
+bathtub              8        4        6        8
+bench               25        3        8        9
+bookshelf           56       47       51       52
+chair              300        9       17       49
+wardrobe            10       10       10       10
+
+================================================================================
+【严重异常清单 (误差 >= 90°) - 建议重新标注为2-front或排除】
+================================================================================
+bookshelf_0124                 类别:bookshelf    最大误差: 180.0° κ: 15.3
+bookshelf_0005                 类别:bookshelf    最大误差: 179.8° κ: 35.5
+bookshelf_0038                 类别:bookshelf    最大误差: 179.6° κ: 25.2
+bookshelf_0256                 类别:bookshelf    最大误差: 179.5° κ: 25.8
+bathtub_0105                   类别:bathtub      最大误差: 179.2° κ: 24.1
+bookshelf_0055                 类别:bookshelf    最大误差: 179.2° κ: 16.6
+wardrobe_0067                  类别:wardrobe     最大误差: 179.1° κ: 14.8
+wardrobe_0087                  类别:wardrobe     最大误差: 179.0° κ:  9.7
+bathtub_0100                   类别:bathtub      最大误差: 178.9° κ:  8.9
+bookshelf_0031                 类别:bookshelf    最大误差: 178.8° κ: 11.9
+bookshelf_0082                 类别:bookshelf    最大误差: 178.5° κ: 30.6
+bookshelf_0177                 类别:bookshelf    最大误差: 178.4° κ: 21.5
+bench_0141                     类别:bench        最大误差: 178.4° κ:  5.1
+bookshelf_0199                 类别:bookshelf    最大误差: 178.3° κ: 10.0
+bookshelf_0288                 类别:bookshelf    最大误差: 178.3° κ: 15.2
+chair_0308                     类别:chair        最大误差: 178.2° κ:  5.3
+bookshelf_0240                 类别:bookshelf    最大误差: 178.2° κ: 26.4
+bookshelf_0049                 类别:bookshelf    最大误差: 178.1° κ: 28.1
+bookshelf_0035                 类别:bookshelf    最大误差: 178.1° κ: 21.8
+bookshelf_0045                 类别:bookshelf    最大误差: 177.9° κ: 25.0
+bookshelf_0289                 类别:bookshelf    最大误差: 177.4° κ: 33.2
+bookshelf_0151                 类别:bookshelf    最大误差: 176.9° κ: 32.5
+bookshelf_0246                 类别:bookshelf    最大误差: 176.6° κ: 24.8
+bookshelf_0078                 类别:bookshelf    最大误差: 176.4° κ: 24.8
+bookshelf_0171                 类别:bookshelf    最大误差: 176.4° κ: 30.6
+airplane_0193                  类别:airplane     最大误差: 176.3° κ:  0.9
+bookshelf_0006                 类别:bookshelf    最大误差: 176.2° κ: 17.7
+bookshelf_0284                 类别:bookshelf    最大误差: 176.0° κ: 16.7
+bookshelf_0087                 类别:bookshelf    最大误差: 175.9° κ: 19.3
+bookshelf_0058                 类别:bookshelf    最大误差: 175.8° κ: 20.6
+wardrobe_0034                  类别:wardrobe     最大误差: 175.6° κ: 17.3
+chair_0763                     类别:chair        最大误差: 175.1° κ:  8.4
+bookshelf_0088                 类别:bookshelf    最大误差: 175.1° κ: 12.6
+bookshelf_0071                 类别:bookshelf    最大误差: 174.6° κ: 15.3
+bookshelf_0248                 类别:bookshelf    最大误差: 174.6° κ: 24.7
+bookshelf_0159                 类别:bookshelf    最大误差: 174.5° κ: 16.6
+wardrobe_0098                  类别:wardrobe     最大误差: 173.9° κ: 44.3
+wardrobe_0047                  类别:wardrobe     最大误差: 173.4° κ: 13.2
+bookshelf_0228                 类别:bookshelf    最大误差: 173.4° κ: 27.1
+bookshelf_0070                 类别:bookshelf    最大误差: 173.3° κ: 23.4
+airplane_0104                  类别:airplane     最大误差: 173.2° κ: 22.5
+bookshelf_0181                 类别:bookshelf    最大误差: 172.8° κ: 16.0
+bathtub_0024                   类别:bathtub      最大误差: 172.8° κ: 10.9
+bookshelf_0042                 类别:bookshelf    最大误差: 172.4° κ: 14.4
+bookshelf_0285                 类别:bookshelf    最大误差: 171.7° κ: 18.9
+wardrobe_0097                  类别:wardrobe     最大误差: 171.5° κ: 11.8
+chair_0974                     类别:chair        最大误差: 171.4° κ: 10.8
+wardrobe_0101                  类别:wardrobe     最大误差: 170.4° κ:  3.3
+bookshelf_0109                 类别:bookshelf    最大误差: 169.3° κ:  7.8
+wardrobe_0052                  类别:wardrobe     最大误差: 169.3° κ: 24.3
+bookshelf_0261                 类别:bookshelf    最大误差: 169.2° κ: 13.3
+chair_0709                     类别:chair        最大误差: 168.8° κ:  2.2
+bookshelf_0163                 类别:bookshelf    最大误差: 168.8° κ: 22.4
+bookshelf_0051                 类别:bookshelf    最大误差: 168.4° κ: 22.4
+bookshelf_0120                 类别:bookshelf    最大误差: 165.0° κ: 16.8
+chair_0431                     类别:chair        最大误差: 164.2° κ:  3.3
+bookshelf_0250                 类别:bookshelf    最大误差: 164.0° κ: 26.7
+wardrobe_0045                  类别:wardrobe     最大误差: 163.8° κ: 19.1
+bench_0148                     类别:bench        最大误差: 163.5° κ: 21.5
+airplane_0022                  类别:airplane     最大误差: 163.5° κ:  7.5
+bookshelf_0019                 类别:bookshelf    最大误差: 162.5° κ: 17.0
+bookshelf_0039                 类别:bookshelf    最大误差: 161.7° κ: 15.5
+bookshelf_0134                 类别:bookshelf    最大误差: 160.8° κ: 10.3
+wardrobe_0065                  类别:wardrobe     最大误差: 160.4° κ:  9.3
+bookshelf_0206                 类别:bookshelf    最大误差: 153.0° κ:  6.3
+bathtub_0128                   类别:bathtub      最大误差: 151.5° κ: 10.8
+chair_0753                     类别:chair        最大误差: 143.5° κ: 16.4
+bench_0146                     类别:bench        最大误差: 141.9° κ:  0.6
+bookshelf_0262                 类别:bookshelf    最大误差: 141.0° κ: 24.5
+bookshelf_0142                 类别:bookshelf    最大误差: 138.0° κ:  9.2
+bookshelf_0034                 类别:bookshelf    最大误差: 131.6° κ:  8.6
+chair_0264                     类别:chair        最大误差: 128.6° κ: 11.9
+chair_0198                     类别:chair        最大误差: 111.9° κ:  8.0
+bookshelf_0148                 类别:bookshelf    最大误差: 105.2° κ: 31.4
+chair_0786                     类别:chair        最大误差:  98.9° κ:  0.4
+bookshelf_0230                 类别:bookshelf    最大误差:  95.9° κ:  9.6
+airplane_0123                  类别:airplane     最大误差:  92.4° κ:  2.6
+
+================================================================================
+【主要异常清单 (45° <= 误差 < 90°)】
+================================================================================
+chair_0233                     类别:chair        最大误差:  87.6° κ:  2.8
+bench_0177                     类别:bench        最大误差:  83.4° κ:  3.8
+bathtub_0008                   类别:bathtub      最大误差:  74.0° κ:  2.6
+bookshelf_0036                 类别:bookshelf    最大误差:  64.6° κ: 39.6
+bookshelf_0263                 类别:bookshelf    最大误差:  62.9° κ: 30.7
+chair_0223                     类别:chair        最大误差:  62.6° κ:  2.7
+bookshelf_0097                 类别:bookshelf    最大误差:  61.1° κ: 24.1
+chair_0666                     类别:chair        最大误差:  59.9° κ: 25.5
+bookshelf_0217                 类别:bookshelf    最大误差:  58.3° κ: 28.2
+chair_0030                     类别:chair        最大误差:  56.2° κ: 19.1
+bathtub_0026                   类别:bathtub      最大误差:  55.6° κ: 12.5
+bench_0171                     类别:bench        最大误差:  54.5° κ: 51.4
+chair_0915                     类别:chair        最大误差:  52.1° κ: 39.6
+bench_0131                     类别:bench        最大误差:  51.4° κ: 14.3
+chair_0681                     类别:chair        最大误差:  47.4° κ: 16.1
+bench_0042                     类别:bench        最大误差:  46.7° κ: 11.9
+bench_0105                     类别:bench        最大误差:  45.5° κ: 38.8
+chair_0438                     类别:chair        最大误差:  45.4° κ:  4.7
+chair_0594                     类别:chair        最大误差:  45.2° κ: 26.8
+
+================================================================================
+【排除清单 - 可直接复制使用】
+================================================================================
+
+# 严重异常 (>=90°) - 强烈建议排除或重新标注:
+bookshelf_0124
+bookshelf_0005
+bookshelf_0038
+bookshelf_0256
+bathtub_0105
+bookshelf_0055
+wardrobe_0067
+wardrobe_0087
+bathtub_0100
+bookshelf_0031
+bookshelf_0082
+bookshelf_0177
+bench_0141
+bookshelf_0199
+bookshelf_0288
+chair_0308
+bookshelf_0240
+bookshelf_0049
+bookshelf_0035
+bookshelf_0045
+bookshelf_0289
+bookshelf_0151
+bookshelf_0246
+bookshelf_0078
+bookshelf_0171
+airplane_0193
+bookshelf_0006
+bookshelf_0284
+bookshelf_0087
+bookshelf_0058
+wardrobe_0034
+chair_0763
+bookshelf_0088
+bookshelf_0071
+bookshelf_0248
+bookshelf_0159
+wardrobe_0098
+wardrobe_0047
+bookshelf_0228
+bookshelf_0070
+airplane_0104
+bookshelf_0181
+bathtub_0024
+bookshelf_0042
+bookshelf_0285
+wardrobe_0097
+chair_0974
+wardrobe_0101
+bookshelf_0109
+wardrobe_0052
+bookshelf_0261
+chair_0709
+bookshelf_0163
+bookshelf_0051
+bookshelf_0120
+chair_0431
+bookshelf_0250
+wardrobe_0045
+bench_0148
+airplane_0022
+bookshelf_0019
+bookshelf_0039
+bookshelf_0134
+wardrobe_0065
+bookshelf_0206
+bathtub_0128
+chair_0753
+bench_0146
+bookshelf_0262
+bookshelf_0142
+bookshelf_0034
+chair_0264
+chair_0198
+bookshelf_0148
+chair_0786
+bookshelf_0230
+airplane_0123

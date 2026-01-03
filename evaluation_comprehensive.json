@@ -1,0 +1,602 @@
+[
+  {
+    "exp_name": "D_8a",
+    "config": {
+      "exp_name": "D_8a",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "ce",
+      "gt_mode": "projection",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 39.13423542741306,
+          "std": 59.04889009414016,
+          "median": 13.822560669433457
+        },
+        "topk_hungarian": {
+          "mean": 39.13423542741306,
+          "std": 59.04889009414016,
+          "median": 13.822560669433457
+        },
+        "kl_divergence": {
+          "mean": 0.54169221291866,
+          "std": 1.0590693567325782,
+          "median": 0.0812912501697336
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 11.042639697650339,
+          "std": 6.577453450960291,
+          "median": 10.836514093431436
+        },
+        "topk_hungarian": {
+          "mean": 12.306860118250247,
+          "std": 9.936207564120147,
+          "median": 10.840582381698596
+        },
+        "kl_divergence": {
+          "mean": 0.0011482989419882791,
+          "std": 0.0033389700835667955,
+          "median": 0.000569901879343972
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "D_8b",
+    "config": {
+      "exp_name": "D_8b",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "ce",
+      "gt_mode": "projection",
+      "temperature": 3.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 39.4453868361669,
+          "std": 59.18893017072998,
+          "median": 13.8798405712976
+        },
+        "topk_hungarian": {
+          "mean": 39.4453868361669,
+          "std": 59.18893017072998,
+          "median": 13.8798405712976
+        },
+        "kl_divergence": {
+          "mean": 0.5742384846979772,
+          "std": 0.9586695412269202,
+          "median": 0.15059184639293238
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 12.483255950572762,
+          "std": 7.806703842484439,
+          "median": 12.183731910169772
+        },
+        "topk_hungarian": {
+          "mean": 22.675163365513995,
+          "std": 16.527687208895827,
+          "median": 17.255082083924698
+        },
+        "kl_divergence": {
+          "mean": 0.028501301092716355,
+          "std": 0.02200182070684705,
+          "median": 0.025805954259904645
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "D_8c",
+    "config": {
+      "exp_name": "D_8c",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "ce",
+      "gt_mode": "projection",
+      "temperature": 10.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 39.099150773836286,
+          "std": 59.411174487840675,
+          "median": 13.589208110496635
+        },
+        "topk_hungarian": {
+          "mean": 39.099150773836286,
+          "std": 59.411174487840675,
+          "median": 13.589208110496635
+        },
+        "kl_divergence": {
+          "mean": 0.63479218902746,
+          "std": 0.8045656844508153,
+          "median": 0.33079755090062923
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 10.966714922864465,
+          "std": 6.70457345088999,
+          "median": 10.877317643533091
+        },
+        "topk_hungarian": {
+          "mean": 11.920998168463143,
+          "std": 9.275181681161616,
+          "median": 10.877317643533091
+        },
+        "kl_divergence": {
+          "mean": 0.08781193705654226,
+          "std": 0.06822710495645523,
+          "median": 0.09423290850196557
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "D_8d",
+    "config": {
+      "exp_name": "D_8d",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "kl",
+      "gt_mode": "projection",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 40.0234376217873,
+          "std": 59.65305370738642,
+          "median": 14.219639892480396
+        },
+        "topk_hungarian": {
+          "mean": 40.0234376217873,
+          "std": 59.65305370738642,
+          "median": 14.219639892480396
+        },
+        "kl_divergence": {
+          "mean": 0.544909007139382,
+          "std": 1.0498262732661392,
+          "median": 0.08222356483771223
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 10.98916339521864,
+          "std": 6.465780059982312,
+          "median": 11.088556156233157
+        },
+        "topk_hungarian": {
+          "mean": 12.030007639437779,
+          "std": 9.216239760367301,
+          "median": 11.088556156233157
+        },
+        "kl_divergence": {
+          "mean": 0.0013953831721489369,
+          "std": 0.0042257858910559375,
+          "median": 0.0007199026287571667
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "D_16a",
+    "config": {
+      "exp_name": "D_16a",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 16,
+      "d_loss_type": "ce",
+      "gt_mode": "projection",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 51.697854353181256,
+          "std": 73.09051899220576,
+          "median": 8.502367238515445
+        },
+        "topk_hungarian": {
+          "mean": 51.697854353181256,
+          "std": 73.09051899220576,
+          "median": 8.502367238515445
+        },
+        "kl_divergence": {
+          "mean": 0.5668959767329791,
+          "std": 0.5434941363731998,
+          "median": 0.37511101183522766
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 5.450562210433041,
+          "std": 3.4513181785759404,
+          "median": 5.277237147834629
+        },
+        "topk_hungarian": {
+          "mean": 25.923905150677733,
+          "std": 19.45403911145381,
+          "median": 28.125000000000004
+        },
+        "kl_divergence": {
+          "mean": 0.022650499396078765,
+          "std": 0.0690815435396595,
+          "median": 0.004882164255318404
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "D_16b",
+    "config": {
+      "exp_name": "D_16b",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 16,
+      "d_loss_type": "ce",
+      "gt_mode": "projection",
+      "temperature": 8.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation"
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 39.19737422935517,
+          "std": 65.52190543722263,
+          "median": 7.48785268898777
+        },
+        "topk_hungarian": {
+          "mean": 39.19737422935517,
+          "std": 65.52190543722263,
+          "median": 7.48785268898777
+        },
+        "kl_divergence": {
+          "mean": 0.5468350522894608,
+          "std": 0.7266539566108575,
+          "median": 0.2661376575667498
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 5.692738868292067,
+          "std": 3.5325053724573356,
+          "median": 5.5784204008245215
+        },
+        "topk_hungarian": {
+          "mean": 9.951570552888942,
+          "std": 12.469653692743822,
+          "median": 5.6214784257862735
+        },
+        "kl_divergence": {
+          "mean": 0.03156580602519023,
+          "std": 0.00717000052783568,
+          "median": 0.03156947685493781
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "DR_8a",
+    "config": {
+      "exp_name": "DR_8a",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "kl",
+      "gt_mode": "dr",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation",
+      "resume": null
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 42.969415695195444,
+          "std": 61.360313554143346,
+          "median": 14.69293486309168
+        },
+        "topk_hungarian": {
+          "mean": 42.969415695195444,
+          "std": 61.360313554143346,
+          "median": 14.69293486309168
+        },
+        "kl_divergence": {
+          "mean": 0.8321585256959323,
+          "std": 0.39297195413676256,
+          "median": 0.6430686333926994
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 22.054960666659063,
+          "std": 12.997102868089216,
+          "median": 22.23693076759462
+        },
+        "topk_hungarian": {
+          "mean": 42.00825075298688,
+          "std": 7.881965658027402,
+          "median": 45.0
+        },
+        "kl_divergence": {
+          "mean": 0.03612534005807054,
+          "std": 0.025084458797300438,
+          "median": 0.03610866335646793
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "DR_8b",
+    "config": {
+      "exp_name": "DR_8b",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 8,
+      "d_loss_type": "ce",
+      "gt_mode": "dr",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation",
+      "resume": null
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 37.6703503583143,
+          "std": 56.63109665944092,
+          "median": 14.125137196174393
+        },
+        "topk_hungarian": {
+          "mean": 37.6703503583143,
+          "std": 56.63109665944092,
+          "median": 14.125137196174393
+        },
+        "kl_divergence": {
+          "mean": 0.7907349573060618,
+          "std": 0.433302293420006,
+          "median": 0.5872179414864124
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 23.378853753153756,
+          "std": 12.94899486662907,
+          "median": 23.342689501467753
+        },
+        "topk_hungarian": {
+          "mean": 40.95168522057843,
+          "std": 8.45296490885107,
+          "median": 44.98805183628615
+        },
+        "kl_divergence": {
+          "mean": 0.03551608731457105,
+          "std": 0.0253900491993223,
+          "median": 0.03643377851685267
+        }
+      }
+    }
+  },
+  {
+    "exp_name": "DR_16a",
+    "config": {
+      "exp_name": "DR_16a",
+      "mode": "discrete",
+      "categories": "1_front,4_fronts,no_front",
+      "num_points": 2048,
+      "batch_size": 32,
+      "num_workers": 4,
+      "augment_factor": 10,
+      "epochs": 50,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss_type": "combined",
+      "lambda_kl": 1.0,
+      "lambda_kappa": 5.0,
+      "lambda_mu": 2.0,
+      "gt_kappa": 10.0,
+      "num_bins": 16,
+      "d_loss_type": "kl",
+      "gt_mode": "dr",
+      "temperature": 5.0,
+      "label_smoothing": 0.0,
+      "focal_gamma": 2.0,
+      "reg_loss_type": "cosine",
+      "lambda_mse": 1.0,
+      "lambda_cos": 1.0,
+      "wandb": true,
+      "wandb_project": "ForwardNet-LossAblation",
+      "resume": null
+    },
+    "methods": {
+      "1_front": {
+        "argmax_min_dist": {
+          "mean": 38.996434019598276,
+          "std": 63.237397026598174,
+          "median": 8.124323724263949
+        },
+        "topk_hungarian": {
+          "mean": 38.996434019598276,
+          "std": 63.237397026598174,
+          "median": 8.124323724263949
+        },
+        "kl_divergence": {
+          "mean": 0.817100376843645,
+          "std": 0.4434631454867165,
+          "median": 0.5849585316306456
+        }
+      },
+      "4_fronts": {
+        "argmax_min_dist": {
+          "mean": 22.773523588547178,
+          "std": 12.614251052647088,
+          "median": 22.873863552165
+        },
+        "topk_hungarian": {
+          "mean": 61.119642638190854,
+          "std": 11.756453184222227,
+          "median": 67.5
+        },
+        "kl_divergence": {
+          "mean": 0.03579544297949868,
+          "std": 0.0007590485159881953,
+          "median": 0.03572230537473842
+        }
+      }
+    }
+  }
+]

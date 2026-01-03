@@ -14,6 +14,12 @@ from .symmetry_classifier import (
     SymmetryClassifier_PointConcat,
     SymmetryClassifier_NoUpright
 )
+from .probabilistic_orientation_net import (
+    ProbabilisticOrientationNet,
+    MaskedExpertLoss,
+    get_final_pdf,
+    get_peak_predictions
+)
 
 __all__ = [
     "PointNet", "PointNetPP", "PointTransformer", "PointNetPPXYZ",
@@ -21,5 +27,7 @@ __all__ = [
     "DGCNN", "DGCNNCls", "DGCNNMvM",
     "PointTransformerV3", "PointTransformerV3Lite", "PTv3MvM",
     "SymmetryClassifier_GlobalConcat", "SymmetryClassifier_PointConcat",
-    "SymmetryClassifier_NoUpright"
+    "SymmetryClassifier_NoUpright",
+    "ProbabilisticOrientationNet", "MaskedExpertLoss",
+    "get_final_pdf", "get_peak_predictions"
 ]

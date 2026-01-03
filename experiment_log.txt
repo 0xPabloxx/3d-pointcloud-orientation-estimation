@@ -1,0 +1,2838 @@
+==============================================
+  MF & D Series Experiments
+  Tue 16 Dec 2025 07:00:18 PM JST
+==============================================
+[0;32mGPU available:[0m
+name, memory.total [MiB], memory.free [MiB]
+NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 6613 MiB
+
+[0;34m==============================================
+  MF Series: Mixture of von Mises
+  Categories: 1_front, 4_fronts
+==============================================\033[0m
+
+[1;33m[MF_1a] Combined Loss (KL + κ + μ)[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 68zjs22g
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251216_190023-68zjs22g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MF_1a_combined
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/68zjs22g
+Config saved to checkpoints/MF_1a_combined_20251216_190021/config.json
+[MultiCategoryDataset] train: 883 samples x10 = 8830 total
+  - 1_front: 693
+  - 4_fronts: 190
+[MultiCategoryDataset] val: 252 samples = 252 total
+  - 1_front: 198
+  - 4_fronts: 54
+Total parameters: 2,391,372
+
+Starting training: MF_1a_combined
+Mode: mf
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/276, Loss: 1721.1345
+  Batch 50/276, Loss: 31.7318
+  Batch 100/276, Loss: 17.3654
+  Batch 150/276, Loss: 75.1938
+  Batch 200/276, Loss: 87.6320
+  Batch 250/276, Loss: 10.8864
+Epoch 1: train_loss=129.4297, val_loss=12.3223, val_error=78.82°, lr=0.000999
+  Saved: best_loss.pth (val_loss=12.3223, val_error=78.82°)
+  Saved: best_error.pth (val_loss=12.3223, val_error=78.82°)
+
+Epoch 2/50
+  Batch 0/276, Loss: 50.4414
+  Batch 50/276, Loss: 50.1365
+  Batch 100/276, Loss: 27.4376
+  Batch 150/276, Loss: 14.1000
+  Batch 200/276, Loss: 14.2038
+  Batch 250/276, Loss: 25.7562
+Epoch 2: train_loss=16.6319, val_loss=5.5174, val_error=94.77°, lr=0.000996
+  Saved: best_loss.pth (val_loss=5.5174, val_error=94.77°)
+
+Epoch 3/50
+  Batch 0/276, Loss: 11.5567
+  Batch 50/276, Loss: 11.3681
+  Batch 100/276, Loss: 8.7007
+  Batch 150/276, Loss: 6.7481
+  Batch 200/276, Loss: 8.1636
+  Batch 250/276, Loss: 8.4874
+Epoch 3: train_loss=13.6096, val_loss=4.1416, val_error=60.14°, lr=0.000991
+  Saved: best_loss.pth (val_loss=4.1416, val_error=60.14°)
+  Saved: best_error.pth (val_loss=4.1416, val_error=60.14°)
+
+Epoch 4/50
+  Batch 0/276, Loss: 7.1973
+  Batch 50/276, Loss: 27.2934
+  Batch 100/276, Loss: 8.8504
+  Batch 150/276, Loss: 7.7255
+  Batch 200/276, Loss: 14.4717
+  Batch 250/276, Loss: 20.9419
+Epoch 4: train_loss=10.8892, val_loss=4.6158, val_error=56.54°, lr=0.000984
+  Saved: best_error.pth (val_loss=4.6158, val_error=56.54°)
+
+Epoch 5/50
+  Batch 0/276, Loss: 15.3854
+  Batch 50/276, Loss: 7.2418
+  Batch 100/276, Loss: 11.1017
+  Batch 150/276, Loss: 7.6470
+  Batch 200/276, Loss: 6.5546
+  Batch 250/276, Loss: 12.1019
+Epoch 5: train_loss=9.3811, val_loss=4.1916, val_error=75.34°, lr=0.000976
+
+Epoch 6/50
+  Batch 0/276, Loss: 13.0151
+  Batch 50/276, Loss: 7.3341
+  Batch 100/276, Loss: 10.3387
+  Batch 150/276, Loss: 7.8415
+  Batch 200/276, Loss: 7.9825
+  Batch 250/276, Loss: 10.8252
+Epoch 6: train_loss=8.8079, val_loss=4.2266, val_error=98.07°, lr=0.000965
+
+Epoch 7/50
+  Batch 0/276, Loss: 9.5733
+  Batch 50/276, Loss: 9.9258
+  Batch 100/276, Loss: 9.0424
+  Batch 150/276, Loss: 8.2542
+  Batch 200/276, Loss: 8.3053
+  Batch 250/276, Loss: 8.7058
+Epoch 7: train_loss=8.2501, val_loss=5.4142, val_error=82.00°, lr=0.000953
+
+Epoch 8/50
+  Batch 0/276, Loss: 9.0742
+  Batch 50/276, Loss: 9.6141
+  Batch 100/276, Loss: 7.2267
+  Batch 150/276, Loss: 6.6770
+  Batch 200/276, Loss: 6.8243
+  Batch 250/276, Loss: 6.1809
+Epoch 8: train_loss=7.9566, val_loss=6.2692, val_error=58.72°, lr=0.000939
+
+Epoch 9/50
+  Batch 0/276, Loss: 8.3191
+  Batch 50/276, Loss: 8.3732
+  Batch 100/276, Loss: 6.6015
+  Batch 150/276, Loss: 9.7666
+  Batch 200/276, Loss: 14.4901
+  Batch 250/276, Loss: 7.5204
+Epoch 9: train_loss=8.0010, val_loss=3.5514, val_error=72.58°, lr=0.000923
+  Saved: best_loss.pth (val_loss=3.5514, val_error=72.58°)
+
+Epoch 10/50
+  Batch 0/276, Loss: 8.8697
+  Batch 50/276, Loss: 7.7678
+  Batch 100/276, Loss: 7.3180
+  Batch 150/276, Loss: 11.0861
+  Batch 200/276, Loss: 7.2721
+  Batch 250/276, Loss: 5.9309
+Epoch 10: train_loss=7.8521, val_loss=4.3462, val_error=113.15°, lr=0.000905
+
+Epoch 11/50
+  Batch 0/276, Loss: 6.4681
+  Batch 50/276, Loss: 6.2510
+  Batch 100/276, Loss: 10.4288
+  Batch 150/276, Loss: 7.7920
+  Batch 200/276, Loss: 6.1989
+  Batch 250/276, Loss: 6.5470
+Epoch 11: train_loss=7.3770, val_loss=4.4425, val_error=59.14°, lr=0.000886
+
+Epoch 12/50
+  Batch 0/276, Loss: 7.5348
+  Batch 50/276, Loss: 6.4387
+  Batch 100/276, Loss: 6.4449
+  Batch 150/276, Loss: 6.9917
+  Batch 200/276, Loss: 6.4573
+  Batch 250/276, Loss: 7.0299
+Epoch 12: train_loss=7.1740, val_loss=3.7054, val_error=108.69°, lr=0.000866
+
+Epoch 13/50
+  Batch 0/276, Loss: 7.0815
+  Batch 50/276, Loss: 5.9101
+  Batch 100/276, Loss: 5.4286
+  Batch 150/276, Loss: 6.6640
+  Batch 200/276, Loss: 5.0936
+  Batch 250/276, Loss: 6.1735
+Epoch 13: train_loss=7.0229, val_loss=3.3463, val_error=95.72°, lr=0.000844
+  Saved: best_loss.pth (val_loss=3.3463, val_error=95.72°)
+
+Epoch 14/50
+  Batch 0/276, Loss: 6.0660
+  Batch 50/276, Loss: 6.0386
+  Batch 100/276, Loss: 8.8476
+  Batch 150/276, Loss: 5.5012
+  Batch 200/276, Loss: 4.8795
+  Batch 250/276, Loss: 7.2523
+Epoch 14: train_loss=7.0266, val_loss=3.7514, val_error=54.53°, lr=0.000821
+  Saved: best_error.pth (val_loss=3.7514, val_error=54.53°)
+
+Epoch 15/50
+  Batch 0/276, Loss: 6.1194
+  Batch 50/276, Loss: 6.2860
+  Batch 100/276, Loss: 6.2986
+  Batch 150/276, Loss: 6.6115
+  Batch 200/276, Loss: 6.0313
+  Batch 250/276, Loss: 5.0377
+Epoch 15: train_loss=6.7138, val_loss=3.9948, val_error=105.13°, lr=0.000796
+
+Epoch 16/50
+  Batch 0/276, Loss: 5.5993
+  Batch 50/276, Loss: 6.0629
+  Batch 100/276, Loss: 6.8456
+  Batch 150/276, Loss: 6.7067
+  Batch 200/276, Loss: 6.7481
+  Batch 250/276, Loss: 7.0706
+Epoch 16: train_loss=6.7599, val_loss=3.5126, val_error=40.82°, lr=0.000770
+  Saved: best_error.pth (val_loss=3.5126, val_error=40.82°)
+
+Epoch 17/50
+  Batch 0/276, Loss: 6.8229
+  Batch 50/276, Loss: 5.4810
+  Batch 100/276, Loss: 5.9103
+  Batch 150/276, Loss: 6.8721
+  Batch 200/276, Loss: 5.5552
+  Batch 250/276, Loss: 6.5188
+Epoch 17: train_loss=6.6620, val_loss=4.1457, val_error=56.03°, lr=0.000743
+
+Epoch 18/50
+  Batch 0/276, Loss: 10.1136
+  Batch 50/276, Loss: 6.0691
+  Batch 100/276, Loss: 5.3653
+  Batch 150/276, Loss: 6.2022
+  Batch 200/276, Loss: 5.6367
+  Batch 250/276, Loss: 11.5360
+Epoch 18: train_loss=6.6655, val_loss=3.7125, val_error=44.46°, lr=0.000716
+
+Epoch 19/50
+  Batch 0/276, Loss: 6.3512
+  Batch 50/276, Loss: 5.7365
+  Batch 100/276, Loss: 6.7590
+  Batch 150/276, Loss: 6.2791
+  Batch 200/276, Loss: 12.7039
+  Batch 250/276, Loss: 7.2828
+Epoch 19: train_loss=6.5314, val_loss=3.4344, val_error=48.88°, lr=0.000687
+
+Epoch 20/50
+  Batch 0/276, Loss: 6.9114
+  Batch 50/276, Loss: 7.8085
+  Batch 100/276, Loss: 6.7904
+  Batch 150/276, Loss: 5.3329
+  Batch 200/276, Loss: 4.5701
+  Batch 250/276, Loss: 9.9072
+Epoch 20: train_loss=6.4842, val_loss=2.9819, val_error=50.96°, lr=0.000658
+  Saved: best_loss.pth (val_loss=2.9819, val_error=50.96°)
+
+Epoch 21/50
+  Batch 0/276, Loss: 6.5305
+  Batch 50/276, Loss: 9.1666
+  Batch 100/276, Loss: 6.3593
+  Batch 150/276, Loss: 7.4593
+  Batch 200/276, Loss: 11.2388
+  Batch 250/276, Loss: 5.0085
+Epoch 21: train_loss=6.1947, val_loss=3.8182, val_error=56.86°, lr=0.000628
+
+Epoch 22/50
+  Batch 0/276, Loss: 6.0436
+  Batch 50/276, Loss: 5.9419
+  Batch 100/276, Loss: 6.4529
+  Batch 150/276, Loss: 5.9185
+  Batch 200/276, Loss: 6.6819
+  Batch 250/276, Loss: 6.5840
+Epoch 22: train_loss=6.1448, val_loss=3.0812, val_error=34.16°, lr=0.000598
+  Saved: best_error.pth (val_loss=3.0812, val_error=34.16°)
+
+Epoch 23/50
+  Batch 0/276, Loss: 7.4511
+  Batch 50/276, Loss: 4.4871
+  Batch 100/276, Loss: 5.2999
+  Batch 150/276, Loss: 11.5176
+  Batch 200/276, Loss: 6.5404
+  Batch 250/276, Loss: 6.7633
+Epoch 23: train_loss=6.0914, val_loss=2.9269, val_error=94.91°, lr=0.000567
+  Saved: best_loss.pth (val_loss=2.9269, val_error=94.91°)
+
+Epoch 24/50
+  Batch 0/276, Loss: 6.0608
+  Batch 50/276, Loss: 6.5141
+  Batch 100/276, Loss: 5.5101
+  Batch 150/276, Loss: 6.3272
+  Batch 200/276, Loss: 6.8079
+  Batch 250/276, Loss: 4.7670
+Epoch 24: train_loss=5.9692, val_loss=3.1374, val_error=57.26°, lr=0.000536
+
+Epoch 25/50
+  Batch 0/276, Loss: 6.1291
+  Batch 50/276, Loss: 6.5482
+  Batch 100/276, Loss: 5.7865
+  Batch 150/276, Loss: 6.0207
+  Batch 200/276, Loss: 6.2060
+  Batch 250/276, Loss: 7.0004
+Epoch 25: train_loss=6.0263, val_loss=3.4743, val_error=36.94°, lr=0.000505
+
+Epoch 26/50
+  Batch 0/276, Loss: 5.1315
+  Batch 50/276, Loss: 6.7613
+  Batch 100/276, Loss: 6.5364
+  Batch 150/276, Loss: 6.0794
+  Batch 200/276, Loss: 7.0829
+  Batch 250/276, Loss: 5.1695
+Epoch 26: train_loss=5.9807, val_loss=2.8405, val_error=52.97°, lr=0.000474
+  Saved: best_loss.pth (val_loss=2.8405, val_error=52.97°)
+
+Epoch 27/50
+  Batch 0/276, Loss: 5.7171
+  Batch 50/276, Loss: 6.0863
+  Batch 100/276, Loss: 6.8999
+  Batch 150/276, Loss: 7.1904
+  Batch 200/276, Loss: 7.1154
+  Batch 250/276, Loss: 6.7024
+Epoch 27: train_loss=5.9629, val_loss=3.8892, val_error=55.59°, lr=0.000443
+
+Epoch 28/50
+  Batch 0/276, Loss: 5.0364
+  Batch 50/276, Loss: 6.1493
+  Batch 100/276, Loss: 6.0618
+  Batch 150/276, Loss: 7.5971
+  Batch 200/276, Loss: 5.8357
+  Batch 250/276, Loss: 5.2562
+Epoch 28: train_loss=5.8621, val_loss=2.9213, val_error=56.01°, lr=0.000412
+
+Epoch 29/50
+  Batch 0/276, Loss: 5.5907
+  Batch 50/276, Loss: 3.9792
+  Batch 100/276, Loss: 5.0737
+  Batch 150/276, Loss: 6.5965
+  Batch 200/276, Loss: 5.4688
+  Batch 250/276, Loss: 5.8138
+Epoch 29: train_loss=5.7677, val_loss=2.9765, val_error=54.24°, lr=0.000382
+
+Epoch 30/50
+  Batch 0/276, Loss: 5.1399
+  Batch 50/276, Loss: 7.1269
+  Batch 100/276, Loss: 7.0181
+  Batch 150/276, Loss: 5.4020
+  Batch 200/276, Loss: 6.5269
+  Batch 250/276, Loss: 4.7341
+Epoch 30: train_loss=5.7020, val_loss=3.1196, val_error=38.26°, lr=0.000352
+
+Epoch 31/50
+  Batch 0/276, Loss: 6.0280
+  Batch 50/276, Loss: 4.8621
+  Batch 100/276, Loss: 5.4530
+  Batch 150/276, Loss: 5.1797
+  Batch 200/276, Loss: 5.7874
+  Batch 250/276, Loss: 5.9714
+Epoch 31: train_loss=5.7017, val_loss=2.9273, val_error=57.16°, lr=0.000323
+
+Epoch 32/50
+  Batch 0/276, Loss: 6.0584
+  Batch 50/276, Loss: 6.0668
+  Batch 100/276, Loss: 5.1641
+  Batch 150/276, Loss: 6.6311
+  Batch 200/276, Loss: 5.7889
+  Batch 250/276, Loss: 7.0162
+Epoch 32: train_loss=5.5757, val_loss=2.9749, val_error=68.17°, lr=0.000294
+
+Epoch 33/50
+  Batch 0/276, Loss: 5.8819
+  Batch 50/276, Loss: 11.6596
+  Batch 100/276, Loss: 5.3417
+  Batch 150/276, Loss: 6.2823
+  Batch 200/276, Loss: 5.4260
+  Batch 250/276, Loss: 5.4247
+Epoch 33: train_loss=5.6693, val_loss=3.1461, val_error=54.04°, lr=0.000267
+
+Epoch 34/50
+  Batch 0/276, Loss: 5.8383
+  Batch 50/276, Loss: 5.0108
+  Batch 100/276, Loss: 6.4952
+  Batch 150/276, Loss: 6.5109
+  Batch 200/276, Loss: 4.9414
+  Batch 250/276, Loss: 4.2720
+Epoch 34: train_loss=5.4618, val_loss=2.8631, val_error=57.46°, lr=0.000240
+
+Epoch 35/50
+  Batch 0/276, Loss: 5.0323
+  Batch 50/276, Loss: 5.3645
+  Batch 100/276, Loss: 4.9930
+  Batch 150/276, Loss: 4.8046
+  Batch 200/276, Loss: 5.7503
+  Batch 250/276, Loss: 7.2724
+Epoch 35: train_loss=5.4980, val_loss=2.9510, val_error=55.43°, lr=0.000214
+
+Epoch 36/50
+  Batch 0/276, Loss: 4.8434
+  Batch 50/276, Loss: 4.9277
+  Batch 100/276, Loss: 5.3172
+  Batch 150/276, Loss: 6.5622
+  Batch 200/276, Loss: 4.3089
+  Batch 250/276, Loss: 4.7318
+Epoch 36: train_loss=5.4130, val_loss=2.7590, val_error=52.93°, lr=0.000189
+  Saved: best_loss.pth (val_loss=2.7590, val_error=52.93°)
+
+Epoch 37/50
+  Batch 0/276, Loss: 5.5072
+  Batch 50/276, Loss: 4.9942
+  Batch 100/276, Loss: 6.0963
+  Batch 150/276, Loss: 6.6677
+  Batch 200/276, Loss: 6.6464
+  Batch 250/276, Loss: 5.1408
+Epoch 37: train_loss=5.3792, val_loss=2.8099, val_error=56.18°, lr=0.000166
+
+Epoch 38/50
+  Batch 0/276, Loss: 5.1298
+  Batch 50/276, Loss: 5.8182
+  Batch 100/276, Loss: 5.7535
+  Batch 150/276, Loss: 4.1645
+  Batch 200/276, Loss: 5.5267
+  Batch 250/276, Loss: 6.2121
+Epoch 38: train_loss=5.4445, val_loss=2.7676, val_error=52.58°, lr=0.000144
+
+Epoch 39/50
+  Batch 0/276, Loss: 5.4939
+  Batch 50/276, Loss: 4.7719
+  Batch 100/276, Loss: 5.4083
+  Batch 150/276, Loss: 6.3786
+  Batch 200/276, Loss: 4.4744
+  Batch 250/276, Loss: 5.9230
+Epoch 39: train_loss=5.3696, val_loss=2.9110, val_error=51.89°, lr=0.000124
+
+Epoch 40/50
+  Batch 0/276, Loss: 4.4461
+  Batch 50/276, Loss: 6.0933
+  Batch 100/276, Loss: 5.6260
+  Batch 150/276, Loss: 4.5526
+  Batch 200/276, Loss: 5.5111
+  Batch 250/276, Loss: 6.4598
+Epoch 40: train_loss=5.4969, val_loss=2.9516, val_error=55.69°, lr=0.000105
+
+Epoch 41/50
+  Batch 0/276, Loss: 4.8231
+  Batch 50/276, Loss: 5.3649
+  Batch 100/276, Loss: 4.4383
+  Batch 150/276, Loss: 4.6860
+  Batch 200/276, Loss: 5.4094
+  Batch 250/276, Loss: 5.0719
+Epoch 41: train_loss=5.2811, val_loss=2.7471, val_error=103.24°, lr=0.000087
+  Saved: best_loss.pth (val_loss=2.7471, val_error=103.24°)
+
+Epoch 42/50
+  Batch 0/276, Loss: 6.4712
+  Batch 50/276, Loss: 5.3249
+  Batch 100/276, Loss: 4.8742
+  Batch 150/276, Loss: 4.7827
+  Batch 200/276, Loss: 4.5335
+  Batch 250/276, Loss: 5.7193
+Epoch 42: train_loss=5.3147, val_loss=2.9253, val_error=55.42°, lr=0.000071
+
+Epoch 43/50
+  Batch 0/276, Loss: 6.4946
+  Batch 50/276, Loss: 6.0338
+  Batch 100/276, Loss: 4.7397
+  Batch 150/276, Loss: 5.5593
+  Batch 200/276, Loss: 4.9266
+  Batch 250/276, Loss: 5.2547
+Epoch 43: train_loss=5.2163, val_loss=2.9802, val_error=55.74°, lr=0.000057
+
+Epoch 44/50
+  Batch 0/276, Loss: 5.1285
+  Batch 50/276, Loss: 4.8407
+  Batch 100/276, Loss: 4.1518
+  Batch 150/276, Loss: 6.8402
+  Batch 200/276, Loss: 4.8976
+  Batch 250/276, Loss: 5.1026
+Epoch 44: train_loss=5.2300, val_loss=2.7947, val_error=51.20°, lr=0.000045
+
+Epoch 45/50
+  Batch 0/276, Loss: 5.3494
+  Batch 50/276, Loss: 6.2984
+  Batch 100/276, Loss: 5.6148
+  Batch 150/276, Loss: 5.2927
+  Batch 200/276, Loss: 4.0902
+  Batch 250/276, Loss: 4.6607
+Epoch 45: train_loss=5.2157, val_loss=2.7751, val_error=55.92°, lr=0.000034
+
+Epoch 46/50
+  Batch 0/276, Loss: 5.2983
+  Batch 50/276, Loss: 4.5142
+  Batch 100/276, Loss: 5.6469
+  Batch 150/276, Loss: 4.6012
+  Batch 200/276, Loss: 5.1403
+  Batch 250/276, Loss: 5.4161
+Epoch 46: train_loss=5.2849, val_loss=2.7408, val_error=55.51°, lr=0.000026
+  Saved: best_loss.pth (val_loss=2.7408, val_error=55.51°)
+
+Epoch 47/50
+  Batch 0/276, Loss: 5.7379
+  Batch 50/276, Loss: 4.9336
+  Batch 100/276, Loss: 5.4442
+  Batch 150/276, Loss: 5.7384
+  Batch 200/276, Loss: 5.7758
+  Batch 250/276, Loss: 4.7634
+Epoch 47: train_loss=5.2901, val_loss=2.7307, val_error=54.34°, lr=0.000019
+  Saved: best_loss.pth (val_loss=2.7307, val_error=54.34°)
+
+Epoch 48/50
+  Batch 0/276, Loss: 5.0665
+  Batch 50/276, Loss: 5.6191
+  Batch 100/276, Loss: 5.8660
+  Batch 150/276, Loss: 6.3793
+  Batch 200/276, Loss: 5.4298
+  Batch 250/276, Loss: 5.6485
+Epoch 48: train_loss=5.2155, val_loss=2.8093, val_error=55.19°, lr=0.000014
+
+Epoch 49/50
+  Batch 0/276, Loss: 5.2259
+  Batch 50/276, Loss: 5.2851
+  Batch 100/276, Loss: 5.4195
+  Batch 150/276, Loss: 4.8147
+  Batch 200/276, Loss: 5.3529
+  Batch 250/276, Loss: 5.5643
+Epoch 49: train_loss=5.1759, val_loss=2.7700, val_error=54.94°, lr=0.000011
+
+Epoch 50/50
+  Batch 0/276, Loss: 4.9480
+  Batch 50/276, Loss: 5.3181
+  Batch 100/276, Loss: 4.5948
+  Batch 150/276, Loss: 4.7808
+  Batch 200/276, Loss: 5.2164
+  Batch 250/276, Loss: 4.4976
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading history steps 49-49, summary, console lines 473-479
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                  lr ███████▇▇▇▇▇▇▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:          train/loss █▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: val/angle_error_deg ▅▆▃▃▅▅▃▄█▃▆▃▇▂▃▂▂▃▁▆▁▃▃▃▃▃▄▃▃▃▃▃▃▇▃▃▃▃▃▃
+wandb:            val/loss ▇▄▅▄▄█▃▄▄▃▃▄▃▄▃▁▃▂▁▂▁▁▁▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 50
+wandb:                  lr 1e-05
+wandb:          train/loss 5.25624
+wandb: val/angle_error_deg 55.42818
+wandb:            val/loss 2.80811
+wandb: 
+wandb: 🚀 View run MF_1a_combined at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/68zjs22g
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251216_190023-68zjs22g/logs
+Epoch 50: train_loss=5.2562, val_loss=2.8081, val_error=55.43°, lr=0.000010
+
+============================================================
+Training completed!
+Best val loss: 2.7307
+Best val error: 34.16°
+Checkpoints saved to: checkpoints/MF_1a_combined_20251216_190021
+
+[1;33m[MF_1b] Reverse KL[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run kuq4xwed
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251216_220646-kuq4xwed
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MF_1b_reverse_kl
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/kuq4xwed
+Config saved to checkpoints/MF_1b_reverse_kl_20251216_220645/config.json
+[MultiCategoryDataset] train: 887 samples x10 = 8870 total
+  - 1_front: 697
+  - 4_fronts: 190
+[MultiCategoryDataset] val: 253 samples = 253 total
+  - 1_front: 199
+  - 4_fronts: 54
+Total parameters: 2,391,372
+
+Starting training: MF_1b_reverse_kl
+Mode: mf
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/278, Loss: 1754.5208
+  Batch 50/278, Loss: 53.5642
+  Batch 100/278, Loss: 51.4043
+  Batch 150/278, Loss: 18.4304
+  Batch 200/278, Loss: 36.1639
+  Batch 250/278, Loss: 15.8817
+Epoch 1: train_loss=133.6658, val_loss=12.4382, val_error=52.82°, lr=0.000999
+  Saved: best_loss.pth (val_loss=12.4382, val_error=52.82°)
+  Saved: best_error.pth (val_loss=12.4382, val_error=52.82°)
+
+Epoch 2/50
+  Batch 0/278, Loss: 17.7163
+  Batch 50/278, Loss: 24.2977
+  Batch 100/278, Loss: 23.8383
+  Batch 150/278, Loss: 20.6845
+  Batch 200/278, Loss: 13.2758
+  Batch 250/278, Loss: 27.3473
+Epoch 2: train_loss=21.5715, val_loss=12.4631, val_error=91.43°, lr=0.000996
+
+Epoch 3/50
+  Batch 0/278, Loss: 25.1553
+  Batch 50/278, Loss: 10.1328
+  Batch 100/278, Loss: 11.7495
+  Batch 150/278, Loss: 11.6291
+  Batch 200/278, Loss: 14.3382
+  Batch 250/278, Loss: 14.1625
+Epoch 3: train_loss=17.6603, val_loss=10.3812, val_error=69.54°, lr=0.000991
+  Saved: best_loss.pth (val_loss=10.3812, val_error=69.54°)
+
+Epoch 4/50
+  Batch 0/278, Loss: 13.2273
+  Batch 50/278, Loss: 19.1294
+  Batch 100/278, Loss: 15.2631
+  Batch 150/278, Loss: 20.1659
+  Batch 200/278, Loss: 14.5508
+  Batch 250/278, Loss: 13.7026
+Epoch 4: train_loss=16.2506, val_loss=8.3485, val_error=85.47°, lr=0.000984
+  Saved: best_loss.pth (val_loss=8.3485, val_error=85.47°)
+
+Epoch 5/50
+  Batch 0/278, Loss: 11.7777
+  Batch 50/278, Loss: 11.8113
+  Batch 100/278, Loss: 13.2177
+  Batch 150/278, Loss: 12.4054
+  Batch 200/278, Loss: 9.3276
+  Batch 250/278, Loss: 11.1550
+Epoch 5: train_loss=14.0585, val_loss=12.2620, val_error=74.97°, lr=0.000976
+
+Epoch 6/50
+  Batch 0/278, Loss: 13.5880
+  Batch 50/278, Loss: 21.7765
+  Batch 100/278, Loss: 12.7033
+  Batch 150/278, Loss: 10.5635
+  Batch 200/278, Loss: 14.6451
+  Batch 250/278, Loss: 25.1194
+Epoch 6: train_loss=13.6012, val_loss=8.9884, val_error=64.14°, lr=0.000965
+
+Epoch 7/50
+  Batch 0/278, Loss: 10.0519
+  Batch 50/278, Loss: 13.3509
+  Batch 100/278, Loss: 15.8194
+  Batch 150/278, Loss: 19.1155
+  Batch 200/278, Loss: 12.5947
+  Batch 250/278, Loss: 14.2891
+Epoch 7: train_loss=12.9579, val_loss=10.9219, val_error=98.33°, lr=0.000953
+
+Epoch 8/50
+  Batch 0/278, Loss: 11.1578
+  Batch 50/278, Loss: 14.5571
+  Batch 100/278, Loss: 14.3922
+  Batch 150/278, Loss: 12.3408
+  Batch 200/278, Loss: 9.9630
+  Batch 250/278, Loss: 23.0590
+Epoch 8: train_loss=13.3431, val_loss=10.1984, val_error=87.35°, lr=0.000939
+
+Epoch 9/50
+  Batch 0/278, Loss: 14.4828
+  Batch 50/278, Loss: 10.8559
+  Batch 100/278, Loss: 14.2554
+  Batch 150/278, Loss: 10.4009
+  Batch 200/278, Loss: 12.0165
+  Batch 250/278, Loss: 10.3659
+Epoch 9: train_loss=12.2450, val_loss=10.4763, val_error=92.95°, lr=0.000923
+
+Epoch 10/50
+  Batch 0/278, Loss: 11.1193
+  Batch 50/278, Loss: 10.7461
+  Batch 100/278, Loss: 10.2384
+  Batch 150/278, Loss: 13.1477
+  Batch 200/278, Loss: 12.0742
+  Batch 250/278, Loss: 11.7681
+Epoch 10: train_loss=11.8937, val_loss=7.1890, val_error=83.01°, lr=0.000905
+  Saved: best_loss.pth (val_loss=7.1890, val_error=83.01°)
+
+Epoch 11/50
+  Batch 0/278, Loss: 10.0338
+  Batch 50/278, Loss: 9.0689
+  Batch 100/278, Loss: 8.1049
+  Batch 150/278, Loss: 10.4569
+  Batch 200/278, Loss: 13.5001
+  Batch 250/278, Loss: 9.8306
+Epoch 11: train_loss=11.8314, val_loss=7.4733, val_error=87.70°, lr=0.000886
+
+Epoch 12/50
+  Batch 0/278, Loss: 12.5745
+  Batch 50/278, Loss: 11.7167
+  Batch 100/278, Loss: 9.7871
+  Batch 150/278, Loss: 13.3881
+  Batch 200/278, Loss: 9.4097
+  Batch 250/278, Loss: 11.5720
+Epoch 12: train_loss=11.5693, val_loss=7.2677, val_error=54.18°, lr=0.000866
+
+Epoch 13/50
+  Batch 0/278, Loss: 10.8538
+  Batch 50/278, Loss: 9.5673
+  Batch 100/278, Loss: 9.2848
+  Batch 150/278, Loss: 9.1234
+  Batch 200/278, Loss: 10.6649
+  Batch 250/278, Loss: 9.7421
+Epoch 13: train_loss=11.5371, val_loss=7.9760, val_error=89.20°, lr=0.000844
+
+Epoch 14/50
+  Batch 0/278, Loss: 10.1923
+  Batch 50/278, Loss: 11.4379
+  Batch 100/278, Loss: 12.9628
+  Batch 150/278, Loss: 9.7225
+  Batch 200/278, Loss: 9.4485
+  Batch 250/278, Loss: 10.3780
+Epoch 14: train_loss=11.1305, val_loss=9.2707, val_error=88.34°, lr=0.000821
+
+Epoch 15/50
+  Batch 0/278, Loss: 13.0265
+  Batch 50/278, Loss: 10.1076
+  Batch 100/278, Loss: 10.2207
+  Batch 150/278, Loss: 11.6200
+  Batch 200/278, Loss: 9.5735
+  Batch 250/278, Loss: 9.2839
+Epoch 15: train_loss=11.1905, val_loss=7.7484, val_error=60.91°, lr=0.000796
+
+Epoch 16/50
+  Batch 0/278, Loss: 10.1086
+  Batch 50/278, Loss: 12.0815
+  Batch 100/278, Loss: 10.6137
+  Batch 150/278, Loss: 10.5301
+  Batch 200/278, Loss: 9.0564
+  Batch 250/278, Loss: 9.6897
+Epoch 16: train_loss=10.9107, val_loss=7.6383, val_error=89.56°, lr=0.000770
+
+Epoch 17/50
+  Batch 0/278, Loss: 11.0389
+  Batch 50/278, Loss: 10.1740
+  Batch 100/278, Loss: 10.1643
+  Batch 150/278, Loss: 9.2812
+  Batch 200/278, Loss: 10.2260
+  Batch 250/278, Loss: 13.4907
+Epoch 17: train_loss=10.8975, val_loss=9.9680, val_error=92.25°, lr=0.000743
+
+Epoch 18/50
+  Batch 0/278, Loss: 9.7750
+  Batch 50/278, Loss: 10.7242
+  Batch 100/278, Loss: 10.2201
+  Batch 150/278, Loss: 11.0427
+  Batch 200/278, Loss: 11.3125
+  Batch 250/278, Loss: 10.3483
+Epoch 18: train_loss=10.8096, val_loss=7.4517, val_error=71.74°, lr=0.000716
+
+Epoch 19/50
+  Batch 0/278, Loss: 10.3278
+  Batch 50/278, Loss: 10.0415
+  Batch 100/278, Loss: 9.9776
+  Batch 150/278, Loss: 11.0514
+  Batch 200/278, Loss: 10.8851
+  Batch 250/278, Loss: 9.6738
+Epoch 19: train_loss=10.7305, val_loss=8.6396, val_error=100.08°, lr=0.000687
+
+Epoch 20/50
+  Batch 0/278, Loss: 10.1701
+  Batch 50/278, Loss: 12.9481
+  Batch 100/278, Loss: 10.8883
+  Batch 150/278, Loss: 9.4673
+  Batch 200/278, Loss: 9.5468
+  Batch 250/278, Loss: 10.0707
+Epoch 20: train_loss=10.5933, val_loss=7.6363, val_error=47.51°, lr=0.000658
+  Saved: best_error.pth (val_loss=7.6363, val_error=47.51°)
+
+Epoch 21/50
+  Batch 0/278, Loss: 9.2228
+  Batch 50/278, Loss: 8.7807
+  Batch 100/278, Loss: 9.2730
+  Batch 150/278, Loss: 8.0488
+  Batch 200/278, Loss: 10.2984
+  Batch 250/278, Loss: 11.2483
+Epoch 21: train_loss=10.4896, val_loss=7.3601, val_error=71.59°, lr=0.000628
+
+Epoch 22/50
+  Batch 0/278, Loss: 9.9937
+  Batch 50/278, Loss: 9.9463
+  Batch 100/278, Loss: 9.7384
+  Batch 150/278, Loss: 10.0927
+  Batch 200/278, Loss: 10.3556
+  Batch 250/278, Loss: 12.3588
+Epoch 22: train_loss=10.4333, val_loss=8.3333, val_error=73.93°, lr=0.000598
+
+Epoch 23/50
+  Batch 0/278, Loss: 9.0309
+  Batch 50/278, Loss: 10.2668
+  Batch 100/278, Loss: 10.2175
+  Batch 150/278, Loss: 10.8021
+  Batch 200/278, Loss: 10.2607
+  Batch 250/278, Loss: 9.6306
+Epoch 23: train_loss=10.2972, val_loss=10.1799, val_error=104.00°, lr=0.000567
+
+Epoch 24/50
+  Batch 0/278, Loss: 9.4769
+  Batch 50/278, Loss: 11.1601
+  Batch 100/278, Loss: 9.7870
+  Batch 150/278, Loss: 10.2837
+  Batch 200/278, Loss: 10.1231
+  Batch 250/278, Loss: 10.7019
+Epoch 24: train_loss=10.1660, val_loss=9.0530, val_error=67.60°, lr=0.000536
+
+Epoch 25/50
+  Batch 0/278, Loss: 14.0504
+  Batch 50/278, Loss: 9.7815
+  Batch 100/278, Loss: 9.0755
+  Batch 150/278, Loss: 9.0683
+  Batch 200/278, Loss: 7.7908
+  Batch 250/278, Loss: 10.7042
+Epoch 25: train_loss=10.1154, val_loss=8.8151, val_error=75.82°, lr=0.000505
+
+Epoch 26/50
+  Batch 0/278, Loss: 10.5769
+  Batch 50/278, Loss: 9.1562
+  Batch 100/278, Loss: 9.1863
+  Batch 150/278, Loss: 13.0702
+  Batch 200/278, Loss: 10.9795
+  Batch 250/278, Loss: 10.3778
+Epoch 26: train_loss=9.8823, val_loss=9.2802, val_error=75.14°, lr=0.000474
+
+Epoch 27/50
+  Batch 0/278, Loss: 8.5865
+  Batch 50/278, Loss: 8.5151
+  Batch 100/278, Loss: 10.8702
+  Batch 150/278, Loss: 8.3829
+  Batch 200/278, Loss: 9.4546
+  Batch 250/278, Loss: 9.7651
+Epoch 27: train_loss=9.7582, val_loss=9.1458, val_error=91.04°, lr=0.000443
+
+Epoch 28/50
+  Batch 0/278, Loss: 7.9627
+  Batch 50/278, Loss: 9.2600
+  Batch 100/278, Loss: 7.7191
+  Batch 150/278, Loss: 8.3654
+  Batch 200/278, Loss: 9.6671
+  Batch 250/278, Loss: 9.8791
+Epoch 28: train_loss=9.7867, val_loss=8.5764, val_error=85.00°, lr=0.000412
+
+Epoch 29/50
+  Batch 0/278, Loss: 10.7149
+  Batch 50/278, Loss: 9.7788
+  Batch 100/278, Loss: 11.4689
+  Batch 150/278, Loss: 9.2057
+  Batch 200/278, Loss: 9.2737
+  Batch 250/278, Loss: 9.1502
+Epoch 29: train_loss=9.5996, val_loss=6.8904, val_error=43.97°, lr=0.000382
+  Saved: best_loss.pth (val_loss=6.8904, val_error=43.97°)
+  Saved: best_error.pth (val_loss=6.8904, val_error=43.97°)
+
+Epoch 30/50
+  Batch 0/278, Loss: 9.8385
+  Batch 50/278, Loss: 8.7554
+  Batch 100/278, Loss: 8.9373
+  Batch 150/278, Loss: 12.1051
+  Batch 200/278, Loss: 6.9219
+  Batch 250/278, Loss: 11.1427
+Epoch 30: train_loss=9.6343, val_loss=6.7042, val_error=72.70°, lr=0.000352
+  Saved: best_loss.pth (val_loss=6.7042, val_error=72.70°)
+
+Epoch 31/50
+  Batch 0/278, Loss: 8.0320
+  Batch 50/278, Loss: 10.6702
+  Batch 100/278, Loss: 8.9704
+  Batch 150/278, Loss: 6.7710
+  Batch 200/278, Loss: 11.1718
+  Batch 250/278, Loss: 9.8132
+Epoch 31: train_loss=9.5092, val_loss=7.5755, val_error=78.37°, lr=0.000323
+
+Epoch 32/50
+  Batch 0/278, Loss: 8.1664
+  Batch 50/278, Loss: 8.8868
+  Batch 100/278, Loss: 8.1663
+  Batch 150/278, Loss: 8.6872
+  Batch 200/278, Loss: 8.9093
+  Batch 250/278, Loss: 9.1064
+Epoch 32: train_loss=9.2507, val_loss=5.6891, val_error=71.29°, lr=0.000294
+  Saved: best_loss.pth (val_loss=5.6891, val_error=71.29°)
+
+Epoch 33/50
+  Batch 0/278, Loss: 10.2310
+  Batch 50/278, Loss: 7.5876
+  Batch 100/278, Loss: 7.9354
+  Batch 150/278, Loss: 9.2362
+  Batch 200/278, Loss: 9.1284
+  Batch 250/278, Loss: 10.7021
+Epoch 33: train_loss=9.1414, val_loss=6.2648, val_error=57.01°, lr=0.000267
+
+Epoch 34/50
+  Batch 0/278, Loss: 9.0425
+  Batch 50/278, Loss: 11.2416
+  Batch 100/278, Loss: 9.1571
+  Batch 150/278, Loss: 6.7600
+  Batch 200/278, Loss: 9.1119
+  Batch 250/278, Loss: 8.5603
+Epoch 34: train_loss=9.2364, val_loss=7.4776, val_error=69.69°, lr=0.000240
+
+Epoch 35/50
+  Batch 0/278, Loss: 11.4594
+  Batch 50/278, Loss: 10.6313
+  Batch 100/278, Loss: 8.6946
+  Batch 150/278, Loss: 8.0909
+  Batch 200/278, Loss: 7.9395
+  Batch 250/278, Loss: 10.3026
+Epoch 35: train_loss=9.0774, val_loss=6.9315, val_error=71.66°, lr=0.000214
+
+Epoch 36/50
+  Batch 0/278, Loss: 7.9712
+  Batch 50/278, Loss: 8.0598
+  Batch 100/278, Loss: 10.4552
+  Batch 150/278, Loss: 7.6719
+  Batch 200/278, Loss: 8.7959
+  Batch 250/278, Loss: 10.6138
+Epoch 36: train_loss=9.1809, val_loss=6.6003, val_error=74.48°, lr=0.000189
+
+Epoch 37/50
+  Batch 0/278, Loss: 8.3168
+  Batch 50/278, Loss: 8.4581
+  Batch 100/278, Loss: 9.3802
+  Batch 150/278, Loss: 8.9665
+  Batch 200/278, Loss: 8.2915
+  Batch 250/278, Loss: 8.4999
+Epoch 37: train_loss=9.0363, val_loss=6.1652, val_error=73.24°, lr=0.000166
+
+Epoch 38/50
+  Batch 0/278, Loss: 9.2132
+  Batch 50/278, Loss: 6.7095
+  Batch 100/278, Loss: 7.4641
+  Batch 150/278, Loss: 10.3557
+  Batch 200/278, Loss: 8.8213
+  Batch 250/278, Loss: 10.6226
+Epoch 38: train_loss=8.9052, val_loss=6.5412, val_error=72.91°, lr=0.000144
+
+Epoch 39/50
+  Batch 0/278, Loss: 8.2984
+  Batch 50/278, Loss: 7.9608
+  Batch 100/278, Loss: 6.4705
+  Batch 150/278, Loss: 7.3177
+  Batch 200/278, Loss: 7.9880
+  Batch 250/278, Loss: 8.8795
+Epoch 39: train_loss=8.8854, val_loss=7.0884, val_error=74.05°, lr=0.000124
+
+Epoch 40/50
+  Batch 0/278, Loss: 10.1265
+  Batch 50/278, Loss: 10.8713
+  Batch 100/278, Loss: 7.0561
+  Batch 150/278, Loss: 9.1634
+  Batch 200/278, Loss: 9.2311
+  Batch 250/278, Loss: 11.5489
+Epoch 40: train_loss=8.8477, val_loss=6.9365, val_error=74.78°, lr=0.000105
+
+Epoch 41/50
+  Batch 0/278, Loss: 8.7089
+  Batch 50/278, Loss: 9.1820
+  Batch 100/278, Loss: 8.8206
+  Batch 150/278, Loss: 9.0683
+  Batch 200/278, Loss: 8.0867
+  Batch 250/278, Loss: 8.6659
+Epoch 41: train_loss=8.8576, val_loss=6.2729, val_error=73.36°, lr=0.000087
+
+Epoch 42/50
+  Batch 0/278, Loss: 9.9612
+  Batch 50/278, Loss: 7.1574
+  Batch 100/278, Loss: 9.5253
+  Batch 150/278, Loss: 8.7883
+  Batch 200/278, Loss: 6.2969
+  Batch 250/278, Loss: 7.7679
+Epoch 42: train_loss=8.6893, val_loss=6.7744, val_error=72.35°, lr=0.000071
+
+Epoch 43/50
+  Batch 0/278, Loss: 8.2064
+  Batch 50/278, Loss: 7.0218
+  Batch 100/278, Loss: 10.2580
+  Batch 150/278, Loss: 7.9777
+  Batch 200/278, Loss: 8.3769
+  Batch 250/278, Loss: 10.2105
+Epoch 43: train_loss=8.8323, val_loss=6.4201, val_error=72.11°, lr=0.000057
+
+Epoch 44/50
+  Batch 0/278, Loss: 8.7726
+  Batch 50/278, Loss: 7.2021
+  Batch 100/278, Loss: 9.2510
+  Batch 150/278, Loss: 9.4388
+  Batch 200/278, Loss: 7.5165
+  Batch 250/278, Loss: 9.4962
+Epoch 44: train_loss=8.7591, val_loss=6.1595, val_error=72.27°, lr=0.000045
+
+Epoch 45/50
+  Batch 0/278, Loss: 11.2580
+  Batch 50/278, Loss: 8.2777
+  Batch 100/278, Loss: 10.0975
+  Batch 150/278, Loss: 8.8312
+  Batch 200/278, Loss: 7.9154
+  Batch 250/278, Loss: 7.1075
+Epoch 45: train_loss=8.7157, val_loss=6.7106, val_error=71.87°, lr=0.000034
+
+Epoch 46/50
+  Batch 0/278, Loss: 8.9598
+  Batch 50/278, Loss: 9.5046
+  Batch 100/278, Loss: 10.0959
+  Batch 150/278, Loss: 9.9769
+  Batch 200/278, Loss: 8.7326
+  Batch 250/278, Loss: 8.5712
+Epoch 46: train_loss=8.7193, val_loss=6.2734, val_error=71.63°, lr=0.000026
+
+Epoch 47/50
+  Batch 0/278, Loss: 8.9502
+  Batch 50/278, Loss: 8.3170
+  Batch 100/278, Loss: 9.0384
+  Batch 150/278, Loss: 7.1105
+  Batch 200/278, Loss: 8.4553
+  Batch 250/278, Loss: 9.3857
+Epoch 47: train_loss=8.6516, val_loss=6.2409, val_error=72.75°, lr=0.000019
+
+Epoch 48/50
+  Batch 0/278, Loss: 9.5552
+  Batch 50/278, Loss: 8.9049
+  Batch 100/278, Loss: 9.7176
+  Batch 150/278, Loss: 10.1450
+  Batch 200/278, Loss: 7.6118
+  Batch 250/278, Loss: 7.5022
+Epoch 48: train_loss=8.6270, val_loss=6.4450, val_error=71.68°, lr=0.000014
+
+Epoch 49/50
+  Batch 0/278, Loss: 9.2402
+  Batch 50/278, Loss: 14.0531
+  Batch 100/278, Loss: 9.5451
+  Batch 150/278, Loss: 9.3908
+  Batch 200/278, Loss: 8.6843
+  Batch 250/278, Loss: 7.6956
+Epoch 49: train_loss=8.7530, val_loss=6.5536, val_error=72.67°, lr=0.000011
+
+Epoch 50/50
+  Batch 0/278, Loss: 8.3092
+  Batch 50/278, Loss: 8.0836
+  Batch 100/278, Loss: 7.7493
+  Batch 150/278, Loss: 7.6104
+  Batch 200/278, Loss: 7.8565
+  Batch 250/278, Loss: 7.9380
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json
+wandb: uploading history steps 49-49, summary, console lines 465-471
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                  lr ███████▇▇▇▇▇▇▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:          train/loss █▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: val/angle_error_deg ▂▇▄▆▅▇▆▇▆▆▆▆▃▆▇█▁▄█▄▅▆▆▁▄▄▃▄▄▅▄▅▅▄▄▄▄▄▄▅
+wandb:            val/loss ██▆▃█▆▅▆▂▂▄▃▃▅▂▃▂▃▅▄▄▄▂▂▃▁▂▂▁▁▂▂▁▂▁▂▁▁▁▂
+wandb: 
+wandb: Run summary:
+wandb:               epoch 50
+wandb:                  lr 1e-05
+wandb:          train/loss 8.64685
+wandb: val/angle_error_deg 74.09203
+wandb:            val/loss 6.68962
+wandb: 
+wandb: 🚀 View run MF_1b_reverse_kl at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/kuq4xwed
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251216_220646-kuq4xwed/logs
+Epoch 50: train_loss=8.6468, val_loss=6.6896, val_error=74.09°, lr=0.000010
+
+============================================================
+Training completed!
+Best val loss: 5.6891
+Best val error: 43.97°
+Checkpoints saved to: checkpoints/MF_1b_reverse_kl_20251216_220645
+
+[1;33m[MF_1c] Pure Mu Loss (Hungarian)[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 13veeioy
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251217_005016-13veeioy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MF_1c_mu_only
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/13veeioy
+Config saved to checkpoints/MF_1c_mu_only_20251217_005015/config.json
+[MultiCategoryDataset] train: 887 samples x10 = 8870 total
+  - 1_front: 697
+  - 4_fronts: 190
+[MultiCategoryDataset] val: 253 samples = 253 total
+  - 1_front: 199
+  - 4_fronts: 54
+Total parameters: 2,391,372
+
+Starting training: MF_1c_mu_only
+Mode: mf
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/278, Loss: 1.7084
+  Batch 50/278, Loss: 1.5907
+  Batch 100/278, Loss: 1.3240
+  Batch 150/278, Loss: 1.3691
+  Batch 200/278, Loss: 1.2614
+  Batch 250/278, Loss: 0.8950
+Epoch 1: train_loss=1.2352, val_loss=0.9929, val_error=52.78°, lr=0.000999
+  Saved: best_loss.pth (val_loss=0.9929, val_error=52.78°)
+  Saved: best_error.pth (val_loss=0.9929, val_error=52.78°)
+
+Epoch 2/50
+  Batch 0/278, Loss: 1.2285
+  Batch 50/278, Loss: 1.4604
+  Batch 100/278, Loss: 0.7019
+  Batch 150/278, Loss: 0.8147
+  Batch 200/278, Loss: 1.0487
+  Batch 250/278, Loss: 1.2051
+Epoch 2: train_loss=1.1306, val_loss=0.9207, val_error=48.69°, lr=0.000996
+  Saved: best_loss.pth (val_loss=0.9207, val_error=48.69°)
+  Saved: best_error.pth (val_loss=0.9207, val_error=48.69°)
+
+Epoch 3/50
+  Batch 0/278, Loss: 1.2532
+  Batch 50/278, Loss: 1.6314
+  Batch 100/278, Loss: 1.0033
+  Batch 150/278, Loss: 1.3973
+  Batch 200/278, Loss: 1.0770
+  Batch 250/278, Loss: 1.2432
+Epoch 3: train_loss=1.0623, val_loss=0.8463, val_error=47.16°, lr=0.000991
+  Saved: best_loss.pth (val_loss=0.8463, val_error=47.16°)
+  Saved: best_error.pth (val_loss=0.8463, val_error=47.16°)
+
+Epoch 4/50
+  Batch 0/278, Loss: 0.6641
+  Batch 50/278, Loss: 1.0083
+  Batch 100/278, Loss: 1.4757
+  Batch 150/278, Loss: 1.2035
+  Batch 200/278, Loss: 1.0167
+  Batch 250/278, Loss: 1.4019
+Epoch 4: train_loss=1.0330, val_loss=0.8839, val_error=46.71°, lr=0.000984
+  Saved: best_error.pth (val_loss=0.8839, val_error=46.71°)
+
+Epoch 5/50
+  Batch 0/278, Loss: 0.3729
+  Batch 50/278, Loss: 0.6025
+  Batch 100/278, Loss: 1.0217
+  Batch 150/278, Loss: 0.7425
+  Batch 200/278, Loss: 0.7917
+  Batch 250/278, Loss: 1.0200
+Epoch 5: train_loss=1.0110, val_loss=1.0985, val_error=57.68°, lr=0.000976
+
+Epoch 6/50
+  Batch 0/278, Loss: 1.4398
+  Batch 50/278, Loss: 0.9519
+  Batch 100/278, Loss: 0.7246
+  Batch 150/278, Loss: 0.8962
+  Batch 200/278, Loss: 1.1452
+  Batch 250/278, Loss: 0.5439
+Epoch 6: train_loss=0.9978, val_loss=0.7754, val_error=40.45°, lr=0.000965
+  Saved: best_loss.pth (val_loss=0.7754, val_error=40.45°)
+  Saved: best_error.pth (val_loss=0.7754, val_error=40.45°)
+
+Epoch 7/50
+  Batch 0/278, Loss: 1.4814
+  Batch 50/278, Loss: 1.0872
+  Batch 100/278, Loss: 1.2761
+  Batch 150/278, Loss: 0.8304
+  Batch 200/278, Loss: 1.0520
+  Batch 250/278, Loss: 0.8705
+Epoch 7: train_loss=0.9870, val_loss=0.7243, val_error=38.22°, lr=0.000953
+  Saved: best_loss.pth (val_loss=0.7243, val_error=38.22°)
+  Saved: best_error.pth (val_loss=0.7243, val_error=38.22°)
+
+Epoch 8/50
+  Batch 0/278, Loss: 1.4429
+  Batch 50/278, Loss: 0.9649
+  Batch 100/278, Loss: 1.0684
+  Batch 150/278, Loss: 0.6842
+  Batch 200/278, Loss: 0.8527
+  Batch 250/278, Loss: 0.9214
+Epoch 8: train_loss=0.9585, val_loss=0.7118, val_error=37.17°, lr=0.000939
+  Saved: best_loss.pth (val_loss=0.7118, val_error=37.17°)
+  Saved: best_error.pth (val_loss=0.7118, val_error=37.17°)
+
+Epoch 9/50
+  Batch 0/278, Loss: 1.3507
+  Batch 50/278, Loss: 0.7663
+  Batch 100/278, Loss: 1.0410
+  Batch 150/278, Loss: 0.8788
+  Batch 200/278, Loss: 1.0238
+  Batch 250/278, Loss: 1.3776
+Epoch 9: train_loss=0.9367, val_loss=0.7810, val_error=39.59°, lr=0.000923
+
+Epoch 10/50
+  Batch 0/278, Loss: 1.0518
+  Batch 50/278, Loss: 0.8736
+  Batch 100/278, Loss: 0.9729
+  Batch 150/278, Loss: 1.0317
+  Batch 200/278, Loss: 0.8817
+  Batch 250/278, Loss: 0.7865
+Epoch 10: train_loss=0.9310, val_loss=0.7438, val_error=37.17°, lr=0.000905
+
+Epoch 11/50
+  Batch 0/278, Loss: 1.6622
+  Batch 50/278, Loss: 1.1693
+  Batch 100/278, Loss: 0.7704
+  Batch 150/278, Loss: 0.8056
+  Batch 200/278, Loss: 1.6455
+  Batch 250/278, Loss: 0.8873
+Epoch 11: train_loss=0.9042, val_loss=0.7296, val_error=41.08°, lr=0.000886
+
+Epoch 12/50
+  Batch 0/278, Loss: 0.6683
+  Batch 50/278, Loss: 0.8748
+  Batch 100/278, Loss: 0.7879
+  Batch 150/278, Loss: 0.6908
+  Batch 200/278, Loss: 0.7455
+  Batch 250/278, Loss: 1.0522
+Epoch 12: train_loss=0.8939, val_loss=0.6501, val_error=35.66°, lr=0.000866
+  Saved: best_loss.pth (val_loss=0.6501, val_error=35.66°)
+  Saved: best_error.pth (val_loss=0.6501, val_error=35.66°)
+
+Epoch 13/50
+  Batch 0/278, Loss: 0.7470
+  Batch 50/278, Loss: 0.9571
+  Batch 100/278, Loss: 0.9961
+  Batch 150/278, Loss: 1.0482
+  Batch 200/278, Loss: 0.7812
+  Batch 250/278, Loss: 0.8674
+Epoch 13: train_loss=0.8913, val_loss=0.7328, val_error=36.60°, lr=0.000844
+
+Epoch 14/50
+  Batch 0/278, Loss: 0.7838
+  Batch 50/278, Loss: 0.7700
+  Batch 100/278, Loss: 1.1027
+  Batch 150/278, Loss: 1.1359
+  Batch 200/278, Loss: 0.6483
+  Batch 250/278, Loss: 0.5117
+Epoch 14: train_loss=0.8635, val_loss=0.7692, val_error=43.42°, lr=0.000821
+
+Epoch 15/50
+  Batch 0/278, Loss: 1.1536
+  Batch 50/278, Loss: 0.8084
+  Batch 100/278, Loss: 1.1860
+  Batch 150/278, Loss: 1.1172
+  Batch 200/278, Loss: 0.9897
+  Batch 250/278, Loss: 0.5019
+Epoch 15: train_loss=0.8331, val_loss=0.7099, val_error=37.02°, lr=0.000796
+
+Epoch 16/50
+  Batch 0/278, Loss: 0.8930
+  Batch 50/278, Loss: 0.7487
+  Batch 100/278, Loss: 0.9953
+  Batch 150/278, Loss: 0.8235
+  Batch 200/278, Loss: 0.7902
+  Batch 250/278, Loss: 0.9907
+Epoch 16: train_loss=0.8186, val_loss=0.6686, val_error=34.78°, lr=0.000770
+  Saved: best_error.pth (val_loss=0.6686, val_error=34.78°)
+
+Epoch 17/50
+  Batch 0/278, Loss: 0.2429
+  Batch 50/278, Loss: 0.1324
+  Batch 100/278, Loss: 0.6335
+  Batch 150/278, Loss: 1.6990
+  Batch 200/278, Loss: 0.6150
+  Batch 250/278, Loss: 0.7716
+Epoch 17: train_loss=0.8047, val_loss=0.6697, val_error=35.44°, lr=0.000743
+
+Epoch 18/50
+  Batch 0/278, Loss: 1.1188
+  Batch 50/278, Loss: 0.5753
+  Batch 100/278, Loss: 0.5996
+  Batch 150/278, Loss: 0.6382
+  Batch 200/278, Loss: 1.0234
+  Batch 250/278, Loss: 0.5385
+Epoch 18: train_loss=0.7866, val_loss=0.7177, val_error=37.64°, lr=0.000716
+
+Epoch 19/50
+  Batch 0/278, Loss: 0.8682
+  Batch 50/278, Loss: 0.7201
+  Batch 100/278, Loss: 1.0053
+  Batch 150/278, Loss: 1.1193
+  Batch 200/278, Loss: 0.8426
+  Batch 250/278, Loss: 0.8485
+Epoch 19: train_loss=0.7725, val_loss=0.6455, val_error=33.21°, lr=0.000687
+  Saved: best_loss.pth (val_loss=0.6455, val_error=33.21°)
+  Saved: best_error.pth (val_loss=0.6455, val_error=33.21°)
+
+Epoch 20/50
+  Batch 0/278, Loss: 0.3549
+  Batch 50/278, Loss: 0.3660
+  Batch 100/278, Loss: 0.8927
+  Batch 150/278, Loss: 0.6655
+  Batch 200/278, Loss: 1.0063
+  Batch 250/278, Loss: 1.0889
+Epoch 20: train_loss=0.7706, val_loss=0.6623, val_error=33.76°, lr=0.000658
+
+Epoch 21/50
+  Batch 0/278, Loss: 0.9352
+  Batch 50/278, Loss: 0.3974
+  Batch 100/278, Loss: 0.8737
+  Batch 150/278, Loss: 0.7255
+  Batch 200/278, Loss: 1.1380
+  Batch 250/278, Loss: 0.5023
+Epoch 21: train_loss=0.7352, val_loss=0.6040, val_error=31.27°, lr=0.000628
+  Saved: best_loss.pth (val_loss=0.6040, val_error=31.27°)
+  Saved: best_error.pth (val_loss=0.6040, val_error=31.27°)
+
+Epoch 22/50
+  Batch 0/278, Loss: 0.7499
+  Batch 50/278, Loss: 0.8419
+  Batch 100/278, Loss: 0.6506
+  Batch 150/278, Loss: 0.3515
+  Batch 200/278, Loss: 0.8930
+  Batch 250/278, Loss: 0.8138
+Epoch 22: train_loss=0.7015, val_loss=0.5977, val_error=30.14°, lr=0.000598
+  Saved: best_loss.pth (val_loss=0.5977, val_error=30.14°)
+  Saved: best_error.pth (val_loss=0.5977, val_error=30.14°)
+
+Epoch 23/50
+  Batch 0/278, Loss: 0.9189
+  Batch 50/278, Loss: 0.8288
+  Batch 100/278, Loss: 0.9392
+  Batch 150/278, Loss: 0.5835
+  Batch 200/278, Loss: 0.6942
+  Batch 250/278, Loss: 0.4842
+Epoch 23: train_loss=0.6874, val_loss=0.5659, val_error=29.44°, lr=0.000567
+  Saved: best_loss.pth (val_loss=0.5659, val_error=29.44°)
+  Saved: best_error.pth (val_loss=0.5659, val_error=29.44°)
+
+Epoch 24/50
+  Batch 0/278, Loss: 0.5426
+  Batch 50/278, Loss: 0.9510
+  Batch 100/278, Loss: 0.4063
+  Batch 150/278, Loss: 0.5381
+  Batch 200/278, Loss: 0.6910
+  Batch 250/278, Loss: 0.1858
+Epoch 24: train_loss=0.6789, val_loss=0.6717, val_error=33.95°, lr=0.000536
+
+Epoch 25/50
+  Batch 0/278, Loss: 0.6182
+  Batch 50/278, Loss: 0.7869
+  Batch 100/278, Loss: 0.5568
+  Batch 150/278, Loss: 0.8011
+  Batch 200/278, Loss: 1.3418
+  Batch 250/278, Loss: 0.5149
+Epoch 25: train_loss=0.6770, val_loss=0.6800, val_error=32.94°, lr=0.000505
+
+Epoch 26/50
+  Batch 0/278, Loss: 0.6823
+  Batch 50/278, Loss: 0.3078
+  Batch 100/278, Loss: 0.5591
+  Batch 150/278, Loss: 0.7525
+  Batch 200/278, Loss: 0.8981
+  Batch 250/278, Loss: 0.4171
+Epoch 26: train_loss=0.6606, val_loss=0.6813, val_error=32.96°, lr=0.000474
+
+Epoch 27/50
+  Batch 0/278, Loss: 0.4653
+  Batch 50/278, Loss: 1.0965
+  Batch 100/278, Loss: 1.0328
+  Batch 150/278, Loss: 0.5446
+  Batch 200/278, Loss: 0.5037
+  Batch 250/278, Loss: 0.5421
+Epoch 27: train_loss=0.6386, val_loss=0.5984, val_error=29.91°, lr=0.000443
+
+Epoch 28/50
+  Batch 0/278, Loss: 0.2588
+  Batch 50/278, Loss: 0.3152
+  Batch 100/278, Loss: 0.3439
+  Batch 150/278, Loss: 0.7756
+  Batch 200/278, Loss: 0.6337
+  Batch 250/278, Loss: 0.3214
+Epoch 28: train_loss=0.6342, val_loss=0.6614, val_error=32.24°, lr=0.000412
+
+Epoch 29/50
+  Batch 0/278, Loss: 0.8188
+  Batch 50/278, Loss: 0.3798
+  Batch 100/278, Loss: 0.4569
+  Batch 150/278, Loss: 0.8399
+  Batch 200/278, Loss: 0.2118
+  Batch 250/278, Loss: 0.6017
+Epoch 29: train_loss=0.6151, val_loss=0.7005, val_error=35.06°, lr=0.000382
+
+Epoch 30/50
+  Batch 0/278, Loss: 0.3790
+  Batch 50/278, Loss: 0.4891
+  Batch 100/278, Loss: 0.6531
+  Batch 150/278, Loss: 0.4265
+  Batch 200/278, Loss: 0.9848
+  Batch 250/278, Loss: 0.8116
+Epoch 30: train_loss=0.6126, val_loss=0.6062, val_error=30.33°, lr=0.000352
+
+Epoch 31/50
+  Batch 0/278, Loss: 0.9981
+  Batch 50/278, Loss: 0.7063
+  Batch 100/278, Loss: 0.3022
+  Batch 150/278, Loss: 0.3564
+  Batch 200/278, Loss: 0.4179
+  Batch 250/278, Loss: 0.8345
+Epoch 31: train_loss=0.5975, val_loss=0.6012, val_error=30.16°, lr=0.000323
+
+Epoch 32/50
+  Batch 0/278, Loss: 0.3740
+  Batch 50/278, Loss: 0.8492
+  Batch 100/278, Loss: 0.4281
+  Batch 150/278, Loss: 0.6991
+  Batch 200/278, Loss: 0.4679
+  Batch 250/278, Loss: 0.4062
+Epoch 32: train_loss=0.5755, val_loss=0.7542, val_error=35.83°, lr=0.000294
+
+Epoch 33/50
+  Batch 0/278, Loss: 0.9101
+  Batch 50/278, Loss: 0.9068
+  Batch 100/278, Loss: 0.4286
+  Batch 150/278, Loss: 1.0322
+  Batch 200/278, Loss: 0.5527
+  Batch 250/278, Loss: 0.4933
+Epoch 33: train_loss=0.5869, val_loss=0.6309, val_error=31.04°, lr=0.000267
+
+Epoch 34/50
+  Batch 0/278, Loss: 0.9023
+  Batch 50/278, Loss: 0.6307
+  Batch 100/278, Loss: 0.7760
+  Batch 150/278, Loss: 0.6644
+  Batch 200/278, Loss: 0.6418
+  Batch 250/278, Loss: 0.5208
+Epoch 34: train_loss=0.5617, val_loss=0.5702, val_error=28.34°, lr=0.000240
+  Saved: best_error.pth (val_loss=0.5702, val_error=28.34°)
+
+Epoch 35/50
+  Batch 0/278, Loss: 0.8983
+  Batch 50/278, Loss: 0.7131
+  Batch 100/278, Loss: 0.3723
+  Batch 150/278, Loss: 0.3571
+  Batch 200/278, Loss: 0.4367
+  Batch 250/278, Loss: 0.8509
+Epoch 35: train_loss=0.5544, val_loss=0.6485, val_error=31.57°, lr=0.000214
+
+Epoch 36/50
+  Batch 0/278, Loss: 0.7311
+  Batch 50/278, Loss: 0.1622
+  Batch 100/278, Loss: 0.9260
+  Batch 150/278, Loss: 0.7249
+  Batch 200/278, Loss: 0.6590
+  Batch 250/278, Loss: 0.1653
+Epoch 36: train_loss=0.5503, val_loss=0.5775, val_error=28.88°, lr=0.000189
+
+Epoch 37/50
+  Batch 0/278, Loss: 0.4462
+  Batch 50/278, Loss: 0.7403
+  Batch 100/278, Loss: 0.7971
+  Batch 150/278, Loss: 0.7380
+  Batch 200/278, Loss: 0.4008
+  Batch 250/278, Loss: 0.6456
+Epoch 37: train_loss=0.5403, val_loss=0.5967, val_error=29.50°, lr=0.000166
+
+Epoch 38/50
+  Batch 0/278, Loss: 0.8145
+  Batch 50/278, Loss: 0.8628
+  Batch 100/278, Loss: 0.9135
+  Batch 150/278, Loss: 0.6343
+  Batch 200/278, Loss: 0.4373
+  Batch 250/278, Loss: 0.6866
+Epoch 38: train_loss=0.5231, val_loss=0.6127, val_error=29.87°, lr=0.000144
+
+Epoch 39/50
+  Batch 0/278, Loss: 0.4134
+  Batch 50/278, Loss: 0.1735
+  Batch 100/278, Loss: 0.4040
+  Batch 150/278, Loss: 0.2375
+  Batch 200/278, Loss: 0.1573
+  Batch 250/278, Loss: 0.5278
+Epoch 39: train_loss=0.5110, val_loss=0.6674, val_error=33.04°, lr=0.000124
+
+Epoch 40/50
+  Batch 0/278, Loss: 0.1638
+  Batch 50/278, Loss: 1.0005
+  Batch 100/278, Loss: 0.5532
+  Batch 150/278, Loss: 0.2957
+  Batch 200/278, Loss: 0.5520
+  Batch 250/278, Loss: 0.1594
+Epoch 40: train_loss=0.5087, val_loss=0.6671, val_error=32.83°, lr=0.000105
+
+Epoch 41/50
+  Batch 0/278, Loss: 0.3452
+  Batch 50/278, Loss: 0.5264
+  Batch 100/278, Loss: 0.4676
+  Batch 150/278, Loss: 0.1551
+  Batch 200/278, Loss: 0.5449
+  Batch 250/278, Loss: 0.5245
+Epoch 41: train_loss=0.4994, val_loss=0.6040, val_error=29.37°, lr=0.000087
+
+Epoch 42/50
+  Batch 0/278, Loss: 0.2464
+  Batch 50/278, Loss: 0.4630
+  Batch 100/278, Loss: 0.3617
+  Batch 150/278, Loss: 0.6466
+  Batch 200/278, Loss: 0.7007
+  Batch 250/278, Loss: 0.7429
+Epoch 42: train_loss=0.5047, val_loss=0.5854, val_error=29.54°, lr=0.000071
+
+Epoch 43/50
+  Batch 0/278, Loss: 0.6325
+  Batch 50/278, Loss: 0.4064
+  Batch 100/278, Loss: 0.3944
+  Batch 150/278, Loss: 0.3260
+  Batch 200/278, Loss: 0.2861
+  Batch 250/278, Loss: 0.7794
+Epoch 43: train_loss=0.4903, val_loss=0.6172, val_error=31.14°, lr=0.000057
+
+Epoch 44/50
+  Batch 0/278, Loss: 0.8230
+  Batch 50/278, Loss: 0.8012
+  Batch 100/278, Loss: 0.5592
+  Batch 150/278, Loss: 0.3085
+  Batch 200/278, Loss: 0.2257
+  Batch 250/278, Loss: 0.3727
+Epoch 44: train_loss=0.4888, val_loss=0.6142, val_error=30.05°, lr=0.000045
+
+Epoch 45/50
+  Batch 0/278, Loss: 0.3269
+  Batch 50/278, Loss: 0.7061
+  Batch 100/278, Loss: 0.2896
+  Batch 150/278, Loss: 0.2866
+  Batch 200/278, Loss: 0.5950
+  Batch 250/278, Loss: 0.2638
+Epoch 45: train_loss=0.4876, val_loss=0.6641, val_error=32.03°, lr=0.000034
+
+Epoch 46/50
+  Batch 0/278, Loss: 0.4336
+  Batch 50/278, Loss: 0.7607
+  Batch 100/278, Loss: 0.6939
+  Batch 150/278, Loss: 0.5127
+  Batch 200/278, Loss: 0.5464
+  Batch 250/278, Loss: 0.5091
+Epoch 46: train_loss=0.4861, val_loss=0.6010, val_error=29.18°, lr=0.000026
+
+Epoch 47/50
+  Batch 0/278, Loss: 0.6467
+  Batch 50/278, Loss: 0.4028
+  Batch 100/278, Loss: 0.4476
+  Batch 150/278, Loss: 0.5766
+  Batch 200/278, Loss: 0.5541
+  Batch 250/278, Loss: 0.6009
+Epoch 47: train_loss=0.4839, val_loss=0.6375, val_error=31.82°, lr=0.000019
+
+Epoch 48/50
+  Batch 0/278, Loss: 0.3234
+  Batch 50/278, Loss: 0.4499
+  Batch 100/278, Loss: 0.5319
+  Batch 150/278, Loss: 0.3868
+  Batch 200/278, Loss: 0.7773
+  Batch 250/278, Loss: 0.0445
+Epoch 48: train_loss=0.4801, val_loss=0.6202, val_error=30.31°, lr=0.000014
+
+Epoch 49/50
+  Batch 0/278, Loss: 0.2821
+  Batch 50/278, Loss: 0.4574
+  Batch 100/278, Loss: 0.3197
+  Batch 150/278, Loss: 0.3009
+  Batch 200/278, Loss: 0.6500
+  Batch 250/278, Loss: 0.2907
+Epoch 49: train_loss=0.4902, val_loss=0.5903, val_error=29.17°, lr=0.000011
+
+Epoch 50/50
+  Batch 0/278, Loss: 0.4700
+  Batch 50/278, Loss: 0.5452
+  Batch 100/278, Loss: 0.6477
+  Batch 150/278, Loss: 0.3997
+  Batch 200/278, Loss: 0.5925
+  Batch 250/278, Loss: 0.4031
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                  lr ███████▇▇▇▇▇▇▆▆▆▅▅▅▅▄▄▄▄▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:          train/loss █▇▆▆▆▆▅▅▅▅▅▅▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁
+wandb: val/angle_error_deg ▇▆▅▅█▃▃▄▃▄▃▅▃▃▃▂▂▂▁▁▂▂▁▂▃▁▃▂▁▂▁▁▂▂▁▂▂▁▂▂
+wandb:            val/loss ▇▆▅▅█▃▃▄▃▃▃▄▃▂▂▂▂▂▁▂▃▁▂▃▂▃▂▁▂▁▂▂▂▂▁▂▁▂▂▂
+wandb: 
+wandb: Run summary:
+wandb:               epoch 50
+wandb:                  lr 1e-05
+wandb:          train/loss 0.48637
+wandb: val/angle_error_deg 31.83123
+wandb:            val/loss 0.64499
+wandb: 
+wandb: 🚀 View run MF_1c_mu_only at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/13veeioy
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251217_005016-13veeioy/logs
+Epoch 50: train_loss=0.4864, val_loss=0.6450, val_error=31.83°, lr=0.000010
+
+============================================================
+Training completed!
+Best val loss: 0.5659
+Best val error: 28.34°
+Checkpoints saved to: checkpoints/MF_1c_mu_only_20251217_005015
+
+[1;33m[MF_1d] Heavy Kappa (κ=10, μ=1)[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run w1qrmatd
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251217_030242-w1qrmatd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MF_1d_heavy_kappa
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/w1qrmatd
+Config saved to checkpoints/MF_1d_heavy_kappa_20251217_030241/config.json
+[MultiCategoryDataset] train: 887 samples x10 = 8870 total
+  - 1_front: 697
+  - 4_fronts: 190
+[MultiCategoryDataset] val: 253 samples = 253 total
+  - 1_front: 199
+  - 4_fronts: 54
+Total parameters: 2,391,372
+
+Starting training: MF_1d_heavy_kappa
+Mode: mf
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/278, Loss: 3513.6753
+  Batch 50/278, Loss: 114.6218
+  Batch 100/278, Loss: 30.2899
+  Batch 150/278, Loss: 24.5549
+  Batch 200/278, Loss: 25.7614
+  Batch 250/278, Loss: 28.2113
+Epoch 1: train_loss=262.9455, val_loss=29.8827, val_error=74.74°, lr=0.000999
+  Saved: best_loss.pth (val_loss=29.8827, val_error=74.74°)
+  Saved: best_error.pth (val_loss=29.8827, val_error=74.74°)
+
+Epoch 2/50
+  Batch 0/278, Loss: 28.9839
+  Batch 50/278, Loss: 31.6730
+  Batch 100/278, Loss: 30.1373
+  Batch 150/278, Loss: 20.8758
+  Batch 200/278, Loss: 52.9795
+  Batch 250/278, Loss: 18.5170
+Epoch 2: train_loss=37.5443, val_loss=15.9173, val_error=49.84°, lr=0.000996
+  Saved: best_loss.pth (val_loss=15.9173, val_error=49.84°)
+  Saved: best_error.pth (val_loss=15.9173, val_error=49.84°)
+
+Epoch 3/50
+  Batch 0/278, Loss: 19.0274
+  Batch 50/278, Loss: 20.2179
+  Batch 100/278, Loss: 51.7499
+  Batch 150/278, Loss: 36.5878
+  Batch 200/278, Loss: 20.4004
+  Batch 250/278, Loss: 21.9719
+Epoch 3: train_loss=29.0420, val_loss=24.8217, val_error=67.81°, lr=0.000991
+
+Epoch 4/50
+  Batch 0/278, Loss: 14.0388
+  Batch 50/278, Loss: 13.9057
+  Batch 100/278, Loss: 14.1188
+  Batch 150/278, Loss: 23.3837
+  Batch 200/278, Loss: 35.9832
+  Batch 250/278, Loss: 20.0245
+Epoch 4: train_loss=28.6312, val_loss=22.5581, val_error=49.30°, lr=0.000984
+  Saved: best_error.pth (val_loss=22.5581, val_error=49.30°)
+
+Epoch 5/50
+  Batch 0/278, Loss: 10.0201
+  Batch 50/278, Loss: 27.9018
+  Batch 100/278, Loss: 11.2026
+  Batch 150/278, Loss: 32.4657
+  Batch 200/278, Loss: 16.6578
+  Batch 250/278, Loss: 44.2995
+Epoch 5: train_loss=22.8052, val_loss=9.8592, val_error=83.58°, lr=0.000976
+  Saved: best_loss.pth (val_loss=9.8592, val_error=83.58°)
+
+Epoch 6/50
+  Batch 0/278, Loss: 18.6870
+  Batch 50/278, Loss: 10.3081
+  Batch 100/278, Loss: 13.4373
+  Batch 150/278, Loss: 13.3452
+  Batch 200/278, Loss: 11.6804
+  Batch 250/278, Loss: 9.5199
+Epoch 6: train_loss=21.1040, val_loss=8.1545, val_error=108.77°, lr=0.000965
+  Saved: best_loss.pth (val_loss=8.1545, val_error=108.77°)
+
+Epoch 7/50
+  Batch 0/278, Loss: 40.5469
+  Batch 50/278, Loss: 32.7760
+  Batch 100/278, Loss: 13.6187
+  Batch 150/278, Loss: 8.7798
+  Batch 200/278, Loss: 14.7718
+  Batch 250/278, Loss: 18.0331
+Epoch 7: train_loss=19.4273, val_loss=17.8232, val_error=78.68°, lr=0.000953
+
+Epoch 8/50
+  Batch 0/278, Loss: 21.1823
+  Batch 50/278, Loss: 20.1924
+  Batch 100/278, Loss: 25.4140
+  Batch 150/278, Loss: 9.7369
+  Batch 200/278, Loss: 31.8007
+  Batch 250/278, Loss: 8.4506
+Epoch 8: train_loss=19.8509, val_loss=8.4649, val_error=105.91°, lr=0.000939
+
+Epoch 9/50
+  Batch 0/278, Loss: 20.1543
+  Batch 50/278, Loss: 10.3097
+  Batch 100/278, Loss: 8.7439
+  Batch 150/278, Loss: 11.8817
+  Batch 200/278, Loss: 13.8722
+  Batch 250/278, Loss: 11.7509
+Epoch 9: train_loss=16.7010, val_loss=5.2464, val_error=92.46°, lr=0.000923
+  Saved: best_loss.pth (val_loss=5.2464, val_error=92.46°)
+
+Epoch 10/50
+  Batch 0/278, Loss: 11.9896
+  Batch 50/278, Loss: 16.5629
+  Batch 100/278, Loss: 13.4848
+  Batch 150/278, Loss: 14.7326
+  Batch 200/278, Loss: 8.9700
+  Batch 250/278, Loss: 13.9546
+Epoch 10: train_loss=16.0122, val_loss=11.8239, val_error=65.48°, lr=0.000905
+
+Epoch 11/50
+  Batch 0/278, Loss: 13.9516
+  Batch 50/278, Loss: 27.6389
+  Batch 100/278, Loss: 17.2313
+  Batch 150/278, Loss: 18.0227
+  Batch 200/278, Loss: 19.9999
+  Batch 250/278, Loss: 11.8866
+Epoch 11: train_loss=14.5146, val_loss=5.2598, val_error=72.71°, lr=0.000886
+
+Epoch 12/50
+  Batch 0/278, Loss: 11.8788
+  Batch 50/278, Loss: 19.0704
+  Batch 100/278, Loss: 7.3171
+  Batch 150/278, Loss: 22.5711
+  Batch 200/278, Loss: 9.9577
+  Batch 250/278, Loss: 12.5572
+Epoch 12: train_loss=14.1186, val_loss=7.9427, val_error=41.22°, lr=0.000866
+  Saved: best_error.pth (val_loss=7.9427, val_error=41.22°)
+
+Epoch 13/50
+  Batch 0/278, Loss: 16.8025
+  Batch 50/278, Loss: 14.9041
+  Batch 100/278, Loss: 8.9378
+  Batch 150/278, Loss: 8.4132
+  Batch 200/278, Loss: 17.2920
+  Batch 250/278, Loss: 31.7535
+Epoch 13: train_loss=13.4467, val_loss=18.6921, val_error=32.41°, lr=0.000844
+  Saved: best_error.pth (val_loss=18.6921, val_error=32.41°)
+
+Epoch 14/50
+  Batch 0/278, Loss: 24.5756
+  Batch 50/278, Loss: 14.8555
+  Batch 100/278, Loss: 10.9662
+  Batch 150/278, Loss: 10.2823
+  Batch 200/278, Loss: 17.2089
+  Batch 250/278, Loss: 11.2735
+Epoch 14: train_loss=13.0243, val_loss=7.6751, val_error=94.58°, lr=0.000821
+
+Epoch 15/50
+  Batch 0/278, Loss: 8.9840
+  Batch 50/278, Loss: 16.6521
+  Batch 100/278, Loss: 9.1788
+  Batch 150/278, Loss: 13.3614
+  Batch 200/278, Loss: 11.7009
+  Batch 250/278, Loss: 11.4758
+Epoch 15: train_loss=12.1491, val_loss=11.9870, val_error=80.54°, lr=0.000796
+
+Epoch 16/50
+  Batch 0/278, Loss: 15.2181
+  Batch 50/278, Loss: 13.2930
+  Batch 100/278, Loss: 12.6418
+  Batch 150/278, Loss: 14.1997
+  Batch 200/278, Loss: 11.0227
+  Batch 250/278, Loss: 14.9032
+Epoch 16: train_loss=12.0779, val_loss=3.0731, val_error=50.90°, lr=0.000770
+  Saved: best_loss.pth (val_loss=3.0731, val_error=50.90°)
+
+Epoch 17/50
+  Batch 0/278, Loss: 9.8211
+  Batch 50/278, Loss: 13.0010
+  Batch 100/278, Loss: 6.5379
+  Batch 150/278, Loss: 9.1225
+  Batch 200/278, Loss: 19.5418
+  Batch 250/278, Loss: 10.8147
+Epoch 17: train_loss=11.1108, val_loss=2.7000, val_error=84.23°, lr=0.000743
+  Saved: best_loss.pth (val_loss=2.7000, val_error=84.23°)
+
+Epoch 18/50
+  Batch 0/278, Loss: 9.1288
+  Batch 50/278, Loss: 15.7345
+  Batch 100/278, Loss: 9.6916
+  Batch 150/278, Loss: 10.2528
+  Batch 200/278, Loss: 13.7678
+  Batch 250/278, Loss: 10.5547
+Epoch 18: train_loss=10.8569, val_loss=6.0247, val_error=47.04°, lr=0.000716
+
+Epoch 19/50
+  Batch 0/278, Loss: 9.1575
+  Batch 50/278, Loss: 8.9164
+  Batch 100/278, Loss: 12.9006
+  Batch 150/278, Loss: 7.9765
+  Batch 200/278, Loss: 6.5719
+  Batch 250/278, Loss: 10.1628
+Epoch 19: train_loss=10.4371, val_loss=7.8417, val_error=44.87°, lr=0.000687
+
+Epoch 20/50
+  Batch 0/278, Loss: 12.2379
+  Batch 50/278, Loss: 10.7827
+  Batch 100/278, Loss: 9.9428
+  Batch 150/278, Loss: 14.1973
+  Batch 200/278, Loss: 7.7263
+  Batch 250/278, Loss: 7.3084
+Epoch 20: train_loss=9.8096, val_loss=2.5699, val_error=99.31°, lr=0.000658
+  Saved: best_loss.pth (val_loss=2.5699, val_error=99.31°)
+
+Epoch 21/50
+  Batch 0/278, Loss: 8.0437
+  Batch 50/278, Loss: 11.9006
+  Batch 100/278, Loss: 9.5876
+  Batch 150/278, Loss: 10.8546
+  Batch 200/278, Loss: 7.0969
+  Batch 250/278, Loss: 8.9875
+Epoch 21: train_loss=9.6349, val_loss=3.9638, val_error=56.16°, lr=0.000628
+
+Epoch 22/50
+  Batch 0/278, Loss: 7.7898
+  Batch 50/278, Loss: 10.1871
+  Batch 100/278, Loss: 6.7731
+  Batch 150/278, Loss: 10.0350
+  Batch 200/278, Loss: 9.8877
+  Batch 250/278, Loss: 6.2183
+Epoch 22: train_loss=9.6195, val_loss=2.7231, val_error=107.27°, lr=0.000598
+
+Epoch 23/50
+  Batch 0/278, Loss: 10.0876
+  Batch 50/278, Loss: 12.5411
+  Batch 100/278, Loss: 7.2038
+  Batch 150/278, Loss: 8.2513
+  Batch 200/278, Loss: 9.2944
+  Batch 250/278, Loss: 9.6115
+Epoch 23: train_loss=9.6505, val_loss=6.4171, val_error=64.70°, lr=0.000567
+
+Epoch 24/50
+  Batch 0/278, Loss: 8.0947
+  Batch 50/278, Loss: 8.3060
+  Batch 100/278, Loss: 7.1209
+  Batch 150/278, Loss: 9.4285
+  Batch 200/278, Loss: 8.8605
+  Batch 250/278, Loss: 9.9239
+Epoch 24: train_loss=9.2684, val_loss=3.0678, val_error=49.16°, lr=0.000536
+
+Epoch 25/50
+  Batch 0/278, Loss: 8.7708
+  Batch 50/278, Loss: 11.1178
+  Batch 100/278, Loss: 8.5793
+  Batch 150/278, Loss: 7.7122
+  Batch 200/278, Loss: 8.3668
+  Batch 250/278, Loss: 6.1822
+Epoch 25: train_loss=9.0497, val_loss=8.8315, val_error=43.89°, lr=0.000505
+
+Epoch 26/50
+  Batch 0/278, Loss: 10.7898
+  Batch 50/278, Loss: 4.7741
+  Batch 100/278, Loss: 7.4139
+  Batch 150/278, Loss: 8.3792
+  Batch 200/278, Loss: 4.9745
+  Batch 250/278, Loss: 8.8337
+Epoch 26: train_loss=8.8560, val_loss=3.6256, val_error=37.32°, lr=0.000474
+
+Epoch 27/50
+  Batch 0/278, Loss: 5.1188
+  Batch 50/278, Loss: 7.2325
+  Batch 100/278, Loss: 9.2923
+  Batch 150/278, Loss: 9.5964
+  Batch 200/278, Loss: 5.8941
+  Batch 250/278, Loss: 7.1218
+Epoch 27: train_loss=8.8965, val_loss=2.5978, val_error=74.80°, lr=0.000443
+
+Epoch 28/50
+  Batch 0/278, Loss: 9.5549
+  Batch 50/278, Loss: 12.2127
+  Batch 100/278, Loss: 6.0164
+  Batch 150/278, Loss: 10.9968
+  Batch 200/278, Loss: 6.6041
+  Batch 250/278, Loss: 7.0927
+Epoch 28: train_loss=8.4355, val_loss=4.0952, val_error=45.32°, lr=0.000412
+
+Epoch 29/50
+  Batch 0/278, Loss: 6.5908
+  Batch 50/278, Loss: 7.0427
+  Batch 100/278, Loss: 7.6991
+  Batch 150/278, Loss: 7.2032
+  Batch 200/278, Loss: 11.5493
+  Batch 250/278, Loss: 6.9645
+Epoch 29: train_loss=8.0475, val_loss=2.7252, val_error=62.52°, lr=0.000382
+
+Epoch 30/50
+  Batch 0/278, Loss: 4.5901
+  Batch 50/278, Loss: 8.8285
+  Batch 100/278, Loss: 9.4782
+  Batch 150/278, Loss: 5.8790
+  Batch 200/278, Loss: 9.5484
+  Batch 250/278, Loss: 7.5310
+Epoch 30: train_loss=8.3547, val_loss=3.0930, val_error=97.32°, lr=0.000352
+
+Epoch 31/50
+  Batch 0/278, Loss: 12.0759
+  Batch 50/278, Loss: 8.2283
+  Batch 100/278, Loss: 6.0164
+  Batch 150/278, Loss: 11.7360
+  Batch 200/278, Loss: 7.2660
+  Batch 250/278, Loss: 8.7547
+Epoch 31: train_loss=8.1967, val_loss=3.1721, val_error=59.36°, lr=0.000323
+
+Epoch 32/50
+  Batch 0/278, Loss: 6.2028
+  Batch 50/278, Loss: 6.6082
+  Batch 100/278, Loss: 8.2883
+  Batch 150/278, Loss: 8.6928
+  Batch 200/278, Loss: 5.6561
+  Batch 250/278, Loss: 5.9802
+Epoch 32: train_loss=8.1354, val_loss=4.8379, val_error=65.09°, lr=0.000294
+
+Epoch 33/50
+  Batch 0/278, Loss: 10.3811
+  Batch 50/278, Loss: 7.7994
+  Batch 100/278, Loss: 9.2614
+  Batch 150/278, Loss: 7.1126
+  Batch 200/278, Loss: 5.0764
+  Batch 250/278, Loss: 6.9638
+Epoch 33: train_loss=7.9719, val_loss=3.3817, val_error=62.49°, lr=0.000267
+
+Epoch 34/50
+  Batch 0/278, Loss: 7.1802
+  Batch 50/278, Loss: 11.6199
+  Batch 100/278, Loss: 8.0171
+  Batch 150/278, Loss: 6.5004
+  Batch 200/278, Loss: 5.3232
+  Batch 250/278, Loss: 7.7705
+Epoch 34: train_loss=8.0512, val_loss=3.5899, val_error=77.04°, lr=0.000240
+
+Epoch 35/50
+  Batch 0/278, Loss: 7.0142
+  Batch 50/278, Loss: 7.9853
+  Batch 100/278, Loss: 10.7018
+  Batch 150/278, Loss: 7.1304
+  Batch 200/278, Loss: 6.8227
+  Batch 250/278, Loss: 6.6835
+Epoch 35: train_loss=7.9343, val_loss=2.5755, val_error=68.04°, lr=0.000214
+
+Epoch 36/50
+  Batch 0/278, Loss: 7.4659
+  Batch 50/278, Loss: 5.8859
+  Batch 100/278, Loss: 9.4317
+  Batch 150/278, Loss: 9.8286
+  Batch 200/278, Loss: 6.6235
+  Batch 250/278, Loss: 7.7434
+Epoch 36: train_loss=7.7292, val_loss=2.8710, val_error=68.23°, lr=0.000189
+
+Epoch 37/50
+  Batch 0/278, Loss: 6.0602
+  Batch 50/278, Loss: 7.1710
+  Batch 100/278, Loss: 6.5360
+  Batch 150/278, Loss: 5.7064
+  Batch 200/278, Loss: 6.2997
+  Batch 250/278, Loss: 7.5582
+Epoch 37: train_loss=7.7865, val_loss=3.9288, val_error=69.18°, lr=0.000166
+
+Epoch 38/50
+  Batch 0/278, Loss: 6.6914
+  Batch 50/278, Loss: 8.0848
+  Batch 100/278, Loss: 7.1351
+  Batch 150/278, Loss: 7.9551
+  Batch 200/278, Loss: 6.6363
+  Batch 250/278, Loss: 8.0687
+Epoch 38: train_loss=7.8739, val_loss=3.5552, val_error=75.23°, lr=0.000144
+
+Epoch 39/50
+  Batch 0/278, Loss: 7.9870
+  Batch 50/278, Loss: 6.7457
+  Batch 100/278, Loss: 5.3208
+  Batch 150/278, Loss: 8.0439
+  Batch 200/278, Loss: 9.5850
+  Batch 250/278, Loss: 7.5347
+Epoch 39: train_loss=7.5060, val_loss=2.6253, val_error=68.98°, lr=0.000124
+
+Epoch 40/50
+  Batch 0/278, Loss: 8.8298
+  Batch 50/278, Loss: 10.1478
+  Batch 100/278, Loss: 7.8688
+  Batch 150/278, Loss: 9.2800
+  Batch 200/278, Loss: 5.9074
+  Batch 250/278, Loss: 7.5483
+Epoch 40: train_loss=7.4564, val_loss=2.7391, val_error=65.80°, lr=0.000105
+
+Epoch 41/50
+  Batch 0/278, Loss: 7.0850
+  Batch 50/278, Loss: 7.7964
+  Batch 100/278, Loss: 9.1915
+  Batch 150/278, Loss: 7.5580
+  Batch 200/278, Loss: 8.4031
+  Batch 250/278, Loss: 7.6472
+Epoch 41: train_loss=7.5032, val_loss=4.1040, val_error=71.84°, lr=0.000087
+
+Epoch 42/50
+  Batch 0/278, Loss: 7.5589
+  Batch 50/278, Loss: 5.5944
+  Batch 100/278, Loss: 6.2521
+  Batch 150/278, Loss: 9.3901
+  Batch 200/278, Loss: 6.1228
+  Batch 250/278, Loss: 6.8004
+Epoch 42: train_loss=7.5306, val_loss=3.0085, val_error=79.89°, lr=0.000071
+
+Epoch 43/50
+  Batch 0/278, Loss: 7.0990
+  Batch 50/278, Loss: 7.9123
+  Batch 100/278, Loss: 7.5870
+  Batch 150/278, Loss: 6.8117
+  Batch 200/278, Loss: 6.4410
+  Batch 250/278, Loss: 9.7355
+Epoch 43: train_loss=7.4432, val_loss=3.4734, val_error=73.07°, lr=0.000057
+
+Epoch 44/50
+  Batch 0/278, Loss: 7.6943
+  Batch 50/278, Loss: 9.3871
+  Batch 100/278, Loss: 8.3159
+  Batch 150/278, Loss: 5.4533
+  Batch 200/278, Loss: 5.2923
+  Batch 250/278, Loss: 8.3845
+Epoch 44: train_loss=7.4447, val_loss=3.4832, val_error=71.53°, lr=0.000045
+
+Epoch 45/50
+  Batch 0/278, Loss: 12.4218
+  Batch 50/278, Loss: 6.0606
+  Batch 100/278, Loss: 7.1492
+  Batch 150/278, Loss: 6.2584
+  Batch 200/278, Loss: 8.4023
+  Batch 250/278, Loss: 7.7142
+Epoch 45: train_loss=7.4297, val_loss=3.1184, val_error=75.48°, lr=0.000034
+
+Epoch 46/50
+  Batch 0/278, Loss: 9.3025
+  Batch 50/278, Loss: 11.5290
+  Batch 100/278, Loss: 6.9449
+  Batch 150/278, Loss: 8.5564
+  Batch 200/278, Loss: 7.1708
+  Batch 250/278, Loss: 6.1418
+Epoch 46: train_loss=7.4536, val_loss=2.7208, val_error=75.59°, lr=0.000026
+
+Epoch 47/50
+  Batch 0/278, Loss: 6.0361
+  Batch 50/278, Loss: 8.8746
+  Batch 100/278, Loss: 6.9441
+  Batch 150/278, Loss: 8.3355
+  Batch 200/278, Loss: 5.7346
+  Batch 250/278, Loss: 5.5865
+Epoch 47: train_loss=7.3996, val_loss=2.6903, val_error=73.21°, lr=0.000019
+
+Epoch 48/50
+  Batch 0/278, Loss: 7.0490
+  Batch 50/278, Loss: 9.8258
+  Batch 100/278, Loss: 6.2883
+  Batch 150/278, Loss: 9.2671
+  Batch 200/278, Loss: 5.6932
+  Batch 250/278, Loss: 7.0569
+Epoch 48: train_loss=7.4360, val_loss=3.5802, val_error=74.54°, lr=0.000014
+
+Epoch 49/50
+  Batch 0/278, Loss: 7.9298
+  Batch 50/278, Loss: 8.0608
+  Batch 100/278, Loss: 6.8163
+  Batch 150/278, Loss: 6.0004
+  Batch 200/278, Loss: 9.3442
+  Batch 250/278, Loss: 5.8646
+Epoch 49: train_loss=7.3764, val_loss=3.2168, val_error=73.56°, lr=0.000011
+
+Epoch 50/50
+  Batch 0/278, Loss: 7.9299
+  Batch 50/278, Loss: 7.6414
+  Batch 100/278, Loss: 7.7345
+  Batch 150/278, Loss: 7.6246
+  Batch 200/278, Loss: 6.8268
+  Batch 250/278, Loss: 6.0524
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading wandb-summary.json
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:                  lr ███████▇▇▇▇▇▇▆▆▆▆▅▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:          train/loss █▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: val/angle_error_deg ▅▃▄▃▆▅█▇▄▅▁▇▅▃▆▂▇▃█▄▂▁▅▂▄▄▄▄▅▄▄▅▄▄▅▅▅▅▅▅
+wandb:            val/loss █▄▇▆▃▅▃▂▃▂▅▂▃▁▁▂▁▁▁▂▃▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 50
+wandb:                  lr 1e-05
+wandb:          train/loss 7.3602
+wandb: val/angle_error_deg 74.20289
+wandb:            val/loss 3.22702
+wandb: 
+wandb: 🚀 View run MF_1d_heavy_kappa at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/w1qrmatd
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251217_030242-w1qrmatd/logs
+Epoch 50: train_loss=7.3602, val_loss=3.2270, val_error=74.20°, lr=0.000010
+
+============================================================
+Training completed!
+Best val loss: 2.5699
+Best val error: 32.41°
+Checkpoints saved to: checkpoints/MF_1d_heavy_kappa_20251217_030241
+
+[1;33m[MF_1e] No KL, κ+μ only (Best from Exp-2)[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run nopi2y16
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251217_053139-nopi2y16
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MF_1e_kappa_mu_only
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/nopi2y16
+Config saved to checkpoints/MF_1e_kappa_mu_only_20251217_053138/config.json
+[MultiCategoryDataset] train: 887 samples x10 = 8870 total
+  - 1_front: 697
+  - 4_fronts: 190
+[MultiCategoryDataset] val: 253 samples = 253 total
+  - 1_front: 199
+  - 4_fronts: 54
+Total parameters: 2,391,372
+
+Starting training: MF_1e_kappa_mu_only
+Mode: mf
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/278, Loss: 1735.7699
+  Batch 50/278, Loss: 74.1819
+  Batch 100/278, Loss: 13.8627
+  Batch 150/278, Loss: 6.9883
+  Batch 200/278, Loss: 8.2590
+  Batch 250/278, Loss: 12.7469
+Epoch 1: train_loss=128.5735, val_loss=13.7185, val_error=48.36°, lr=0.000999
+  Saved: best_loss.pth (val_loss=13.7185, val_error=48.36°)
+  Saved: best_error.pth (val_loss=13.7185, val_error=48.36°)
+
+Epoch 2/50
+  Batch 0/278, Loss: 19.9826
+  Batch 50/278, Loss: 9.9142
+  Batch 100/278, Loss: 8.5344
+  Batch 150/278, Loss: 7.0526
+  Batch 200/278, Loss: 12.3545
+  Batch 250/278, Loss: 7.4400
+Epoch 2: train_loss=11.8255, val_loss=4.2960, val_error=45.92°, lr=0.000996
+  Saved: best_loss.pth (val_loss=4.2960, val_error=45.92°)
+  Saved: best_error.pth (val_loss=4.2960, val_error=45.92°)
+
+Epoch 3/50
+  Batch 0/278, Loss: 8.3533
+  Batch 50/278, Loss: 6.2255
+  Batch 100/278, Loss: 11.0864
+  Batch 150/278, Loss: 9.7913
+  Batch 200/278, Loss: 6.7648
+  Batch 250/278, Loss: 14.6031
+Epoch 3: train_loss=9.0828, val_loss=5.5101, val_error=70.61°, lr=0.000991
+
+Epoch 4/50
+  Batch 0/278, Loss: 6.3805
+  Batch 50/278, Loss: 9.5729
+  Batch 100/278, Loss: 10.0556
+  Batch 150/278, Loss: 7.8849
+  Batch 200/278, Loss: 8.3468
+  Batch 250/278, Loss: 7.2703
+Epoch 4: train_loss=7.7090, val_loss=4.2011, val_error=92.75°, lr=0.000984
+  Saved: best_loss.pth (val_loss=4.2011, val_error=92.75°)
+
+Epoch 5/50
+  Batch 0/278, Loss: 6.6534
+  Batch 50/278, Loss: 8.5535
+  Batch 100/278, Loss: 10.2194
+  Batch 150/278, Loss: 7.1833
+  Batch 200/278, Loss: 10.2280
+  Batch 250/278, Loss: 7.0832
+Epoch 5: train_loss=8.2193, val_loss=2.9990, val_error=56.01°, lr=0.000976
+  Saved: best_loss.pth (val_loss=2.9990, val_error=56.01°)
+
+Epoch 6/50
+  Batch 0/278, Loss: 4.5005
+  Batch 50/278, Loss: 8.5253
+  Batch 100/278, Loss: 4.9144
+  Batch 150/278, Loss: 9.7440
+  Batch 200/278, Loss: 5.4855
+  Batch 250/278, Loss: 6.5683
+Epoch 6: train_loss=7.0879, val_loss=2.9046, val_error=58.70°, lr=0.000965
+  Saved: best_loss.pth (val_loss=2.9046, val_error=58.70°)
+
+Epoch 7/50
+  Batch 0/278, Loss: 8.3632
+  Batch 50/278, Loss: 6.6434
+  Batch 100/278, Loss: 5.3566
+  Batch 150/278, Loss: 6.1177
+  Batch 200/278, Loss: 11.2602
+  Batch 250/278, Loss: 5.1628
+Epoch 7: train_loss=6.9854, val_loss=1.9440, val_error=41.28°, lr=0.000953
+  Saved: best_loss.pth (val_loss=1.9440, val_error=41.28°)
+  Saved: best_error.pth (val_loss=1.9440, val_error=41.28°)
+
+Epoch 8/50
+  Batch 0/278, Loss: 5.9896
+  Batch 50/278, Loss: 7.4017
+  Batch 100/278, Loss: 6.2794
+  Batch 150/278, Loss: 6.1994
+  Batch 200/278, Loss: 7.1114
+  Batch 250/278, Loss: 7.0913
+Epoch 8: train_loss=6.3387, val_loss=1.6915, val_error=44.04°, lr=0.000939
+  Saved: best_loss.pth (val_loss=1.6915, val_error=44.04°)
+
+Epoch 9/50
+  Batch 0/278, Loss: 5.9090
+  Batch 50/278, Loss: 9.8413
+  Batch 100/278, Loss: 7.9067
+  Batch 150/278, Loss: 5.4670
+  Batch 200/278, Loss: 7.7533
+  Batch 250/278, Loss: 4.4257
+Epoch 9: train_loss=6.5184, val_loss=3.1881, val_error=48.36°, lr=0.000923
+
+Epoch 10/50
+  Batch 0/278, Loss: 4.2260
+  Batch 50/278, Loss: 13.8207
+  Batch 100/278, Loss: 8.3604
+  Batch 150/278, Loss: 3.1893
+  Batch 200/278, Loss: 11.0681
+  Batch 250/278, Loss: 5.3563
+Epoch 10: train_loss=6.1622, val_loss=2.1379, val_error=58.92°, lr=0.000905
+
+Epoch 11/50
+  Batch 0/278, Loss: 3.9050
+  Batch 50/278, Loss: 6.0727
+  Batch 100/278, Loss: 5.5044
+  Batch 150/278, Loss: 5.3032
+  Batch 200/278, Loss: 5.2778
+  Batch 250/278, Loss: 4.9280
+Epoch 11: train_loss=6.0963, val_loss=3.2645, val_error=83.02°, lr=0.000886
+
+Epoch 12/50
+  Batch 0/278, Loss: 11.7911
+  Batch 50/278, Loss: 7.0885
+  Batch 100/278, Loss: 5.2220
+  Batch 150/278, Loss: 4.7760
+  Batch 200/278, Loss: 6.1621
+  Batch 250/278, Loss: 6.4210
+Epoch 12: train_loss=5.9025, val_loss=2.4082, val_error=92.87°, lr=0.000866
+
+Epoch 13/50
+  Batch 0/278, Loss: 6.3751
+  Batch 50/278, Loss: 5.8231
+  Batch 100/278, Loss: 10.4483
+  Batch 150/278, Loss: 6.2471
+  Batch 200/278, Loss: 8.4209
+  Batch 250/278, Loss: 5.2016
+Epoch 13: train_loss=5.9847, val_loss=4.1046, val_error=111.61°, lr=0.000844
+
+Epoch 14/50
+  Batch 0/278, Loss: 4.8647
+  Batch 50/278, Loss: 5.2612
+  Batch 100/278, Loss: 5.8064
+  Batch 150/278, Loss: 4.2342
+  Batch 200/278, Loss: 6.8015
+  Batch 250/278, Loss: 5.5542
+Epoch 14: train_loss=5.5208, val_loss=3.6575, val_error=99.12°, lr=0.000821
+
+Epoch 15/50
+  Batch 0/278, Loss: 5.0039
+  Batch 50/278, Loss: 6.2799
+  Batch 100/278, Loss: 4.5455
+  Batch 150/278, Loss: 5.4832
+  Batch 200/278, Loss: 5.7106
+  Batch 250/278, Loss: 7.1926
+Epoch 15: train_loss=5.5834, val_loss=4.5335, val_error=70.70°, lr=0.000796
+
+Epoch 16/50
+  Batch 0/278, Loss: 7.0816
+  Batch 50/278, Loss: 3.5260
+  Batch 100/278, Loss: 4.5582
+  Batch 150/278, Loss: 5.6812
+  Batch 200/278, Loss: 3.8163
+  Batch 250/278, Loss: 4.7656
+Epoch 16: train_loss=5.4880, val_loss=3.6787, val_error=88.33°, lr=0.000770
+
+Epoch 17/50
+  Batch 0/278, Loss: 4.9151
+  Batch 50/278, Loss: 4.2935
+  Batch 100/278, Loss: 3.8267
+  Batch 150/278, Loss: 4.6580
+  Batch 200/278, Loss: 6.7244
+  Batch 250/278, Loss: 5.1068
+Epoch 17: train_loss=5.1909, val_loss=1.8831, val_error=50.31°, lr=0.000743
+
+Epoch 18/50
+  Batch 0/278, Loss: 4.4363
+  Batch 50/278, Loss: 4.6923
+  Batch 100/278, Loss: 4.7550
+  Batch 150/278, Loss: 5.7636
+  Batch 200/278, Loss: 5.7756
+  Batch 250/278, Loss: 9.0804
+Epoch 18: train_loss=5.0536, val_loss=1.4928, val_error=52.82°, lr=0.000716
+  Saved: best_loss.pth (val_loss=1.4928, val_error=52.82°)
+
+Epoch 19/50
+  Batch 0/278, Loss: 5.6090
+  Batch 50/278, Loss: 8.3415
+  Batch 100/278, Loss: 7.1513
+  Batch 150/278, Loss: 5.2725
+  Batch 200/278, Loss: 5.0632
+  Batch 250/278, Loss: 5.8940
+Epoch 19: train_loss=5.0734, val_loss=2.8362, val_error=79.89°, lr=0.000687
+
+Epoch 20/50
+  Batch 0/278, Loss: 3.3591
+  Batch 50/278, Loss: 6.7895
+  Batch 100/278, Loss: 4.6793
+  Batch 150/278, Loss: 4.7325
+  Batch 200/278, Loss: 5.7970
+  Batch 250/278, Loss: 3.9455
+Epoch 20: train_loss=5.0109, val_loss=1.6695, val_error=52.58°, lr=0.000658
+
+Epoch 21/50
+  Batch 0/278, Loss: 5.2330
+  Batch 50/278, Loss: 4.2999
+  Batch 100/278, Loss: 5.0705
+  Batch 150/278, Loss: 5.8323
+  Batch 200/278, Loss: 4.5163
+  Batch 250/278, Loss: 7.6876
+Epoch 21: train_loss=4.8197, val_loss=2.0489, val_error=48.36°, lr=0.000628
+
+Epoch 22/50
+  Batch 0/278, Loss: 5.1211
+  Batch 50/278, Loss: 9.8379
+  Batch 100/278, Loss: 5.2454
+  Batch 150/278, Loss: 5.1547
+  Batch 200/278, Loss: 5.6025
+  Batch 250/278, Loss: 4.0248
+Epoch 22: train_loss=4.8151, val_loss=3.5224, val_error=59.61°, lr=0.000598
+
+Epoch 23/50
+  Batch 0/278, Loss: 9.0379
+  Batch 50/278, Loss: 5.6212
+  Batch 100/278, Loss: 4.4118
+  Batch 150/278, Loss: 8.0069
+  Batch 200/278, Loss: 5.4953
+  Batch 250/278, Loss: 4.3589
+Epoch 23: train_loss=4.8078, val_loss=2.2082, val_error=47.28°, lr=0.000567
+
+Epoch 24/50
+  Batch 0/278, Loss: 9.6651
+  Batch 50/278, Loss: 4.7380
+  Batch 100/278, Loss: 6.4739
+  Batch 150/278, Loss: 3.6762
+  Batch 200/278, Loss: 6.4972
+  Batch 250/278, Loss: 4.1570
+Epoch 24: train_loss=4.7026, val_loss=1.8909, val_error=54.87°, lr=0.000536
+
+Epoch 25/50
+  Batch 0/278, Loss: 5.3985
+  Batch 50/278, Loss: 4.1682
+  Batch 100/278, Loss: 3.5331
+  Batch 150/278, Loss: 2.8477
+  Batch 200/278, Loss: 3.6590
+  Batch 250/278, Loss: 4.7567
+Epoch 25: train_loss=4.6047, val_loss=2.2228, val_error=45.18°, lr=0.000505
+
+Epoch 26/50
+  Batch 0/278, Loss: 3.0436
+  Batch 50/278, Loss: 5.4144
+  Batch 100/278, Loss: 4.3009
+  Batch 150/278, Loss: 7.3727
+  Batch 200/278, Loss: 3.5515
+  Batch 250/278, Loss: 4.8881
+Epoch 26: train_loss=4.5799, val_loss=2.0682, val_error=61.51°, lr=0.000474
+
+Epoch 27/50
+  Batch 0/278, Loss: 3.5571
+  Batch 50/278, Loss: 5.3679
+  Batch 100/278, Loss: 3.8722
+  Batch 150/278, Loss: 8.0601
+  Batch 200/278, Loss: 6.4829
+  Batch 250/278, Loss: 4.0866
+Epoch 27: train_loss=4.4879, val_loss=1.8851, val_error=54.93°, lr=0.000443
+
+Epoch 28/50
+  Batch 0/278, Loss: 10.2495
+  Batch 50/278, Loss: 6.5419
+  Batch 100/278, Loss: 4.6028
+  Batch 150/278, Loss: 3.3537
+  Batch 200/278, Loss: 4.2772
+  Batch 250/278, Loss: 3.3927
+Epoch 28: train_loss=4.5194, val_loss=1.2188, val_error=52.44°, lr=0.000412
+  Saved: best_loss.pth (val_loss=1.2188, val_error=52.44°)
+
+Epoch 29/50
+  Batch 0/278, Loss: 4.2232
+  Batch 50/278, Loss: 4.3180
+  Batch 100/278, Loss: 3.7332
+  Batch 150/278, Loss: 6.1623
+  Batch 200/278, Loss: 4.1634
+  Batch 250/278, Loss: 3.8997
+Epoch 29: train_loss=4.2394, val_loss=1.4485, val_error=56.83°, lr=0.000382
+
+Epoch 30/50
+  Batch 0/278, Loss: 4.4587
+  Batch 50/278, Loss: 4.2585
+  Batch 100/278, Loss: 4.9669
+  Batch 150/278, Loss: 4.3976
+  Batch 200/278, Loss: 5.7381
+  Batch 250/278, Loss: 4.5885
+Epoch 30: train_loss=4.3470, val_loss=3.2113, val_error=55.35°, lr=0.000352
+
+Epoch 31/50
+  Batch 0/278, Loss: 4.3155
+  Batch 50/278, Loss: 4.6963
+  Batch 100/278, Loss: 4.0187
+  Batch 150/278, Loss: 3.3534
+  Batch 200/278, Loss: 4.6869
+  Batch 250/278, Loss: 4.7015
+Epoch 31: train_loss=4.1979, val_loss=1.5777, val_error=51.73°, lr=0.000323
+
+Epoch 32/50
+  Batch 0/278, Loss: 3.5490
+  Batch 50/278, Loss: 7.3829
+  Batch 100/278, Loss: 4.8748
+  Batch 150/278, Loss: 6.2351
+  Batch 200/278, Loss: 4.2122
+  Batch 250/278, Loss: 3.5866
+Epoch 32: train_loss=4.2248, val_loss=2.1548, val_error=55.05°, lr=0.000294
+
+Epoch 33/50
+  Batch 0/278, Loss: 3.7796
+  Batch 50/278, Loss: 4.0074
+  Batch 100/278, Loss: 4.3880
+  Batch 150/278, Loss: 5.5349
+  Batch 200/278, Loss: 3.7672
+  Batch 250/278, Loss: 4.4224
+Epoch 33: train_loss=4.2090, val_loss=1.7929, val_error=51.79°, lr=0.000267
+
+Epoch 34/50
+  Batch 0/278, Loss: 2.6394
+  Batch 50/278, Loss: 4.3163
+  Batch 100/278, Loss: 4.2152
+  Batch 150/278, Loss: 3.9022
+  Batch 200/278, Loss: 3.8207
+  Batch 250/278, Loss: 4.5437
+Epoch 34: train_loss=3.9991, val_loss=1.8686, val_error=52.08°, lr=0.000240
+
+Epoch 35/50
+  Batch 0/278, Loss: 4.3488
+  Batch 50/278, Loss: 3.3723
+  Batch 100/278, Loss: 4.1163
+  Batch 150/278, Loss: 3.7688
+  Batch 200/278, Loss: 5.5096
+  Batch 250/278, Loss: 4.3679
+Epoch 35: train_loss=4.0704, val_loss=2.1681, val_error=54.10°, lr=0.000214
+
+Epoch 36/50
+  Batch 0/278, Loss: 4.8949
+  Batch 50/278, Loss: 3.7273
+  Batch 100/278, Loss: 3.4553
+  Batch 150/278, Loss: 4.3858
+  Batch 200/278, Loss: 4.0375
+  Batch 250/278, Loss: 5.5825
+Epoch 36: train_loss=4.1170, val_loss=2.0246, val_error=56.41°, lr=0.000189
+
+Epoch 37/50
+  Batch 0/278, Loss: 4.4049
+  Batch 50/278, Loss: 4.7994
+  Batch 100/278, Loss: 3.2823
+  Batch 150/278, Loss: 3.9330
+  Batch 200/278, Loss: 3.1851
+  Batch 250/278, Loss: 4.3327
+Epoch 37: train_loss=4.0101, val_loss=2.6113, val_error=54.95°, lr=0.000166
+
+Epoch 38/50
+  Batch 0/278, Loss: 3.2564
+  Batch 50/278, Loss: 3.4055
+  Batch 100/278, Loss: 3.1206
+  Batch 150/278, Loss: 3.9637
+  Batch 200/278, Loss: 3.4274
+  Batch 250/278, Loss: 3.4255
+Epoch 38: train_loss=3.9831, val_loss=1.6454, val_error=53.53°, lr=0.000144
+
+Epoch 39/50
+  Batch 0/278, Loss: 3.7685
+  Batch 50/278, Loss: 4.2602
+  Batch 100/278, Loss: 3.0777
+  Batch 150/278, Loss: 3.9946
+  Batch 200/278, Loss: 3.2862
+  Batch 250/278, Loss: 3.3954
+Epoch 39: train_loss=3.9899, val_loss=1.5679, val_error=52.81°, lr=0.000124
+
+Epoch 40/50
+  Batch 0/278, Loss: 3.1414
+  Batch 50/278, Loss: 5.4866
+  Batch 100/278, Loss: 3.3080
+  Batch 150/278, Loss: 4.2017
+  Batch 200/278, Loss: 3.2249
+  Batch 250/278, Loss: 3.6573
+Epoch 40: train_loss=3.9134, val_loss=1.6061, val_error=61.45°, lr=0.000105
+
+Epoch 41/50
+  Batch 0/278, Loss: 3.9146
+  Batch 50/278, Loss: 4.5629
+  Batch 100/278, Loss: 4.8515
+  Batch 150/278, Loss: 4.9186
+  Batch 200/278, Loss: 3.2378
+  Batch 250/278, Loss: 3.1980
+Epoch 41: train_loss=3.9040, val_loss=1.3938, val_error=56.06°, lr=0.000087
+
+Epoch 42/50
+  Batch 0/278, Loss: 3.8637
+  Batch 50/278, Loss: 4.2656
+  Batch 100/278, Loss: 3.6732
+  Batch 150/278, Loss: 3.7312
+  Batch 200/278, Loss: 3.7170
+  Batch 250/278, Loss: 4.8166
+Epoch 42: train_loss=3.8174, val_loss=2.0322, val_error=55.90°, lr=0.000071
+
+Epoch 43/50
+  Batch 0/278, Loss: 3.2154
+  Batch 50/278, Loss: 4.1128
+  Batch 100/278, Loss: 2.6727
+  Batch 150/278, Loss: 3.5354
+  Batch 200/278, Loss: 3.5237
+  Batch 250/278, Loss: 4.9944
+Epoch 43: train_loss=3.8664, val_loss=1.4141, val_error=54.88°, lr=0.000057
+
+Epoch 44/50
+  Batch 0/278, Loss: 3.8589
+  Batch 50/278, Loss: 4.7586
+  Batch 100/278, Loss: 4.1691
+  Batch 150/278, Loss: 4.0626
+  Batch 200/278, Loss: 3.6993
+  Batch 250/278, Loss: 3.1826
+Epoch 44: train_loss=3.8481, val_loss=1.7547, val_error=56.16°, lr=0.000045
+
+Epoch 45/50
+  Batch 0/278, Loss: 4.1514
+  Batch 50/278, Loss: 5.4103
+  Batch 100/278, Loss: 4.0820
+  Batch 150/278, Loss: 3.4695
+  Batch 200/278, Loss: 3.8121
+  Batch 250/278, Loss: 4.3766
+Epoch 45: train_loss=3.8921, val_loss=1.3781, val_error=55.40°, lr=0.000034
+
+Epoch 46/50
+  Batch 0/278, Loss: 3.5569
+  Batch 50/278, Loss: 5.4152
+  Batch 100/278, Loss: 4.0919
+  Batch 150/278, Loss: 3.6791
+  Batch 200/278, Loss: 3.4869
+  Batch 250/278, Loss: 4.1849
+Epoch 46: train_loss=3.9528, val_loss=1.8900, val_error=54.25°, lr=0.000026
+
+Epoch 47/50
+  Batch 0/278, Loss: 3.0801
+  Batch 50/278, Loss: 3.8340
+  Batch 100/278, Loss: 5.0196
+  Batch 150/278, Loss: 5.0806
+  Batch 200/278, Loss: 2.7050
+  Batch 250/278, Loss: 4.1380
+Epoch 47: train_loss=3.8567, val_loss=1.7381, val_error=56.22°, lr=0.000019
+
+Epoch 48/50
+  Batch 0/278, Loss: 2.6970
+  Batch 50/278, Loss: 3.2709
+  Batch 100/278, Loss: 3.4704
+  Batch 150/278, Loss: 5.3308
+  Batch 200/278, Loss: 3.1963
+  Batch 250/278, Loss: 3.9150
+Epoch 48: train_loss=3.7973, val_loss=1.6947, val_error=53.44°, lr=0.000014
+
+Epoch 49/50
+  Batch 0/278, Loss: 4.0056
+  Batch 50/278, Loss: 4.7162
+  Batch 100/278, Loss: 3.1894
+  Batch 150/278, Loss: 3.1035
+  Batch 200/278, Loss: 4.0785
+  Batch 250/278, Loss: 4.2240
+Epoch 49: train_loss=3.7849, val_loss=1.5685, val_error=54.57°, lr=0.000011
+
+Epoch 50/50
+  Batch 0/278, Loss: 3.8206
+  Batch 50/278, Loss: 3.9116
+  Batch 100/278, Loss: 4.4066
+  Batch 150/278, Loss: 3.4533
+  Batch 200/278, Loss: 3.0788
+  Batch 250/278, Loss: 4.0752
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                  lr ███████▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁
+wandb:          train/loss █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: val/angle_error_deg ▂▁▄▆▂▁▁▂▃▅█▇▆▂▂▂▂▃▂▁▂▂▃▂▂▂▂▂▃▂▂▃▂▂▂▂▂▂▂▂
+wandb:            val/loss █▃▃▃▂▁▁▂▂▂▃▂▃▂▁▁▁▂▂▁▁▁▁▁▁▁▁▂▁▂▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 50
+wandb:                  lr 1e-05
+wandb:          train/loss 3.72167
+wandb: val/angle_error_deg 52.73086
+wandb:            val/loss 1.6745
+wandb: 
+wandb: 🚀 View run MF_1e_kappa_mu_only at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/nopi2y16
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251217_053139-nopi2y16/logs
+Epoch 50: train_loss=3.7217, val_loss=1.6745, val_error=52.73°, lr=0.000010
+
+============================================================
+Training completed!
+Best val loss: 1.2188
+Best val error: 41.28°
+Checkpoints saved to: checkpoints/MF_1e_kappa_mu_only_20251217_053138
+
+[0;34m==============================================
+  D Series: Discrete Direction (Projection+Softmax)
+  Categories: 1_front, 4_fronts, no_front
+==============================================\033[0m
+
+[1;33m[D_8a] 8 bins, CE, τ=5 (baseline)[0m
+Config saved to checkpoints/D_8a_proj_t5_20251217_075937/config.json
+Traceback (most recent call last):
+  File "/home/pablo/ForwardNet-claude/train_direction.py", line 951, in <module>
+    trainer = Trainer(args)
+              ^^^^^^^^^^^^^
+  File "/home/pablo/ForwardNet-claude/train_direction.py", line 593, in __init__
+    self._init_datasets()
+  File "/home/pablo/ForwardNet-claude/train_direction.py", line 653, in _init_datasets
+    self.train_dataset = DiscreteDirectionDataset(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/ForwardNet-claude/datasets/discrete_direction_dataset.py", line 89, in __init__
+    self.samples = self._load_annotations()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pablo/ForwardNet-claude/datasets/discrete_direction_dataset.py", line 141, in _load_annotations
+    'angle': self.DIRECTION_TO_ANGLE[direction],
+             ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'N/A'
+[D_8a] 8 bins, CE, τ=5 (baseline)
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run x6w42le3
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251217_163434-x6w42le3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run D_8a_proj_t5
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/x6w42le3
+Config saved to checkpoints/D_8a_proj_t5_20251217_163431/config.json
+[DiscreteDirectionDataset] train: 1688 samples x10 = 16880 total
+  num_bins: 8, gt_mode: projection, temperature: 5.0
+  - 1_front: 697
+  - 4_fronts: 190
+  - no_front: 801
+[DiscreteDirectionDataset] val: 482 samples = 482 total
+  num_bins: 8, gt_mode: projection, temperature: 5.0
+  - 1_front: 199
+  - 4_fronts: 54
+  - no_front: 229
+Total parameters: 2,519,112
+
+Starting training: D_8a_proj_t5
+Mode: discrete
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/528, Loss: 2.1290
+  Batch 50/528, Loss: 2.0107
+  Batch 100/528, Loss: 2.0324
+  Batch 150/528, Loss: 1.9332
+  Batch 200/528, Loss: 1.8914
+  Batch 250/528, Loss: 1.9570
+  Batch 300/528, Loss: 1.8322
+  Batch 350/528, Loss: 1.8659
+  Batch 400/528, Loss: 1.9533
+  Batch 450/528, Loss: 1.8824
+  Batch 500/528, Loss: 1.9971
+Epoch 1: train_loss=1.9558, val_loss=1.8334, val_error=18.98°, lr=0.000999
+  Saved: best_loss.pth (val_loss=1.8334, val_error=18.98°)
+  Saved: best_error.pth (val_loss=1.8334, val_error=18.98°)
+
+Epoch 2/50
+scripts/run_d_series.sh: line 6: $'\r': command not found
+scripts/run_d_series.sh: line 7: set: -: invalid option
+set: usage: set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]
+scripts/run_d_series.sh: line 8: $'\r': command not found
+scripts/run_d_series.sh: line 15: $'\r': command not found
+==============================================
+  D Series: Discrete Direction Experiments
+  Wed 17 Dec 2025 07:07:03 PM JST
+==============================================
+scripts/run_d_series.sh: line 20: $'\r': command not found
+scripts/run_d_series.sh: line 203: syntax error: unexpected end of file
+==============================================
+  D Series: Discrete Direction Experiments
+  Wed 17 Dec 2025 07:07:43 PM JST
+==============================================
+[0;32mGPU available:[0m
+name, memory.total [MiB], memory.free [MiB]
+NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 6326 MiB
+
+[0;34m==============================================
+  D Series: 8 bins experiments
+==============================================\033[0m
+
+[1;33m[D_8a] 8 bins, CE, τ=5 (baseline)[0m
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 7hf50alj
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/pablo/ForwardNet-claude/wandb/run-20251217_190748-7hf50alj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run D_8a_proj_t5
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/7hf50alj
+Config saved to checkpoints/D_8a_proj_t5_20251217_190746/config.json
+[DiscreteDirectionDataset] train: 1688 samples x10 = 16880 total
+  num_bins: 8, gt_mode: projection, temperature: 5.0
+  - 1_front: 697
+  - 4_fronts: 190
+  - no_front: 801
+[DiscreteDirectionDataset] val: 482 samples = 482 total
+  num_bins: 8, gt_mode: projection, temperature: 5.0
+  - 1_front: 199
+  - 4_fronts: 54
+  - no_front: 229
+Total parameters: 2,519,112
+
+Starting training: D_8a_proj_t5
+Mode: discrete
+Device: cuda
+Epochs: 50
+============================================================
+
+Epoch 1/50
+  Batch 0/528, Loss: 2.1918
+  Batch 50/528, Loss: 1.9756
+  Batch 100/528, Loss: 1.9642
+  Batch 150/528, Loss: 1.9515
+  Batch 200/528, Loss: 1.9774
+  Batch 250/528, Loss: 2.0825
+  Batch 300/528, Loss: 1.9077
+  Batch 350/528, Loss: 1.8965
+  Batch 400/528, Loss: 1.8193
+  Batch 450/528, Loss: 1.8571
+  Batch 500/528, Loss: 1.8752
+Epoch 1: train_loss=1.9526, val_loss=1.8793, val_error=20.04°, lr=0.000999
+  Saved: best_loss.pth (val_loss=1.8793, val_error=20.04°)
+  Saved: best_error.pth (val_loss=1.8793, val_error=20.04°)
+
+Epoch 2/50
+  Batch 0/528, Loss: 1.9076
+  Batch 50/528, Loss: 1.9269
+  Batch 100/528, Loss: 1.8581
+  Batch 150/528, Loss: 1.9490
+  Batch 200/528, Loss: 1.8083
+  Batch 250/528, Loss: 1.8739
+  Batch 300/528, Loss: 1.9245
+  Batch 350/528, Loss: 1.9119
+  Batch 400/528, Loss: 1.9186
+  Batch 450/528, Loss: 1.9561
+  Batch 500/528, Loss: 1.7744
+Epoch 2: train_loss=1.9069, val_loss=1.9174, val_error=23.29°, lr=0.000996
+
+Epoch 3/50
+  Batch 0/528, Loss: 2.0565
+  Batch 50/528, Loss: 1.8715
+  Batch 100/528, Loss: 1.8127
+  Batch 150/528, Loss: 1.8798
+  Batch 200/528, Loss: 1.9484
+  Batch 250/528, Loss: 1.8338
+  Batch 300/528, Loss: 1.9403
+  Batch 350/528, Loss: 1.7888
+  Batch 400/528, Loss: 1.8925
+  Batch 450/528, Loss: 1.8309
+  Batch 500/528, Loss: 2.0092
+Epoch 3: train_loss=1.8889, val_loss=1.8553, val_error=11.60°, lr=0.000991
+  Saved: best_loss.pth (val_loss=1.8553, val_error=11.60°)
+  Saved: best_error.pth (val_loss=1.8553, val_error=11.60°)
+
+Epoch 4/50
+  Batch 0/528, Loss: 1.8479
+  Batch 50/528, Loss: 1.7960
+  Batch 100/528, Loss: 1.7821
+  Batch 150/528, Loss: 1.7779
+  Batch 200/528, Loss: 1.9051
+  Batch 250/528, Loss: 1.7847
+  Batch 300/528, Loss: 1.8464
+  Batch 350/528, Loss: 1.8232
+  Batch 400/528, Loss: 1.9291
+  Batch 450/528, Loss: 1.9153
+  Batch 500/528, Loss: 1.7977
+Epoch 4: train_loss=1.8734, val_loss=1.8132, val_error=14.94°, lr=0.000984
+  Saved: best_loss.pth (val_loss=1.8132, val_error=14.94°)
+
+Epoch 5/50
+  Batch 0/528, Loss: 1.7774
+  Batch 50/528, Loss: 1.8851
+  Batch 100/528, Loss: 1.8739
+  Batch 150/528, Loss: 1.8462
+  Batch 200/528, Loss: 1.8489
+  Batch 250/528, Loss: 1.8546
+  Batch 300/528, Loss: 1.9842
+  Batch 350/528, Loss: 1.8837
+  Batch 400/528, Loss: 1.9409
+  Batch 450/528, Loss: 1.8920
+  Batch 500/528, Loss: 1.8577
+Epoch 5: train_loss=1.8617, val_loss=1.8887, val_error=28.30°, lr=0.000976
+
+Epoch 6/50
+  Batch 0/528, Loss: 2.0604
+  Batch 50/528, Loss: 1.8860
+  Batch 100/528, Loss: 1.9562
+  Batch 150/528, Loss: 1.8697
+  Batch 200/528, Loss: 1.8325
+  Batch 250/528, Loss: 1.8314
+  Batch 300/528, Loss: 1.8202
+  Batch 350/528, Loss: 1.9443
+  Batch 400/528, Loss: 1.8906
+  Batch 450/528, Loss: 2.0247
+  Batch 500/528, Loss: 1.7885
+Epoch 6: train_loss=1.8525, val_loss=1.8864, val_error=31.99°, lr=0.000965
+
+Epoch 7/50
+  Batch 0/528, Loss: 1.8173
+  Batch 50/528, Loss: 1.9075
+  Batch 100/528, Loss: 1.8672
+  Batch 150/528, Loss: 1.8443
+  Batch 200/528, Loss: 1.8157
+  Batch 250/528, Loss: 2.0654
+  Batch 300/528, Loss: 1.8670
+  Batch 350/528, Loss: 1.9218
+  Batch 400/528, Loss: 1.8146
+  Batch 450/528, Loss: 1.9910
+  Batch 500/528, Loss: 1.8898
+Epoch 7: train_loss=1.8437, val_loss=1.7786, val_error=13.10°, lr=0.000953
+  Saved: best_loss.pth (val_loss=1.7786, val_error=13.10°)
+
+Epoch 8/50
+  Batch 0/528, Loss: 1.7725
+  Batch 50/528, Loss: 1.6301
+  Batch 100/528, Loss: 1.8882
+  Batch 150/528, Loss: 1.8935
+  Batch 200/528, Loss: 1.6519
+  Batch 250/528, Loss: 1.7214
+  Batch 300/528, Loss: 1.8799
+  Batch 350/528, Loss: 1.7848
+  Batch 400/528, Loss: 1.6778
+  Batch 450/528, Loss: 1.7410
+  Batch 500/528, Loss: 1.7786
+Epoch 8: train_loss=1.8343, val_loss=1.7974, val_error=11.87°, lr=0.000939
+
+Epoch 9/50

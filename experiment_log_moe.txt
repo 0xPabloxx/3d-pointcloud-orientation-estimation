@@ -1,0 +1,138 @@
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run a2fbuc44
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in checkpoints/2-step_MoE_v1_20251228_173146/wandb/run-20251228_173148-a2fbuc44
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 2-step_MoE_v1_20251228_173146
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/a2fbuc44
+[MoEDataset train] 1858 samples x12 = 22296 total
+  0 (1-front): 697
+  1 (2-front): 170
+  2 (4-front): 190
+  3 (Rot-sym): 564
+  4 (No-front): 237
+[MoEDataset val] 396 samples = 396 total
+  0 (1-front): 149
+  1 (2-front): 36
+  2 (4-front): 40
+  3 (Rot-sym): 120
+  4 (No-front): 51
+[MoEDataset test] 403 samples = 403 total
+  0 (1-front): 150
+  1 (2-front): 37
+  2 (4-front): 42
+  3 (Rot-sym): 122
+  4 (No-front): 52
+
+Loading classifier from: checkpoints/SymClassifier_20251216_035345/best.pth
+Classifier loaded successfully
+
+============================================================
+Experiment: 2-step_MoE_v1_20251228_173146
+Device: cuda
+Total parameters: 3,953,818
+Trainable parameters: 1,797,717
+Classifier frozen: True
+Train samples: 22296
+Val samples: 396
+Batch size: 32
+Balanced sampler: True
+Output dir: checkpoints/2-step_MoE_v1_20251228_173146
+WandB: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/a2fbuc44
+============================================================
+
+
+Starting training...
+============================================================
+
+Epoch 1/100
+----------------------------------------
+  Batch 0/696: loss=1.8359, gate_acc=1.000
+  Batch 20/696: loss=1.4769, gate_acc=1.000
+  Batch 40/696: loss=1.6808, gate_acc=1.000
+  Batch 60/696: loss=1.7688, gate_acc=1.000
+  Batch 80/696: loss=1.0447, gate_acc=1.000
+  Batch 100/696: loss=1.7742, gate_acc=1.000
+  Batch 120/696: loss=1.3340, gate_acc=1.000
+  Batch 140/696: loss=1.1290, gate_acc=1.000
+  Batch 160/696: loss=1.5218, gate_acc=1.000
+  Batch 180/696: loss=1.4860, gate_acc=1.000
+  Batch 200/696: loss=1.2143, gate_acc=1.000
+  Batch 220/696: loss=0.8920, gate_acc=1.000
+  Batch 240/696: loss=1.3571, gate_acc=1.000
+  Batch 260/696: loss=1.1091, gate_acc=1.000
+  Batch 280/696: loss=1.1845, gate_acc=1.000
+  Batch 300/696: loss=0.9639, gate_acc=0.938
+  Batch 320/696: loss=1.0112, gate_acc=1.000
+  Batch 340/696: loss=0.8270, gate_acc=1.000
+  Batch 360/696: loss=0.6096, gate_acc=1.000
+  Batch 380/696: loss=0.4905, gate_acc=1.000
+  Batch 400/696: loss=1.0525, gate_acc=1.000
+  Batch 420/696: loss=1.2345, gate_acc=1.000
+  Batch 440/696: loss=1.1988, gate_acc=1.000
+  Batch 460/696: loss=1.4805, gate_acc=1.000
+  Batch 480/696: loss=1.1242, gate_acc=1.000
+  Batch 500/696: loss=0.7383, gate_acc=1.000
+  Batch 520/696: loss=1.7140, gate_acc=1.000
+  Batch 540/696: loss=1.0361, gate_acc=1.000
+  Batch 560/696: loss=1.0017, gate_acc=1.000
+  Batch 580/696: loss=1.2682, gate_acc=1.000
+  Batch 600/696: loss=1.5959, gate_acc=1.000
+  Batch 620/696: loss=3.0790, gate_acc=1.000
+  Batch 640/696: loss=1.3245, gate_acc=1.000
+  Batch 660/696: loss=0.6718, gate_acc=1.000
+  Batch 680/696: loss=0.9846, gate_acc=1.000
+
+  Train: loss=1.2315, 1f=1.6873, 2f=1.3167, 4f=-0.6536
+  Val:   loss=0.6358, gate_acc=0.974
+  LR: 0.001000
+  Time: 307.3s | Elapsed: 0h05m | ETA: 8h27m04s
+  [*] New best model saved!
+
+Epoch 2/100
+----------------------------------------
+  Batch 0/696: loss=1.1256, gate_acc=0.938
+  Batch 20/696: loss=1.0396, gate_acc=1.000
+  Batch 40/696: loss=0.7920, gate_acc=1.000
+  Batch 60/696: loss=0.9344, gate_acc=1.000
+  Batch 80/696: loss=0.9197, gate_acc=1.000
+  Batch 100/696: loss=1.7468, gate_acc=1.000
+  Batch 120/696: loss=0.8738, gate_acc=1.000
+  Batch 140/696: loss=1.9524, gate_acc=1.000
+  Batch 160/696: loss=0.6407, gate_acc=1.000
+  Batch 180/696: loss=0.6575, gate_acc=1.000
+  Batch 200/696: loss=0.5369, gate_acc=1.000
+  Batch 220/696: loss=0.6941, gate_acc=1.000
+  Batch 240/696: loss=1.4220, gate_acc=1.000
+  Batch 260/696: loss=0.4012, gate_acc=1.000
+  Batch 280/696: loss=0.4261, gate_acc=1.000
+  Batch 300/696: loss=0.6477, gate_acc=1.000
+  Batch 320/696: loss=-0.0324, gate_acc=1.000
+  Batch 340/696: loss=0.4274, gate_acc=1.000
+  Batch 360/696: loss=0.5803, gate_acc=1.000
+  Batch 380/696: loss=4.6059, gate_acc=1.000
+  Batch 400/696: loss=0.7255, gate_acc=1.000
+  Batch 420/696: loss=0.4810, gate_acc=1.000
+  Batch 440/696: loss=0.1277, gate_acc=0.969
+  Batch 460/696: loss=0.3754, gate_acc=1.000
+  Batch 480/696: loss=0.5401, gate_acc=1.000
+  Batch 500/696: loss=1.8278, gate_acc=1.000
+  Batch 520/696: loss=2.9402, gate_acc=0.969
+  Batch 540/696: loss=0.4281, gate_acc=1.000
+  Batch 560/696: loss=0.0468, gate_acc=1.000
+  Batch 580/696: loss=0.5689, gate_acc=1.000
+  Batch 600/696: loss=-0.0858, gate_acc=1.000
+  Batch 620/696: loss=5.7920, gate_acc=1.000
+  Batch 640/696: loss=0.7643, gate_acc=1.000
+  Batch 660/696: loss=0.3776, gate_acc=1.000
+  Batch 680/696: loss=0.2345, gate_acc=1.000
+
+  Train: loss=0.7679, 1f=1.0430, 2f=1.2833, 4f=-0.9102
+  Val:   loss=0.2447, gate_acc=0.976
+  LR: 0.000999
+  Time: 323.0s | Elapsed: 0h10m | ETA: 8h34m45s
+  [*] New best model saved!
+
+Epoch 3/100
+----------------------------------------

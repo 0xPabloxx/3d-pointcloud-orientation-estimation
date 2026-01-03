@@ -1,0 +1,150 @@
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 3ayrs2g3
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in checkpoints/P0_v2_warmup15_20251229_164430/wandb/run-20251229_164431-3ayrs2g3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run P0_v2_warmup15_20251229_164430
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/3ayrs2g3
+[MoEDataset train] 2122 samples x12 = 25464 total
+  0 (1-front): 853
+  1 (2-front): 277
+  2 (4-front): 191
+  3 (Rot-sym): 564
+  4 (No-front): 237
+[MoEDataset val] 452 samples = 452 total
+  0 (1-front): 182
+  1 (2-front): 59
+  2 (4-front): 40
+  3 (Rot-sym): 120
+  4 (No-front): 51
+[MoEDataset test] 461 samples = 461 total
+  0 (1-front): 184
+  1 (2-front): 61
+  2 (4-front): 42
+  3 (Rot-sym): 122
+  4 (No-front): 52
+
+Loading classifier from: checkpoints/SymClassifier_20251216_035345/best.pth
+Classifier loaded successfully
+
+============================================================
+Experiment: P0_v2_warmup15_20251229_164430
+Device: cuda
+Total parameters: 3,953,818
+Trainable parameters: 1,797,717
+Classifier frozen: True
+Train samples: 25464
+Val samples: 452
+Batch size: 32
+Balanced sampler: True
+Output dir: checkpoints/P0_v2_warmup15_20251229_164430
+WandB: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/3ayrs2g3
+============================================================
+
+
+Starting training...
+============================================================
+
+Epoch 1/50
+----------------------------------------
+  [Warmup 1/15] Using cosine loss for 1-front
+  Batch 0/795: loss=1.2551, gate_acc=0.969
+  Batch 20/795: loss=1.0844, gate_acc=0.969
+  Batch 40/795: loss=0.6787, gate_acc=1.000
+  Batch 60/795: loss=1.2864, gate_acc=1.000
+  Batch 80/795: loss=1.2254, gate_acc=0.969
+  Batch 100/795: loss=0.7531, gate_acc=0.969
+  Batch 120/795: loss=0.7886, gate_acc=0.938
+  Batch 140/795: loss=0.7408, gate_acc=1.000
+  Batch 160/795: loss=0.8023, gate_acc=1.000
+  Batch 180/795: loss=0.9412, gate_acc=0.969
+  Batch 200/795: loss=0.4377, gate_acc=0.938
+  Batch 220/795: loss=0.7173, gate_acc=0.906
+  Batch 240/795: loss=1.0284, gate_acc=0.969
+  Batch 260/795: loss=1.0264, gate_acc=1.000
+  Batch 280/795: loss=0.8876, gate_acc=1.000
+  Batch 300/795: loss=0.7077, gate_acc=0.938
+  Batch 320/795: loss=0.7200, gate_acc=1.000
+  Batch 340/795: loss=0.6919, gate_acc=0.938
+  Batch 360/795: loss=0.8344, gate_acc=0.938
+  Batch 380/795: loss=0.6584, gate_acc=1.000
+  Batch 400/795: loss=0.9981, gate_acc=0.969
+  Batch 420/795: loss=0.4748, gate_acc=0.938
+  Batch 440/795: loss=0.2660, gate_acc=0.969
+  Batch 460/795: loss=0.4626, gate_acc=0.906
+  Batch 480/795: loss=1.1545, gate_acc=0.875
+  Batch 500/795: loss=0.2262, gate_acc=0.969
+  Batch 520/795: loss=0.3027, gate_acc=0.906
+  Batch 540/795: loss=0.2838, gate_acc=0.938
+  Batch 560/795: loss=1.4467, gate_acc=0.969
+  Batch 580/795: loss=0.2121, gate_acc=1.000
+  Batch 600/795: loss=0.5236, gate_acc=0.969
+  Batch 620/795: loss=0.6373, gate_acc=1.000
+  Batch 640/795: loss=0.5290, gate_acc=1.000
+  Batch 660/795: loss=0.4114, gate_acc=1.000
+  Batch 680/795: loss=0.5515, gate_acc=0.875
+  Batch 700/795: loss=0.5976, gate_acc=0.938
+  Batch 720/795: loss=0.7858, gate_acc=0.969
+  Batch 740/795: loss=0.3382, gate_acc=0.938
+  Batch 760/795: loss=-0.0025, gate_acc=0.906
+  Batch 780/795: loss=0.8377, gate_acc=0.938
+
+  Train: loss=0.7721, 1f=1.0012, 2f=1.0348, 4f=-0.5380
+  Val:   loss=0.7258, gate_acc=0.965
+  LR: 0.000999
+  Time: 408.2s | Elapsed: 0h06m | ETA: 5h33m23s
+  [*] New best model saved!
+
+Epoch 2/50
+----------------------------------------
+  [Warmup 2/15] Using cosine loss for 1-front
+  Batch 0/795: loss=-0.0577, gate_acc=0.969
+  Batch 20/795: loss=0.3202, gate_acc=1.000
+  Batch 40/795: loss=0.6689, gate_acc=1.000
+  Batch 60/795: loss=0.1200, gate_acc=0.969
+  Batch 80/795: loss=0.2996, gate_acc=0.969
+  Batch 100/795: loss=0.6916, gate_acc=0.969
+  Batch 120/795: loss=0.0696, gate_acc=0.969
+  Batch 140/795: loss=1.1301, gate_acc=0.938
+  Batch 160/795: loss=0.3680, gate_acc=0.906
+  Batch 180/795: loss=1.1550, gate_acc=0.969
+  Batch 200/795: loss=-0.0140, gate_acc=0.906
+  Batch 220/795: loss=0.0423, gate_acc=0.938
+  Batch 240/795: loss=3.7962, gate_acc=0.969
+  Batch 260/795: loss=0.4633, gate_acc=0.938
+  Batch 280/795: loss=1.4626, gate_acc=1.000
+  Batch 300/795: loss=0.0539, gate_acc=0.969
+  Batch 320/795: loss=0.6135, gate_acc=0.969
+  Batch 340/795: loss=0.0325, gate_acc=0.938
+  Batch 360/795: loss=0.2629, gate_acc=0.938
+  Batch 380/795: loss=0.2852, gate_acc=0.969
+  Batch 400/795: loss=-0.1408, gate_acc=0.875
+  Batch 420/795: loss=0.4845, gate_acc=0.938
+  Batch 440/795: loss=0.4164, gate_acc=1.000
+  Batch 460/795: loss=0.3890, gate_acc=0.969
+  Batch 480/795: loss=0.4081, gate_acc=1.000
+  Batch 500/795: loss=0.6981, gate_acc=0.969
+  Batch 520/795: loss=0.7198, gate_acc=0.938
+  Batch 540/795: loss=3.9592, gate_acc=1.000
+  Batch 560/795: loss=-0.1491, gate_acc=0.969
+  Batch 580/795: loss=0.6057, gate_acc=0.938
+  Batch 600/795: loss=0.2851, gate_acc=0.938
+  Batch 620/795: loss=0.4751, gate_acc=0.969
+  Batch 640/795: loss=-0.0906, gate_acc=0.969
+  Batch 660/795: loss=0.4841, gate_acc=0.969
+  Batch 680/795: loss=0.5761, gate_acc=0.906
+  Batch 700/795: loss=0.4291, gate_acc=0.938
+  Batch 720/795: loss=0.5714, gate_acc=0.938
+  Batch 740/795: loss=0.3537, gate_acc=0.938
+  Batch 760/795: loss=0.3752, gate_acc=0.969
+  Batch 780/795: loss=0.4169, gate_acc=0.938
+
+  Train: loss=0.6819, 1f=1.0054, 2f=1.0779, 4f=-1.0477
+  Val:   loss=0.9252, gate_acc=0.965
+  LR: 0.000996
+  Time: 302.6s | Elapsed: 0h11m | ETA: 4h44m19s
+
+Epoch 3/50
+----------------------------------------
+  [Warmup 3/15] Using cosine loss for 1-front

@@ -1,0 +1,3674 @@
+{
+  "description": "1-front方向预测异常值清单 - 基于P2v2_SoftGate模型评估",
+  "model_checkpoint": "checkpoints/P2v2_SoftGate_20251229_183118/best.pth",
+  "evaluation_date": "2025-12-29",
+  "thresholds": {
+    "severe": "误差 >= 90° (前后颠倒)",
+    "major": "误差 >= 45° (严重偏差)",
+    "moderate": "误差 >= 15° (中等偏差)"
+  },
+  "summary": {
+    "total_1front_samples": 465,
+    "severe_outliers": 77,
+    "major_outliers": 96,
+    "moderate_outliers": 155
+  },
+  "category_summary": {
+    "airplane": {
+      "total": 66,
+      "severe": 4,
+      "major": 4,
+      "moderate": 27
+    },
+    "chair": {
+      "total": 300,
+      "severe": 9,
+      "major": 17,
+      "moderate": 49
+    },
+    "bench": {
+      "total": 25,
+      "severe": 3,
+      "major": 8,
+      "moderate": 9
+    },
+    "bookshelf": {
+      "total": 56,
+      "severe": 47,
+      "major": 51,
+      "moderate": 52
+    },
+    "bathtub": {
+      "total": 8,
+      "severe": 4,
+      "major": 6,
+      "moderate": 8
+    },
+    "wardrobe": {
+      "total": 10,
+      "severe": 10,
+      "major": 10,
+      "moderate": 10
+    }
+  },
+  "severe_outliers": [
+    {
+      "file": "bookshelf_0124",
+      "category": "bookshelf",
+      "max_error": 180.0,
+      "mean_error": 111.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0005",
+      "category": "bookshelf",
+      "max_error": 179.8,
+      "mean_error": 167.7,
+      "mean_kappa": 35.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0038",
+      "category": "bookshelf",
+      "max_error": 179.6,
+      "mean_error": 67.7,
+      "mean_kappa": 25.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0256",
+      "category": "bookshelf",
+      "max_error": 179.5,
+      "mean_error": 94.4,
+      "mean_kappa": 25.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0105",
+      "category": "bathtub",
+      "max_error": 179.2,
+      "mean_error": 176.4,
+      "mean_kappa": 24.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0055",
+      "category": "bookshelf",
+      "max_error": 179.2,
+      "mean_error": 95.8,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0067",
+      "category": "wardrobe",
+      "max_error": 179.1,
+      "mean_error": 105.7,
+      "mean_kappa": 14.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0087",
+      "category": "wardrobe",
+      "max_error": 179.0,
+      "mean_error": 91.1,
+      "mean_kappa": 9.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bathtub_0100",
+      "category": "bathtub",
+      "max_error": 178.9,
+      "mean_error": 76.6,
+      "mean_kappa": 8.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0031",
+      "category": "bookshelf",
+      "max_error": 178.8,
+      "mean_error": 90.1,
+      "mean_kappa": 11.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0082",
+      "category": "bookshelf",
+      "max_error": 178.5,
+      "mean_error": 122.0,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0177",
+      "category": "bookshelf",
+      "max_error": 178.4,
+      "mean_error": 127.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0141",
+      "category": "bench",
+      "max_error": 178.4,
+      "mean_error": 154.0,
+      "mean_kappa": 5.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0199",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 95.2,
+      "mean_kappa": 10.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0288",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 129.4,
+      "mean_kappa": 15.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0308",
+      "category": "chair",
+      "max_error": 178.2,
+      "mean_error": 46.6,
+      "mean_kappa": 5.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0240",
+      "category": "bookshelf",
+      "max_error": 178.2,
+      "mean_error": 122.6,
+      "mean_kappa": 26.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0049",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 92.4,
+      "mean_kappa": 28.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0035",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 166.6,
+      "mean_kappa": 21.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0045",
+      "category": "bookshelf",
+      "max_error": 177.9,
+      "mean_error": 132.9,
+      "mean_kappa": 25.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0289",
+      "category": "bookshelf",
+      "max_error": 177.4,
+      "mean_error": 164.5,
+      "mean_kappa": 33.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0151",
+      "category": "bookshelf",
+      "max_error": 176.9,
+      "mean_error": 130.4,
+      "mean_kappa": 32.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0246",
+      "category": "bookshelf",
+      "max_error": 176.6,
+      "mean_error": 121.0,
+      "mean_kappa": 24.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0078",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 111.6,
+      "mean_kappa": 24.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0171",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 166.1,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0193",
+      "category": "airplane",
+      "max_error": 176.3,
+      "mean_error": 145.7,
+      "mean_kappa": 0.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0006",
+      "category": "bookshelf",
+      "max_error": 176.2,
+      "mean_error": 120.8,
+      "mean_kappa": 17.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0284",
+      "category": "bookshelf",
+      "max_error": 176.0,
+      "mean_error": 94.3,
+      "mean_kappa": 16.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0087",
+      "category": "bookshelf",
+      "max_error": 175.9,
+      "mean_error": 169.9,
+      "mean_kappa": 19.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0058",
+      "category": "bookshelf",
+      "max_error": 175.8,
+      "mean_error": 90.2,
+      "mean_kappa": 20.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0034",
+      "category": "wardrobe",
+      "max_error": 175.6,
+      "mean_error": 93.0,
+      "mean_kappa": 17.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0763",
+      "category": "chair",
+      "max_error": 175.1,
+      "mean_error": 88.1,
+      "mean_kappa": 8.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0088",
+      "category": "bookshelf",
+      "max_error": 175.1,
+      "mean_error": 68.0,
+      "mean_kappa": 12.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0071",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 130.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0248",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 89.7,
+      "mean_kappa": 24.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0159",
+      "category": "bookshelf",
+      "max_error": 174.5,
+      "mean_error": 126.0,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0098",
+      "category": "wardrobe",
+      "max_error": 173.9,
+      "mean_error": 165.9,
+      "mean_kappa": 44.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0047",
+      "category": "wardrobe",
+      "max_error": 173.4,
+      "mean_error": 108.4,
+      "mean_kappa": 13.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0228",
+      "category": "bookshelf",
+      "max_error": 173.4,
+      "mean_error": 132.3,
+      "mean_kappa": 27.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0070",
+      "category": "bookshelf",
+      "max_error": 173.3,
+      "mean_error": 104.6,
+      "mean_kappa": 23.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0104",
+      "category": "airplane",
+      "max_error": 173.2,
+      "mean_error": 171.3,
+      "mean_kappa": 22.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0181",
+      "category": "bookshelf",
+      "max_error": 172.8,
+      "mean_error": 68.8,
+      "mean_kappa": 16.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0024",
+      "category": "bathtub",
+      "max_error": 172.8,
+      "mean_error": 115.0,
+      "mean_kappa": 10.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0042",
+      "category": "bookshelf",
+      "max_error": 172.4,
+      "mean_error": 62.8,
+      "mean_kappa": 14.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0285",
+      "category": "bookshelf",
+      "max_error": 171.7,
+      "mean_error": 114.3,
+      "mean_kappa": 18.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0097",
+      "category": "wardrobe",
+      "max_error": 171.5,
+      "mean_error": 73.9,
+      "mean_kappa": 11.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0974",
+      "category": "chair",
+      "max_error": 171.4,
+      "mean_error": 51.9,
+      "mean_kappa": 10.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0101",
+      "category": "wardrobe",
+      "max_error": 170.4,
+      "mean_error": 147.3,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0109",
+      "category": "bookshelf",
+      "max_error": 169.3,
+      "mean_error": 69.6,
+      "mean_kappa": 7.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0052",
+      "category": "wardrobe",
+      "max_error": 169.3,
+      "mean_error": 115.5,
+      "mean_kappa": 24.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0261",
+      "category": "bookshelf",
+      "max_error": 169.2,
+      "mean_error": 48.0,
+      "mean_kappa": 13.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0709",
+      "category": "chair",
+      "max_error": 168.8,
+      "mean_error": 48.7,
+      "mean_kappa": 2.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0163",
+      "category": "bookshelf",
+      "max_error": 168.8,
+      "mean_error": 86.6,
+      "mean_kappa": 22.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0051",
+      "category": "bookshelf",
+      "max_error": 168.4,
+      "mean_error": 123.1,
+      "mean_kappa": 22.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0120",
+      "category": "bookshelf",
+      "max_error": 165.0,
+      "mean_error": 123.7,
+      "mean_kappa": 16.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0431",
+      "category": "chair",
+      "max_error": 164.2,
+      "mean_error": 53.2,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0250",
+      "category": "bookshelf",
+      "max_error": 164.0,
+      "mean_error": 58.3,
+      "mean_kappa": 26.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0045",
+      "category": "wardrobe",
+      "max_error": 163.8,
+      "mean_error": 69.8,
+      "mean_kappa": 19.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0148",
+      "category": "bench",
+      "max_error": 163.5,
+      "mean_error": 61.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0022",
+      "category": "airplane",
+      "max_error": 163.5,
+      "mean_error": 62.2,
+      "mean_kappa": 7.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0019",
+      "category": "bookshelf",
+      "max_error": 162.5,
+      "mean_error": 73.5,
+      "mean_kappa": 17.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0039",
+      "category": "bookshelf",
+      "max_error": 161.7,
+      "mean_error": 105.2,
+      "mean_kappa": 15.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0134",
+      "category": "bookshelf",
+      "max_error": 160.8,
+      "mean_error": 49.9,
+      "mean_kappa": 10.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0065",
+      "category": "wardrobe",
+      "max_error": 160.4,
+      "mean_error": 50.3,
+      "mean_kappa": 9.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0206",
+      "category": "bookshelf",
+      "max_error": 153.0,
+      "mean_error": 46.3,
+      "mean_kappa": 6.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0128",
+      "category": "bathtub",
+      "max_error": 151.5,
+      "mean_error": 65.5,
+      "mean_kappa": 10.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0753",
+      "category": "chair",
+      "max_error": 143.5,
+      "mean_error": 73.0,
+      "mean_kappa": 16.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0146",
+      "category": "bench",
+      "max_error": 141.9,
+      "mean_error": 70.2,
+      "mean_kappa": 0.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0262",
+      "category": "bookshelf",
+      "max_error": 141.0,
+      "mean_error": 89.8,
+      "mean_kappa": 24.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0142",
+      "category": "bookshelf",
+      "max_error": 138.0,
+      "mean_error": 81.6,
+      "mean_kappa": 9.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0034",
+      "category": "bookshelf",
+      "max_error": 131.6,
+      "mean_error": 60.9,
+      "mean_kappa": 8.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0264",
+      "category": "chair",
+      "max_error": 128.6,
+      "mean_error": 63.2,
+      "mean_kappa": 11.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0198",
+      "category": "chair",
+      "max_error": 111.9,
+      "mean_error": 34.0,
+      "mean_kappa": 8.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0148",
+      "category": "bookshelf",
+      "max_error": 105.2,
+      "mean_error": 35.4,
+      "mean_kappa": 31.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0786",
+      "category": "chair",
+      "max_error": 98.9,
+      "mean_error": 73.5,
+      "mean_kappa": 0.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0230",
+      "category": "bookshelf",
+      "max_error": 95.9,
+      "mean_error": 39.7,
+      "mean_kappa": 9.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0123",
+      "category": "airplane",
+      "max_error": 92.4,
+      "mean_error": 63.1,
+      "mean_kappa": 2.6,
+      "splits": [
+        "test"
+      ]
+    }
+  ],
+  "major_outliers": [
+    {
+      "file": "bookshelf_0124",
+      "category": "bookshelf",
+      "max_error": 180.0,
+      "mean_error": 111.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0005",
+      "category": "bookshelf",
+      "max_error": 179.8,
+      "mean_error": 167.7,
+      "mean_kappa": 35.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0038",
+      "category": "bookshelf",
+      "max_error": 179.6,
+      "mean_error": 67.7,
+      "mean_kappa": 25.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0256",
+      "category": "bookshelf",
+      "max_error": 179.5,
+      "mean_error": 94.4,
+      "mean_kappa": 25.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0105",
+      "category": "bathtub",
+      "max_error": 179.2,
+      "mean_error": 176.4,
+      "mean_kappa": 24.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0055",
+      "category": "bookshelf",
+      "max_error": 179.2,
+      "mean_error": 95.8,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0067",
+      "category": "wardrobe",
+      "max_error": 179.1,
+      "mean_error": 105.7,
+      "mean_kappa": 14.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0087",
+      "category": "wardrobe",
+      "max_error": 179.0,
+      "mean_error": 91.1,
+      "mean_kappa": 9.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bathtub_0100",
+      "category": "bathtub",
+      "max_error": 178.9,
+      "mean_error": 76.6,
+      "mean_kappa": 8.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0031",
+      "category": "bookshelf",
+      "max_error": 178.8,
+      "mean_error": 90.1,
+      "mean_kappa": 11.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0082",
+      "category": "bookshelf",
+      "max_error": 178.5,
+      "mean_error": 122.0,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0177",
+      "category": "bookshelf",
+      "max_error": 178.4,
+      "mean_error": 127.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0141",
+      "category": "bench",
+      "max_error": 178.4,
+      "mean_error": 154.0,
+      "mean_kappa": 5.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0199",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 95.2,
+      "mean_kappa": 10.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0288",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 129.4,
+      "mean_kappa": 15.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0308",
+      "category": "chair",
+      "max_error": 178.2,
+      "mean_error": 46.6,
+      "mean_kappa": 5.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0240",
+      "category": "bookshelf",
+      "max_error": 178.2,
+      "mean_error": 122.6,
+      "mean_kappa": 26.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0049",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 92.4,
+      "mean_kappa": 28.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0035",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 166.6,
+      "mean_kappa": 21.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0045",
+      "category": "bookshelf",
+      "max_error": 177.9,
+      "mean_error": 132.9,
+      "mean_kappa": 25.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0289",
+      "category": "bookshelf",
+      "max_error": 177.4,
+      "mean_error": 164.5,
+      "mean_kappa": 33.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0151",
+      "category": "bookshelf",
+      "max_error": 176.9,
+      "mean_error": 130.4,
+      "mean_kappa": 32.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0246",
+      "category": "bookshelf",
+      "max_error": 176.6,
+      "mean_error": 121.0,
+      "mean_kappa": 24.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0078",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 111.6,
+      "mean_kappa": 24.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0171",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 166.1,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0193",
+      "category": "airplane",
+      "max_error": 176.3,
+      "mean_error": 145.7,
+      "mean_kappa": 0.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0006",
+      "category": "bookshelf",
+      "max_error": 176.2,
+      "mean_error": 120.8,
+      "mean_kappa": 17.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0284",
+      "category": "bookshelf",
+      "max_error": 176.0,
+      "mean_error": 94.3,
+      "mean_kappa": 16.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0087",
+      "category": "bookshelf",
+      "max_error": 175.9,
+      "mean_error": 169.9,
+      "mean_kappa": 19.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0058",
+      "category": "bookshelf",
+      "max_error": 175.8,
+      "mean_error": 90.2,
+      "mean_kappa": 20.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0034",
+      "category": "wardrobe",
+      "max_error": 175.6,
+      "mean_error": 93.0,
+      "mean_kappa": 17.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0763",
+      "category": "chair",
+      "max_error": 175.1,
+      "mean_error": 88.1,
+      "mean_kappa": 8.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0088",
+      "category": "bookshelf",
+      "max_error": 175.1,
+      "mean_error": 68.0,
+      "mean_kappa": 12.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0071",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 130.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0248",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 89.7,
+      "mean_kappa": 24.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0159",
+      "category": "bookshelf",
+      "max_error": 174.5,
+      "mean_error": 126.0,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0098",
+      "category": "wardrobe",
+      "max_error": 173.9,
+      "mean_error": 165.9,
+      "mean_kappa": 44.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0047",
+      "category": "wardrobe",
+      "max_error": 173.4,
+      "mean_error": 108.4,
+      "mean_kappa": 13.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0228",
+      "category": "bookshelf",
+      "max_error": 173.4,
+      "mean_error": 132.3,
+      "mean_kappa": 27.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0070",
+      "category": "bookshelf",
+      "max_error": 173.3,
+      "mean_error": 104.6,
+      "mean_kappa": 23.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0104",
+      "category": "airplane",
+      "max_error": 173.2,
+      "mean_error": 171.3,
+      "mean_kappa": 22.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0181",
+      "category": "bookshelf",
+      "max_error": 172.8,
+      "mean_error": 68.8,
+      "mean_kappa": 16.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0024",
+      "category": "bathtub",
+      "max_error": 172.8,
+      "mean_error": 115.0,
+      "mean_kappa": 10.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0042",
+      "category": "bookshelf",
+      "max_error": 172.4,
+      "mean_error": 62.8,
+      "mean_kappa": 14.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0285",
+      "category": "bookshelf",
+      "max_error": 171.7,
+      "mean_error": 114.3,
+      "mean_kappa": 18.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0097",
+      "category": "wardrobe",
+      "max_error": 171.5,
+      "mean_error": 73.9,
+      "mean_kappa": 11.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0974",
+      "category": "chair",
+      "max_error": 171.4,
+      "mean_error": 51.9,
+      "mean_kappa": 10.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0101",
+      "category": "wardrobe",
+      "max_error": 170.4,
+      "mean_error": 147.3,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0109",
+      "category": "bookshelf",
+      "max_error": 169.3,
+      "mean_error": 69.6,
+      "mean_kappa": 7.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0052",
+      "category": "wardrobe",
+      "max_error": 169.3,
+      "mean_error": 115.5,
+      "mean_kappa": 24.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0261",
+      "category": "bookshelf",
+      "max_error": 169.2,
+      "mean_error": 48.0,
+      "mean_kappa": 13.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0709",
+      "category": "chair",
+      "max_error": 168.8,
+      "mean_error": 48.7,
+      "mean_kappa": 2.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0163",
+      "category": "bookshelf",
+      "max_error": 168.8,
+      "mean_error": 86.6,
+      "mean_kappa": 22.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0051",
+      "category": "bookshelf",
+      "max_error": 168.4,
+      "mean_error": 123.1,
+      "mean_kappa": 22.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0120",
+      "category": "bookshelf",
+      "max_error": 165.0,
+      "mean_error": 123.7,
+      "mean_kappa": 16.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0431",
+      "category": "chair",
+      "max_error": 164.2,
+      "mean_error": 53.2,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0250",
+      "category": "bookshelf",
+      "max_error": 164.0,
+      "mean_error": 58.3,
+      "mean_kappa": 26.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0045",
+      "category": "wardrobe",
+      "max_error": 163.8,
+      "mean_error": 69.8,
+      "mean_kappa": 19.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0148",
+      "category": "bench",
+      "max_error": 163.5,
+      "mean_error": 61.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0022",
+      "category": "airplane",
+      "max_error": 163.5,
+      "mean_error": 62.2,
+      "mean_kappa": 7.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0019",
+      "category": "bookshelf",
+      "max_error": 162.5,
+      "mean_error": 73.5,
+      "mean_kappa": 17.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0039",
+      "category": "bookshelf",
+      "max_error": 161.7,
+      "mean_error": 105.2,
+      "mean_kappa": 15.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0134",
+      "category": "bookshelf",
+      "max_error": 160.8,
+      "mean_error": 49.9,
+      "mean_kappa": 10.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0065",
+      "category": "wardrobe",
+      "max_error": 160.4,
+      "mean_error": 50.3,
+      "mean_kappa": 9.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0206",
+      "category": "bookshelf",
+      "max_error": 153.0,
+      "mean_error": 46.3,
+      "mean_kappa": 6.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0128",
+      "category": "bathtub",
+      "max_error": 151.5,
+      "mean_error": 65.5,
+      "mean_kappa": 10.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0753",
+      "category": "chair",
+      "max_error": 143.5,
+      "mean_error": 73.0,
+      "mean_kappa": 16.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0146",
+      "category": "bench",
+      "max_error": 141.9,
+      "mean_error": 70.2,
+      "mean_kappa": 0.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0262",
+      "category": "bookshelf",
+      "max_error": 141.0,
+      "mean_error": 89.8,
+      "mean_kappa": 24.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0142",
+      "category": "bookshelf",
+      "max_error": 138.0,
+      "mean_error": 81.6,
+      "mean_kappa": 9.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0034",
+      "category": "bookshelf",
+      "max_error": 131.6,
+      "mean_error": 60.9,
+      "mean_kappa": 8.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0264",
+      "category": "chair",
+      "max_error": 128.6,
+      "mean_error": 63.2,
+      "mean_kappa": 11.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0198",
+      "category": "chair",
+      "max_error": 111.9,
+      "mean_error": 34.0,
+      "mean_kappa": 8.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0148",
+      "category": "bookshelf",
+      "max_error": 105.2,
+      "mean_error": 35.4,
+      "mean_kappa": 31.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0786",
+      "category": "chair",
+      "max_error": 98.9,
+      "mean_error": 73.5,
+      "mean_kappa": 0.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0230",
+      "category": "bookshelf",
+      "max_error": 95.9,
+      "mean_error": 39.7,
+      "mean_kappa": 9.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0123",
+      "category": "airplane",
+      "max_error": 92.4,
+      "mean_error": 63.1,
+      "mean_kappa": 2.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0233",
+      "category": "chair",
+      "max_error": 87.6,
+      "mean_error": 32.2,
+      "mean_kappa": 2.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0177",
+      "category": "bench",
+      "max_error": 83.4,
+      "mean_error": 36.2,
+      "mean_kappa": 3.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0008",
+      "category": "bathtub",
+      "max_error": 74.0,
+      "mean_error": 42.1,
+      "mean_kappa": 2.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0036",
+      "category": "bookshelf",
+      "max_error": 64.6,
+      "mean_error": 19.7,
+      "mean_kappa": 39.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0263",
+      "category": "bookshelf",
+      "max_error": 62.9,
+      "mean_error": 17.9,
+      "mean_kappa": 30.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0223",
+      "category": "chair",
+      "max_error": 62.6,
+      "mean_error": 21.9,
+      "mean_kappa": 2.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0097",
+      "category": "bookshelf",
+      "max_error": 61.1,
+      "mean_error": 17.9,
+      "mean_kappa": 24.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0666",
+      "category": "chair",
+      "max_error": 59.9,
+      "mean_error": 48.0,
+      "mean_kappa": 25.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0217",
+      "category": "bookshelf",
+      "max_error": 58.3,
+      "mean_error": 23.1,
+      "mean_kappa": 28.2,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0030",
+      "category": "chair",
+      "max_error": 56.2,
+      "mean_error": 28.4,
+      "mean_kappa": 19.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0026",
+      "category": "bathtub",
+      "max_error": 55.6,
+      "mean_error": 21.3,
+      "mean_kappa": 12.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0171",
+      "category": "bench",
+      "max_error": 54.5,
+      "mean_error": 28.7,
+      "mean_kappa": 51.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0915",
+      "category": "chair",
+      "max_error": 52.1,
+      "mean_error": 41.3,
+      "mean_kappa": 39.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0131",
+      "category": "bench",
+      "max_error": 51.4,
+      "mean_error": 26.9,
+      "mean_kappa": 14.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0681",
+      "category": "chair",
+      "max_error": 47.4,
+      "mean_error": 30.2,
+      "mean_kappa": 16.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0042",
+      "category": "bench",
+      "max_error": 46.7,
+      "mean_error": 24.2,
+      "mean_kappa": 11.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0105",
+      "category": "bench",
+      "max_error": 45.5,
+      "mean_error": 21.7,
+      "mean_kappa": 38.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0438",
+      "category": "chair",
+      "max_error": 45.4,
+      "mean_error": 18.4,
+      "mean_kappa": 4.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0594",
+      "category": "chair",
+      "max_error": 45.2,
+      "mean_error": 16.1,
+      "mean_kappa": 26.8,
+      "splits": [
+        "val"
+      ]
+    }
+  ],
+  "moderate_outliers": [
+    {
+      "file": "bookshelf_0124",
+      "category": "bookshelf",
+      "max_error": 180.0,
+      "mean_error": 111.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0005",
+      "category": "bookshelf",
+      "max_error": 179.8,
+      "mean_error": 167.7,
+      "mean_kappa": 35.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0038",
+      "category": "bookshelf",
+      "max_error": 179.6,
+      "mean_error": 67.7,
+      "mean_kappa": 25.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0256",
+      "category": "bookshelf",
+      "max_error": 179.5,
+      "mean_error": 94.4,
+      "mean_kappa": 25.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0105",
+      "category": "bathtub",
+      "max_error": 179.2,
+      "mean_error": 176.4,
+      "mean_kappa": 24.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0055",
+      "category": "bookshelf",
+      "max_error": 179.2,
+      "mean_error": 95.8,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0067",
+      "category": "wardrobe",
+      "max_error": 179.1,
+      "mean_error": 105.7,
+      "mean_kappa": 14.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0087",
+      "category": "wardrobe",
+      "max_error": 179.0,
+      "mean_error": 91.1,
+      "mean_kappa": 9.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bathtub_0100",
+      "category": "bathtub",
+      "max_error": 178.9,
+      "mean_error": 76.6,
+      "mean_kappa": 8.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0031",
+      "category": "bookshelf",
+      "max_error": 178.8,
+      "mean_error": 90.1,
+      "mean_kappa": 11.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0082",
+      "category": "bookshelf",
+      "max_error": 178.5,
+      "mean_error": 122.0,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0177",
+      "category": "bookshelf",
+      "max_error": 178.4,
+      "mean_error": 127.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0141",
+      "category": "bench",
+      "max_error": 178.4,
+      "mean_error": 154.0,
+      "mean_kappa": 5.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0199",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 95.2,
+      "mean_kappa": 10.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0288",
+      "category": "bookshelf",
+      "max_error": 178.3,
+      "mean_error": 129.4,
+      "mean_kappa": 15.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0308",
+      "category": "chair",
+      "max_error": 178.2,
+      "mean_error": 46.6,
+      "mean_kappa": 5.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0240",
+      "category": "bookshelf",
+      "max_error": 178.2,
+      "mean_error": 122.6,
+      "mean_kappa": 26.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0049",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 92.4,
+      "mean_kappa": 28.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0035",
+      "category": "bookshelf",
+      "max_error": 178.1,
+      "mean_error": 166.6,
+      "mean_kappa": 21.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0045",
+      "category": "bookshelf",
+      "max_error": 177.9,
+      "mean_error": 132.9,
+      "mean_kappa": 25.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0289",
+      "category": "bookshelf",
+      "max_error": 177.4,
+      "mean_error": 164.5,
+      "mean_kappa": 33.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0151",
+      "category": "bookshelf",
+      "max_error": 176.9,
+      "mean_error": 130.4,
+      "mean_kappa": 32.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0246",
+      "category": "bookshelf",
+      "max_error": 176.6,
+      "mean_error": 121.0,
+      "mean_kappa": 24.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0078",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 111.6,
+      "mean_kappa": 24.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0171",
+      "category": "bookshelf",
+      "max_error": 176.4,
+      "mean_error": 166.1,
+      "mean_kappa": 30.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0193",
+      "category": "airplane",
+      "max_error": 176.3,
+      "mean_error": 145.7,
+      "mean_kappa": 0.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0006",
+      "category": "bookshelf",
+      "max_error": 176.2,
+      "mean_error": 120.8,
+      "mean_kappa": 17.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0284",
+      "category": "bookshelf",
+      "max_error": 176.0,
+      "mean_error": 94.3,
+      "mean_kappa": 16.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0087",
+      "category": "bookshelf",
+      "max_error": 175.9,
+      "mean_error": 169.9,
+      "mean_kappa": 19.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0058",
+      "category": "bookshelf",
+      "max_error": 175.8,
+      "mean_error": 90.2,
+      "mean_kappa": 20.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0034",
+      "category": "wardrobe",
+      "max_error": 175.6,
+      "mean_error": 93.0,
+      "mean_kappa": 17.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0763",
+      "category": "chair",
+      "max_error": 175.1,
+      "mean_error": 88.1,
+      "mean_kappa": 8.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0088",
+      "category": "bookshelf",
+      "max_error": 175.1,
+      "mean_error": 68.0,
+      "mean_kappa": 12.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0071",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 130.9,
+      "mean_kappa": 15.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0248",
+      "category": "bookshelf",
+      "max_error": 174.6,
+      "mean_error": 89.7,
+      "mean_kappa": 24.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0159",
+      "category": "bookshelf",
+      "max_error": 174.5,
+      "mean_error": 126.0,
+      "mean_kappa": 16.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0098",
+      "category": "wardrobe",
+      "max_error": 173.9,
+      "mean_error": 165.9,
+      "mean_kappa": 44.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0047",
+      "category": "wardrobe",
+      "max_error": 173.4,
+      "mean_error": 108.4,
+      "mean_kappa": 13.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0228",
+      "category": "bookshelf",
+      "max_error": 173.4,
+      "mean_error": 132.3,
+      "mean_kappa": 27.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0070",
+      "category": "bookshelf",
+      "max_error": 173.3,
+      "mean_error": 104.6,
+      "mean_kappa": 23.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0104",
+      "category": "airplane",
+      "max_error": 173.2,
+      "mean_error": 171.3,
+      "mean_kappa": 22.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0181",
+      "category": "bookshelf",
+      "max_error": 172.8,
+      "mean_error": 68.8,
+      "mean_kappa": 16.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0024",
+      "category": "bathtub",
+      "max_error": 172.8,
+      "mean_error": 115.0,
+      "mean_kappa": 10.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0042",
+      "category": "bookshelf",
+      "max_error": 172.4,
+      "mean_error": 62.8,
+      "mean_kappa": 14.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0285",
+      "category": "bookshelf",
+      "max_error": 171.7,
+      "mean_error": 114.3,
+      "mean_kappa": 18.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0097",
+      "category": "wardrobe",
+      "max_error": 171.5,
+      "mean_error": 73.9,
+      "mean_kappa": 11.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0974",
+      "category": "chair",
+      "max_error": 171.4,
+      "mean_error": 51.9,
+      "mean_kappa": 10.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0101",
+      "category": "wardrobe",
+      "max_error": 170.4,
+      "mean_error": 147.3,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0109",
+      "category": "bookshelf",
+      "max_error": 169.3,
+      "mean_error": 69.6,
+      "mean_kappa": 7.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0052",
+      "category": "wardrobe",
+      "max_error": 169.3,
+      "mean_error": 115.5,
+      "mean_kappa": 24.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0261",
+      "category": "bookshelf",
+      "max_error": 169.2,
+      "mean_error": 48.0,
+      "mean_kappa": 13.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0709",
+      "category": "chair",
+      "max_error": 168.8,
+      "mean_error": 48.7,
+      "mean_kappa": 2.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0163",
+      "category": "bookshelf",
+      "max_error": 168.8,
+      "mean_error": 86.6,
+      "mean_kappa": 22.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0051",
+      "category": "bookshelf",
+      "max_error": 168.4,
+      "mean_error": 123.1,
+      "mean_kappa": 22.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0120",
+      "category": "bookshelf",
+      "max_error": 165.0,
+      "mean_error": 123.7,
+      "mean_kappa": 16.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0431",
+      "category": "chair",
+      "max_error": 164.2,
+      "mean_error": 53.2,
+      "mean_kappa": 3.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0250",
+      "category": "bookshelf",
+      "max_error": 164.0,
+      "mean_error": 58.3,
+      "mean_kappa": 26.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "wardrobe_0045",
+      "category": "wardrobe",
+      "max_error": 163.8,
+      "mean_error": 69.8,
+      "mean_kappa": 19.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0148",
+      "category": "bench",
+      "max_error": 163.5,
+      "mean_error": 61.7,
+      "mean_kappa": 21.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0022",
+      "category": "airplane",
+      "max_error": 163.5,
+      "mean_error": 62.2,
+      "mean_kappa": 7.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0019",
+      "category": "bookshelf",
+      "max_error": 162.5,
+      "mean_error": 73.5,
+      "mean_kappa": 17.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0039",
+      "category": "bookshelf",
+      "max_error": 161.7,
+      "mean_error": 105.2,
+      "mean_kappa": 15.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0134",
+      "category": "bookshelf",
+      "max_error": 160.8,
+      "mean_error": 49.9,
+      "mean_kappa": 10.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "wardrobe_0065",
+      "category": "wardrobe",
+      "max_error": 160.4,
+      "mean_error": 50.3,
+      "mean_kappa": 9.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0206",
+      "category": "bookshelf",
+      "max_error": 153.0,
+      "mean_error": 46.3,
+      "mean_kappa": 6.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0128",
+      "category": "bathtub",
+      "max_error": 151.5,
+      "mean_error": 65.5,
+      "mean_kappa": 10.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0753",
+      "category": "chair",
+      "max_error": 143.5,
+      "mean_error": 73.0,
+      "mean_kappa": 16.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0146",
+      "category": "bench",
+      "max_error": 141.9,
+      "mean_error": 70.2,
+      "mean_kappa": 0.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0262",
+      "category": "bookshelf",
+      "max_error": 141.0,
+      "mean_error": 89.8,
+      "mean_kappa": 24.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0142",
+      "category": "bookshelf",
+      "max_error": 138.0,
+      "mean_error": 81.6,
+      "mean_kappa": 9.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0034",
+      "category": "bookshelf",
+      "max_error": 131.6,
+      "mean_error": 60.9,
+      "mean_kappa": 8.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0264",
+      "category": "chair",
+      "max_error": 128.6,
+      "mean_error": 63.2,
+      "mean_kappa": 11.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0198",
+      "category": "chair",
+      "max_error": 111.9,
+      "mean_error": 34.0,
+      "mean_kappa": 8.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0148",
+      "category": "bookshelf",
+      "max_error": 105.2,
+      "mean_error": 35.4,
+      "mean_kappa": 31.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0786",
+      "category": "chair",
+      "max_error": 98.9,
+      "mean_error": 73.5,
+      "mean_kappa": 0.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0230",
+      "category": "bookshelf",
+      "max_error": 95.9,
+      "mean_error": 39.7,
+      "mean_kappa": 9.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0123",
+      "category": "airplane",
+      "max_error": 92.4,
+      "mean_error": 63.1,
+      "mean_kappa": 2.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0233",
+      "category": "chair",
+      "max_error": 87.6,
+      "mean_error": 32.2,
+      "mean_kappa": 2.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0177",
+      "category": "bench",
+      "max_error": 83.4,
+      "mean_error": 36.2,
+      "mean_kappa": 3.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0008",
+      "category": "bathtub",
+      "max_error": 74.0,
+      "mean_error": 42.1,
+      "mean_kappa": 2.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0036",
+      "category": "bookshelf",
+      "max_error": 64.6,
+      "mean_error": 19.7,
+      "mean_kappa": 39.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0263",
+      "category": "bookshelf",
+      "max_error": 62.9,
+      "mean_error": 17.9,
+      "mean_kappa": 30.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0223",
+      "category": "chair",
+      "max_error": 62.6,
+      "mean_error": 21.9,
+      "mean_kappa": 2.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0097",
+      "category": "bookshelf",
+      "max_error": 61.1,
+      "mean_error": 17.9,
+      "mean_kappa": 24.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0666",
+      "category": "chair",
+      "max_error": 59.9,
+      "mean_error": 48.0,
+      "mean_kappa": 25.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bookshelf_0217",
+      "category": "bookshelf",
+      "max_error": 58.3,
+      "mean_error": 23.1,
+      "mean_kappa": 28.2,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0030",
+      "category": "chair",
+      "max_error": 56.2,
+      "mean_error": 28.4,
+      "mean_kappa": 19.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bathtub_0026",
+      "category": "bathtub",
+      "max_error": 55.6,
+      "mean_error": 21.3,
+      "mean_kappa": 12.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0171",
+      "category": "bench",
+      "max_error": 54.5,
+      "mean_error": 28.7,
+      "mean_kappa": 51.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0915",
+      "category": "chair",
+      "max_error": 52.1,
+      "mean_error": 41.3,
+      "mean_kappa": 39.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0131",
+      "category": "bench",
+      "max_error": 51.4,
+      "mean_error": 26.9,
+      "mean_kappa": 14.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0681",
+      "category": "chair",
+      "max_error": 47.4,
+      "mean_error": 30.2,
+      "mean_kappa": 16.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0042",
+      "category": "bench",
+      "max_error": 46.7,
+      "mean_error": 24.2,
+      "mean_kappa": 11.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bench_0105",
+      "category": "bench",
+      "max_error": 45.5,
+      "mean_error": 21.7,
+      "mean_kappa": 38.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0438",
+      "category": "chair",
+      "max_error": 45.4,
+      "mean_error": 18.4,
+      "mean_kappa": 4.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0594",
+      "category": "chair",
+      "max_error": 45.2,
+      "mean_error": 16.1,
+      "mean_kappa": 26.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0159",
+      "category": "airplane",
+      "max_error": 42.8,
+      "mean_error": 26.5,
+      "mean_kappa": 10.5,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0311",
+      "category": "chair",
+      "max_error": 41.6,
+      "mean_error": 19.2,
+      "mean_kappa": 23.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0612",
+      "category": "chair",
+      "max_error": 41.3,
+      "mean_error": 22.4,
+      "mean_kappa": 9.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0028",
+      "category": "chair",
+      "max_error": 36.7,
+      "mean_error": 24.5,
+      "mean_kappa": 7.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0038",
+      "category": "airplane",
+      "max_error": 36.0,
+      "mean_error": 15.4,
+      "mean_kappa": 9.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0156",
+      "category": "airplane",
+      "max_error": 35.2,
+      "mean_error": 16.1,
+      "mean_kappa": 7.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0386",
+      "category": "chair",
+      "max_error": 34.2,
+      "mean_error": 19.2,
+      "mean_kappa": 9.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0132",
+      "category": "airplane",
+      "max_error": 32.3,
+      "mean_error": 21.2,
+      "mean_kappa": 19.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0375",
+      "category": "chair",
+      "max_error": 30.7,
+      "mean_error": 13.4,
+      "mean_kappa": 16.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0017",
+      "category": "airplane",
+      "max_error": 28.9,
+      "mean_error": 14.0,
+      "mean_kappa": 19.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0065",
+      "category": "airplane",
+      "max_error": 27.6,
+      "mean_error": 19.2,
+      "mean_kappa": 27.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0005",
+      "category": "airplane",
+      "max_error": 26.1,
+      "mean_error": 18.0,
+      "mean_kappa": 4.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0202",
+      "category": "airplane",
+      "max_error": 25.0,
+      "mean_error": 11.1,
+      "mean_kappa": 19.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0027",
+      "category": "airplane",
+      "max_error": 24.4,
+      "mean_error": 14.5,
+      "mean_kappa": 21.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0051",
+      "category": "airplane",
+      "max_error": 23.3,
+      "mean_error": 9.9,
+      "mean_kappa": 20.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0272",
+      "category": "chair",
+      "max_error": 23.0,
+      "mean_error": 13.2,
+      "mean_kappa": 24.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0021",
+      "category": "airplane",
+      "max_error": 22.8,
+      "mean_error": 12.8,
+      "mean_kappa": 11.8,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0152",
+      "category": "airplane",
+      "max_error": 22.0,
+      "mean_error": 11.9,
+      "mean_kappa": 22.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0020",
+      "category": "airplane",
+      "max_error": 21.9,
+      "mean_error": 10.8,
+      "mean_kappa": 17.3,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0707",
+      "category": "chair",
+      "max_error": 21.9,
+      "mean_error": 16.9,
+      "mean_kappa": 41.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0546",
+      "category": "chair",
+      "max_error": 20.9,
+      "mean_error": 11.0,
+      "mean_kappa": 17.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0148",
+      "category": "airplane",
+      "max_error": 20.9,
+      "mean_error": 12.1,
+      "mean_kappa": 25.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "bench_0003",
+      "category": "bench",
+      "max_error": 20.9,
+      "mean_error": 9.9,
+      "mean_kappa": 45.2,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0611",
+      "category": "chair",
+      "max_error": 20.7,
+      "mean_error": 8.7,
+      "mean_kappa": 51.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0633",
+      "category": "chair",
+      "max_error": 20.3,
+      "mean_error": 9.2,
+      "mean_kappa": 22.7,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0282",
+      "category": "chair",
+      "max_error": 19.6,
+      "mean_error": 8.6,
+      "mean_kappa": 15.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0271",
+      "category": "chair",
+      "max_error": 19.4,
+      "mean_error": 7.4,
+      "mean_kappa": 48.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0296",
+      "category": "chair",
+      "max_error": 19.1,
+      "mean_error": 6.4,
+      "mean_kappa": 38.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0949",
+      "category": "chair",
+      "max_error": 19.0,
+      "mean_error": 13.1,
+      "mean_kappa": 46.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0036",
+      "category": "airplane",
+      "max_error": 18.7,
+      "mean_error": 10.7,
+      "mean_kappa": 15.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0494",
+      "category": "chair",
+      "max_error": 18.7,
+      "mean_error": 13.6,
+      "mean_kappa": 32.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0190",
+      "category": "airplane",
+      "max_error": 18.7,
+      "mean_error": 14.1,
+      "mean_kappa": 26.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0351",
+      "category": "chair",
+      "max_error": 18.6,
+      "mean_error": 8.1,
+      "mean_kappa": 34.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bathtub_0091",
+      "category": "bathtub",
+      "max_error": 18.6,
+      "mean_error": 10.1,
+      "mean_kappa": 22.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0299",
+      "category": "chair",
+      "max_error": 18.5,
+      "mean_error": 5.6,
+      "mean_kappa": 23.6,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bathtub_0031",
+      "category": "bathtub",
+      "max_error": 18.5,
+      "mean_error": 11.4,
+      "mean_kappa": 17.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0521",
+      "category": "chair",
+      "max_error": 18.5,
+      "mean_error": 8.5,
+      "mean_kappa": 0.6,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0621",
+      "category": "chair",
+      "max_error": 18.4,
+      "mean_error": 10.1,
+      "mean_kappa": 19.0,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0232",
+      "category": "airplane",
+      "max_error": 17.6,
+      "mean_error": 8.5,
+      "mean_kappa": 17.4,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0206",
+      "category": "airplane",
+      "max_error": 17.3,
+      "mean_error": 9.0,
+      "mean_kappa": 31.5,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0189",
+      "category": "chair",
+      "max_error": 17.0,
+      "mean_error": 11.2,
+      "mean_kappa": 37.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0569",
+      "category": "chair",
+      "max_error": 17.0,
+      "mean_error": 13.5,
+      "mean_kappa": 50.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0832",
+      "category": "chair",
+      "max_error": 17.0,
+      "mean_error": 10.2,
+      "mean_kappa": 9.2,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0153",
+      "category": "airplane",
+      "max_error": 16.8,
+      "mean_error": 10.5,
+      "mean_kappa": 27.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "bookshelf_0162",
+      "category": "bookshelf",
+      "max_error": 16.8,
+      "mean_error": 12.3,
+      "mean_kappa": 19.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0168",
+      "category": "airplane",
+      "max_error": 16.7,
+      "mean_error": 9.8,
+      "mean_kappa": 24.1,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0929",
+      "category": "chair",
+      "max_error": 16.7,
+      "mean_error": 11.4,
+      "mean_kappa": 49.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0345",
+      "category": "chair",
+      "max_error": 16.7,
+      "mean_error": 9.4,
+      "mean_kappa": 18.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0895",
+      "category": "chair",
+      "max_error": 16.6,
+      "mean_error": 9.7,
+      "mean_kappa": 32.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0916",
+      "category": "chair",
+      "max_error": 16.4,
+      "mean_error": 6.7,
+      "mean_kappa": 58.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0699",
+      "category": "chair",
+      "max_error": 16.4,
+      "mean_error": 9.7,
+      "mean_kappa": 43.7,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0262",
+      "category": "chair",
+      "max_error": 16.1,
+      "mean_error": 11.5,
+      "mean_kappa": 64.0,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "airplane_0120",
+      "category": "airplane",
+      "max_error": 15.7,
+      "mean_error": 9.8,
+      "mean_kappa": 38.9,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0124",
+      "category": "airplane",
+      "max_error": 15.6,
+      "mean_error": 8.2,
+      "mean_kappa": 25.3,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0628",
+      "category": "chair",
+      "max_error": 15.4,
+      "mean_error": 6.7,
+      "mean_kappa": 29.4,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "airplane_0054",
+      "category": "airplane",
+      "max_error": 15.4,
+      "mean_error": 10.7,
+      "mean_kappa": 39.1,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0310",
+      "category": "chair",
+      "max_error": 15.3,
+      "mean_error": 6.9,
+      "mean_kappa": 27.9,
+      "splits": [
+        "test"
+      ]
+    },
+    {
+      "file": "chair_0024",
+      "category": "chair",
+      "max_error": 15.1,
+      "mean_error": 5.7,
+      "mean_kappa": 47.8,
+      "splits": [
+        "val"
+      ]
+    },
+    {
+      "file": "chair_0447",
+      "category": "chair",
+      "max_error": 15.0,
+      "mean_error": 6.2,
+      "mean_kappa": 56.8,
+      "splits": [
+        "val"
+      ]
+    }
+  ],
+  "exclude_list_severe": [
+    "bookshelf_0124",
+    "bookshelf_0005",
+    "bookshelf_0038",
+    "bookshelf_0256",
+    "bathtub_0105",
+    "bookshelf_0055",
+    "wardrobe_0067",
+    "wardrobe_0087",
+    "bathtub_0100",
+    "bookshelf_0031",
+    "bookshelf_0082",
+    "bookshelf_0177",
+    "bench_0141",
+    "bookshelf_0199",
+    "bookshelf_0288",
+    "chair_0308",
+    "bookshelf_0240",
+    "bookshelf_0049",
+    "bookshelf_0035",
+    "bookshelf_0045",
+    "bookshelf_0289",
+    "bookshelf_0151",
+    "bookshelf_0246",
+    "bookshelf_0078",
+    "bookshelf_0171",
+    "airplane_0193",
+    "bookshelf_0006",
+    "bookshelf_0284",
+    "bookshelf_0087",
+    "bookshelf_0058",
+    "wardrobe_0034",
+    "chair_0763",
+    "bookshelf_0088",
+    "bookshelf_0071",
+    "bookshelf_0248",
+    "bookshelf_0159",
+    "wardrobe_0098",
+    "wardrobe_0047",
+    "bookshelf_0228",
+    "bookshelf_0070",
+    "airplane_0104",
+    "bookshelf_0181",
+    "bathtub_0024",
+    "bookshelf_0042",
+    "bookshelf_0285",
+    "wardrobe_0097",
+    "chair_0974",
+    "wardrobe_0101",
+    "bookshelf_0109",
+    "wardrobe_0052",
+    "bookshelf_0261",
+    "chair_0709",
+    "bookshelf_0163",
+    "bookshelf_0051",
+    "bookshelf_0120",
+    "chair_0431",
+    "bookshelf_0250",
+    "wardrobe_0045",
+    "bench_0148",
+    "airplane_0022",
+    "bookshelf_0019",
+    "bookshelf_0039",
+    "bookshelf_0134",
+    "wardrobe_0065",
+    "bookshelf_0206",
+    "bathtub_0128",
+    "chair_0753",
+    "bench_0146",
+    "bookshelf_0262",
+    "bookshelf_0142",
+    "bookshelf_0034",
+    "chair_0264",
+    "chair_0198",
+    "bookshelf_0148",
+    "chair_0786",
+    "bookshelf_0230",
+    "airplane_0123"
+  ],
+  "exclude_list_major": [
+    "bookshelf_0124",
+    "bookshelf_0005",
+    "bookshelf_0038",
+    "bookshelf_0256",
+    "bathtub_0105",
+    "bookshelf_0055",
+    "wardrobe_0067",
+    "wardrobe_0087",
+    "bathtub_0100",
+    "bookshelf_0031",
+    "bookshelf_0082",
+    "bookshelf_0177",
+    "bench_0141",
+    "bookshelf_0199",
+    "bookshelf_0288",
+    "chair_0308",
+    "bookshelf_0240",
+    "bookshelf_0049",
+    "bookshelf_0035",
+    "bookshelf_0045",
+    "bookshelf_0289",
+    "bookshelf_0151",
+    "bookshelf_0246",
+    "bookshelf_0078",
+    "bookshelf_0171",
+    "airplane_0193",
+    "bookshelf_0006",
+    "bookshelf_0284",
+    "bookshelf_0087",
+    "bookshelf_0058",
+    "wardrobe_0034",
+    "chair_0763",
+    "bookshelf_0088",
+    "bookshelf_0071",
+    "bookshelf_0248",
+    "bookshelf_0159",
+    "wardrobe_0098",
+    "wardrobe_0047",
+    "bookshelf_0228",
+    "bookshelf_0070",
+    "airplane_0104",
+    "bookshelf_0181",
+    "bathtub_0024",
+    "bookshelf_0042",
+    "bookshelf_0285",
+    "wardrobe_0097",
+    "chair_0974",
+    "wardrobe_0101",
+    "bookshelf_0109",
+    "wardrobe_0052",
+    "bookshelf_0261",
+    "chair_0709",
+    "bookshelf_0163",
+    "bookshelf_0051",
+    "bookshelf_0120",
+    "chair_0431",
+    "bookshelf_0250",
+    "wardrobe_0045",
+    "bench_0148",
+    "airplane_0022",
+    "bookshelf_0019",
+    "bookshelf_0039",
+    "bookshelf_0134",
+    "wardrobe_0065",
+    "bookshelf_0206",
+    "bathtub_0128",
+    "chair_0753",
+    "bench_0146",
+    "bookshelf_0262",
+    "bookshelf_0142",
+    "bookshelf_0034",
+    "chair_0264",
+    "chair_0198",
+    "bookshelf_0148",
+    "chair_0786",
+    "bookshelf_0230",
+    "airplane_0123",
+    "chair_0233",
+    "bench_0177",
+    "bathtub_0008",
+    "bookshelf_0036",
+    "bookshelf_0263",
+    "chair_0223",
+    "bookshelf_0097",
+    "chair_0666",
+    "bookshelf_0217",
+    "chair_0030",
+    "bathtub_0026",
+    "bench_0171",
+    "chair_0915",
+    "bench_0131",
+    "chair_0681",
+    "bench_0042",
+    "bench_0105",
+    "chair_0438",
+    "chair_0594"
+  ],
+  "exclude_list_moderate": [
+    "bookshelf_0124",
+    "bookshelf_0005",
+    "bookshelf_0038",
+    "bookshelf_0256",
+    "bathtub_0105",
+    "bookshelf_0055",
+    "wardrobe_0067",
+    "wardrobe_0087",
+    "bathtub_0100",
+    "bookshelf_0031",
+    "bookshelf_0082",
+    "bookshelf_0177",
+    "bench_0141",
+    "bookshelf_0199",
+    "bookshelf_0288",
+    "chair_0308",
+    "bookshelf_0240",
+    "bookshelf_0049",
+    "bookshelf_0035",
+    "bookshelf_0045",
+    "bookshelf_0289",
+    "bookshelf_0151",
+    "bookshelf_0246",
+    "bookshelf_0078",
+    "bookshelf_0171",
+    "airplane_0193",
+    "bookshelf_0006",
+    "bookshelf_0284",
+    "bookshelf_0087",
+    "bookshelf_0058",
+    "wardrobe_0034",
+    "chair_0763",
+    "bookshelf_0088",
+    "bookshelf_0071",
+    "bookshelf_0248",
+    "bookshelf_0159",
+    "wardrobe_0098",
+    "wardrobe_0047",
+    "bookshelf_0228",
+    "bookshelf_0070",
+    "airplane_0104",
+    "bookshelf_0181",
+    "bathtub_0024",
+    "bookshelf_0042",
+    "bookshelf_0285",
+    "wardrobe_0097",
+    "chair_0974",
+    "wardrobe_0101",
+    "bookshelf_0109",
+    "wardrobe_0052",
+    "bookshelf_0261",
+    "chair_0709",
+    "bookshelf_0163",
+    "bookshelf_0051",
+    "bookshelf_0120",
+    "chair_0431",
+    "bookshelf_0250",
+    "wardrobe_0045",
+    "bench_0148",
+    "airplane_0022",
+    "bookshelf_0019",
+    "bookshelf_0039",
+    "bookshelf_0134",
+    "wardrobe_0065",
+    "bookshelf_0206",
+    "bathtub_0128",
+    "chair_0753",
+    "bench_0146",
+    "bookshelf_0262",
+    "bookshelf_0142",
+    "bookshelf_0034",
+    "chair_0264",
+    "chair_0198",
+    "bookshelf_0148",
+    "chair_0786",
+    "bookshelf_0230",
+    "airplane_0123",
+    "chair_0233",
+    "bench_0177",
+    "bathtub_0008",
+    "bookshelf_0036",
+    "bookshelf_0263",
+    "chair_0223",
+    "bookshelf_0097",
+    "chair_0666",
+    "bookshelf_0217",
+    "chair_0030",
+    "bathtub_0026",
+    "bench_0171",
+    "chair_0915",
+    "bench_0131",
+    "chair_0681",
+    "bench_0042",
+    "bench_0105",
+    "chair_0438",
+    "chair_0594",
+    "airplane_0159",
+    "chair_0311",
+    "chair_0612",
+    "chair_0028",
+    "airplane_0038",
+    "airplane_0156",
+    "chair_0386",
+    "airplane_0132",
+    "chair_0375",
+    "airplane_0017",
+    "airplane_0065",
+    "airplane_0005",
+    "airplane_0202",
+    "airplane_0027",
+    "airplane_0051",
+    "chair_0272",
+    "airplane_0021",
+    "airplane_0152",
+    "airplane_0020",
+    "chair_0707",
+    "chair_0546",
+    "airplane_0148",
+    "bench_0003",
+    "chair_0611",
+    "chair_0633",
+    "chair_0282",
+    "chair_0271",
+    "chair_0296",
+    "chair_0949",
+    "airplane_0036",
+    "chair_0494",
+    "airplane_0190",
+    "chair_0351",
+    "bathtub_0091",
+    "chair_0299",
+    "bathtub_0031",
+    "chair_0521",
+    "chair_0621",
+    "airplane_0232",
+    "airplane_0206",
+    "chair_0189",
+    "chair_0569",
+    "chair_0832",
+    "airplane_0153",
+    "bookshelf_0162",
+    "airplane_0168",
+    "chair_0929",
+    "chair_0345",
+    "chair_0895",
+    "chair_0916",
+    "chair_0699",
+    "chair_0262",
+    "airplane_0120",
+    "airplane_0124",
+    "chair_0628",
+    "airplane_0054",
+    "chair_0310",
+    "chair_0024",
+    "chair_0447"
+  ]
+}

@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00Z" agent="codex" version="20.0.0">
+  <diagram id="p2v2clean" name="P2v2 Clean">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="2" value="Step 1: Classifier Training" style="whiteSpace=wrap;html=1;fontStyle=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="240" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="SymmetryClassifier&#xa;(train_symmetry_classifier.py)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Classifier checkpoint&#xa;(best.pth)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="5" value="Step 2: P2v2 Clean Training" style="whiteSpace=wrap;html=1;fontStyle=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="320" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="CleanMoEDataset&#xa;(outlier + category filter)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="DataLoader +&#xa;WeightedRandomSampler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="ProbabilisticOrientationNet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="240" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" value="Classifier gate&#xa;(frozen)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="PointNet++&#xa;backbone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="280" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Expert heads&#xa;1/2/4-front" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="12" value="MaskedExpertLoss&#xa;(soft gate weighting)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="AdamW + CosineLR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="400" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="Checkpoints / WandB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="470" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e8" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" style="endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

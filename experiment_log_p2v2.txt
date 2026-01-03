@@ -1,0 +1,1265 @@
+wandb: Currently logged in as: augustuschen00 (augustuschen00-university-of-tokyo) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 0g9ucw2q
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in checkpoints/P2v2_SoftGate_20251229_183118/wandb/run-20251229_183119-0g9ucw2q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run P2v2_SoftGate_20251229_183118
+wandb: ⭐️ View project at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: 🚀 View run at https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/0g9ucw2q
+[MoEDataset train] 2122 samples x4 (random) = 8488 total
+  0 (1-front): 853
+  1 (2-front): 277
+  2 (4-front): 191
+  3 (Rot-sym): 564
+  4 (No-front): 237
+[MoEDataset val] 452 samples x4 (deterministic) = 1808 total
+  0 (1-front): 182
+  1 (2-front): 59
+  2 (4-front): 40
+  3 (Rot-sym): 120
+  4 (No-front): 51
+[MoEDataset test] 461 samples x4 (deterministic) = 1844 total
+  0 (1-front): 184
+  1 (2-front): 61
+  2 (4-front): 42
+  3 (Rot-sym): 122
+  4 (No-front): 52
+
+Loading classifier from: checkpoints/SymClassifier_20251216_035345/best.pth
+Classifier loaded successfully
+
+============================================================
+Experiment: P2v2_SoftGate_20251229_183118
+Device: cuda
+Total parameters: 3,953,818
+Trainable parameters: 1,797,717
+Classifier frozen: True
+Train samples: 8488
+Val samples: 1808
+Batch size: 32
+Balanced sampler: True
+Output dir: checkpoints/P2v2_SoftGate_20251229_183118
+WandB: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/0g9ucw2q
+============================================================
+
+
+Starting training...
+============================================================
+
+Epoch 1/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=4.4122, gate_acc=1.000
+  Batch 20/265: loss=1.9381, gate_acc=0.906
+  Batch 40/265: loss=1.6587, gate_acc=0.938
+  Batch 60/265: loss=1.8351, gate_acc=0.938
+  Batch 80/265: loss=1.4955, gate_acc=0.906
+  Batch 100/265: loss=1.8558, gate_acc=0.938
+  Batch 120/265: loss=1.6675, gate_acc=0.938
+  Batch 140/265: loss=1.7098, gate_acc=0.969
+  Batch 160/265: loss=1.3559, gate_acc=0.969
+  Batch 180/265: loss=1.3869, gate_acc=0.969
+  Batch 200/265: loss=1.5687, gate_acc=0.875
+  Batch 220/265: loss=1.6051, gate_acc=1.000
+  Batch 240/265: loss=1.3473, gate_acc=1.000
+  Batch 260/265: loss=1.7673, gate_acc=0.938
+
+  Train: loss=1.6837, 1f=2.0618, 2f=1.3669, 4f=-0.1610
+  Val:   loss=1.4921, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000999
+  Time: 224.1s | Elapsed: 0h03m | ETA: 3h03m01s
+  [*] New best model saved!
+
+Epoch 2/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=2.0801, gate_acc=0.938
+  Batch 20/265: loss=1.7861, gate_acc=1.000
+  Batch 40/265: loss=1.3989, gate_acc=1.000
+  Batch 60/265: loss=1.5831, gate_acc=1.000
+  Batch 80/265: loss=1.1997, gate_acc=1.000
+  Batch 100/265: loss=1.4789, gate_acc=0.938
+  Batch 120/265: loss=1.5922, gate_acc=0.906
+  Batch 140/265: loss=1.5892, gate_acc=1.000
+  Batch 160/265: loss=1.8795, gate_acc=1.000
+  Batch 180/265: loss=1.2298, gate_acc=0.969
+  Batch 200/265: loss=1.6493, gate_acc=0.969
+  Batch 220/265: loss=1.4768, gate_acc=1.000
+  Batch 240/265: loss=1.7384, gate_acc=0.969
+  Batch 260/265: loss=1.6476, gate_acc=0.938
+
+  Train: loss=1.6080, 1f=2.0442, 2f=1.2589, 4f=-0.5322
+  Val:   loss=1.4460, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000996
+  Time: 114.8s | Elapsed: 0h05m | ETA: 2h15m34s
+  [*] New best model saved!
+
+Epoch 3/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=1.6018, gate_acc=0.938
+  Batch 20/265: loss=1.7452, gate_acc=0.969
+  Batch 40/265: loss=1.5491, gate_acc=0.938
+  Batch 60/265: loss=1.7476, gate_acc=0.938
+  Batch 80/265: loss=1.5235, gate_acc=0.969
+  Batch 100/265: loss=1.7104, gate_acc=0.906
+  Batch 120/265: loss=1.4324, gate_acc=1.000
+  Batch 140/265: loss=1.5381, gate_acc=1.000
+  Batch 160/265: loss=1.1920, gate_acc=1.000
+  Batch 180/265: loss=1.3333, gate_acc=1.000
+  Batch 200/265: loss=1.2960, gate_acc=0.906
+  Batch 220/265: loss=1.7120, gate_acc=0.969
+  Batch 240/265: loss=1.7958, gate_acc=0.938
+  Batch 260/265: loss=1.6494, gate_acc=1.000
+
+  Train: loss=1.5846, 1f=2.0361, 2f=1.2337, 4f=-0.5144
+  Val:   loss=1.8037, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000991
+  Time: 116.6s | Elapsed: 0h07m | ETA: 1h58m56s
+
+Epoch 4/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=1.3864, gate_acc=1.000
+  Batch 20/265: loss=2.1466, gate_acc=0.875
+  Batch 40/265: loss=1.5708, gate_acc=0.812
+  Batch 60/265: loss=2.0914, gate_acc=0.969
+  Batch 80/265: loss=1.7466, gate_acc=1.000
+  Batch 100/265: loss=1.4203, gate_acc=0.938
+  Batch 120/265: loss=1.0340, gate_acc=0.906
+  Batch 140/265: loss=1.4968, gate_acc=0.969
+  Batch 160/265: loss=1.0956, gate_acc=0.969
+  Batch 180/265: loss=1.5479, gate_acc=0.906
+  Batch 200/265: loss=1.6304, gate_acc=1.000
+  Batch 220/265: loss=1.4947, gate_acc=0.969
+  Batch 240/265: loss=1.1963, gate_acc=1.000
+  Batch 260/265: loss=1.6618, gate_acc=0.969
+
+  Train: loss=1.5479, 1f=2.0377, 2f=0.9785, 4f=-0.5604
+  Val:   loss=1.3716, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000984
+  Time: 121.9s | Elapsed: 0h09m | ETA: 1h50m40s
+  [*] New best model saved!
+
+Epoch 5/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=1.6110, gate_acc=0.969
+  Batch 20/265: loss=2.8752, gate_acc=1.000
+  Batch 40/265: loss=1.4110, gate_acc=0.969
+  Batch 60/265: loss=1.3028, gate_acc=1.000
+  Batch 80/265: loss=1.6411, gate_acc=0.969
+  Batch 100/265: loss=2.2784, gate_acc=0.969
+  Batch 120/265: loss=0.8278, gate_acc=0.906
+  Batch 140/265: loss=1.0383, gate_acc=0.938
+  Batch 160/265: loss=1.2723, gate_acc=0.875
+  Batch 180/265: loss=1.2797, gate_acc=0.938
+  Batch 200/265: loss=1.5090, gate_acc=1.000
+  Batch 220/265: loss=1.5558, gate_acc=0.938
+  Batch 240/265: loss=1.7691, gate_acc=0.938
+  Batch 260/265: loss=1.4308, gate_acc=0.875
+
+  Train: loss=1.4670, 1f=2.0362, 2f=0.6579, 4f=-0.7779
+  Val:   loss=1.2760, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000976
+  Time: 124.2s | Elapsed: 0h11m | ETA: 1h45m14s
+  [*] New best model saved!
+
+Epoch 6/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=1.8355, gate_acc=0.969
+  Batch 20/265: loss=0.7886, gate_acc=0.969
+  Batch 40/265: loss=1.8068, gate_acc=1.000
+  Batch 60/265: loss=0.9036, gate_acc=0.938
+  Batch 80/265: loss=0.8913, gate_acc=0.875
+  Batch 100/265: loss=2.1607, gate_acc=0.938
+  Batch 120/265: loss=1.2407, gate_acc=0.969
+  Batch 140/265: loss=1.6078, gate_acc=0.969
+  Batch 160/265: loss=1.2784, gate_acc=1.000
+  Batch 180/265: loss=0.8655, gate_acc=0.969
+  Batch 200/265: loss=1.2005, gate_acc=0.906
+  Batch 220/265: loss=1.3843, gate_acc=0.906
+  Batch 240/265: loss=0.9862, gate_acc=0.969
+  Batch 260/265: loss=1.3024, gate_acc=0.906
+
+  Train: loss=1.4347, 1f=2.0368, 2f=0.5861, 4f=-0.8662
+  Val:   loss=1.2907, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000965
+  Time: 124.3s | Elapsed: 0h13m | ETA: 1h40m56s
+
+Epoch 7/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.000, κ_target=0.0
+  Batch 0/265: loss=1.8450, gate_acc=1.000
+  Batch 20/265: loss=2.2245, gate_acc=0.938
+  Batch 40/265: loss=1.2783, gate_acc=0.969
+  Batch 60/265: loss=1.0747, gate_acc=0.938
+  Batch 80/265: loss=1.5618, gate_acc=0.969
+  Batch 100/265: loss=1.7305, gate_acc=0.969
+  Batch 120/265: loss=1.7230, gate_acc=1.000
+  Batch 140/265: loss=1.4856, gate_acc=0.969
+  Batch 160/265: loss=1.3890, gate_acc=0.969
+  Batch 180/265: loss=1.5198, gate_acc=1.000
+  Batch 200/265: loss=1.4582, gate_acc=0.938
+  Batch 220/265: loss=1.6947, gate_acc=0.969
+  Batch 240/265: loss=1.2758, gate_acc=0.938
+  Batch 260/265: loss=1.5037, gate_acc=0.938
+
+  Train: loss=1.4669, 1f=2.0338, 2f=0.6063, 4f=-0.8260
+  Val:   loss=1.5216, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000953
+  Time: 124.2s | Elapsed: 0h15m | ETA: 1h37m16s
+
+Epoch 8/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.002, κ_target=0.5
+  Batch 0/265: loss=3.0230, gate_acc=0.969
+  Batch 20/265: loss=0.9574, gate_acc=0.906
+  Batch 40/265: loss=1.1614, gate_acc=0.969
+  Batch 60/265: loss=1.0219, gate_acc=0.969
+  Batch 80/265: loss=1.2545, gate_acc=0.938
+  Batch 100/265: loss=1.7287, gate_acc=1.000
+  Batch 120/265: loss=1.2868, gate_acc=1.000
+  Batch 140/265: loss=1.6163, gate_acc=0.875
+  Batch 160/265: loss=1.6918, gate_acc=0.938
+  Batch 180/265: loss=0.8015, gate_acc=0.969
+  Batch 200/265: loss=1.4132, gate_acc=0.969
+  Batch 220/265: loss=2.7296, gate_acc=0.938
+  Batch 240/265: loss=1.8307, gate_acc=1.000
+  Batch 260/265: loss=1.3309, gate_acc=0.906
+
+  Train: loss=1.4120, 1f=2.0385, 2f=0.5562, 4f=-0.9708
+  Val:   loss=1.5820, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000939
+  Time: 126.9s | Elapsed: 0h17m | ETA: 1h34m14s
+
+Epoch 9/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.004, κ_target=1.0
+  Batch 0/265: loss=1.6698, gate_acc=0.969
+  Batch 20/265: loss=1.1341, gate_acc=0.938
+  Batch 40/265: loss=1.7657, gate_acc=0.969
+  Batch 60/265: loss=1.3913, gate_acc=0.938
+  Batch 80/265: loss=1.4186, gate_acc=0.969
+  Batch 100/265: loss=0.8856, gate_acc=0.938
+  Batch 120/265: loss=1.3538, gate_acc=0.938
+  Batch 140/265: loss=1.5343, gate_acc=0.969
+  Batch 160/265: loss=1.5450, gate_acc=0.906
+  Batch 180/265: loss=1.2510, gate_acc=0.969
+  Batch 200/265: loss=1.6828, gate_acc=0.938
+  Batch 220/265: loss=1.6004, gate_acc=0.875
+  Batch 240/265: loss=4.6746, gate_acc=0.906
+  Batch 260/265: loss=0.5322, gate_acc=0.938
+
+  Train: loss=1.4063, 1f=2.0359, 2f=0.3983, 4f=-0.9195
+  Val:   loss=1.2632, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000923
+  Time: 127.4s | Elapsed: 0h20m | ETA: 1h31m26s
+  [*] New best model saved!
+
+Epoch 10/50
+----------------------------------------
+  [Schedule] cosine_w=0.20, κ_reg_w=0.006, κ_target=1.5
+  Batch 0/265: loss=1.3284, gate_acc=1.000
+  Batch 20/265: loss=1.3973, gate_acc=1.000
+  Batch 40/265: loss=1.3960, gate_acc=0.938
+  Batch 60/265: loss=1.5889, gate_acc=0.938
+  Batch 80/265: loss=0.7540, gate_acc=0.969
+  Batch 100/265: loss=1.5516, gate_acc=0.938
+  Batch 120/265: loss=1.0396, gate_acc=0.938
+  Batch 140/265: loss=1.4189, gate_acc=0.875
+  Batch 160/265: loss=1.4284, gate_acc=1.000
+  Batch 180/265: loss=1.3354, gate_acc=0.938
+  Batch 200/265: loss=3.0967, gate_acc=0.969
+  Batch 220/265: loss=1.2595, gate_acc=0.938
+  Batch 240/265: loss=1.4187, gate_acc=0.938
+  Batch 260/265: loss=0.8167, gate_acc=0.969
+
+  Train: loss=1.3889, 1f=2.0372, 2f=0.4379, 4f=-0.9638
+  Val:   loss=1.3328, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000905
+  Time: 127.0s | Elapsed: 0h22m | ETA: 1h28m45s
+
+Epoch 11/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.008, κ_target=2.0
+  Batch 0/265: loss=0.7929, gate_acc=0.938
+  Batch 20/265: loss=0.7062, gate_acc=0.906
+  Batch 40/265: loss=1.1276, gate_acc=0.781
+  Batch 60/265: loss=1.2437, gate_acc=0.938
+  Batch 80/265: loss=1.6037, gate_acc=0.938
+  Batch 100/265: loss=1.5812, gate_acc=0.906
+  Batch 120/265: loss=1.1681, gate_acc=0.969
+  Batch 140/265: loss=0.1513, gate_acc=0.875
+  Batch 160/265: loss=1.2537, gate_acc=0.938
+  Batch 180/265: loss=1.6583, gate_acc=1.000
+  Batch 200/265: loss=1.3166, gate_acc=0.938
+  Batch 220/265: loss=1.7987, gate_acc=1.000
+  Batch 240/265: loss=1.7651, gate_acc=0.969
+  Batch 260/265: loss=1.2359, gate_acc=0.969
+
+  Train: loss=1.2785, 1f=1.9377, 2f=-0.0515, 4f=-1.0192
+  Val:   loss=1.4399, gate_acc=0.963, 1f_err=57.2°, 1f_κ=0.00
+  LR: 0.000886
+  Time: 125.7s | Elapsed: 0h24m | ETA: 1h20m08s
+
+Epoch 12/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.010, κ_target=2.5
+  Batch 0/265: loss=1.2499, gate_acc=0.938
+  Batch 20/265: loss=1.1211, gate_acc=0.938
+  Batch 40/265: loss=1.1477, gate_acc=0.938
+  Batch 60/265: loss=1.4660, gate_acc=0.969
+  Batch 80/265: loss=1.4356, gate_acc=0.969
+  Batch 100/265: loss=1.4827, gate_acc=1.000
+  Batch 120/265: loss=1.3909, gate_acc=0.938
+  Batch 140/265: loss=1.0965, gate_acc=0.969
+  Batch 160/265: loss=0.9942, gate_acc=0.906
+  Batch 180/265: loss=1.6928, gate_acc=0.875
+  Batch 200/265: loss=1.4407, gate_acc=0.906
+  Batch 220/265: loss=0.5768, gate_acc=0.938
+  Batch 240/265: loss=1.1527, gate_acc=0.969
+  Batch 260/265: loss=1.1152, gate_acc=1.000
+
+  Train: loss=1.3266, 1f=1.9387, 2f=0.3841, 4f=-1.1366
+  Val:   loss=1.2721, gate_acc=0.963, 1f_err=57.3°, 1f_κ=0.00
+  LR: 0.000866
+  Time: 123.7s | Elapsed: 0h26m | ETA: 1h18m38s
+
+Epoch 13/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.012, κ_target=3.0
+  Batch 0/265: loss=1.9882, gate_acc=0.969
+  Batch 20/265: loss=1.1712, gate_acc=1.000
+  Batch 40/265: loss=1.1791, gate_acc=1.000
+  Batch 60/265: loss=5.8278, gate_acc=0.969
+  Batch 80/265: loss=1.1680, gate_acc=0.969
+  Batch 100/265: loss=1.1743, gate_acc=0.906
+  Batch 120/265: loss=0.8159, gate_acc=1.000
+  Batch 140/265: loss=0.9918, gate_acc=0.969
+  Batch 160/265: loss=1.9624, gate_acc=0.906
+  Batch 180/265: loss=4.1087, gate_acc=0.906
+  Batch 200/265: loss=1.3381, gate_acc=0.969
+  Batch 220/265: loss=1.5630, gate_acc=0.969
+  Batch 240/265: loss=0.8923, gate_acc=0.969
+  Batch 260/265: loss=1.1150, gate_acc=0.969
+
+  Train: loss=1.3506, 1f=1.9395, 2f=0.3537, 4f=-1.0300
+  Val:   loss=1.1536, gate_acc=0.963, 1f_err=57.1°, 1f_κ=0.00
+  LR: 0.000844
+  Time: 127.2s | Elapsed: 0h28m | ETA: 1h17m13s
+  [*] New best model saved!
+
+Epoch 14/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.014, κ_target=3.5
+  Batch 0/265: loss=1.2705, gate_acc=0.938
+  Batch 20/265: loss=1.1777, gate_acc=0.875
+  Batch 40/265: loss=0.5158, gate_acc=0.938
+  Batch 60/265: loss=3.6379, gate_acc=1.000
+  Batch 80/265: loss=2.0094, gate_acc=0.969
+  Batch 100/265: loss=1.3909, gate_acc=0.969
+  Batch 120/265: loss=1.7858, gate_acc=0.906
+  Batch 140/265: loss=1.2643, gate_acc=0.969
+  Batch 160/265: loss=3.2481, gate_acc=0.969
+  Batch 180/265: loss=1.6454, gate_acc=0.938
+  Batch 200/265: loss=1.1266, gate_acc=1.000
+  Batch 220/265: loss=1.4371, gate_acc=0.969
+  Batch 240/265: loss=1.4632, gate_acc=0.938
+  Batch 260/265: loss=1.4927, gate_acc=0.906
+
+  Train: loss=1.4415, 1f=1.9386, 2f=0.6144, 4f=-0.9843
+  Val:   loss=1.3329, gate_acc=0.963, 1f_err=56.9°, 1f_κ=0.00
+  LR: 0.000821
+  Time: 123.3s | Elapsed: 0h30m | ETA: 1h15m14s
+
+Epoch 15/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.016, κ_target=4.0
+  Batch 0/265: loss=0.6756, gate_acc=0.969
+  Batch 20/265: loss=1.3919, gate_acc=0.969
+  Batch 40/265: loss=1.2876, gate_acc=1.000
+  Batch 60/265: loss=1.5783, gate_acc=0.969
+  Batch 80/265: loss=1.4629, gate_acc=0.969
+  Batch 100/265: loss=2.0564, gate_acc=0.844
+  Batch 120/265: loss=1.6134, gate_acc=0.938
+  Batch 140/265: loss=1.0438, gate_acc=1.000
+  Batch 160/265: loss=1.9568, gate_acc=1.000
+  Batch 180/265: loss=1.2250, gate_acc=0.938
+  Batch 200/265: loss=1.0120, gate_acc=1.000
+  Batch 220/265: loss=1.1432, gate_acc=0.938
+  Batch 240/265: loss=1.1795, gate_acc=0.969
+  Batch 260/265: loss=0.9119, gate_acc=0.938
+
+  Train: loss=1.3291, 1f=1.9354, 2f=0.2055, 4f=-1.0370
+  Val:   loss=1.4641, gate_acc=0.963, 1f_err=57.1°, 1f_κ=0.00
+  LR: 0.000796
+  Time: 125.4s | Elapsed: 0h32m | ETA: 1h13m12s
+
+Epoch 16/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.018, κ_target=4.5
+  Batch 0/265: loss=1.2397, gate_acc=0.938
+  Batch 20/265: loss=1.8232, gate_acc=0.969
+  Batch 40/265: loss=0.7752, gate_acc=0.969
+  Batch 60/265: loss=1.3253, gate_acc=0.969
+  Batch 80/265: loss=0.4922, gate_acc=0.938
+  Batch 100/265: loss=1.5013, gate_acc=1.000
+  Batch 120/265: loss=0.9163, gate_acc=1.000
+  Batch 140/265: loss=0.6724, gate_acc=0.906
+  Batch 160/265: loss=0.7271, gate_acc=0.969
+  Batch 180/265: loss=1.1714, gate_acc=1.000
+  Batch 200/265: loss=1.6047, gate_acc=0.938
+  Batch 220/265: loss=0.8576, gate_acc=0.906
+  Batch 240/265: loss=1.1013, gate_acc=1.000
+  Batch 260/265: loss=1.5670, gate_acc=0.906
+
+  Train: loss=1.3448, 1f=1.9369, 2f=0.3058, 4f=-1.0629
+  Val:   loss=1.3530, gate_acc=0.963, 1f_err=56.9°, 1f_κ=0.00
+  LR: 0.000770
+  Time: 124.7s | Elapsed: 0h34m | ETA: 1h11m08s
+
+Epoch 17/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.1469, gate_acc=0.969
+  Batch 20/265: loss=3.4561, gate_acc=0.969
+  Batch 40/265: loss=0.9145, gate_acc=1.000
+  Batch 60/265: loss=1.4600, gate_acc=0.969
+  Batch 80/265: loss=0.8661, gate_acc=0.938
+  Batch 100/265: loss=1.1132, gate_acc=1.000
+  Batch 120/265: loss=0.6206, gate_acc=0.969
+  Batch 140/265: loss=1.1340, gate_acc=1.000
+  Batch 160/265: loss=1.3845, gate_acc=1.000
+  Batch 180/265: loss=1.6572, gate_acc=0.906
+  Batch 200/265: loss=1.4652, gate_acc=0.969
+  Batch 220/265: loss=1.3376, gate_acc=0.938
+  Batch 240/265: loss=3.8910, gate_acc=0.969
+  Batch 260/265: loss=1.2117, gate_acc=0.969
+
+  Train: loss=1.3579, 1f=1.9332, 2f=0.1719, 4f=-1.1028
+  Val:   loss=1.3279, gate_acc=0.963, 1f_err=49.8°, 1f_κ=0.00
+  LR: 0.000743
+  Time: 123.9s | Elapsed: 0h36m | ETA: 1h09m02s
+
+Epoch 18/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.0312, gate_acc=0.875
+  Batch 20/265: loss=1.5694, gate_acc=0.969
+  Batch 40/265: loss=1.4115, gate_acc=0.938
+  Batch 60/265: loss=0.7986, gate_acc=0.938
+  Batch 80/265: loss=1.0175, gate_acc=0.875
+  Batch 100/265: loss=1.1197, gate_acc=0.938
+  Batch 120/265: loss=1.4584, gate_acc=0.906
+  Batch 140/265: loss=0.8813, gate_acc=1.000
+  Batch 160/265: loss=1.5477, gate_acc=1.000
+  Batch 180/265: loss=1.4136, gate_acc=0.969
+  Batch 200/265: loss=0.9526, gate_acc=0.969
+  Batch 220/265: loss=0.5834, gate_acc=0.969
+  Batch 240/265: loss=1.1230, gate_acc=0.875
+  Batch 260/265: loss=1.3332, gate_acc=0.969
+
+  Train: loss=1.3780, 1f=1.9314, 2f=0.2776, 4f=-0.9480
+  Val:   loss=1.4565, gate_acc=0.963, 1f_err=52.5°, 1f_κ=0.00
+  LR: 0.000716
+  Time: 123.9s | Elapsed: 0h38m | ETA: 1h06m46s
+
+Epoch 19/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.4648, gate_acc=0.875
+  Batch 20/265: loss=1.3827, gate_acc=1.000
+  Batch 40/265: loss=1.5394, gate_acc=0.969
+  Batch 60/265: loss=1.2763, gate_acc=0.938
+  Batch 80/265: loss=1.3854, gate_acc=0.969
+  Batch 100/265: loss=1.4851, gate_acc=0.938
+  Batch 120/265: loss=1.2427, gate_acc=0.969
+  Batch 140/265: loss=1.6614, gate_acc=0.938
+  Batch 160/265: loss=0.3743, gate_acc=1.000
+  Batch 180/265: loss=1.4523, gate_acc=1.000
+  Batch 200/265: loss=1.6353, gate_acc=0.969
+  Batch 220/265: loss=1.0771, gate_acc=0.906
+  Batch 240/265: loss=0.9215, gate_acc=0.906
+  Batch 260/265: loss=0.8390, gate_acc=1.000
+
+  Train: loss=1.4547, 1f=1.9280, 2f=0.6379, 4f=-0.9898
+  Val:   loss=1.3050, gate_acc=0.963, 1f_err=50.3°, 1f_κ=0.00
+  LR: 0.000687
+  Time: 123.4s | Elapsed: 0h40m | ETA: 1h04m29s
+
+Epoch 20/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.6318, gate_acc=0.969
+  Batch 20/265: loss=0.9163, gate_acc=0.969
+  Batch 40/265: loss=0.9137, gate_acc=1.000
+  Batch 60/265: loss=1.4441, gate_acc=0.938
+  Batch 80/265: loss=1.5287, gate_acc=0.906
+  Batch 100/265: loss=0.7694, gate_acc=1.000
+  Batch 120/265: loss=1.8260, gate_acc=0.969
+  Batch 140/265: loss=0.7778, gate_acc=0.875
+  Batch 160/265: loss=0.4880, gate_acc=0.938
+  Batch 180/265: loss=1.0095, gate_acc=0.938
+  Batch 200/265: loss=1.5298, gate_acc=0.969
+  Batch 220/265: loss=0.7360, gate_acc=1.000
+  Batch 240/265: loss=1.4365, gate_acc=0.969
+  Batch 260/265: loss=1.7542, gate_acc=0.969
+
+  Train: loss=1.3743, 1f=1.9247, 2f=0.6314, 4f=-1.0754
+  Val:   loss=1.8016, gate_acc=0.963, 1f_err=47.9°, 1f_κ=0.00
+  LR: 0.000658
+  Time: 123.1s | Elapsed: 0h42m | ETA: 1h02m12s
+
+Epoch 21/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.1627, gate_acc=0.969
+  Batch 20/265: loss=0.8018, gate_acc=0.969
+  Batch 40/265: loss=1.2072, gate_acc=1.000
+  Batch 60/265: loss=0.7094, gate_acc=0.844
+  Batch 80/265: loss=0.9266, gate_acc=0.938
+  Batch 100/265: loss=1.4402, gate_acc=0.969
+  Batch 120/265: loss=1.2541, gate_acc=0.969
+  Batch 140/265: loss=1.0944, gate_acc=1.000
+  Batch 160/265: loss=1.1718, gate_acc=0.969
+  Batch 180/265: loss=1.0958, gate_acc=0.969
+  Batch 200/265: loss=0.7907, gate_acc=0.938
+  Batch 220/265: loss=-0.0090, gate_acc=0.906
+  Batch 240/265: loss=1.1191, gate_acc=1.000
+  Batch 260/265: loss=1.1579, gate_acc=0.969
+
+  Train: loss=1.3034, 1f=1.9177, 2f=-0.0445, 4f=-1.1407
+  Val:   loss=1.7301, gate_acc=0.963, 1f_err=43.9°, 1f_κ=0.00
+  LR: 0.000628
+  Time: 122.4s | Elapsed: 0h45m | ETA: 0h59m58s
+
+Epoch 22/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.8512, gate_acc=1.000
+  Batch 20/265: loss=1.4507, gate_acc=1.000
+  Batch 40/265: loss=1.5108, gate_acc=0.906
+  Batch 60/265: loss=1.5449, gate_acc=0.938
+  Batch 80/265: loss=1.2488, gate_acc=0.938
+  Batch 100/265: loss=1.1616, gate_acc=0.969
+  Batch 120/265: loss=1.6876, gate_acc=1.000
+  Batch 140/265: loss=0.6548, gate_acc=1.000
+  Batch 160/265: loss=1.1980, gate_acc=0.938
+  Batch 180/265: loss=0.8855, gate_acc=0.906
+  Batch 200/265: loss=1.3352, gate_acc=1.000
+  Batch 220/265: loss=1.2914, gate_acc=0.938
+  Batch 240/265: loss=0.0379, gate_acc=0.938
+  Batch 260/265: loss=0.9491, gate_acc=0.938
+
+  Train: loss=1.4783, 1f=1.9169, 2f=1.2660, 4f=-1.1616
+  Val:   loss=1.4782, gate_acc=0.963, 1f_err=44.2°, 1f_κ=0.00
+  LR: 0.000598
+  Time: 124.2s | Elapsed: 0h47m | ETA: 0h57m55s
+
+Epoch 23/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=7.4182, gate_acc=1.000
+  Batch 20/265: loss=1.4595, gate_acc=0.938
+  Batch 40/265: loss=1.5669, gate_acc=0.938
+  Batch 60/265: loss=0.8619, gate_acc=1.000
+  Batch 80/265: loss=0.8371, gate_acc=1.000
+  Batch 100/265: loss=1.2143, gate_acc=0.906
+  Batch 120/265: loss=1.0232, gate_acc=0.969
+  Batch 140/265: loss=1.3324, gate_acc=0.938
+  Batch 160/265: loss=0.6885, gate_acc=0.938
+  Batch 180/265: loss=0.3781, gate_acc=0.938
+  Batch 200/265: loss=1.6371, gate_acc=1.000
+  Batch 220/265: loss=1.5697, gate_acc=0.844
+  Batch 240/265: loss=0.8935, gate_acc=0.969
+  Batch 260/265: loss=1.1620, gate_acc=0.969
+
+  Train: loss=1.3514, 1f=1.9149, 2f=0.1398, 4f=-1.0600
+  Val:   loss=1.3925, gate_acc=0.963, 1f_err=42.5°, 1f_κ=0.00
+  LR: 0.000567
+  Time: 123.5s | Elapsed: 0h49m | ETA: 0h55m41s
+
+Epoch 24/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.6239, gate_acc=0.906
+  Batch 20/265: loss=1.4936, gate_acc=1.000
+  Batch 40/265: loss=0.9390, gate_acc=0.875
+  Batch 60/265: loss=1.6924, gate_acc=0.969
+  Batch 80/265: loss=1.3623, gate_acc=1.000
+  Batch 100/265: loss=1.0495, gate_acc=0.875
+  Batch 120/265: loss=1.5959, gate_acc=0.938
+  Batch 140/265: loss=0.7009, gate_acc=0.969
+  Batch 160/265: loss=1.4885, gate_acc=1.000
+  Batch 180/265: loss=1.5590, gate_acc=0.969
+  Batch 200/265: loss=0.9135, gate_acc=0.906
+  Batch 220/265: loss=1.8194, gate_acc=0.969
+  Batch 240/265: loss=1.0213, gate_acc=0.938
+  Batch 260/265: loss=1.5078, gate_acc=0.938
+
+  Train: loss=1.3636, 1f=1.9131, 2f=-0.0361, 4f=-1.0881
+  Val:   loss=1.6250, gate_acc=0.963, 1f_err=43.0°, 1f_κ=0.00
+  LR: 0.000536
+  Time: 124.4s | Elapsed: 0h51m | ETA: 0h53m40s
+
+Epoch 25/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.2494, gate_acc=0.906
+  Batch 20/265: loss=1.4571, gate_acc=0.969
+  Batch 40/265: loss=1.6486, gate_acc=0.969
+  Batch 60/265: loss=1.1434, gate_acc=0.938
+  Batch 80/265: loss=1.3334, gate_acc=1.000
+  Batch 100/265: loss=1.0010, gate_acc=0.938
+  Batch 120/265: loss=0.8141, gate_acc=0.938
+  Batch 140/265: loss=0.8498, gate_acc=0.938
+  Batch 160/265: loss=0.5701, gate_acc=0.969
+  Batch 180/265: loss=1.1733, gate_acc=0.969
+  Batch 200/265: loss=4.5657, gate_acc=0.969
+  Batch 220/265: loss=0.6883, gate_acc=0.969
+  Batch 240/265: loss=1.1546, gate_acc=1.000
+  Batch 260/265: loss=1.3600, gate_acc=0.969
+
+  Train: loss=1.3823, 1f=1.9081, 2f=0.6980, 4f=-1.0567
+  Val:   loss=1.6207, gate_acc=0.963, 1f_err=38.6°, 1f_κ=0.00
+  LR: 0.000505
+  Time: 124.0s | Elapsed: 0h53m | ETA: 0h51m33s
+
+Epoch 26/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.0280, gate_acc=0.875
+  Batch 20/265: loss=0.7515, gate_acc=0.969
+  Batch 40/265: loss=0.3654, gate_acc=0.969
+  Batch 60/265: loss=0.7710, gate_acc=0.969
+  Batch 80/265: loss=1.3624, gate_acc=0.938
+  Batch 100/265: loss=0.9738, gate_acc=0.969
+  Batch 120/265: loss=1.5010, gate_acc=0.938
+  Batch 140/265: loss=0.7924, gate_acc=0.938
+  Batch 160/265: loss=0.8744, gate_acc=1.000
+  Batch 180/265: loss=1.2534, gate_acc=0.938
+  Batch 200/265: loss=0.6078, gate_acc=0.969
+  Batch 220/265: loss=0.5396, gate_acc=0.969
+  Batch 240/265: loss=2.2399, gate_acc=0.906
+  Batch 260/265: loss=1.6778, gate_acc=0.969
+
+  Train: loss=1.3329, 1f=1.9092, 2f=-0.0522, 4f=-1.1551
+  Val:   loss=1.6382, gate_acc=0.963, 1f_err=43.1°, 1f_κ=0.00
+  LR: 0.000474
+  Time: 121.3s | Elapsed: 0h55m | ETA: 0h49m21s
+
+Epoch 27/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.2209, gate_acc=1.000
+  Batch 20/265: loss=1.1764, gate_acc=0.969
+  Batch 40/265: loss=0.8504, gate_acc=0.938
+  Batch 60/265: loss=1.4777, gate_acc=0.969
+  Batch 80/265: loss=0.7082, gate_acc=0.844
+  Batch 100/265: loss=1.7054, gate_acc=0.938
+  Batch 120/265: loss=1.3877, gate_acc=0.938
+  Batch 140/265: loss=0.8685, gate_acc=0.969
+  Batch 160/265: loss=1.3218, gate_acc=0.969
+  Batch 180/265: loss=0.8658, gate_acc=0.969
+  Batch 200/265: loss=1.1970, gate_acc=0.938
+  Batch 220/265: loss=1.2850, gate_acc=0.969
+  Batch 240/265: loss=1.2817, gate_acc=0.938
+  Batch 260/265: loss=0.6526, gate_acc=0.969
+
+  Train: loss=1.2796, 1f=1.9065, 2f=-0.1962, 4f=-1.1490
+  Val:   loss=1.4131, gate_acc=0.963, 1f_err=37.9°, 1f_κ=0.00
+  LR: 0.000443
+  Time: 122.0s | Elapsed: 0h57m | ETA: 0h47m13s
+
+Epoch 28/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.5412, gate_acc=0.938
+  Batch 20/265: loss=1.3761, gate_acc=0.969
+  Batch 40/265: loss=0.9554, gate_acc=1.000
+  Batch 60/265: loss=5.8776, gate_acc=0.969
+  Batch 80/265: loss=1.7610, gate_acc=0.938
+  Batch 100/265: loss=1.2651, gate_acc=0.938
+  Batch 120/265: loss=0.9108, gate_acc=0.969
+  Batch 140/265: loss=2.3960, gate_acc=1.000
+  Batch 160/265: loss=1.8443, gate_acc=0.969
+  Batch 180/265: loss=1.0477, gate_acc=0.906
+  Batch 200/265: loss=0.9659, gate_acc=0.969
+  Batch 220/265: loss=1.5071, gate_acc=0.969
+  Batch 240/265: loss=1.3691, gate_acc=0.938
+  Batch 260/265: loss=0.8021, gate_acc=0.969
+
+  Train: loss=1.3702, 1f=1.9038, 2f=0.2125, 4f=-1.1250
+  Val:   loss=1.3149, gate_acc=0.963, 1f_err=33.4°, 1f_κ=0.00
+  LR: 0.000412
+  Time: 121.9s | Elapsed: 0h59m | ETA: 0h45m05s
+
+Epoch 29/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.4496, gate_acc=0.938
+  Batch 20/265: loss=0.7281, gate_acc=0.969
+  Batch 40/265: loss=1.1572, gate_acc=0.875
+  Batch 60/265: loss=1.1944, gate_acc=0.938
+  Batch 80/265: loss=1.2823, gate_acc=0.906
+  Batch 100/265: loss=0.4585, gate_acc=0.969
+  Batch 120/265: loss=0.9299, gate_acc=0.906
+  Batch 140/265: loss=1.2014, gate_acc=0.938
+  Batch 160/265: loss=3.8290, gate_acc=1.000
+  Batch 180/265: loss=0.9135, gate_acc=0.969
+  Batch 200/265: loss=0.7168, gate_acc=0.938
+  Batch 220/265: loss=7.1031, gate_acc=0.906
+  Batch 240/265: loss=1.4789, gate_acc=0.906
+  Batch 260/265: loss=1.4307, gate_acc=0.969
+
+  Train: loss=1.3725, 1f=1.8991, 2f=0.4338, 4f=-1.0904
+  Val:   loss=1.2682, gate_acc=0.963, 1f_err=35.7°, 1f_κ=0.00
+  LR: 0.000382
+  Time: 122.0s | Elapsed: 1h01m | ETA: 0h42m59s
+
+Epoch 30/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=1.5756, gate_acc=0.938
+  Batch 20/265: loss=1.3495, gate_acc=1.000
+  Batch 40/265: loss=0.9059, gate_acc=0.969
+  Batch 60/265: loss=1.5178, gate_acc=0.938
+  Batch 80/265: loss=0.7839, gate_acc=0.875
+  Batch 100/265: loss=1.2566, gate_acc=1.000
+  Batch 120/265: loss=1.4379, gate_acc=0.969
+  Batch 140/265: loss=0.7909, gate_acc=1.000
+  Batch 160/265: loss=0.6972, gate_acc=0.938
+  Batch 180/265: loss=0.3778, gate_acc=1.000
+  Batch 200/265: loss=1.0499, gate_acc=0.875
+  Batch 220/265: loss=0.7907, gate_acc=0.969
+  Batch 240/265: loss=1.2107, gate_acc=0.969
+  Batch 260/265: loss=1.6092, gate_acc=0.906
+
+  Train: loss=1.3250, 1f=1.8799, 2f=0.6137, 4f=-1.1834
+  Val:   loss=1.1668, gate_acc=0.963, 1f_err=30.3°, 1f_κ=1.78
+  LR: 0.000352
+  Time: 122.7s | Elapsed: 1h03m | ETA: 0h40m56s
+
+Epoch 31/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.6354, gate_acc=1.000
+  Batch 20/265: loss=1.2106, gate_acc=0.969
+  Batch 40/265: loss=0.6836, gate_acc=0.875
+  Batch 60/265: loss=0.5104, gate_acc=0.969
+  Batch 80/265: loss=1.0055, gate_acc=1.000
+  Batch 100/265: loss=0.7615, gate_acc=0.938
+  Batch 120/265: loss=0.9515, gate_acc=0.844
+  Batch 140/265: loss=0.5117, gate_acc=0.969
+  Batch 160/265: loss=0.6501, gate_acc=0.938
+  Batch 180/265: loss=0.2438, gate_acc=0.906
+  Batch 200/265: loss=0.8871, gate_acc=0.969
+  Batch 220/265: loss=3.8381, gate_acc=1.000
+  Batch 240/265: loss=1.0260, gate_acc=1.000
+  Batch 260/265: loss=0.6241, gate_acc=0.938
+
+  Train: loss=1.0167, 1f=1.5516, 2f=0.0207, 4f=-1.1735
+  Val:   loss=0.7562, gate_acc=0.963, 1f_err=24.2°, 1f_κ=2.99
+  LR: 0.000323
+  Time: 124.1s | Elapsed: 1h05m | ETA: 0h38m56s
+  [*] New best model saved!
+
+Epoch 32/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.2623, gate_acc=0.875
+  Batch 20/265: loss=0.3858, gate_acc=0.938
+  Batch 40/265: loss=0.9423, gate_acc=0.906
+  Batch 60/265: loss=0.3570, gate_acc=0.906
+  Batch 80/265: loss=0.5760, gate_acc=0.938
+  Batch 100/265: loss=0.7695, gate_acc=0.906
+  Batch 120/265: loss=0.9072, gate_acc=1.000
+  Batch 140/265: loss=0.7162, gate_acc=0.969
+  Batch 160/265: loss=0.2980, gate_acc=1.000
+  Batch 180/265: loss=0.1915, gate_acc=0.969
+  Batch 200/265: loss=1.0085, gate_acc=0.938
+  Batch 220/265: loss=0.5413, gate_acc=1.000
+  Batch 240/265: loss=1.0149, gate_acc=1.000
+  Batch 260/265: loss=0.8019, gate_acc=0.969
+
+  Train: loss=0.7204, 1f=1.1600, 2f=-0.0803, 4f=-1.0107
+  Val:   loss=0.5568, gate_acc=0.963, 1f_err=16.5°, 1f_κ=5.90
+  LR: 0.000294
+  Time: 122.0s | Elapsed: 1h07m | ETA: 0h36m49s
+  [*] New best model saved!
+
+Epoch 33/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.1054, gate_acc=0.938
+  Batch 20/265: loss=0.2856, gate_acc=0.969
+  Batch 40/265: loss=0.5287, gate_acc=1.000
+  Batch 60/265: loss=0.3477, gate_acc=0.938
+  Batch 80/265: loss=-0.1231, gate_acc=1.000
+  Batch 100/265: loss=0.1743, gate_acc=0.969
+  Batch 120/265: loss=0.2682, gate_acc=1.000
+  Batch 140/265: loss=0.6176, gate_acc=0.938
+  Batch 160/265: loss=0.0666, gate_acc=0.812
+  Batch 180/265: loss=0.1395, gate_acc=1.000
+  Batch 200/265: loss=0.2454, gate_acc=0.906
+  Batch 220/265: loss=0.4378, gate_acc=0.938
+  Batch 240/265: loss=-0.0446, gate_acc=0.938
+  Batch 260/265: loss=0.4545, gate_acc=1.000
+
+  Train: loss=0.4139, 1f=0.8165, 2f=-0.2160, 4f=-1.1460
+  Val:   loss=0.3520, gate_acc=0.963, 1f_err=13.0°, 1f_κ=8.20
+  LR: 0.000267
+  Time: 121.2s | Elapsed: 1h09m | ETA: 0h34m43s
+  [*] New best model saved!
+
+Epoch 34/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.2639, gate_acc=0.969
+  Batch 20/265: loss=0.7534, gate_acc=0.969
+  Batch 40/265: loss=0.0542, gate_acc=0.906
+  Batch 60/265: loss=0.0719, gate_acc=0.969
+  Batch 80/265: loss=-0.2053, gate_acc=1.000
+  Batch 100/265: loss=0.3718, gate_acc=0.969
+  Batch 120/265: loss=-0.1765, gate_acc=0.906
+  Batch 140/265: loss=0.4195, gate_acc=0.969
+  Batch 160/265: loss=0.2091, gate_acc=0.938
+  Batch 180/265: loss=0.3720, gate_acc=0.906
+  Batch 200/265: loss=0.4387, gate_acc=0.906
+  Batch 220/265: loss=-0.3271, gate_acc=1.000
+  Batch 240/265: loss=0.1492, gate_acc=0.969
+  Batch 260/265: loss=0.1641, gate_acc=0.969
+
+  Train: loss=0.3445, 1f=0.6217, 2f=0.0178, 4f=-1.0444
+  Val:   loss=0.1965, gate_acc=0.963, 1f_err=10.1°, 1f_κ=10.52
+  LR: 0.000240
+  Time: 123.3s | Elapsed: 1h11m | ETA: 0h32m39s
+  [*] New best model saved!
+
+Epoch 35/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.1011, gate_acc=0.906
+  Batch 20/265: loss=0.3152, gate_acc=0.906
+  Batch 40/265: loss=0.1032, gate_acc=0.875
+  Batch 60/265: loss=0.1475, gate_acc=0.969
+  Batch 80/265: loss=-0.1867, gate_acc=0.938
+  Batch 100/265: loss=0.2123, gate_acc=0.906
+  Batch 120/265: loss=-0.1689, gate_acc=0.938
+  Batch 140/265: loss=-0.4008, gate_acc=0.906
+  Batch 160/265: loss=0.1363, gate_acc=0.969
+  Batch 180/265: loss=0.0704, gate_acc=0.906
+  Batch 200/265: loss=-0.0893, gate_acc=1.000
+  Batch 220/265: loss=-0.0825, gate_acc=0.969
+  Batch 240/265: loss=-0.3041, gate_acc=0.906
+  Batch 260/265: loss=-0.2334, gate_acc=1.000
+
+  Train: loss=0.2144, 1f=0.4641, 2f=0.0745, 4f=-1.0539
+  Val:   loss=0.0443, gate_acc=0.963, 1f_err=6.9°, 1f_κ=15.99
+  LR: 0.000214
+  Time: 123.2s | Elapsed: 1h13m | ETA: 0h30m35s
+  [*] New best model saved!
+
+Epoch 36/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.2186, gate_acc=0.969
+  Batch 20/265: loss=-0.2209, gate_acc=1.000
+  Batch 40/265: loss=0.7881, gate_acc=0.938
+  Batch 60/265: loss=-0.0569, gate_acc=1.000
+  Batch 80/265: loss=0.1700, gate_acc=1.000
+  Batch 100/265: loss=-0.2131, gate_acc=0.938
+  Batch 120/265: loss=-0.3366, gate_acc=0.969
+  Batch 140/265: loss=-0.0970, gate_acc=0.938
+  Batch 160/265: loss=-0.1464, gate_acc=0.938
+  Batch 180/265: loss=0.7710, gate_acc=0.969
+  Batch 200/265: loss=0.1798, gate_acc=0.969
+  Batch 220/265: loss=-0.0686, gate_acc=0.969
+  Batch 240/265: loss=-0.2822, gate_acc=0.969
+  Batch 260/265: loss=-0.2636, gate_acc=0.938
+
+  Train: loss=0.0743, 1f=0.3636, 2f=-0.1796, 4f=-1.0941
+  Val:   loss=-0.0301, gate_acc=0.963, 1f_err=6.3°, 1f_κ=20.96
+  LR: 0.000189
+  Time: 123.0s | Elapsed: 1h15m | ETA: 0h28m35s
+  [*] New best model saved!
+
+Epoch 37/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.3354, gate_acc=1.000
+  Batch 20/265: loss=-0.3821, gate_acc=0.969
+  Batch 40/265: loss=0.4385, gate_acc=1.000
+  Batch 60/265: loss=-0.1489, gate_acc=0.969
+  Batch 80/265: loss=-0.3222, gate_acc=0.938
+  Batch 100/265: loss=0.0851, gate_acc=0.906
+  Batch 120/265: loss=-0.2619, gate_acc=1.000
+  Batch 140/265: loss=-0.0275, gate_acc=1.000
+  Batch 160/265: loss=0.6274, gate_acc=1.000
+  Batch 180/265: loss=-0.0883, gate_acc=0.938
+  Batch 200/265: loss=0.0078, gate_acc=0.906
+  Batch 220/265: loss=-0.4495, gate_acc=0.938
+  Batch 240/265: loss=-0.2625, gate_acc=0.844
+  Batch 260/265: loss=-0.3670, gate_acc=0.938
+
+  Train: loss=-0.0229, 1f=0.2316, 2f=-0.3487, 4f=-1.1310
+  Val:   loss=-0.0505, gate_acc=0.963, 1f_err=6.7°, 1f_κ=21.90
+  LR: 0.000166
+  Time: 123.1s | Elapsed: 1h17m | ETA: 0h26m34s
+  [*] New best model saved!
+
+Epoch 38/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.4143, gate_acc=1.000
+  Batch 20/265: loss=-0.6451, gate_acc=0.969
+  Batch 40/265: loss=0.4820, gate_acc=0.969
+  Batch 60/265: loss=-0.6100, gate_acc=0.969
+  Batch 80/265: loss=-0.1453, gate_acc=0.906
+  Batch 100/265: loss=-0.3164, gate_acc=1.000
+  Batch 120/265: loss=0.2796, gate_acc=1.000
+  Batch 140/265: loss=-0.5544, gate_acc=0.906
+  Batch 160/265: loss=0.1795, gate_acc=0.969
+  Batch 180/265: loss=-0.0453, gate_acc=0.938
+  Batch 200/265: loss=0.4829, gate_acc=0.938
+  Batch 220/265: loss=0.3410, gate_acc=0.812
+  Batch 240/265: loss=-0.3666, gate_acc=0.906
+  Batch 260/265: loss=-0.6153, gate_acc=0.906
+
+  Train: loss=-0.0951, 1f=0.1550, 2f=-0.2619, 4f=-1.1075
+  Val:   loss=-0.0695, gate_acc=0.963, 1f_err=5.4°, 1f_κ=27.04
+  LR: 0.000144
+  Time: 122.2s | Elapsed: 1h19m | ETA: 0h24m32s
+  [*] New best model saved!
+
+Epoch 39/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.0066, gate_acc=0.969
+  Batch 20/265: loss=0.4603, gate_acc=0.969
+  Batch 40/265: loss=-0.4365, gate_acc=0.938
+  Batch 60/265: loss=-0.7024, gate_acc=0.906
+  Batch 80/265: loss=0.7603, gate_acc=0.969
+  Batch 100/265: loss=0.1746, gate_acc=0.875
+  Batch 120/265: loss=-0.6055, gate_acc=0.969
+  Batch 140/265: loss=-0.3644, gate_acc=0.844
+  Batch 160/265: loss=-0.6684, gate_acc=0.906
+  Batch 180/265: loss=-0.3071, gate_acc=0.875
+  Batch 200/265: loss=-0.6156, gate_acc=1.000
+  Batch 220/265: loss=-0.3607, gate_acc=0.844
+  Batch 240/265: loss=-0.1586, gate_acc=1.000
+  Batch 260/265: loss=-0.3457, gate_acc=0.906
+
+  Train: loss=-0.1410, 1f=0.0446, 2f=-0.0731, 4f=-1.1817
+  Val:   loss=-0.2070, gate_acc=0.963, 1f_err=4.8°, 1f_κ=29.21
+  LR: 0.000124
+  Time: 123.2s | Elapsed: 1h21m | ETA: 0h22m30s
+  [*] New best model saved!
+
+Epoch 40/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.1788, gate_acc=0.969
+  Batch 20/265: loss=-0.4812, gate_acc=1.000
+  Batch 40/265: loss=-0.8106, gate_acc=0.906
+  Batch 60/265: loss=0.4444, gate_acc=0.938
+  Batch 80/265: loss=-0.6877, gate_acc=0.969
+  Batch 100/265: loss=-0.3162, gate_acc=1.000
+  Batch 120/265: loss=-0.2681, gate_acc=0.969
+  Batch 140/265: loss=-0.4208, gate_acc=0.969
+  Batch 160/265: loss=-0.4202, gate_acc=0.906
+  Batch 180/265: loss=-0.0206, gate_acc=1.000
+  Batch 200/265: loss=-0.1489, gate_acc=0.906
+  Batch 220/265: loss=-0.4678, gate_acc=0.906
+  Batch 240/265: loss=-0.4140, gate_acc=0.875
+  Batch 260/265: loss=-0.3848, gate_acc=1.000
+
+  Train: loss=-0.2196, 1f=-0.0166, 2f=-0.3587, 4f=-1.1406
+  Val:   loss=-0.2464, gate_acc=0.963, 1f_err=4.8°, 1f_κ=33.62
+  LR: 0.000105
+  Time: 120.9s | Elapsed: 1h23m | ETA: 0h20m26s
+  [*] New best model saved!
+
+Epoch 41/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.3290, gate_acc=0.938
+  Batch 20/265: loss=-0.2993, gate_acc=0.906
+  Batch 40/265: loss=-0.6789, gate_acc=0.938
+  Batch 60/265: loss=0.0147, gate_acc=0.969
+  Batch 80/265: loss=-0.5860, gate_acc=0.906
+  Batch 100/265: loss=-0.3536, gate_acc=0.938
+  Batch 120/265: loss=-0.5269, gate_acc=0.875
+  Batch 140/265: loss=-0.0073, gate_acc=0.906
+  Batch 160/265: loss=-0.2117, gate_acc=0.969
+  Batch 180/265: loss=-0.6809, gate_acc=0.938
+  Batch 200/265: loss=-0.5701, gate_acc=1.000
+  Batch 220/265: loss=0.6095, gate_acc=0.938
+  Batch 240/265: loss=-0.0398, gate_acc=0.906
+  Batch 260/265: loss=-0.7014, gate_acc=0.969
+
+  Train: loss=-0.2450, 1f=-0.0297, 2f=-0.4292, 4f=-1.1710
+  Val:   loss=-0.1448, gate_acc=0.963, 1f_err=4.9°, 1f_κ=35.21
+  LR: 0.000087
+  Time: 122.4s | Elapsed: 1h25m | ETA: 0h18m21s
+
+Epoch 42/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.4413, gate_acc=0.875
+  Batch 20/265: loss=-0.5409, gate_acc=0.938
+  Batch 40/265: loss=-0.4592, gate_acc=0.938
+  Batch 60/265: loss=-0.1507, gate_acc=0.844
+  Batch 80/265: loss=-0.0553, gate_acc=0.906
+  Batch 100/265: loss=-0.4139, gate_acc=0.969
+  Batch 120/265: loss=0.8002, gate_acc=1.000
+  Batch 140/265: loss=-0.4974, gate_acc=0.969
+  Batch 160/265: loss=-0.6312, gate_acc=0.969
+  Batch 180/265: loss=-0.3602, gate_acc=0.906
+  Batch 200/265: loss=-0.6826, gate_acc=0.875
+  Batch 220/265: loss=-0.4897, gate_acc=0.938
+  Batch 240/265: loss=-0.7195, gate_acc=0.969
+  Batch 260/265: loss=-0.7397, gate_acc=0.938
+
+  Train: loss=-0.2136, 1f=0.0151, 2f=-0.5986, 4f=-1.1509
+  Val:   loss=-0.2766, gate_acc=0.963, 1f_err=4.2°, 1f_κ=38.53
+  LR: 0.000071
+  Time: 120.8s | Elapsed: 1h27m | ETA: 0h16m18s
+  [*] New best model saved!
+
+Epoch 43/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.4996, gate_acc=1.000
+  Batch 20/265: loss=-0.3500, gate_acc=1.000
+  Batch 40/265: loss=0.8490, gate_acc=1.000
+  Batch 60/265: loss=-0.6461, gate_acc=0.906
+  Batch 80/265: loss=-0.4364, gate_acc=0.969
+  Batch 100/265: loss=-0.7701, gate_acc=1.000
+  Batch 120/265: loss=-0.4331, gate_acc=0.969
+  Batch 140/265: loss=-0.7068, gate_acc=1.000
+  Batch 160/265: loss=-0.6416, gate_acc=1.000
+  Batch 180/265: loss=-0.3283, gate_acc=0.906
+  Batch 200/265: loss=-0.5369, gate_acc=0.906
+  Batch 220/265: loss=-1.0755, gate_acc=0.906
+  Batch 240/265: loss=0.2705, gate_acc=0.969
+  Batch 260/265: loss=-0.8105, gate_acc=0.938
+
+  Train: loss=-0.3149, 1f=-0.0918, 2f=-0.4949, 4f=-1.1235
+  Val:   loss=-0.3212, gate_acc=0.963, 1f_err=4.1°, 1f_κ=38.82
+  LR: 0.000057
+  Time: 120.9s | Elapsed: 1h30m | ETA: 0h14m16s
+  [*] New best model saved!
+
+Epoch 44/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.9376, gate_acc=0.969
+  Batch 20/265: loss=-0.6361, gate_acc=0.812
+  Batch 40/265: loss=1.9489, gate_acc=0.938
+  Batch 60/265: loss=-0.2852, gate_acc=0.938
+  Batch 80/265: loss=1.3973, gate_acc=0.844
+  Batch 100/265: loss=-0.9015, gate_acc=0.938
+  Batch 120/265: loss=-0.4788, gate_acc=0.969
+  Batch 140/265: loss=-0.6071, gate_acc=0.969
+  Batch 160/265: loss=-0.5165, gate_acc=0.938
+  Batch 180/265: loss=-0.5829, gate_acc=0.938
+  Batch 200/265: loss=-0.6452, gate_acc=0.969
+  Batch 220/265: loss=-0.4042, gate_acc=0.938
+  Batch 240/265: loss=1.1148, gate_acc=1.000
+  Batch 260/265: loss=-0.5681, gate_acc=0.938
+
+  Train: loss=-0.3243, 1f=-0.0712, 2f=-0.6589, 4f=-1.1210
+  Val:   loss=-0.3058, gate_acc=0.963, 1f_err=3.6°, 1f_κ=38.71
+  LR: 0.000045
+  Time: 122.3s | Elapsed: 1h32m | ETA: 0h12m13s
+
+Epoch 45/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.5191, gate_acc=0.969
+  Batch 20/265: loss=-0.7913, gate_acc=0.938
+  Batch 40/265: loss=-0.4285, gate_acc=0.906
+  Batch 60/265: loss=-0.6661, gate_acc=1.000
+  Batch 80/265: loss=-0.2002, gate_acc=0.969
+  Batch 100/265: loss=-1.1025, gate_acc=0.938
+  Batch 120/265: loss=0.1649, gate_acc=1.000
+  Batch 140/265: loss=-0.7487, gate_acc=0.938
+  Batch 160/265: loss=-0.4560, gate_acc=0.938
+  Batch 180/265: loss=0.3792, gate_acc=0.938
+  Batch 200/265: loss=-0.7507, gate_acc=0.906
+  Batch 220/265: loss=1.0817, gate_acc=0.969
+  Batch 240/265: loss=-0.6322, gate_acc=1.000
+  Batch 260/265: loss=0.1330, gate_acc=0.938
+
+  Train: loss=-0.3369, 1f=-0.1450, 2f=-0.4745, 4f=-1.1829
+  Val:   loss=-0.3030, gate_acc=0.963, 1f_err=4.0°, 1f_κ=42.98
+  LR: 0.000034
+  Time: 121.0s | Elapsed: 1h34m | ETA: 0h10m09s
+
+Epoch 46/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.1340, gate_acc=0.938
+  Batch 20/265: loss=3.0517, gate_acc=1.000
+  Batch 40/265: loss=-0.8466, gate_acc=0.938
+  Batch 60/265: loss=-0.2082, gate_acc=0.969
+  Batch 80/265: loss=-0.3818, gate_acc=1.000
+  Batch 100/265: loss=-0.6501, gate_acc=0.844
+  Batch 120/265: loss=-0.8864, gate_acc=1.000
+  Batch 140/265: loss=0.0403, gate_acc=0.969
+  Batch 160/265: loss=-0.8433, gate_acc=0.969
+  Batch 180/265: loss=-0.6223, gate_acc=0.875
+  Batch 200/265: loss=-0.6452, gate_acc=0.969
+  Batch 220/265: loss=0.1469, gate_acc=0.938
+  Batch 240/265: loss=-0.6056, gate_acc=0.938
+  Batch 260/265: loss=1.9029, gate_acc=0.938
+
+  Train: loss=-0.3157, 1f=-0.1438, 2f=-0.5140, 4f=-1.0567
+  Val:   loss=-0.2567, gate_acc=0.963, 1f_err=3.8°, 1f_κ=43.31
+  LR: 0.000026
+  Time: 123.6s | Elapsed: 1h36m | ETA: 0h08m08s
+
+Epoch 47/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.6726, gate_acc=0.938
+  Batch 20/265: loss=-0.7215, gate_acc=0.906
+  Batch 40/265: loss=-0.0034, gate_acc=1.000
+  Batch 60/265: loss=-0.9128, gate_acc=1.000
+  Batch 80/265: loss=-0.3239, gate_acc=0.969
+  Batch 100/265: loss=0.0614, gate_acc=0.906
+  Batch 120/265: loss=-0.7720, gate_acc=0.969
+  Batch 140/265: loss=-0.5530, gate_acc=0.969
+  Batch 160/265: loss=-0.5109, gate_acc=1.000
+  Batch 180/265: loss=-0.7474, gate_acc=0.906
+  Batch 200/265: loss=-0.6592, gate_acc=0.969
+  Batch 220/265: loss=0.1926, gate_acc=1.000
+  Batch 240/265: loss=-0.3881, gate_acc=1.000
+  Batch 260/265: loss=-0.6949, gate_acc=0.938
+
+  Train: loss=-0.3832, 1f=-0.1779, 2f=-0.5471, 4f=-1.1562
+  Val:   loss=-0.3245, gate_acc=0.963, 1f_err=3.8°, 1f_κ=44.64
+  LR: 0.000019
+  Time: 122.4s | Elapsed: 1h38m | ETA: 0h06m05s
+  [*] New best model saved!
+
+Epoch 48/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.5668, gate_acc=1.000
+  Batch 20/265: loss=-0.9233, gate_acc=0.938
+  Batch 40/265: loss=-0.8205, gate_acc=0.969
+  Batch 60/265: loss=-0.6766, gate_acc=0.938
+  Batch 80/265: loss=-0.6465, gate_acc=0.938
+  Batch 100/265: loss=-0.7629, gate_acc=1.000
+  Batch 120/265: loss=-0.4243, gate_acc=0.938
+  Batch 140/265: loss=-0.6040, gate_acc=0.938
+  Batch 160/265: loss=-0.6494, gate_acc=0.969
+  Batch 180/265: loss=-0.7652, gate_acc=0.969
+  Batch 200/265: loss=-0.1707, gate_acc=0.875
+  Batch 220/265: loss=-0.6644, gate_acc=0.938
+  Batch 240/265: loss=-0.8276, gate_acc=0.969
+  Batch 260/265: loss=-0.5129, gate_acc=0.969
+
+  Train: loss=-0.3207, 1f=-0.1449, 2f=-0.4989, 4f=-1.1090
+  Val:   loss=-0.3459, gate_acc=0.963, 1f_err=3.6°, 1f_κ=44.20
+  LR: 0.000014
+  Time: 123.8s | Elapsed: 1h40m | ETA: 0h04m04s
+  [*] New best model saved!
+
+Epoch 49/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=0.6042, gate_acc=0.969
+  Batch 20/265: loss=-0.4673, gate_acc=0.938
+  Batch 40/265: loss=-0.3333, gate_acc=0.938
+  Batch 60/265: loss=-0.2073, gate_acc=0.969
+  Batch 80/265: loss=-0.6752, gate_acc=0.969
+  Batch 100/265: loss=-0.4137, gate_acc=0.938
+  Batch 120/265: loss=1.4089, gate_acc=0.938
+  Batch 140/265: loss=-0.5047, gate_acc=0.938
+  Batch 160/265: loss=-0.4419, gate_acc=0.969
+  Batch 180/265: loss=-0.8092, gate_acc=0.969
+  Batch 200/265: loss=-0.7959, gate_acc=0.969
+  Batch 220/265: loss=-0.7784, gate_acc=0.969
+  Batch 240/265: loss=-0.3920, gate_acc=0.938
+  Batch 260/265: loss=-0.7948, gate_acc=0.969
+
+  Train: loss=-0.3620, 1f=-0.2028, 2f=-0.5357, 4f=-1.0969
+  Val:   loss=-0.3332, gate_acc=0.963, 1f_err=3.5°, 1f_κ=44.33
+  LR: 0.000011
+  Time: 123.1s | Elapsed: 1h42m | ETA: 0h02m02s
+
+Epoch 50/50
+----------------------------------------
+  [Schedule] cosine_w=0.10, κ_reg_w=0.020, κ_target=5.0
+  Batch 0/265: loss=-0.4361, gate_acc=0.969
+  Batch 20/265: loss=-0.4300, gate_acc=0.969
+  Batch 40/265: loss=-0.7068, gate_acc=1.000
+  Batch 60/265: loss=-0.9371, gate_acc=0.969
+  Batch 80/265: loss=1.3392, gate_acc=0.969
+  Batch 100/265: loss=1.1225, gate_acc=0.969
+  Batch 120/265: loss=-0.6004, gate_acc=1.000
+  Batch 140/265: loss=-0.4015, gate_acc=0.906
+  Batch 160/265: loss=-0.1959, gate_acc=0.875
+  Batch 180/265: loss=-0.2340, gate_acc=0.938
+  Batch 200/265: loss=2.4814, gate_acc=0.969
+  Batch 220/265: loss=-0.2336, gate_acc=1.000
+  Batch 240/265: loss=-0.6795, gate_acc=0.875
+  Batch 260/265: loss=1.3698, gate_acc=0.875
+
+  Train: loss=-0.3690, 1f=-0.1493, 2f=-0.5777, 4f=-1.1442
+  Val:   loss=-0.3337, gate_acc=0.963, 1f_err=3.7°, 1f_κ=45.05
+  LR: 0.000010
+  Time: 122.1s | Elapsed: 1h44m | ETA: 0h00m00s
+
+============================================================
+Training completed! Running final test...
+wandb: updating run metadata
+wandb: uploading wandb-summary.json; uploading output.log
+wandb: uploading history steps 50-50, summary, console lines 1191-1198
+wandb: 
+wandb: Run history:
+wandb:                     epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇██
+wandb:                        lr ██████▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:    schedule/cosine_weight ███████▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: schedule/kappa_reg_weight ▁▁▁▁▁▂▂▃▄▅▆▇▇███████████████████████████
+wandb:     schedule/kappa_target ▁▁▁▁▁▁▂▂▃▄▅▆▇▇██████████████████████████
+wandb:                 test/loss ▁
+wandb:          test/loss_1front ▁
+wandb:          test/loss_2front ▁
+wandb:          test/loss_4front ▁
+wandb:        test/test_gate_acc ▁
+wandb:                       +31 ...
+wandb: 
+wandb: Run summary:
+wandb:                     epoch 50
+wandb:                        lr 1e-05
+wandb:    schedule/cosine_weight 0.1
+wandb: schedule/kappa_reg_weight 0.02
+wandb:     schedule/kappa_target 5
+wandb:                 test/loss -0.55312
+wandb:          test/loss_1front -0.31811
+wandb:          test/loss_2front -0.73043
+wandb:          test/loss_4front -1.33419
+wandb:        test/test_gate_acc 0.97343
+wandb:                       +31 ...
+wandb: 
+wandb: 🚀 View run P2v2_SoftGate_20251229_183118 at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation/runs/0g9ucw2q
+wandb: ⭐️ View project at: https://wandb.ai/augustuschen00-university-of-tokyo/ForwardNet-LossAblation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: checkpoints/P2v2_SoftGate_20251229_183118/wandb/run-20251229_183119-0g9ucw2q/logs
+
+Test Results - Gate Accuracy by Class:
+  1-front: 0.997 (734/736)
+  2-front: 0.811 (198/244)
+  4-front: 1.000 (168/168)
+  Rot-sym: 0.998 (487/488)
+  No-front: 1.000 (208/208)
+  Overall: 0.973
+
+Best val loss: -0.3459
+Checkpoints saved to: checkpoints/P2v2_SoftGate_20251229_183118

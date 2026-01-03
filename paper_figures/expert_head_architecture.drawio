@@ -1,0 +1,147 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Title -->
+    <mxCell id="title" value="Expert Head Architecture" style="text;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="250" y="20" width="300" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Input -->
+    <mxCell id="input" value="Global Feature&#xa;[B, 1024]" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="320" y="70" width="120" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Shared Hidden Block -->
+    <mxCell id="shared_box" value="" style="rounded=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="270" y="150" width="220" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="shared_label" value="Shared Layers" style="text;fontSize=11;fontStyle=2;align=center;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="340" y="155" width="80" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Linear 1 -->
+    <mxCell id="linear1" value="Linear(1024, 256)&#xa;+ ReLU" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="310" y="180" width="140" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Linear 2 -->
+    <mxCell id="linear2" value="Linear(256, 256)&#xa;+ ReLU" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="310" y="240" width="140" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Branch point -->
+    <mxCell id="branch" value="" style="ellipse;fillColor=#333333;strokeColor=#333333;" vertex="1" parent="1">
+      <mxGeometry x="372" y="310" width="16" height="16" as="geometry"/>
+    </mxCell>
+    
+    <!-- Mu Branch (Left) -->
+    <mxCell id="mu_box" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="100" y="355" width="180" height="200" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_label" value="μ Branch" style="text;fontSize=11;fontStyle=2;align=center;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="155" y="360" width="70" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="fc_mu" value="Linear(256, K×2)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="125" y="390" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="reshape" value="Reshape&#xa;[B, K, 2]" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="125" y="440" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="atan2" value="atan2(sin, cos)" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="125" y="490" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <!-- Kappa Branch (Right) -->
+    <mxCell id="kappa_box" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="480" y="355" width="180" height="200" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_label" value="κ Branch" style="text;fontSize=11;fontStyle=2;align=center;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="535" y="360" width="70" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="fc_kappa" value="Linear(256, K)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="505" y="390" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="softplus" value="Softplus" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="505" y="440" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="clamp" value="Clamp&#xa;[κ_min, κ_max]" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="505" y="490" width="130" height="35" as="geometry"/>
+    </mxCell>
+    
+    <!-- Outputs -->
+    <mxCell id="mu_out" value="μ&#xa;[B, K]" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="150" y="580" width="80" height="45" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="kappa_out" value="κ&#xa;[B, K]" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="530" y="580" width="80" height="45" as="geometry"/>
+    </mxCell>
+    
+    <!-- Note -->
+    <mxCell id="note" value="K = number of peaks&#xa;(1 for 1-front, 2 for 2-front, 4 for 4-front)" style="text;fontSize=10;fontStyle=2;align=left;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="280" y="590" width="220" height="35" as="geometry"/>
+    </mxCell>
+    
+    <!-- Edges -->
+    <mxCell id="e1" value="" style="endArrow=classic;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="input" target="linear1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e2" value="" style="endArrow=classic;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="linear1" target="linear2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e3" value="" style="endArrow=classic;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="linear2" target="branch">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Branch to Mu -->
+    <mxCell id="e4" value="" style="endArrow=classic;strokeWidth=2;exitX=0;exitY=0.5;entryX=0.5;entryY=0;curved=1;" edge="1" parent="1" source="branch" target="fc_mu">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="190" y="340"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Branch to Kappa -->
+    <mxCell id="e5" value="" style="endArrow=classic;strokeWidth=2;exitX=1;exitY=0.5;entryX=0.5;entryY=0;curved=1;" edge="1" parent="1" source="branch" target="fc_kappa">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="570" y="340"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Mu path -->
+    <mxCell id="e6" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="fc_mu" target="reshape">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e7" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="reshape" target="atan2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e8" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="atan2" target="mu_out">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Kappa path -->
+    <mxCell id="e9" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="fc_kappa" target="softplus">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e10" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="softplus" target="clamp">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e11" value="" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1" source="clamp" target="kappa_out">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

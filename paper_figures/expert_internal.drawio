@@ -1,0 +1,168 @@
+<mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="400">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Title -->
+    <mxCell id="title" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;Expert Head Internal Structure&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="280" height="25" as="geometry"/>
+    </mxCell>
+    
+    <!-- Input -->
+    <mxCell id="input" value="&lt;b&gt;Global Feature&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;(B × 1024)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="150" width="100" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Expert Container -->
+    <mxCell id="expert_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fillOpacity=20;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="180" y="70" width="450" height="210" as="geometry"/>
+    </mxCell>
+    <mxCell id="expert_title" value="&lt;b&gt;Expert&lt;sub&gt;k&lt;/sub&gt;&lt;/b&gt; &lt;font style=&quot;font-size: 10px&quot;&gt;(K peaks)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#922b21;" vertex="1" parent="1">
+      <mxGeometry x="190" y="75" width="140" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Mu Branch -->
+    <mxCell id="mu_branch" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fillOpacity=30;" vertex="1" parent="1">
+      <mxGeometry x="200" y="100" width="410" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_label" value="&lt;font style=&quot;font-size: 9px&quot; color=&quot;#b45f06&quot;&gt;&lt;b&gt;μ Branch (Direction)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="210" y="103" width="120" height="15" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="mu_fc1" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;1024→512&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="215" y="122" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_bn" value="&lt;b&gt;BN+ReLU&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="300" y="122" width="65" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_fc2" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;512→2K&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="380" y="122" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_norm" value="&lt;b&gt;L2 Norm&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;per peak&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="465" y="122" width="65" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_out" value="&lt;b&gt;μ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;(B×K×2)&lt;br&gt;[cos,sin]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="545" y="117" width="55" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Kappa Branch -->
+    <mxCell id="kappa_branch" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fillOpacity=30;" vertex="1" parent="1">
+      <mxGeometry x="200" y="185" width="410" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_label" value="&lt;font style=&quot;font-size: 9px&quot; color=&quot;#7c3aed&quot;&gt;&lt;b&gt;κ Branch (Concentration)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="210" y="188" width="140" height="15" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="kappa_fc1" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;1024→512&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="215" y="207" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_bn" value="&lt;b&gt;BN+ReLU&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="300" y="207" width="65" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_fc2" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;512→K&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="380" y="207" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_soft" value="&lt;b&gt;Softplus&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;κ ≥ 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="465" y="207" width="65" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_out" value="&lt;b&gt;κ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;(B×K)&lt;br&gt;κ&gt;0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="545" y="202" width="55" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Output -->
+    <mxCell id="output" value="&lt;b&gt;Output&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;K von Mises&lt;br&gt;(μ₁,κ₁)...(μₖ,κₖ)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="680" y="145" width="100" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrows: Input to branches -->
+    <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="input" target="mu_fc1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="170" y="175"/>
+          <mxPoint x="170" y="142"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="input" target="kappa_fc1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="170" y="175"/>
+          <mxPoint x="170" y="227"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Arrows: Mu branch -->
+    <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_fc1" target="mu_bn">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_bn" target="mu_fc2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_fc2" target="mu_norm">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_norm" target="mu_out">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrows: Kappa branch -->
+    <mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_fc1" target="kappa_bn">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_bn" target="kappa_fc2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_fc2" target="kappa_soft">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_soft" target="kappa_out">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrows: Outputs to final -->
+    <mxCell id="a11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.3;strokeWidth=2;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_out" target="output">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="650" y="142"/>
+          <mxPoint x="650" y="163"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.7;strokeWidth=2;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_out" target="output">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="650" y="227"/>
+          <mxPoint x="650" y="187"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Legend -->
+    <mxCell id="legend" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="40" y="310" width="350" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg_title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="50" y="313" width="50" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1" value="" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="50" y="333" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1_t" value="&lt;font style=&quot;font-size: 8px&quot;&gt;μ (direction)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="73" y="330" width="60" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="140" y="333" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2_t" value="&lt;font style=&quot;font-size: 8px&quot;&gt;κ (concentration)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="163" y="330" width="80" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="250" y="333" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3_t" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Input Feature&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="273" y="330" width="70" height="15" as="geometry"/>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

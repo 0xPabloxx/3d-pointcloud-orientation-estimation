@@ -1,0 +1,97 @@
+[MoEDataset train] 2357 samples x12 = 28284 total
+  0 (1-front): 1085
+  1 (2-front): 280
+  2 (4-front): 191
+  3 (Rot-sym): 564
+  4 (No-front): 237
+[MoEDataset val] 503 samples = 503 total
+  0 (1-front): 232
+  1 (2-front): 60
+  2 (4-front): 40
+  3 (Rot-sym): 120
+  4 (No-front): 51
+[MoEDataset test] 509 samples = 509 total
+  0 (1-front): 233
+  1 (2-front): 60
+  2 (4-front): 42
+  3 (Rot-sym): 122
+  4 (No-front): 52
+
+Loading classifier from: checkpoints/SymClassifier_20251216_035345/best.pth
+Classifier loaded successfully
+
+============================================================
+Experiment: P0_warmup10_cos0.1_20251229_162446
+Device: cuda
+Total parameters: 3,953,818
+Trainable parameters: 1,797,717
+Classifier frozen: True
+Train samples: 28284
+Val samples: 503
+Batch size: 32
+Balanced sampler: True
+Output dir: checkpoints/P0_warmup10_cos0.1_20251229_162446
+============================================================
+
+
+Starting training...
+============================================================
+
+Epoch 1/20
+----------------------------------------
+  [Warmup 1/10] Using cosine loss for 1-front
+  Batch 0/883: loss=1.1344, gate_acc=0.938
+  Batch 20/883: loss=0.9624, gate_acc=1.000
+  Batch 40/883: loss=0.7741, gate_acc=0.938
+  Batch 60/883: loss=1.1138, gate_acc=0.938
+  Batch 80/883: loss=1.1566, gate_acc=0.906
+  Batch 100/883: loss=0.8235, gate_acc=0.969
+  Batch 120/883: loss=0.8625, gate_acc=0.906
+  Batch 140/883: loss=0.6363, gate_acc=0.938
+  Batch 160/883: loss=1.0662, gate_acc=1.000
+  Batch 180/883: loss=0.7958, gate_acc=1.000
+  Batch 200/883: loss=0.9511, gate_acc=0.938
+  Batch 220/883: loss=1.0064, gate_acc=0.938
+  Batch 240/883: loss=0.9921, gate_acc=1.000
+  Batch 260/883: loss=1.3188, gate_acc=1.000
+  Batch 280/883: loss=0.7661, gate_acc=0.969
+  Batch 300/883: loss=0.8287, gate_acc=0.938
+  Batch 320/883: loss=1.3941, gate_acc=0.969
+  Batch 340/883: loss=0.5949, gate_acc=0.938
+  Batch 360/883: loss=0.7173, gate_acc=0.969
+  Batch 380/883: loss=0.7777, gate_acc=0.938
+  Batch 400/883: loss=0.5171, gate_acc=0.938
+  Batch 420/883: loss=0.8861, gate_acc=0.875
+  Batch 440/883: loss=0.8204, gate_acc=0.969
+  Batch 460/883: loss=0.9379, gate_acc=0.844
+  Batch 480/883: loss=0.7484, gate_acc=0.938
+  Batch 500/883: loss=0.4959, gate_acc=0.938
+  Batch 520/883: loss=0.5013, gate_acc=0.938
+  Batch 540/883: loss=0.7138, gate_acc=0.938
+  Batch 560/883: loss=0.6246, gate_acc=1.000
+  Batch 580/883: loss=0.6985, gate_acc=0.969
+  Batch 600/883: loss=0.8586, gate_acc=0.938
+  Batch 620/883: loss=0.7852, gate_acc=0.969
+  Batch 640/883: loss=1.1418, gate_acc=1.000
+  Batch 660/883: loss=0.6854, gate_acc=0.906
+  Batch 680/883: loss=0.9056, gate_acc=0.938
+  Batch 700/883: loss=0.6312, gate_acc=1.000
+  Batch 720/883: loss=0.6822, gate_acc=0.969
+  Batch 740/883: loss=0.2372, gate_acc=0.938
+  Batch 760/883: loss=1.6695, gate_acc=1.000
+  Batch 780/883: loss=0.8368, gate_acc=0.969
+  Batch 800/883: loss=0.4924, gate_acc=0.969
+  Batch 820/883: loss=1.4469, gate_acc=1.000
+  Batch 840/883: loss=0.5189, gate_acc=0.906
+  Batch 860/883: loss=0.4478, gate_acc=1.000
+  Batch 880/883: loss=0.8079, gate_acc=0.938
+
+  Train: loss=0.8205, 1f=0.9980, 2f=1.0389, 4f=-0.4830
+  Val:   loss=0.4929, gate_acc=0.944
+  LR: 0.000994
+  Time: 905.1s | Elapsed: 0h15m | ETA: 4h46m36s
+  [*] New best model saved!
+
+Epoch 2/20
+----------------------------------------
+  [Warmup 2/10] Using cosine loss for 1-front
