@@ -1,6 +1,6 @@
 # 点云对称性与方向标注报告
 
-**生成时间**: 2025-12-29 16:17:48
+**生成时间**: 2026-01-10 15:12:11
 
 **数据集**: /home/pablo/ForwardNet-claude/data/full_mn40_normal_resampled_ply
 
@@ -8,36 +8,36 @@
 
 ## 📊 标注统计
 
-- **总标注数**: 3393
-- **需矫正数**: 382
+- **总标注数**: 3703
+- **需矫正数**: 607
 
 ### 对称性分布
 
 | 对称类型 | 数量 | 占比 |
 |---------|------|------|
-| 1个正面 | 1563 | 46.1% |
-| 2个正面 | 410 | 12.1% |
-| 4个正面 | 273 | 8.0% |
+| 1个正面 | 1502 | 40.6% |
+| 2个正面 | 575 | 15.5% |
+| 4个正面 | 308 | 8.3% |
 | 完全对称 | 1 | 0.0% |
-| 旋转对称 | 805 | 23.7% |
-| 无正面 | 340 | 10.0% |
+| 旋转对称 | 889 | 24.0% |
+| 无正面 | 427 | 11.5% |
 | 没有正面 | 1 | 0.0% |
 
 ### 正面方向分布
 
 | 方向 | 数量 | 占比 | 状态 |
 |------|------|------|------|
-| +X | 93 | 2.7% | ⚠️ 需矫正 |
-| +Z | 45 | 1.3% | ⚠️ 需矫正 |
-| -X | 220 | 6.5% | ⚠️ 需矫正 |
-| -Z | 1866 | 55.0% | ✅ 已对齐 |
-| MULTI | 3 | 0.1% | ⚠️ 需矫正 |
-| N/A | 1145 | 33.7% | ⚠️ 需矫正 |
-| OBLIQUE | 21 | 0.6% | ⚠️ 需矫正 |
+| +X | 95 | 2.6% | ⚠️ 需矫正 |
+| +Z | 46 | 1.2% | ⚠️ 需矫正 |
+| -X | 440 | 11.9% | ⚠️ 需矫正 |
+| -Z | 1949 | 52.6% | ✅ 已对齐 |
+| MULTI | 6 | 0.2% | ⚠️ 需矫正 |
+| N/A | 1145 | 30.9% | ⚠️ 需矫正 |
+| OBLIQUE | 22 | 0.6% | ⚠️ 需矫正 |
 
 ---
 
-## ⚠️ 需要矫正的数据（共382个）
+## ⚠️ 需要矫正的数据（共607个）
 
 | 文件 | 对称类型 | 当前方向 | 需要旋转 |
 |------|---------|----------|----------|
@@ -382,17 +382,242 @@
 | `bookshelf/bookshelf_0116.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
 | `bookshelf/bookshelf_0246.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
 | `bookshelf/bookshelf_0248.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
-| `bookshelf/bookshelf_0254.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
-| `bookshelf/bookshelf_0272.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
-| `bookshelf/bookshelf_0281.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
-| `bookshelf/bookshelf_0285.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
 | `chair/chair_0298.ply` | 1个正面 | OBLIQUE | 未知方向 |
-| `chair/chair_0739.ply` | 1个正面 | OBLIQUE | 未知方向 |
+| `curtain/curtain_0007.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0010.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0013.ply` | 2个正面 | OBLIQUE | 未知方向 |
+| `curtain/curtain_0014.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0020.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0022.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0025.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0026.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0029.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0030.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0032.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0033.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `curtain/curtain_0035.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
 | `desk/desk_0001.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
 | `desk/desk_0002.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
 | `desk/desk_0003.ply` | 2个正面 | +X | 绕Y轴旋转-90° |
 | `desk/desk_0004.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
 | `desk/desk_0005.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `dresser/dresser_0001.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0002.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0003.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0004.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0005.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0006.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0007.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0008.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0009.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0010.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0011.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0012.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0014.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0015.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0016.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0017.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0018.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0019.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0020.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0021.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0022.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0023.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0024.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0025.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0026.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0027.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0028.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0029.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0030.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0031.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0032.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `dresser/dresser_0033.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `night_stand/night_stand_0001.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `night_stand/night_stand_0002.ply` | 4个正面 | -X | 绕Y轴旋转+90° |
+| `night_stand/night_stand_0005.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0001.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0002.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0003.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0004.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0005.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0006.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0007.ply` | 2个正面 | MULTI | 未知方向 |
+| `sofa/sofa_0008.ply` | 2个正面 | MULTI | 未知方向 |
+| `sofa/sofa_0009.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0010.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0011.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0012.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0013.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0014.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0015.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0016.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0017.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0018.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0019.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0020.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0021.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0022.ply` | 2个正面 | MULTI | 未知方向 |
+| `sofa/sofa_0024.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0025.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0026.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0027.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0028.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0029.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0030.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0031.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0032.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0033.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0034.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0036.ply` | 4个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0038.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0039.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0040.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0041.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0042.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0043.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0045.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0046.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0047.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0048.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0049.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0050.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0051.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0052.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0053.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0054.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0055.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0056.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0057.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0058.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0059.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0060.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0061.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0062.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0063.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0064.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0065.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `sofa/sofa_0066.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0002.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0004.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0005.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0006.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0008.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0009.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0010.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0014.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0017.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0021.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0023.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0024.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0026.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0032.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0035.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0036.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0037.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0040.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0042.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0044.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0047.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0048.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0050.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0052.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0054.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0056.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0061.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0062.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0063.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0066.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0068.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0074.ply` | 4个正面 | +Z | 绕Y轴旋转180° |
+| `table/table_0075.ply` | 4个正面 | +Z | 绕Y轴旋转180° |
+| `table/table_0076.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0077.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0078.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0079.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0080.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0081.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0083.ply` | 4个正面 | +Z | 绕Y轴旋转180° |
+| `table/table_0084.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0085.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0086.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0088.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0091.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0092.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0094.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0095.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0097.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0098.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0099.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0101.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0102.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0103.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0104.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0105.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0106.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0107.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0109.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0110.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0114.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0115.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0116.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0119.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0122.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0123.ply` | 4个正面 | OBLIQUE | 未知方向 |
+| `table/table_0125.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0126.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0128.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0129.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0130.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0131.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0134.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0135.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0136.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0137.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0139.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0140.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0141.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0142.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0143.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0144.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0147.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0149.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0150.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0152.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0153.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0154.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0155.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0156.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0158.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0159.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0161.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0163.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0164.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0165.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0168.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0169.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0170.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0171.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0172.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0173.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0178.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0180.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0189.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0192.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0193.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0194.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0197.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0198.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0200.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0202.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0204.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0205.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0206.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0207.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `table/table_0208.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
+| `tv_stand/tv_stand_0004.ply` | 1个正面 | -X | 绕Y轴旋转+90° |
+| `tv_stand/tv_stand_0005.ply` | 1个正面 | +X | 绕Y轴旋转-90° |
+| `tv_stand/tv_stand_0006.ply` | 1个正面 | +Z | 绕Y轴旋转180° |
 | `wardrobe/wardrobe_0012.ply` | 2个正面 | -X | 绕Y轴旋转+90° |
 | `wardrobe/wardrobe_0013.ply` | 2个正面 | +Z | 绕Y轴旋转180° |
 | `wardrobe/wardrobe_0014.ply` | 2个正面 | +Z | 绕Y轴旋转180° |

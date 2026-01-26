@@ -382,6 +382,61 @@ checkpoints/
 
 ---
 
-**版本**: 6.0
-**更新**: 2025-12-10
-**核心任务**: Fixed 4-Peak von Mises 训练实验进行中
+## 📊 MVM Angular Error 计算方法（强制）
+
+### 统一 Hungarian Matching (4 vs 4)
+
+对于 Mixture von Mises (MVM) 模型输出的 4 个 peaks，使用统一的 4 vs 4 Hungarian matching 计算 angular error：
+
+**GT 构造方法**：
+```python
+def create_gt_peaks(gt_angle: float, label: int) -> np.ndarray:
+    """
+    根据对称类型构造 4 个 GT 方向
+
+    Args:
+        gt_angle: 基准 GT 角度 (radians)
+        label: 0=1-front, 1=2-front, 2=4-front
+    """
+    if label == 0:  # 1-front: 复制 4 份相同方向
+        return np.array([gt_angle, gt_angle, gt_angle, gt_angle])
+
+    elif label == 1:  # 2-front: 2个方向各复制2份
+        angle2 = (gt_angle + np.pi) % (2 * np.pi)
+        return np.array([gt_angle, gt_angle, angle2, angle2])
+
+    elif label == 2:  # 4-front: 4个不同方向
+        return np.array([
+            gt_angle,
+            (gt_angle + np.pi / 2) % (2 * np.pi),
+            (gt_angle + np.pi) % (2 * np.pi),
+            (gt_angle + 3 * np.pi / 2) % (2 * np.pi),
+        ])
+```
+
+**Angular Error 计算**：
+```python
+def hungarian_angular_error(pred_peaks, gt_peaks):
+    """4 vs 4 Hungarian matching，返回 4 个 angular errors"""
+    cost = np.zeros((4, 4))
+    for i in range(4):
+        for j in range(4):
+            diff = abs(pred_peaks[i] - gt_peaks[j])
+            cost[i, j] = min(diff, 2 * np.pi - diff)  # circular distance
+
+    row_ind, col_ind = linear_sum_assignment(cost)
+    return [cost[i, j] for i, j in zip(row_ind, col_ind)]
+```
+
+**设计意图**：
+- 1-front: 所有 4 个预测 peaks 都应指向同一方向
+- 2-front: 4 个预测 peaks 分成 2 组，每组指向一个方向
+- 4-front: 4 个预测 peaks 各自指向 4 个不同方向
+
+**测试脚本**: `test_muonly_angular_error.py`
+
+---
+
+**版本**: 7.0
+**更新**: 2026-01-10
+**核心任务**: MuOnly Full 训练完成，Angular Error 评估方法确立

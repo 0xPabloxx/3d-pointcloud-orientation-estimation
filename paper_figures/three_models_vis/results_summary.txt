@@ -1,0 +1,49 @@
+=========================================================================================================
+Three Models Comparison - All Visualized Samples
+=========================================================================================================
+
+--- 新增表现好的样本 (17个) ---
+File                                     Category       Rotation   Discrete        MvM        MoE
+---------------------------------------------------------------------------------------------------------
+chair/chair_0423.ply                     1_front          181.6°       1.6°       2.1°       0.3°
+chair/chair_0312.ply                     1_front          180.2°       0.2°       4.9°       5.0°
+chair/chair_0054.ply                     1_front          179.1°       0.9°       1.9°       5.5°
+chair/chair_0229.ply                     1_front            1.1°       1.1°       4.8°       5.5°
+airplane/airplane_0131.ply               1_front          186.9°       6.9°       6.3°       3.0°
+bathtub/bathtub_0025.ply                 2_fronts          16.7°      39.2°      34.7°      32.6°
+wardrobe/wardrobe_0078.ply               2_fronts          69.4°      45.0°      45.4°      40.9°
+wardrobe/wardrobe_0043.ply               2_fronts         265.4°      45.0°      46.3°      10.4°
+wardrobe/wardrobe_0073.ply               2_fronts         358.6°       1.4°      46.8°       0.7°
+wardrobe/wardrobe_0084.ply               2_fronts         245.8°      45.0°      45.5°      47.1°
+wardrobe/wardrobe_0026.ply               2_fronts          82.8°      52.2°      47.3°      15.4°
+glass_box/glass_box_0134.ply             4_fronts         134.3°       0.7°       1.8°       0.3°
+glass_box/glass_box_0143.ply             4_fronts         315.9°       0.8°       2.0°       2.7°
+glass_box/glass_box_0006.ply             4_fronts         226.4°       1.4°       3.9°       3.9°
+glass_box/glass_box_0080.ply             4_fronts         314.9°       0.1°       4.5°       4.9°
+glass_box/glass_box_0164.ply             4_fronts          47.2°       2.2°       4.3°       5.7°
+glass_box/glass_box_0037.ply             4_fronts         319.0°       4.0°       6.8°       7.8°
+
+--- 原有样本 (18个，含负面例子) ---
+File                                     Category       Rotation   Discrete        MvM        MoE
+---------------------------------------------------------------------------------------------------------
+chair/chair_0784.ply                     1_front          182.1°       2.1°       9.7°       5.1°
+chair/chair_0807.ply                     1_front          350.6°       9.4°       8.4°      16.6°
+chair/chair_0959.ply                     1_front          171.6°       8.4°      14.7°      17.2°
+chair/chair_0069.ply                     1_front          350.0°      10.0°      11.1°      22.7°
+chair/chair_0281.ply                     1_front          113.9°     133.6°     179.2°     125.2°
+chair/chair_0414.ply                     1_front           89.3°     179.3°     176.1°     176.9°
+wardrobe/wardrobe_0073.ply               2_fronts          13.9°      36.4°      45.9°      29.8°
+bench/bench_0128.ply                     2_fronts         199.4°      48.1°      46.8°      42.9°
+bench/bench_0091.ply                     2_fronts         194.6°      78.8°      70.8°      34.1°
+bench/bench_0036.ply                     2_fronts         125.6°      80.6°      74.5°      71.0°
+bench/bench_0058.ply                     2_fronts          24.7°      78.8°      90.0°      51.5°
+bathtub/bathtub_0098.ply                 2_fronts         334.4°      78.8°      90.0°      52.8°
+glass_box/glass_box_0044.ply             4_fronts         131.3°       3.7°      10.8°       7.7°
+glass_box/glass_box_0188.ply             4_fronts         232.6°       7.6°      15.9°      15.3°
+glass_box/glass_box_0213.ply             4_fronts         140.6°       5.5°      15.9°      11.5°
+glass_box/glass_box_0094.ply             4_fronts          35.2°       9.8°      18.3°      17.3°
+flower_pot/flower_pot_0010.ply           4_fronts         195.6°      39.4°      81.0°      33.6°
+chair/chair_0127.ply                     4_fronts         223.6°      67.5°      88.5°       0.6°
+
+=========================================================================================================
+Total: 35 visualizations

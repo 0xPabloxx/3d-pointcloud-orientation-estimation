@@ -1,0 +1,378 @@
+<mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="550">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Title -->
+    <mxCell id="title" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;MF Series: Mixture of von Mises for Multi-Peak Orientation Estimation&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="300" y="20" width="550" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== Section 1: Input ===== -->
+    <mxCell id="sec1_title" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;1. Input&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="40" y="60" width="80" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="input_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="85" width="90" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="input_label" value="&lt;b&gt;Point Cloud&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;(B × N × 3)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="40" y="180" width="90" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== Section 2: Backbone ===== -->
+    <mxCell id="sec2_title" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;2. Feature Extraction&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="170" y="60" width="150" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="backbone_section" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fillOpacity=20;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="170" y="85" width="180" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="backbone_title" value="&lt;b&gt;PointNet++ Encoder&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#1a5276;" vertex="1" parent="1">
+      <mxGeometry x="180" y="90" width="140" height="15" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="sa1" value="&lt;b&gt;SA1&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;N→512&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="185" y="115" width="45" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="sa2" value="&lt;b&gt;SA2&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;512→128&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="240" y="115" width="45" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="sa3" value="&lt;b&gt;SA3&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;Global&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="295" y="115" width="45" height="35" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="global_feat" value="&lt;b&gt;Global Feature&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;(B × 1024)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="210" y="165" width="100" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== Section 3: MixturePeakHead ===== -->
+    <mxCell id="sec3_title" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;3. MixturePeakHead&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="390" y="60" width="150" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="head_section" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fillOpacity=20;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="390" y="85" width="260" height="200" as="geometry"/>
+    </mxCell>
+    
+    <!-- Mu Branch -->
+    <mxCell id="mu_branch" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fillOpacity=30;" vertex="1" parent="1">
+      <mxGeometry x="400" y="95" width="240" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_title" value="&lt;b&gt;μ Branch (Direction)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#b45f06;" vertex="1" parent="1">
+      <mxGeometry x="410" y="98" width="120" height="15" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="mu_fc1" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;1024→512&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="410" y="118" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_bn" value="&lt;b&gt;BN&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;ReLU&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="475" y="118" width="40" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_fc2" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;512→8&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="525" y="118" width="50" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_norm" value="&lt;b&gt;L2&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;Norm&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="585" y="118" width="40" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mu_out" value="&lt;b&gt;μ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;(4×2)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="410" y="155" width="40" height="25" as="geometry"/>
+    </mxCell>
+    
+    <!-- Kappa Branch -->
+    <mxCell id="kappa_branch" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fillOpacity=30;" vertex="1" parent="1">
+      <mxGeometry x="400" y="185" width="240" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_title" value="&lt;b&gt;κ Branch (Concentration)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#7c3aed;" vertex="1" parent="1">
+      <mxGeometry x="410" y="188" width="140" height="15" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="kappa_fc1" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;1024→512&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="410" y="208" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_bn" value="&lt;b&gt;BN&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;ReLU&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="475" y="208" width="40" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_fc2" value="&lt;b&gt;Linear&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;512→4&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="525" y="208" width="50" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_soft" value="&lt;b&gt;Soft&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;plus&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="585" y="208" width="40" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="kappa_out" value="&lt;b&gt;κ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;(4)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="410" y="245" width="40" height="25" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== Section 4: Output ===== -->
+    <mxCell id="sec4_title" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;4. Output Distribution&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="690" y="60" width="150" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="output_section" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fillOpacity=20;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="690" y="85" width="140" height="200" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="vm_combine" value="&lt;b&gt;4 von Mises&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Components&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="710" y="100" width="100" height="45" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="vm1" value="&lt;font style=&quot;font-size: 8px&quot;&gt;vM(θ|μ₁,κ₁)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="710" y="155" width="45" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="vm2" value="&lt;font style=&quot;font-size: 8px&quot;&gt;vM(θ|μ₂,κ₂)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="765" y="155" width="45" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="vm3" value="&lt;font style=&quot;font-size: 8px&quot;&gt;vM(θ|μ₃,κ₃)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="710" y="190" width="45" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="vm4" value="&lt;font style=&quot;font-size: 8px&quot;&gt;vM(θ|μ₄,κ₄)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=8;" vertex="1" parent="1">
+      <mxGeometry x="765" y="190" width="45" height="25" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="pred_dist" value="&lt;b&gt;p(θ) = Σ vM&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Mixture Dist&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="710" y="230" width="100" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== Section 5: Loss ===== -->
+    <mxCell id="sec5_title" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;5. Loss Calculation&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+      <mxGeometry x="870" y="60" width="140" height="20" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="loss_section" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fillOpacity=20;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="870" y="85" width="200" height="280" as="geometry"/>
+    </mxCell>
+    
+    <!-- GT -->
+    <mxCell id="gt_dist" value="&lt;b&gt;GT p(θ)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Target Dist&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="890" y="95" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="gt_params" value="&lt;b&gt;GT (μ,κ)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Annotations&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="980" y="95" width="70" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- KL Loss -->
+    <mxCell id="kl_loss" value="&lt;b&gt;ℒ&lt;sub&gt;kl&lt;/sub&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;KL(GT∥Pred)&lt;br&gt;&lt;i&gt;direct&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="890" y="150" width="70" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Hungarian -->
+    <mxCell id="hungarian" value="&lt;b&gt;Hungarian&lt;br&gt;Matching&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 7px&quot;&gt;Optimal Assignment&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=8;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="975" y="150" width="80" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Mu Loss -->
+    <mxCell id="mu_loss" value="&lt;b&gt;ℒ&lt;sub&gt;μ&lt;/sub&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Angle Error&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="890" y="215" width="70" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Kappa Loss -->
+    <mxCell id="kappa_loss" value="&lt;b&gt;ℒ&lt;sub&gt;κ&lt;/sub&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;MSE(κ)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+      <mxGeometry x="975" y="215" width="70" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Total Loss -->
+    <mxCell id="total_loss" value="&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;b&gt;ℒ = λ&lt;sub&gt;kl&lt;/sub&gt;ℒ&lt;sub&gt;kl&lt;/sub&gt; + λ&lt;sub&gt;μ&lt;/sub&gt;ℒ&lt;sub&gt;μ&lt;/sub&gt; + λ&lt;sub&gt;κ&lt;/sub&gt;ℒ&lt;sub&gt;κ&lt;/sub&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="890" y="275" width="160" height="35" as="geometry"/>
+    </mxCell>
+    
+    <!-- Loss weights note -->
+    <mxCell id="loss_note" value="&lt;font style=&quot;font-size: 8px&quot; color=&quot;#666666&quot;&gt;&lt;i&gt;Default: λ&lt;sub&gt;kl&lt;/sub&gt;=1, λ&lt;sub&gt;μ&lt;/sub&gt;=2, λ&lt;sub&gt;κ&lt;/sub&gt;=5&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;" vertex="1" parent="1">
+      <mxGeometry x="890" y="315" width="160" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- ===== ARROWS ===== -->
+    
+    <!-- Input to SA1 -->
+    <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#666666;endArrow=classic;" edge="1" parent="1" source="input_box" target="sa1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- SA chain -->
+    <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="sa1" target="sa2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="sa2" target="sa3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="sa3" target="global_feat">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Global feat to heads -->
+    <mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="global_feat" target="mu_fc1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="380" y="185"/>
+          <mxPoint x="380" y="133"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#6c8ebf;endArrow=classic;" edge="1" parent="1" source="global_feat" target="kappa_fc1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="380" y="185"/>
+          <mxPoint x="380" y="223"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Mu branch internal -->
+    <mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_fc1" target="mu_bn">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_bn" target="mu_fc2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_fc2" target="mu_norm">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_norm" target="mu_out">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="605" y="155"/>
+          <mxPoint x="460" y="155"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Kappa branch internal -->
+    <mxCell id="a11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_fc1" target="kappa_bn">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_bn" target="kappa_fc2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_fc2" target="kappa_soft">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_soft" target="kappa_out">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="605" y="245"/>
+          <mxPoint x="460" y="245"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Outputs to vM combine -->
+    <mxCell id="a15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="mu_out" target="vm_combine">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="470" y="168"/>
+          <mxPoint x="470" y="90"/>
+          <mxPoint x="760" y="90"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="kappa_out" target="vm_combine">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="480" y="258"/>
+          <mxPoint x="480" y="295"/>
+          <mxPoint x="670" y="295"/>
+          <mxPoint x="670" y="123"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- vM to pred dist -->
+    <mxCell id="a17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d6b656;endArrow=classic;" edge="1" parent="1" source="vm_combine" target="pred_dist">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Pred dist to KL loss -->
+    <mxCell id="a18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#d6b656;endArrow=classic;" edge="1" parent="1" source="pred_dist" target="kl_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- GT dist to KL loss -->
+    <mxCell id="a19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#82b366;endArrow=classic;" edge="1" parent="1" source="gt_dist" target="kl_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- GT params to Hungarian -->
+    <mxCell id="a20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#82b366;endArrow=classic;" edge="1" parent="1" source="gt_params" target="hungarian">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- mu/kappa out to Hungarian -->
+    <mxCell id="a21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="450" y="168" as="sourcePoint"/>
+        <mxPoint x="1015" y="150" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="450" y="80"/>
+          <mxPoint x="1100" y="80"/>
+          <mxPoint x="1100" y="150"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="450" y="258" as="sourcePoint"/>
+        <mxPoint x="1015" y="200" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="450" y="340"/>
+          <mxPoint x="1100" y="340"/>
+          <mxPoint x="1100" y="200"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+    <!-- Hungarian to losses -->
+    <mxCell id="a23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#d79b00;endArrow=classic;" edge="1" parent="1" source="hungarian" target="mu_loss">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="960" y="235"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="a24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1.5;strokeColor=#9673a6;endArrow=classic;" edge="1" parent="1" source="hungarian" target="kappa_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- All losses to total -->
+    <mxCell id="a25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#b85450;endArrow=classic;" edge="1" parent="1" source="kl_loss" target="total_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#b85450;endArrow=classic;" edge="1" parent="1" source="mu_loss" target="total_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="a27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#b85450;endArrow=classic;" edge="1" parent="1" source="kappa_loss" target="total_loss">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Legend -->
+    <mxCell id="legend" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="40" y="400" width="450" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg_title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="50" y="403" width="50" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="50" y="425" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1_t" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Backbone&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="73" y="422" width="55" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2" value="" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="135" y="425" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2_t" value="&lt;font style=&quot;font-size: 9px&quot;&gt;μ (direction)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="158" y="422" width="60" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="225" y="425" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3_t" value="&lt;font style=&quot;font-size: 9px&quot;&gt;κ (concentration)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="248" y="422" width="85" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg4" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="340" y="425" width="18" height="12" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg4_t" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Ground Truth&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="363" y="422" width="70" height="15" as="geometry"/>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

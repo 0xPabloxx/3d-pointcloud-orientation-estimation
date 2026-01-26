@@ -169,6 +169,7 @@ def plot_discrete_gt(
     temperature=5.0,
     figsize=(10, 10),
     show_legend=True,
+    show_gt_line=True,
 ):
     """绘制离散方向GT可视化"""
     fig = plt.figure(figsize=figsize, facecolor='white')
@@ -211,23 +212,24 @@ def plot_discrete_gt(
     )
 
     # ========== 3. GT方向线（红色）==========
-    if category == '1_front' and gt_angle is not None:
-        gt_angles = [gt_angle]
-    elif category == '2_fronts' and gt_angle is not None:
-        gt_angles = [gt_angle, (gt_angle + np.pi) % (2 * np.pi)]
-    elif category == '4_fronts' and gt_angle is not None:
-        gt_angles = [(gt_angle + i * np.pi / 2) % (2 * np.pi) for i in range(4)]
-    else:
-        gt_angles = []  # symmetric/no_front 没有GT方向线
+    if show_gt_line:
+        if category == '1_front' and gt_angle is not None:
+            gt_angles = [gt_angle]
+        elif category == '2_fronts' and gt_angle is not None:
+            gt_angles = [gt_angle, (gt_angle + np.pi) % (2 * np.pi)]
+        elif category == '4_fronts' and gt_angle is not None:
+            gt_angles = [(gt_angle + i * np.pi / 2) % (2 * np.pi) for i in range(4)]
+        else:
+            gt_angles = []  # symmetric/no_front 没有GT方向线
 
-    for i, angle in enumerate(gt_angles):
-        ax_polar.plot(
-            [angle, angle], [0.30, 1.05],
-            color='#e74c3c', linewidth=2.5,
-            solid_capstyle='round',
-            zorder=10,
-            label=r'$\phi_{gt}$' if i == 0 else None,
-        )
+        for i, angle in enumerate(gt_angles):
+            ax_polar.plot(
+                [angle, angle], [0.30, 1.05],
+                color='#e74c3c', linewidth=2.5,
+                solid_capstyle='round',
+                zorder=10,
+                label=r'$\phi_{gt}$' if i == 0 else None,
+            )
 
     # ========== 4. 极坐标样式（无标签）==========
     ax_polar.set_ylim(0, 1.2)
@@ -309,7 +311,7 @@ def get_valid_samples(annotations):
     return samples_by_category
 
 
-def create_combined_figure(image_paths, output_path, ncols=5, nrows=2):
+def create_combined_figure(image_paths, output_path, ncols=5, nrows=2, show_gt_line=True):
     """将多张图片拼成一张大图，右上角只显示一次图例
 
     按列排列：同一类别的样本在同一列
@@ -335,10 +337,10 @@ def create_combined_figure(image_paths, output_path, ncols=5, nrows=2):
     ax_legend.axis('off')
 
     # 创建图例元素
-    legend_elements = [
-        Line2D([0], [0], color='#e74c3c', linewidth=2.5, label=r'$\phi_{gt}$'),
-        Patch(facecolor='#27ae60', edgecolor='#1e8449', label=r'$p_{gt}(\phi)$'),
-    ]
+    legend_elements = []
+    if show_gt_line:
+        legend_elements.append(Line2D([0], [0], color='#e74c3c', linewidth=2.5, label=r'$\phi_{gt}$'))
+    legend_elements.append(Patch(facecolor='#27ae60', edgecolor='#1e8449', label=r'$p_{gt}(\phi)$'))
     ax_legend.legend(handles=legend_elements, loc='center', framealpha=0.95,
                     edgecolor='#cccccc', fontsize=12)
 
@@ -379,6 +381,7 @@ def main():
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument('--combine', action='store_true', help='Combine all into one figure')
     parser.add_argument('--ncols', type=int, default=5, help='Columns in combined figure')
+    parser.add_argument('--no_gt_line', action='store_true', help='Do not draw GT direction lines')
 
     args = parser.parse_args()
     np.random.seed(args.seed)
@@ -462,7 +465,8 @@ def main():
                 rotated_gt_angle = None
 
             # 保存文件名
-            save_name = f"{category}_{i+1:02d}_{file_path.replace('/', '_').replace('.ply', '')}_{args.num_bins}bins.png"
+            suffix = "_no_gt_line" if args.no_gt_line else ""
+            save_name = f"{category}_{i+1:02d}_{file_path.replace('/', '_').replace('.ply', '')}_{args.num_bins}bins{suffix}.png"
             save_path = output_dir / save_name
 
             plot_discrete_gt(
@@ -476,13 +480,16 @@ def main():
                 save_path=save_path,
                 temperature=args.temperature,
                 show_legend=not args.combine,  # 拼图模式不显示单独图例
+                show_gt_line=not args.no_gt_line,
             )
             saved_paths.append(save_path)
 
     # 拼图
     if args.combine and len(saved_paths) > 1:
-        combined_path = output_dir / f"combined_{args.num_bins}bins.png"
-        create_combined_figure(saved_paths, combined_path, ncols=len(categories_to_process), nrows=args.num_samples)
+        suffix = "_no_gt_line" if args.no_gt_line else ""
+        combined_path = output_dir / f"combined_{args.num_bins}bins{suffix}.png"
+        create_combined_figure(saved_paths, combined_path, ncols=len(categories_to_process),
+                              nrows=args.num_samples, show_gt_line=not args.no_gt_line)
 
     print(f"\nOutput saved to: {output_dir}")
 

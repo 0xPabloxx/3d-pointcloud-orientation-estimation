@@ -1,0 +1,66 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Input: Point Cloud -->
+    <mxCell id="input" value="Point Cloud&#xa;(N × 3)" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="40" y="120" width="90" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- PointNet++ Backbone -->
+    <mxCell id="sa1" value="SA1" style="rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="170" y="125" width="60" height="40" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="sa2" value="SA2" style="rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="260" y="125" width="60" height="40" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="sa3" value="SA3" style="rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="350" y="125" width="60" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Backbone label -->
+    <mxCell id="backbone_label" value="PointNet++ Backbone" style="text;fontStyle=3;fontSize=11;fillColor=none;strokeColor=none;align=center;" vertex="1" parent="1">
+      <mxGeometry x="200" y="80" width="140" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- FC Layers -->
+    <mxCell id="fc" value="FC&#xa;Layers" style="rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="450" y="120" width="70" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Output -->
+    <mxCell id="output" value="8-Dir&#xa;Logits" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="560" y="120" width="80" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Edges -->
+    <mxCell id="e1" style="endArrow=classic;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="input" target="sa1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e2" style="endArrow=classic;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="sa1" target="sa2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e3" style="endArrow=classic;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="sa2" target="sa3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e4" style="endArrow=classic;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="sa3" target="fc">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="e5" style="endArrow=classic;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="fc" target="output">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Bracket under PointNet++ -->
+    <mxCell id="bracket" value="" style="shape=curlyBracket;whiteSpace=wrap;rounded=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;rotation=-90;size=0.5;strokeWidth=2;strokeColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="245" y="145" width="50" height="140" as="geometry"/>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

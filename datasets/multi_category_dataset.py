@@ -1,14 +1,15 @@
 """
 Multi-Category Dataset - 多类别方向预测数据集
 
-支持三种对称类型:
+支持四种对称类型:
 - 1_front (1个正面): 4峰同方向
+- 2_fronts (2个正面): 4峰中2对方向相同，间隔180°
 - 4_fronts (4个正面): 4峰间隔90°
 - no_front (无正面): κ=0，均匀分布
 
 用法:
     # 使用所有类别
-    dataset = MultiCategoryDataset(split='train', categories=['1_front', '4_fronts', 'no_front'])
+    dataset = MultiCategoryDataset(split='train', categories=['1_front', '2_fronts', '4_fronts', 'no_front'])
 
     # 只使用特定类别
     dataset = MultiCategoryDataset(split='train', categories=['1_front'])
@@ -27,7 +28,7 @@ class MultiCategoryDataset(Dataset):
     """
     多类别方向预测数据集
 
-    支持 1_front, 4_fronts, no_front 三种对称类型
+    支持 1_front, 2_fronts, 4_fronts, no_front 四种对称类型
 
     Args:
         annotation_file: 标注JSON文件路径
@@ -46,6 +47,7 @@ class MultiCategoryDataset(Dataset):
     # 类别名称映射
     CATEGORY_MAP = {
         '1_front': '1个正面',
+        '2_fronts': '2个正面',
         '4_fronts': '4个正面',
         'no_front': '无正面',
         'symmetric': '旋转对称',  # 也算无正面
@@ -109,6 +111,8 @@ class MultiCategoryDataset(Dataset):
             category = None
             if symmetry_name == '1个正面':
                 category = '1_front'
+            elif symmetry_name == '2个正面':
+                category = '2_fronts'
             elif symmetry_name == '4个正面':
                 category = '4_fronts'
             elif symmetry_name == '无正面':
@@ -128,7 +132,7 @@ class MultiCategoryDataset(Dataset):
             direction = ann.get('front_direction')
 
             # 对于有方向的类别，排除 OBLIQUE 和 MULTI
-            if category in ['1_front', '4_fronts']:
+            if category in ['1_front', '2_fronts', '4_fronts']:
                 if not direction or direction in excluded_directions:
                     continue
                 if direction not in self.DIRECTION_TO_ANGLE:
@@ -244,6 +248,8 @@ class MultiCategoryDataset(Dataset):
         # 计算主方向（用于评估）
         if category == '1_front':
             gt_angle = (sample['angle'] + angle_offset) % (2 * np.pi)
+        elif category == '2_fronts':
+            gt_angle = (sample['angle'] + angle_offset) % (2 * np.pi)  # 第一个峰的角度
         elif category == '4_fronts':
             gt_angle = (sample['angle'] + angle_offset) % (2 * np.pi)  # 第一个峰的角度
         else:  # no_front
@@ -269,6 +275,15 @@ class MultiCategoryDataset(Dataset):
             # 4峰同方向
             angle = (base_angle + angle_offset) % (2 * np.pi)
             for i in range(4):
+                gt_mu[i] = [np.cos(angle), np.sin(angle)]
+                gt_kappa[i] = self.gt_kappa
+
+        elif category == '2_fronts':
+            # 2峰间隔180° (两对相同方向)
+            base = (base_angle + angle_offset) % (2 * np.pi)
+            for i in range(4):
+                # Peak 0,2 在 base 方向，Peak 1,3 在 base+π 方向
+                angle = (base + (i % 2) * np.pi) % (2 * np.pi)
                 gt_mu[i] = [np.cos(angle), np.sin(angle)]
                 gt_kappa[i] = self.gt_kappa
 

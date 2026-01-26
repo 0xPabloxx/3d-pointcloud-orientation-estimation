@@ -24287,2827 +24287,5340 @@
     "index": 696,
     "aligned": true
   },
-  "chair/chair_0695.ply": {
-    "file": "chair/chair_0695.ply",
+  "bed/bed_0103.ply": {
+    "file": "bed/bed_0103.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 694,
+    "index": 102,
     "aligned": true
   },
-  "chair/chair_0701.ply": {
-    "file": "chair/chair_0701.ply",
+  "toilet/toilet_0082.ply": {
+    "file": "toilet/toilet_0082.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 700,
+    "index": 81,
     "aligned": true
   },
-  "chair/chair_0700.ply": {
-    "file": "chair/chair_0700.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "curtain/curtain_0017.ply": {
+    "file": "curtain/curtain_0017.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
     "front_direction": "-Z",
-    "index": 699,
+    "index": 16,
     "aligned": true
   },
-  "chair/chair_0698.ply": {
-    "file": "chair/chair_0698.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "table/table_0053.ply": {
+    "file": "table/table_0053.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
     "front_direction": "-Z",
-    "index": 697,
+    "index": 52,
     "aligned": true
   },
-  "chair/chair_0699.ply": {
-    "file": "chair/chair_0699.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 698,
-    "aligned": true
-  },
-  "chair/chair_0702.ply": {
-    "file": "chair/chair_0702.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 701,
-    "aligned": true
-  },
-  "chair/chair_0705.ply": {
-    "file": "chair/chair_0705.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 704,
-    "aligned": true
-  },
-  "chair/chair_0703.ply": {
-    "file": "chair/chair_0703.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 702,
-    "aligned": true
-  },
-  "chair/chair_0704.ply": {
-    "file": "chair/chair_0704.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 703,
-    "aligned": true
-  },
-  "chair/chair_0709.ply": {
-    "file": "chair/chair_0709.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 708,
-    "aligned": true
-  },
-  "chair/chair_0707.ply": {
-    "file": "chair/chair_0707.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 706,
-    "aligned": true
-  },
-  "chair/chair_0710.ply": {
-    "file": "chair/chair_0710.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 709,
-    "aligned": true
-  },
-  "chair/chair_0708.ply": {
-    "file": "chair/chair_0708.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 707,
-    "aligned": true
-  },
-  "chair/chair_0706.ply": {
-    "file": "chair/chair_0706.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 705,
-    "aligned": true
-  },
-  "chair/chair_0711.ply": {
-    "file": "chair/chair_0711.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 710,
-    "aligned": true
-  },
-  "chair/chair_0713.ply": {
-    "file": "chair/chair_0713.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 712,
-    "aligned": true
-  },
-  "chair/chair_0714.ply": {
-    "file": "chair/chair_0714.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 713,
-    "aligned": true
-  },
-  "chair/chair_0712.ply": {
-    "file": "chair/chair_0712.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 711,
-    "aligned": true
-  },
-  "chair/chair_0716.ply": {
-    "file": "chair/chair_0716.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 715,
-    "aligned": true
-  },
-  "chair/chair_0718.ply": {
-    "file": "chair/chair_0718.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 717,
-    "aligned": true
-  },
-  "chair/chair_0717.ply": {
-    "file": "chair/chair_0717.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 716,
-    "aligned": true
-  },
-  "chair/chair_0715.ply": {
-    "file": "chair/chair_0715.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 714,
-    "aligned": true
-  },
-  "chair/chair_0720.ply": {
-    "file": "chair/chair_0720.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 719,
-    "aligned": true
-  },
-  "chair/chair_0723.ply": {
-    "file": "chair/chair_0723.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 722,
-    "aligned": true
-  },
-  "chair/chair_0722.ply": {
-    "file": "chair/chair_0722.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 721,
-    "aligned": true
-  },
-  "chair/chair_0721.ply": {
-    "file": "chair/chair_0721.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 720,
-    "aligned": true
-  },
-  "chair/chair_0724.ply": {
-    "file": "chair/chair_0724.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 723,
-    "aligned": true
-  },
-  "chair/chair_0726.ply": {
-    "file": "chair/chair_0726.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 725,
-    "aligned": true
-  },
-  "chair/chair_0725.ply": {
-    "file": "chair/chair_0725.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 724,
-    "aligned": true
-  },
-  "chair/chair_0727.ply": {
-    "file": "chair/chair_0727.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 726,
-    "aligned": true
-  },
-  "chair/chair_0730.ply": {
-    "file": "chair/chair_0730.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 729,
-    "aligned": true
-  },
-  "chair/chair_0728.ply": {
-    "file": "chair/chair_0728.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 727,
-    "aligned": true
-  },
-  "chair/chair_0729.ply": {
-    "file": "chair/chair_0729.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 728,
-    "aligned": true
-  },
-  "chair/chair_0735.ply": {
-    "file": "chair/chair_0735.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 734,
-    "aligned": true
-  },
-  "chair/chair_0732.ply": {
-    "file": "chair/chair_0732.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 731,
-    "aligned": true
-  },
-  "chair/chair_0734.ply": {
-    "file": "chair/chair_0734.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 733,
-    "aligned": true
-  },
-  "chair/chair_0733.ply": {
-    "file": "chair/chair_0733.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 732,
-    "aligned": true
-  },
-  "chair/chair_0738.ply": {
-    "file": "chair/chair_0738.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 737,
-    "aligned": true
-  },
-  "chair/chair_0737.ply": {
-    "file": "chair/chair_0737.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 736,
-    "aligned": true
-  },
-  "chair/chair_0736.ply": {
-    "file": "chair/chair_0736.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 735,
-    "aligned": true
-  },
-  "chair/chair_0739.ply": {
-    "file": "chair/chair_0739.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "OBLIQUE",
-    "index": 738,
+  "curtain/curtain_0035.ply": {
+    "file": "curtain/curtain_0035.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 34,
     "aligned": false
   },
-  "chair/chair_0741.ply": {
-    "file": "chair/chair_0741.ply",
+  "sofa/sofa_0001.ply": {
+    "file": "sofa/sofa_0001.ply",
     "K": 1,
     "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 740,
-    "aligned": true
-  },
-  "chair/chair_0740.ply": {
-    "file": "chair/chair_0740.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 739,
-    "aligned": true
-  },
-  "chair/chair_0745.ply": {
-    "file": "chair/chair_0745.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 744,
-    "aligned": true
-  },
-  "chair/chair_0743.ply": {
-    "file": "chair/chair_0743.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 742,
-    "aligned": true
-  },
-  "chair/chair_0744.ply": {
-    "file": "chair/chair_0744.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 743,
-    "aligned": true
-  },
-  "chair/chair_0742.ply": {
-    "file": "chair/chair_0742.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 741,
-    "aligned": true
-  },
-  "chair/chair_0747.ply": {
-    "file": "chair/chair_0747.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 746,
-    "aligned": true
-  },
-  "chair/chair_0748.ply": {
-    "file": "chair/chair_0748.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 747,
-    "aligned": true
-  },
-  "chair/chair_0746.ply": {
-    "file": "chair/chair_0746.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 745,
-    "aligned": true
-  },
-  "chair/chair_0749.ply": {
-    "file": "chair/chair_0749.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 748,
-    "aligned": true
-  },
-  "chair/chair_0750.ply": {
-    "file": "chair/chair_0750.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 749,
-    "aligned": true
-  },
-  "chair/chair_0752.ply": {
-    "file": "chair/chair_0752.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 751,
-    "aligned": true
-  },
-  "chair/chair_0751.ply": {
-    "file": "chair/chair_0751.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 750,
-    "aligned": true
-  },
-  "chair/chair_0753.ply": {
-    "file": "chair/chair_0753.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 752,
-    "aligned": true
-  },
-  "chair/chair_0755.ply": {
-    "file": "chair/chair_0755.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 754,
-    "aligned": true
-  },
-  "chair/chair_0754.ply": {
-    "file": "chair/chair_0754.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 753,
-    "aligned": true
-  },
-  "chair/chair_0756.ply": {
-    "file": "chair/chair_0756.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 755,
-    "aligned": true
-  },
-  "chair/chair_0759.ply": {
-    "file": "chair/chair_0759.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 758,
-    "aligned": true
-  },
-  "chair/chair_0757.ply": {
-    "file": "chair/chair_0757.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 756,
-    "aligned": true
-  },
-  "chair/chair_0758.ply": {
-    "file": "chair/chair_0758.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 757,
-    "aligned": true
-  },
-  "chair/chair_0761.ply": {
-    "file": "chair/chair_0761.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 760,
-    "aligned": true
-  },
-  "chair/chair_0760.ply": {
-    "file": "chair/chair_0760.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 759,
-    "aligned": true
-  },
-  "chair/chair_0762.ply": {
-    "file": "chair/chair_0762.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 761,
-    "aligned": true
-  },
-  "chair/chair_0764.ply": {
-    "file": "chair/chair_0764.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 763,
-    "aligned": true
-  },
-  "chair/chair_0763.ply": {
-    "file": "chair/chair_0763.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 762,
-    "aligned": true
-  },
-  "chair/chair_0767.ply": {
-    "file": "chair/chair_0767.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 766,
-    "aligned": true
-  },
-  "chair/chair_0766.ply": {
-    "file": "chair/chair_0766.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 765,
-    "aligned": true
-  },
-  "chair/chair_0769.ply": {
-    "file": "chair/chair_0769.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 768,
-    "aligned": true
-  },
-  "chair/chair_0768.ply": {
-    "file": "chair/chair_0768.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 767,
-    "aligned": true
-  },
-  "chair/chair_0770.ply": {
-    "file": "chair/chair_0770.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 769,
-    "aligned": true
-  },
-  "chair/chair_0773.ply": {
-    "file": "chair/chair_0773.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 772,
-    "aligned": true
-  },
-  "chair/chair_0772.ply": {
-    "file": "chair/chair_0772.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 771,
-    "aligned": true
-  },
-  "chair/chair_0771.ply": {
-    "file": "chair/chair_0771.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 770,
-    "aligned": true
-  },
-  "chair/chair_0775.ply": {
-    "file": "chair/chair_0775.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 774,
-    "aligned": true
-  },
-  "chair/chair_0776.ply": {
-    "file": "chair/chair_0776.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 775,
-    "aligned": true
-  },
-  "chair/chair_0777.ply": {
-    "file": "chair/chair_0777.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 776,
-    "aligned": true
-  },
-  "chair/chair_0779.ply": {
-    "file": "chair/chair_0779.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 778,
-    "aligned": true
-  },
-  "chair/chair_0778.ply": {
-    "file": "chair/chair_0778.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 777,
-    "aligned": true
-  },
-  "chair/chair_0781.ply": {
-    "file": "chair/chair_0781.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 780,
-    "aligned": true
-  },
-  "chair/chair_0780.ply": {
-    "file": "chair/chair_0780.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 779,
-    "aligned": true
-  },
-  "chair/chair_0783.ply": {
-    "file": "chair/chair_0783.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 782,
-    "aligned": true
-  },
-  "chair/chair_0784.ply": {
-    "file": "chair/chair_0784.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 783,
-    "aligned": true
-  },
-  "chair/chair_0782.ply": {
-    "file": "chair/chair_0782.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 781,
-    "aligned": true
-  },
-  "chair/chair_0786.ply": {
-    "file": "chair/chair_0786.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 785,
-    "aligned": true
-  },
-  "chair/chair_0785.ply": {
-    "file": "chair/chair_0785.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 784,
-    "aligned": true
-  },
-  "chair/chair_0788.ply": {
-    "file": "chair/chair_0788.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 787,
-    "aligned": true
-  },
-  "chair/chair_0787.ply": {
-    "file": "chair/chair_0787.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 786,
-    "aligned": true
-  },
-  "chair/chair_0792.ply": {
-    "file": "chair/chair_0792.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 791,
-    "aligned": true
-  },
-  "chair/chair_0791.ply": {
-    "file": "chair/chair_0791.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 790,
-    "aligned": true
-  },
-  "chair/chair_0790.ply": {
-    "file": "chair/chair_0790.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 789,
-    "aligned": true
-  },
-  "chair/chair_0789.ply": {
-    "file": "chair/chair_0789.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 788,
-    "aligned": true
-  },
-  "chair/chair_0796.ply": {
-    "file": "chair/chair_0796.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 795,
-    "aligned": true
-  },
-  "chair/chair_0795.ply": {
-    "file": "chair/chair_0795.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 794,
-    "aligned": true
-  },
-  "chair/chair_0793.ply": {
-    "file": "chair/chair_0793.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 792,
-    "aligned": true
-  },
-  "chair/chair_0797.ply": {
-    "file": "chair/chair_0797.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 796,
-    "aligned": true
-  },
-  "chair/chair_0794.ply": {
-    "file": "chair/chair_0794.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 793,
-    "aligned": true
-  },
-  "chair/chair_0799.ply": {
-    "file": "chair/chair_0799.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 798,
-    "aligned": true
-  },
-  "chair/chair_0802.ply": {
-    "file": "chair/chair_0802.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 801,
-    "aligned": true
-  },
-  "chair/chair_0800.ply": {
-    "file": "chair/chair_0800.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 799,
-    "aligned": true
-  },
-  "chair/chair_0801.ply": {
-    "file": "chair/chair_0801.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 800,
-    "aligned": true
-  },
-  "chair/chair_0798.ply": {
-    "file": "chair/chair_0798.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 797,
-    "aligned": true
-  },
-  "chair/chair_0804.ply": {
-    "file": "chair/chair_0804.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 803,
-    "aligned": true
-  },
-  "chair/chair_0803.ply": {
-    "file": "chair/chair_0803.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 802,
-    "aligned": true
-  },
-  "chair/chair_0806.ply": {
-    "file": "chair/chair_0806.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 805,
-    "aligned": true
-  },
-  "chair/chair_0805.ply": {
-    "file": "chair/chair_0805.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 804,
-    "aligned": true
-  },
-  "chair/chair_0807.ply": {
-    "file": "chair/chair_0807.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 806,
-    "aligned": true
-  },
-  "chair/chair_0808.ply": {
-    "file": "chair/chair_0808.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 807,
-    "aligned": true
-  },
-  "chair/chair_0809.ply": {
-    "file": "chair/chair_0809.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 808,
-    "aligned": true
-  },
-  "chair/chair_0810.ply": {
-    "file": "chair/chair_0810.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 809,
-    "aligned": true
-  },
-  "chair/chair_0813.ply": {
-    "file": "chair/chair_0813.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 812,
-    "aligned": true
-  },
-  "chair/chair_0814.ply": {
-    "file": "chair/chair_0814.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 813,
-    "aligned": true
-  },
-  "chair/chair_0812.ply": {
-    "file": "chair/chair_0812.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 811,
-    "aligned": true
-  },
-  "chair/chair_0811.ply": {
-    "file": "chair/chair_0811.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 810,
-    "aligned": true
-  },
-  "chair/chair_0819.ply": {
-    "file": "chair/chair_0819.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 818,
-    "aligned": true
-  },
-  "chair/chair_0817.ply": {
-    "file": "chair/chair_0817.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 816,
-    "aligned": true
-  },
-  "chair/chair_0815.ply": {
-    "file": "chair/chair_0815.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 814,
-    "aligned": true
-  },
-  "chair/chair_0818.ply": {
-    "file": "chair/chair_0818.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 817,
-    "aligned": true
-  },
-  "chair/chair_0816.ply": {
-    "file": "chair/chair_0816.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 815,
-    "aligned": true
-  },
-  "chair/chair_0824.ply": {
-    "file": "chair/chair_0824.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 823,
-    "aligned": true
-  },
-  "chair/chair_0822.ply": {
-    "file": "chair/chair_0822.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 821,
-    "aligned": true
-  },
-  "chair/chair_0823.ply": {
-    "file": "chair/chair_0823.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 822,
-    "aligned": true
-  },
-  "chair/chair_0821.ply": {
-    "file": "chair/chair_0821.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 820,
-    "aligned": true
-  },
-  "chair/chair_0827.ply": {
-    "file": "chair/chair_0827.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 826,
-    "aligned": true
-  },
-  "chair/chair_0829.ply": {
-    "file": "chair/chair_0829.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 828,
-    "aligned": true
-  },
-  "chair/chair_0826.ply": {
-    "file": "chair/chair_0826.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 825,
-    "aligned": true
-  },
-  "chair/chair_0828.ply": {
-    "file": "chair/chair_0828.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 827,
-    "aligned": true
-  },
-  "chair/chair_0834.ply": {
-    "file": "chair/chair_0834.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 833,
-    "aligned": true
-  },
-  "chair/chair_0833.ply": {
-    "file": "chair/chair_0833.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 832,
-    "aligned": true
-  },
-  "chair/chair_0832.ply": {
-    "file": "chair/chair_0832.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 831,
-    "aligned": true
-  },
-  "chair/chair_0831.ply": {
-    "file": "chair/chair_0831.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 830,
-    "aligned": true
-  },
-  "chair/chair_0839.ply": {
-    "file": "chair/chair_0839.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 838,
-    "aligned": true
-  },
-  "chair/chair_0835.ply": {
-    "file": "chair/chair_0835.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 834,
-    "aligned": true
-  },
-  "chair/chair_0837.ply": {
-    "file": "chair/chair_0837.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 836,
-    "aligned": true
-  },
-  "chair/chair_0838.ply": {
-    "file": "chair/chair_0838.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 837,
-    "aligned": true
-  },
-  "chair/chair_0836.ply": {
-    "file": "chair/chair_0836.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 835,
-    "aligned": true
-  },
-  "chair/chair_0841.ply": {
-    "file": "chair/chair_0841.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 840,
-    "aligned": true
-  },
-  "chair/chair_0844.ply": {
-    "file": "chair/chair_0844.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 843,
-    "aligned": true
-  },
-  "chair/chair_0843.ply": {
-    "file": "chair/chair_0843.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 842,
-    "aligned": true
-  },
-  "chair/chair_0842.ply": {
-    "file": "chair/chair_0842.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 841,
-    "aligned": true
-  },
-  "chair/chair_0845.ply": {
-    "file": "chair/chair_0845.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 844,
-    "aligned": true
-  },
-  "chair/chair_0846.ply": {
-    "file": "chair/chair_0846.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 845,
-    "aligned": true
-  },
-  "chair/chair_0848.ply": {
-    "file": "chair/chair_0848.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 847,
-    "aligned": true
-  },
-  "chair/chair_0849.ply": {
-    "file": "chair/chair_0849.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 848,
-    "aligned": true
-  },
-  "chair/chair_0847.ply": {
-    "file": "chair/chair_0847.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 846,
-    "aligned": true
-  },
-  "chair/chair_0851.ply": {
-    "file": "chair/chair_0851.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 850,
-    "aligned": true
-  },
-  "chair/chair_0852.ply": {
-    "file": "chair/chair_0852.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 851,
-    "aligned": true
-  },
-  "chair/chair_0853.ply": {
-    "file": "chair/chair_0853.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 852,
-    "aligned": true
-  },
-  "chair/chair_0854.ply": {
-    "file": "chair/chair_0854.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 853,
-    "aligned": true
-  },
-  "chair/chair_0850.ply": {
-    "file": "chair/chair_0850.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 849,
-    "aligned": true
-  },
-  "chair/chair_0858.ply": {
-    "file": "chair/chair_0858.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 857,
-    "aligned": true
-  },
-  "chair/chair_0856.ply": {
-    "file": "chair/chair_0856.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 855,
-    "aligned": true
-  },
-  "chair/chair_0857.ply": {
-    "file": "chair/chair_0857.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 856,
-    "aligned": true
-  },
-  "chair/chair_0859.ply": {
-    "file": "chair/chair_0859.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 858,
-    "aligned": true
-  },
-  "chair/chair_0855.ply": {
-    "file": "chair/chair_0855.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 854,
-    "aligned": true
-  },
-  "chair/chair_0861.ply": {
-    "file": "chair/chair_0861.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 860,
-    "aligned": true
-  },
-  "chair/chair_0864.ply": {
-    "file": "chair/chair_0864.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 863,
-    "aligned": true
-  },
-  "chair/chair_0860.ply": {
-    "file": "chair/chair_0860.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 859,
-    "aligned": true
-  },
-  "chair/chair_0862.ply": {
-    "file": "chair/chair_0862.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 861,
-    "aligned": true
-  },
-  "chair/chair_0863.ply": {
-    "file": "chair/chair_0863.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 862,
-    "aligned": true
-  },
-  "chair/chair_0866.ply": {
-    "file": "chair/chair_0866.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 865,
-    "aligned": true
-  },
-  "chair/chair_0865.ply": {
-    "file": "chair/chair_0865.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 864,
-    "aligned": true
-  },
-  "chair/chair_0867.ply": {
-    "file": "chair/chair_0867.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 866,
-    "aligned": true
-  },
-  "chair/chair_0871.ply": {
-    "file": "chair/chair_0871.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 870,
-    "aligned": true
-  },
-  "chair/chair_0870.ply": {
-    "file": "chair/chair_0870.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 869,
-    "aligned": true
-  },
-  "chair/chair_0868.ply": {
-    "file": "chair/chair_0868.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 867,
-    "aligned": true
-  },
-  "chair/chair_0869.ply": {
-    "file": "chair/chair_0869.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 868,
-    "aligned": true
-  },
-  "chair/chair_0872.ply": {
-    "file": "chair/chair_0872.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 871,
-    "aligned": true
-  },
-  "chair/chair_0873.ply": {
-    "file": "chair/chair_0873.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 872,
-    "aligned": true
-  },
-  "chair/chair_0874.ply": {
-    "file": "chair/chair_0874.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 873,
-    "aligned": true
-  },
-  "chair/chair_0879.ply": {
-    "file": "chair/chair_0879.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 878,
-    "aligned": true
-  },
-  "chair/chair_0875.ply": {
-    "file": "chair/chair_0875.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 874,
-    "aligned": true
-  },
-  "chair/chair_0876.ply": {
-    "file": "chair/chair_0876.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 875,
-    "aligned": true
-  },
-  "chair/chair_0878.ply": {
-    "file": "chair/chair_0878.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 877,
-    "aligned": true
-  },
-  "chair/chair_0877.ply": {
-    "file": "chair/chair_0877.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 876,
-    "aligned": true
-  },
-  "chair/chair_0880.ply": {
-    "file": "chair/chair_0880.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 879,
-    "aligned": true
-  },
-  "chair/chair_0882.ply": {
-    "file": "chair/chair_0882.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 881,
-    "aligned": true
-  },
-  "chair/chair_0884.ply": {
-    "file": "chair/chair_0884.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 883,
-    "aligned": true
-  },
-  "chair/chair_0881.ply": {
-    "file": "chair/chair_0881.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 880,
-    "aligned": true
-  },
-  "chair/chair_0883.ply": {
-    "file": "chair/chair_0883.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 882,
-    "aligned": true
-  },
-  "chair/chair_0886.ply": {
-    "file": "chair/chair_0886.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 885,
-    "aligned": true
-  },
-  "chair/chair_0889.ply": {
-    "file": "chair/chair_0889.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 888,
-    "aligned": true
-  },
-  "chair/chair_0885.ply": {
-    "file": "chair/chair_0885.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 884,
-    "aligned": true
-  },
-  "chair/chair_0887.ply": {
-    "file": "chair/chair_0887.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 886,
-    "aligned": true
-  },
-  "chair/chair_0888.ply": {
-    "file": "chair/chair_0888.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 887,
-    "aligned": true
-  },
-  "chair/chair_0893.ply": {
-    "file": "chair/chair_0893.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 892,
-    "aligned": true
-  },
-  "chair/chair_0890.ply": {
-    "file": "chair/chair_0890.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 889,
-    "aligned": true
-  },
-  "chair/chair_0891.ply": {
-    "file": "chair/chair_0891.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 890,
-    "aligned": true
-  },
-  "chair/chair_0892.ply": {
-    "file": "chair/chair_0892.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 891,
-    "aligned": true
-  },
-  "chair/chair_0895.ply": {
-    "file": "chair/chair_0895.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 894,
-    "aligned": true
-  },
-  "chair/chair_0897.ply": {
-    "file": "chair/chair_0897.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 896,
-    "aligned": true
-  },
-  "chair/chair_0896.ply": {
-    "file": "chair/chair_0896.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 895,
-    "aligned": true
-  },
-  "chair/chair_0894.ply": {
-    "file": "chair/chair_0894.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 893,
-    "aligned": true
-  },
-  "chair/chair_0899.ply": {
-    "file": "chair/chair_0899.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 898,
-    "aligned": true
-  },
-  "chair/chair_0901.ply": {
-    "file": "chair/chair_0901.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 900,
-    "aligned": true
-  },
-  "chair/chair_0898.ply": {
-    "file": "chair/chair_0898.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 897,
-    "aligned": true
-  },
-  "chair/chair_0900.ply": {
-    "file": "chair/chair_0900.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 899,
-    "aligned": true
-  },
-  "chair/chair_0905.ply": {
-    "file": "chair/chair_0905.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 904,
-    "aligned": true
-  },
-  "chair/chair_0902.ply": {
-    "file": "chair/chair_0902.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 901,
-    "aligned": true
-  },
-  "chair/chair_0904.ply": {
-    "file": "chair/chair_0904.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 903,
-    "aligned": true
-  },
-  "chair/chair_0903.ply": {
-    "file": "chair/chair_0903.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 902,
-    "aligned": true
-  },
-  "chair/chair_0908.ply": {
-    "file": "chair/chair_0908.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 907,
-    "aligned": true
-  },
-  "chair/chair_0907.ply": {
-    "file": "chair/chair_0907.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 906,
-    "aligned": true
-  },
-  "chair/chair_0906.ply": {
-    "file": "chair/chair_0906.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 905,
-    "aligned": true
-  },
-  "chair/chair_0909.ply": {
-    "file": "chair/chair_0909.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 908,
-    "aligned": true
-  },
-  "chair/chair_0911.ply": {
-    "file": "chair/chair_0911.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 910,
-    "aligned": true
-  },
-  "chair/chair_0910.ply": {
-    "file": "chair/chair_0910.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 909,
-    "aligned": true
-  },
-  "chair/chair_0912.ply": {
-    "file": "chair/chair_0912.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 911,
-    "aligned": true
-  },
-  "chair/chair_0913.ply": {
-    "file": "chair/chair_0913.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 912,
-    "aligned": true
-  },
-  "chair/chair_0915.ply": {
-    "file": "chair/chair_0915.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 914,
-    "aligned": true
-  },
-  "chair/chair_0914.ply": {
-    "file": "chair/chair_0914.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 913,
-    "aligned": true
-  },
-  "chair/chair_0916.ply": {
-    "file": "chair/chair_0916.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 915,
-    "aligned": true
-  },
-  "chair/chair_0920.ply": {
-    "file": "chair/chair_0920.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 919,
-    "aligned": true
-  },
-  "chair/chair_0919.ply": {
-    "file": "chair/chair_0919.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 918,
-    "aligned": true
-  },
-  "chair/chair_0921.ply": {
-    "file": "chair/chair_0921.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 920,
-    "aligned": true
-  },
-  "chair/chair_0918.ply": {
-    "file": "chair/chair_0918.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 917,
-    "aligned": true
-  },
-  "chair/chair_0923.ply": {
-    "file": "chair/chair_0923.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 922,
-    "aligned": true
-  },
-  "chair/chair_0926.ply": {
-    "file": "chair/chair_0926.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 925,
-    "aligned": true
-  },
-  "chair/chair_0925.ply": {
-    "file": "chair/chair_0925.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 924,
-    "aligned": true
-  },
-  "chair/chair_0924.ply": {
-    "file": "chair/chair_0924.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 923,
-    "aligned": true
-  },
-  "chair/chair_0922.ply": {
-    "file": "chair/chair_0922.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 921,
-    "aligned": true
-  },
-  "chair/chair_0927.ply": {
-    "file": "chair/chair_0927.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 926,
-    "aligned": true
-  },
-  "chair/chair_0928.ply": {
-    "file": "chair/chair_0928.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 927,
-    "aligned": true
-  },
-  "chair/chair_0930.ply": {
-    "file": "chair/chair_0930.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 929,
-    "aligned": true
-  },
-  "chair/chair_0929.ply": {
-    "file": "chair/chair_0929.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 928,
-    "aligned": true
-  },
-  "chair/chair_0934.ply": {
-    "file": "chair/chair_0934.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 933,
-    "aligned": true
-  },
-  "chair/chair_0933.ply": {
-    "file": "chair/chair_0933.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 932,
-    "aligned": true
-  },
-  "chair/chair_0932.ply": {
-    "file": "chair/chair_0932.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 931,
-    "aligned": true
-  },
-  "chair/chair_0931.ply": {
-    "file": "chair/chair_0931.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 930,
-    "aligned": true
-  },
-  "chair/chair_0935.ply": {
-    "file": "chair/chair_0935.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 934,
-    "aligned": true
-  },
-  "chair/chair_0937.ply": {
-    "file": "chair/chair_0937.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 936,
-    "aligned": true
-  },
-  "chair/chair_0936.ply": {
-    "file": "chair/chair_0936.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 935,
-    "aligned": true
-  },
-  "chair/chair_0938.ply": {
-    "file": "chair/chair_0938.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 937,
-    "aligned": true
-  },
-  "chair/chair_0939.ply": {
-    "file": "chair/chair_0939.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 938,
-    "aligned": true
-  },
-  "chair/chair_0941.ply": {
-    "file": "chair/chair_0941.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 940,
-    "aligned": true
-  },
-  "chair/chair_0942.ply": {
-    "file": "chair/chair_0942.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 941,
-    "aligned": true
-  },
-  "chair/chair_0940.ply": {
-    "file": "chair/chair_0940.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 939,
-    "aligned": true
-  },
-  "chair/chair_0943.ply": {
-    "file": "chair/chair_0943.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 942,
-    "aligned": true
-  },
-  "chair/chair_0946.ply": {
-    "file": "chair/chair_0946.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 945,
-    "aligned": true
-  },
-  "chair/chair_0947.ply": {
-    "file": "chair/chair_0947.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 946,
-    "aligned": true
-  },
-  "chair/chair_0944.ply": {
-    "file": "chair/chair_0944.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 943,
-    "aligned": true
-  },
-  "chair/chair_0945.ply": {
-    "file": "chair/chair_0945.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 944,
-    "aligned": true
-  },
-  "chair/chair_0951.ply": {
-    "file": "chair/chair_0951.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 950,
-    "aligned": true
-  },
-  "chair/chair_0949.ply": {
-    "file": "chair/chair_0949.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 948,
-    "aligned": true
-  },
-  "chair/chair_0948.ply": {
-    "file": "chair/chair_0948.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 947,
-    "aligned": true
-  },
-  "chair/chair_0950.ply": {
-    "file": "chair/chair_0950.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 949,
-    "aligned": true
-  },
-  "chair/chair_0954.ply": {
-    "file": "chair/chair_0954.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 953,
-    "aligned": true
-  },
-  "chair/chair_0955.ply": {
-    "file": "chair/chair_0955.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 954,
-    "aligned": true
-  },
-  "chair/chair_0957.ply": {
-    "file": "chair/chair_0957.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 956,
-    "aligned": true
-  },
-  "chair/chair_0956.ply": {
-    "file": "chair/chair_0956.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 955,
-    "aligned": true
-  },
-  "chair/chair_0953.ply": {
-    "file": "chair/chair_0953.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 952,
-    "aligned": true
-  },
-  "chair/chair_0961.ply": {
-    "file": "chair/chair_0961.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 960,
-    "aligned": true
-  },
-  "chair/chair_0959.ply": {
-    "file": "chair/chair_0959.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 958,
-    "aligned": true
-  },
-  "chair/chair_0960.ply": {
-    "file": "chair/chair_0960.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 959,
-    "aligned": true
-  },
-  "chair/chair_0962.ply": {
-    "file": "chair/chair_0962.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 961,
-    "aligned": true
-  },
-  "chair/chair_0958.ply": {
-    "file": "chair/chair_0958.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 957,
-    "aligned": true
-  },
-  "chair/chair_0964.ply": {
-    "file": "chair/chair_0964.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 963,
-    "aligned": true
-  },
-  "chair/chair_0965.ply": {
-    "file": "chair/chair_0965.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 964,
-    "aligned": true
-  },
-  "chair/chair_0963.ply": {
-    "file": "chair/chair_0963.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 962,
-    "aligned": true
-  },
-  "chair/chair_0966.ply": {
-    "file": "chair/chair_0966.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 965,
-    "aligned": true
-  },
-  "chair/chair_0967.ply": {
-    "file": "chair/chair_0967.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 966,
-    "aligned": true
-  },
-  "chair/chair_0970.ply": {
-    "file": "chair/chair_0970.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 969,
-    "aligned": true
-  },
-  "chair/chair_0969.ply": {
-    "file": "chair/chair_0969.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 968,
-    "aligned": true
-  },
-  "chair/chair_0968.ply": {
-    "file": "chair/chair_0968.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 967,
-    "aligned": true
-  },
-  "chair/chair_0972.ply": {
-    "file": "chair/chair_0972.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 971,
-    "aligned": true
-  },
-  "chair/chair_0974.ply": {
-    "file": "chair/chair_0974.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 973,
-    "aligned": true
+    "front_direction": "-X",
+    "index": 0,
+    "aligned": false
   },
-  "chair/chair_0973.ply": {
-    "file": "chair/chair_0973.ply",
+  "toilet/toilet_0039.ply": {
+    "file": "toilet/toilet_0039.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 972,
+    "index": 38,
     "aligned": true
   },
-  "chair/chair_0975.ply": {
-    "file": "chair/chair_0975.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 974,
-    "aligned": true
-  },
-  "chair/chair_0978.ply": {
-    "file": "chair/chair_0978.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 977,
-    "aligned": true
+  "table/table_0091.ply": {
+    "file": "table/table_0091.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 90,
+    "aligned": false
   },
-  "chair/chair_0977.ply": {
-    "file": "chair/chair_0977.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 976,
-    "aligned": true
+  "table/table_0137.ply": {
+    "file": "table/table_0137.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 136,
+    "aligned": false
   },
-  "chair/chair_0980.ply": {
-    "file": "chair/chair_0980.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 979,
-    "aligned": true
+  "table/table_0095.ply": {
+    "file": "table/table_0095.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 94,
+    "aligned": false
   },
-  "chair/chair_0979.ply": {
-    "file": "chair/chair_0979.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 978,
-    "aligned": true
+  "table/table_0107.ply": {
+    "file": "table/table_0107.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 106,
+    "aligned": false
   },
-  "chair/chair_0981.ply": {
-    "file": "chair/chair_0981.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 980,
-    "aligned": true
+  "curtain/curtain_0020.ply": {
+    "file": "curtain/curtain_0020.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 19,
+    "aligned": false
   },
-  "chair/chair_0984.ply": {
-    "file": "chair/chair_0984.ply",
+  "toilet/toilet_0114.ply": {
+    "file": "toilet/toilet_0114.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 983,
+    "index": 113,
     "aligned": true
   },
-  "chair/chair_0983.ply": {
-    "file": "chair/chair_0983.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 982,
-    "aligned": true
+  "table/table_0075.ply": {
+    "file": "table/table_0075.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "+Z",
+    "index": 74,
+    "aligned": false
   },
-  "chair/chair_0982.ply": {
-    "file": "chair/chair_0982.ply",
+  "toilet/toilet_0104.ply": {
+    "file": "toilet/toilet_0104.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 981,
+    "index": 103,
     "aligned": true
   },
-  "chair/chair_0985.ply": {
-    "file": "chair/chair_0985.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 984,
-    "aligned": true
+  "table/table_0023.ply": {
+    "file": "table/table_0023.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 22,
+    "aligned": false
   },
-  "chair/chair_0989.ply": {
-    "file": "chair/chair_0989.ply",
+  "bed/bed_0079.ply": {
+    "file": "bed/bed_0079.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 988,
+    "index": 78,
     "aligned": true
   },
-  "chair/chair_0986.ply": {
-    "file": "chair/chair_0986.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 985,
-    "aligned": true
+  "dresser/dresser_0028.ply": {
+    "file": "dresser/dresser_0028.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 27,
+    "aligned": false
   },
-  "chair/chair_0987.ply": {
-    "file": "chair/chair_0987.ply",
+  "bed/bed_0092.ply": {
+    "file": "bed/bed_0092.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 986,
+    "index": 91,
     "aligned": true
   },
-  "chair/chair_0988.ply": {
-    "file": "chair/chair_0988.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 987,
-    "aligned": true
+  "dresser/dresser_0014.ply": {
+    "file": "dresser/dresser_0014.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 13,
+    "aligned": false
   },
-  "bookshelf/bookshelf_0064.ply": {
-    "file": "bookshelf/bookshelf_0064.ply",
+  "toilet/toilet_0017.ply": {
+    "file": "toilet/toilet_0017.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 63,
+    "index": 16,
     "aligned": true
   },
-  "chair/chair_0074.ply": {
-    "file": "chair/chair_0074.ply",
+  "bed/bed_0074.ply": {
+    "file": "bed/bed_0074.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
     "index": 73,
     "aligned": true
   },
-  "chair/chair_0109.ply": {
-    "file": "chair/chair_0109.ply",
+  "sofa/sofa_0015.ply": {
+    "file": "sofa/sofa_0015.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 14,
+    "aligned": false
+  },
+  "bed/bed_0034.ply": {
+    "file": "bed/bed_0034.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 33,
+    "aligned": true
+  },
+  "sofa/sofa_0025.ply": {
+    "file": "sofa/sofa_0025.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 24,
+    "aligned": false
+  },
+  "sofa/sofa_0058.ply": {
+    "file": "sofa/sofa_0058.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 57,
+    "aligned": false
+  },
+  "night_stand/night_stand_0001.ply": {
+    "file": "night_stand/night_stand_0001.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 0,
+    "aligned": false
+  },
+  "sofa/sofa_0048.ply": {
+    "file": "sofa/sofa_0048.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 47,
+    "aligned": false
+  },
+  "table/table_0083.ply": {
+    "file": "table/table_0083.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "+Z",
+    "index": 82,
+    "aligned": false
+  },
+  "night_stand/night_stand_0002.ply": {
+    "file": "night_stand/night_stand_0002.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-X",
+    "index": 1,
+    "aligned": false
+  },
+  "bed/bed_0032.ply": {
+    "file": "bed/bed_0032.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 31,
+    "aligned": true
+  },
+  "bed/bed_0094.ply": {
+    "file": "bed/bed_0094.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 93,
+    "aligned": true
+  },
+  "sofa/sofa_0052.ply": {
+    "file": "sofa/sofa_0052.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 51,
+    "aligned": false
+  },
+  "table/table_0044.ply": {
+    "file": "table/table_0044.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 43,
+    "aligned": false
+  },
+  "bed/bed_0087.ply": {
+    "file": "bed/bed_0087.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 86,
+    "aligned": true
+  },
+  "toilet/toilet_0029.ply": {
+    "file": "toilet/toilet_0029.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 28,
+    "aligned": true
+  },
+  "toilet/toilet_0053.ply": {
+    "file": "toilet/toilet_0053.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 52,
+    "aligned": true
+  },
+  "bed/bed_0097.ply": {
+    "file": "bed/bed_0097.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 96,
+    "aligned": true
+  },
+  "sofa/sofa_0032.ply": {
+    "file": "sofa/sofa_0032.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 31,
+    "aligned": false
+  },
+  "table/table_0122.ply": {
+    "file": "table/table_0122.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 121,
+    "aligned": false
+  },
+  "sofa/sofa_0026.ply": {
+    "file": "sofa/sofa_0026.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 25,
+    "aligned": false
+  },
+  "sofa/sofa_0049.ply": {
+    "file": "sofa/sofa_0049.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 48,
+    "aligned": false
+  },
+  "curtain/curtain_0029.ply": {
+    "file": "curtain/curtain_0029.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 28,
+    "aligned": false
+  },
+  "sofa/sofa_0028.ply": {
+    "file": "sofa/sofa_0028.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 27,
+    "aligned": false
+  },
+  "toilet/toilet_0069.ply": {
+    "file": "toilet/toilet_0069.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 68,
+    "aligned": true
+  },
+  "sofa/sofa_0031.ply": {
+    "file": "sofa/sofa_0031.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 30,
+    "aligned": false
+  },
+  "curtain/curtain_0021.ply": {
+    "file": "curtain/curtain_0021.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 20,
+    "aligned": true
+  },
+  "toilet/toilet_0047.ply": {
+    "file": "toilet/toilet_0047.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 46,
+    "aligned": true
+  },
+  "curtain/curtain_0004.ply": {
+    "file": "curtain/curtain_0004.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 3,
+    "aligned": true
+  },
+  "toilet/toilet_0084.ply": {
+    "file": "toilet/toilet_0084.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 83,
+    "aligned": true
+  },
+  "dresser/dresser_0008.ply": {
+    "file": "dresser/dresser_0008.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 7,
+    "aligned": false
+  },
+  "curtain/curtain_0014.ply": {
+    "file": "curtain/curtain_0014.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 13,
+    "aligned": false
+  },
+  "table/table_0039.ply": {
+    "file": "table/table_0039.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "+X",
+    "index": 38,
+    "aligned": true
+  },
+  "sofa/sofa_0066.ply": {
+    "file": "sofa/sofa_0066.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 65,
+    "aligned": false
+  },
+  "toilet/toilet_0048.ply": {
+    "file": "toilet/toilet_0048.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 47,
+    "aligned": true
+  },
+  "sofa/sofa_0012.ply": {
+    "file": "sofa/sofa_0012.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 11,
+    "aligned": false
+  },
+  "curtain/curtain_0025.ply": {
+    "file": "curtain/curtain_0025.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 24,
+    "aligned": false
+  },
+  "dresser/dresser_0032.ply": {
+    "file": "dresser/dresser_0032.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 31,
+    "aligned": false
+  },
+  "table/table_0138.ply": {
+    "file": "table/table_0138.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 137,
+    "aligned": true
+  },
+  "xbox/xbox_0001.ply": {
+    "file": "xbox/xbox_0001.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "bed/bed_0109.ply": {
+    "file": "bed/bed_0109.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
     "index": 108,
     "aligned": true
   },
-  "chair/chair_0125.ply": {
-    "file": "chair/chair_0125.ply",
+  "table/table_0026.ply": {
+    "file": "table/table_0026.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 25,
+    "aligned": false
+  },
+  "table/table_0117.ply": {
+    "file": "table/table_0117.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 116,
+    "aligned": true
+  },
+  "toilet/toilet_0096.ply": {
+    "file": "toilet/toilet_0096.ply",
     "K": 1,
     "symmetry_name": "1个正面",
     "front_direction": "-Z",
-    "index": 124,
+    "index": 95,
     "aligned": true
   },
-  "bookshelf/bookshelf_0133.ply": {
-    "file": "bookshelf/bookshelf_0133.ply",
+  "toilet/toilet_0078.ply": {
+    "file": "toilet/toilet_0078.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 77,
+    "aligned": true
+  },
+  "toilet/toilet_0088.ply": {
+    "file": "toilet/toilet_0088.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 87,
+    "aligned": true
+  },
+  "table/table_0126.ply": {
+    "file": "table/table_0126.ply",
     "K": 2,
     "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 125,
+    "aligned": false
+  },
+  "curtain/curtain_0031.ply": {
+    "file": "curtain/curtain_0031.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "table/table_0051.ply": {
+    "file": "table/table_0051.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 50,
+    "aligned": true
+  },
+  "table/table_0097.ply": {
+    "file": "table/table_0097.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 96,
+    "aligned": false
+  },
+  "sofa/sofa_0064.ply": {
+    "file": "sofa/sofa_0064.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 63,
+    "aligned": false
+  },
+  "bed/bed_0040.ply": {
+    "file": "bed/bed_0040.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 39,
+    "aligned": true
+  },
+  "bed/bed_0071.ply": {
+    "file": "bed/bed_0071.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 70,
+    "aligned": true
+  },
+  "sofa/sofa_0013.ply": {
+    "file": "sofa/sofa_0013.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 12,
+    "aligned": false
+  },
+  "bed/bed_0099.ply": {
+    "file": "bed/bed_0099.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 98,
+    "aligned": true
+  },
+  "table/table_0120.ply": {
+    "file": "table/table_0120.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 119,
+    "aligned": true
+  },
+  "sofa/sofa_0050.ply": {
+    "file": "sofa/sofa_0050.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 49,
+    "aligned": false
+  },
+  "sofa/sofa_0005.ply": {
+    "file": "sofa/sofa_0005.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 4,
+    "aligned": false
+  },
+  "toilet/toilet_0054.ply": {
+    "file": "toilet/toilet_0054.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 53,
+    "aligned": true
+  },
+  "table/table_0004.ply": {
+    "file": "table/table_0004.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 3,
+    "aligned": false
+  },
+  "bed/bed_0046.ply": {
+    "file": "bed/bed_0046.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 45,
+    "aligned": true
+  },
+  "bed/bed_0060.ply": {
+    "file": "bed/bed_0060.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 59,
+    "aligned": true
+  },
+  "toilet/toilet_0040.ply": {
+    "file": "toilet/toilet_0040.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 39,
+    "aligned": true
+  },
+  "sofa/sofa_0063.ply": {
+    "file": "sofa/sofa_0063.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 62,
+    "aligned": false
+  },
+  "toilet/toilet_0090.ply": {
+    "file": "toilet/toilet_0090.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 89,
+    "aligned": true
+  },
+  "bed/bed_0068.ply": {
+    "file": "bed/bed_0068.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 67,
+    "aligned": true
+  },
+  "toilet/toilet_0091.ply": {
+    "file": "toilet/toilet_0091.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 90,
+    "aligned": true
+  },
+  "sofa/sofa_0040.ply": {
+    "file": "sofa/sofa_0040.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 39,
+    "aligned": false
+  },
+  "sofa/sofa_0016.ply": {
+    "file": "sofa/sofa_0016.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 15,
+    "aligned": false
+  },
+  "bed/bed_0102.ply": {
+    "file": "bed/bed_0102.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 101,
+    "aligned": true
+  },
+  "dresser/dresser_0024.ply": {
+    "file": "dresser/dresser_0024.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 23,
+    "aligned": false
+  },
+  "bed/bed_0027.ply": {
+    "file": "bed/bed_0027.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "table/table_0088.ply": {
+    "file": "table/table_0088.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 87,
+    "aligned": false
+  },
+  "bed/bed_0051.ply": {
+    "file": "bed/bed_0051.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 50,
+    "aligned": true
+  },
+  "toilet/toilet_0046.ply": {
+    "file": "toilet/toilet_0046.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 45,
+    "aligned": true
+  },
+  "bed/bed_0052.ply": {
+    "file": "bed/bed_0052.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 51,
+    "aligned": true
+  },
+  "bed/bed_0063.ply": {
+    "file": "bed/bed_0063.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 62,
+    "aligned": true
+  },
+  "table/table_0061.ply": {
+    "file": "table/table_0061.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 60,
+    "aligned": false
+  },
+  "table/table_0045.ply": {
+    "file": "table/table_0045.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 44,
+    "aligned": true
+  },
+  "toilet/toilet_0011.ply": {
+    "file": "toilet/toilet_0011.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 10,
+    "aligned": true
+  },
+  "table/table_0014.ply": {
+    "file": "table/table_0014.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 13,
+    "aligned": false
+  },
+  "bed/bed_0012.ply": {
+    "file": "bed/bed_0012.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 11,
+    "aligned": true
+  },
+  "bed/bed_0038.ply": {
+    "file": "bed/bed_0038.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 37,
+    "aligned": true
+  },
+  "sofa/sofa_0053.ply": {
+    "file": "sofa/sofa_0053.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 52,
+    "aligned": false
+  },
+  "dresser/dresser_0022.ply": {
+    "file": "dresser/dresser_0022.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 21,
+    "aligned": false
+  },
+  "table/table_0087.ply": {
+    "file": "table/table_0087.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 86,
+    "aligned": true
+  },
+  "bed/bed_0100.ply": {
+    "file": "bed/bed_0100.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 99,
+    "aligned": true
+  },
+  "tv_stand/tv_stand_0002.ply": {
+    "file": "tv_stand/tv_stand_0002.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "table/table_0038.ply": {
+    "file": "table/table_0038.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-X",
+    "index": 37,
+    "aligned": true
+  },
+  "toilet/toilet_0056.ply": {
+    "file": "toilet/toilet_0056.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 55,
+    "aligned": true
+  },
+  "curtain/curtain_0034.ply": {
+    "file": "curtain/curtain_0034.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 33,
+    "aligned": true
+  },
+  "table/table_0065.ply": {
+    "file": "table/table_0065.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 64,
+    "aligned": true
+  },
+  "vase/vase_0003.ply": {
+    "file": "vase/vase_0003.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "sofa/sofa_0045.ply": {
+    "file": "sofa/sofa_0045.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 44,
+    "aligned": false
+  },
+  "bed/bed_0048.ply": {
+    "file": "bed/bed_0048.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 47,
+    "aligned": true
+  },
+  "curtain/curtain_0011.ply": {
+    "file": "curtain/curtain_0011.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 10,
+    "aligned": true
+  },
+  "table/table_0136.ply": {
+    "file": "table/table_0136.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 135,
+    "aligned": false
+  },
+  "table/table_0103.ply": {
+    "file": "table/table_0103.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 102,
+    "aligned": false
+  },
+  "bed/bed_0021.ply": {
+    "file": "bed/bed_0021.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 20,
+    "aligned": true
+  },
+  "toilet/toilet_0108.ply": {
+    "file": "toilet/toilet_0108.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 107,
+    "aligned": true
+  },
+  "dresser/dresser_0012.ply": {
+    "file": "dresser/dresser_0012.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 11,
+    "aligned": false
+  },
+  "table/table_0016.ply": {
+    "file": "table/table_0016.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 15,
+    "aligned": true
+  },
+  "sofa/sofa_0065.ply": {
+    "file": "sofa/sofa_0065.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 64,
+    "aligned": false
+  },
+  "toilet/toilet_0100.ply": {
+    "file": "toilet/toilet_0100.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 99,
+    "aligned": true
+  },
+  "sofa/sofa_0047.ply": {
+    "file": "sofa/sofa_0047.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 46,
+    "aligned": false
+  },
+  "sofa/sofa_0008.ply": {
+    "file": "sofa/sofa_0008.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "MULTI",
+    "index": 7,
+    "aligned": false
+  },
+  "table/table_0017.ply": {
+    "file": "table/table_0017.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 16,
+    "aligned": false
+  },
+  "toilet/toilet_0074.ply": {
+    "file": "toilet/toilet_0074.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 73,
+    "aligned": true
+  },
+  "table/table_0116.ply": {
+    "file": "table/table_0116.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 115,
+    "aligned": false
+  },
+  "dresser/dresser_0010.ply": {
+    "file": "dresser/dresser_0010.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 9,
+    "aligned": false
+  },
+  "curtain/curtain_0010.ply": {
+    "file": "curtain/curtain_0010.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 9,
+    "aligned": false
+  },
+  "bed/bed_0072.ply": {
+    "file": "bed/bed_0072.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 71,
+    "aligned": true
+  },
+  "curtain/curtain_0002.ply": {
+    "file": "curtain/curtain_0002.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "toilet/toilet_0001.ply": {
+    "file": "toilet/toilet_0001.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "bed/bed_0101.ply": {
+    "file": "bed/bed_0101.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 100,
+    "aligned": true
+  },
+  "toilet/toilet_0113.ply": {
+    "file": "toilet/toilet_0113.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 112,
+    "aligned": true
+  },
+  "bed/bed_0058.ply": {
+    "file": "bed/bed_0058.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 57,
+    "aligned": true
+  },
+  "table/table_0064.ply": {
+    "file": "table/table_0064.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 63,
+    "aligned": true
+  },
+  "table/table_0082.ply": {
+    "file": "table/table_0082.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 81,
+    "aligned": true
+  },
+  "toilet/toilet_0064.ply": {
+    "file": "toilet/toilet_0064.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 63,
+    "aligned": true
+  },
+  "dresser/dresser_0019.ply": {
+    "file": "dresser/dresser_0019.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 18,
+    "aligned": false
+  },
+  "table/table_0090.ply": {
+    "file": "table/table_0090.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 89,
+    "aligned": true
+  },
+  "bed/bed_0029.ply": {
+    "file": "bed/bed_0029.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 28,
+    "aligned": true
+  },
+  "toilet/toilet_0112.ply": {
+    "file": "toilet/toilet_0112.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 111,
+    "aligned": true
+  },
+  "table/table_0141.ply": {
+    "file": "table/table_0141.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 140,
+    "aligned": false
+  },
+  "table/table_0015.ply": {
+    "file": "table/table_0015.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 14,
+    "aligned": true
+  },
+  "sofa/sofa_0044.ply": {
+    "file": "sofa/sofa_0044.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 43,
+    "aligned": true
+  },
+  "bed/bed_0082.ply": {
+    "file": "bed/bed_0082.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 81,
+    "aligned": true
+  },
+  "table/table_0060.ply": {
+    "file": "table/table_0060.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 59,
+    "aligned": true
+  },
+  "table/table_0110.ply": {
+    "file": "table/table_0110.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 109,
+    "aligned": false
+  },
+  "curtain/curtain_0022.ply": {
+    "file": "curtain/curtain_0022.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 21,
+    "aligned": false
+  },
+  "toilet/toilet_0033.ply": {
+    "file": "toilet/toilet_0033.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 32,
+    "aligned": true
+  },
+  "toilet/toilet_0092.ply": {
+    "file": "toilet/toilet_0092.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 91,
+    "aligned": true
+  },
+  "table/table_0112.ply": {
+    "file": "table/table_0112.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 111,
+    "aligned": true
+  },
+  "toilet/toilet_0089.ply": {
+    "file": "toilet/toilet_0089.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 88,
+    "aligned": true
+  },
+  "toilet/toilet_0015.ply": {
+    "file": "toilet/toilet_0015.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 14,
+    "aligned": true
+  },
+  "table/table_0101.ply": {
+    "file": "table/table_0101.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 100,
+    "aligned": false
+  },
+  "bed/bed_0033.ply": {
+    "file": "bed/bed_0033.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 32,
+    "aligned": true
+  },
+  "bed/bed_0028.ply": {
+    "file": "bed/bed_0028.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 27,
+    "aligned": true
+  },
+  "table/table_0113.ply": {
+    "file": "table/table_0113.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 112,
+    "aligned": true
+  },
+  "dresser/dresser_0031.ply": {
+    "file": "dresser/dresser_0031.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 30,
+    "aligned": false
+  },
+  "table/table_0054.ply": {
+    "file": "table/table_0054.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 53,
+    "aligned": false
+  },
+  "table/table_0066.ply": {
+    "file": "table/table_0066.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 65,
+    "aligned": false
+  },
+  "vase/vase_0002.ply": {
+    "file": "vase/vase_0002.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "bed/bed_0039.ply": {
+    "file": "bed/bed_0039.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 38,
+    "aligned": true
+  },
+  "sofa/sofa_0059.ply": {
+    "file": "sofa/sofa_0059.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 58,
+    "aligned": false
+  },
+  "dresser/dresser_0026.ply": {
+    "file": "dresser/dresser_0026.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 25,
+    "aligned": false
+  },
+  "dresser/dresser_0025.ply": {
+    "file": "dresser/dresser_0025.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 24,
+    "aligned": false
+  },
+  "bed/bed_0098.ply": {
+    "file": "bed/bed_0098.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 97,
+    "aligned": true
+  },
+  "bed/bed_0073.ply": {
+    "file": "bed/bed_0073.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 72,
+    "aligned": true
+  },
+  "toilet/toilet_0014.ply": {
+    "file": "toilet/toilet_0014.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 13,
+    "aligned": true
+  },
+  "table/table_0031.ply": {
+    "file": "table/table_0031.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "table/table_0052.ply": {
+    "file": "table/table_0052.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 51,
+    "aligned": false
+  },
+  "table/table_0022.ply": {
+    "file": "table/table_0022.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 21,
+    "aligned": true
+  },
+  "toilet/toilet_0076.ply": {
+    "file": "toilet/toilet_0076.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 75,
+    "aligned": true
+  },
+  "night_stand/night_stand_0005.ply": {
+    "file": "night_stand/night_stand_0005.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 4,
+    "aligned": false
+  },
+  "bed/bed_0018.ply": {
+    "file": "bed/bed_0018.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "toilet/toilet_0026.ply": {
+    "file": "toilet/toilet_0026.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 25,
+    "aligned": true
+  },
+  "toilet/toilet_0013.ply": {
+    "file": "toilet/toilet_0013.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "toilet/toilet_0034.ply": {
+    "file": "toilet/toilet_0034.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 33,
+    "aligned": true
+  },
+  "table/table_0125.ply": {
+    "file": "table/table_0125.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 124,
+    "aligned": false
+  },
+  "toilet/toilet_0012.ply": {
+    "file": "toilet/toilet_0012.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 11,
+    "aligned": true
+  },
+  "bed/bed_0088.ply": {
+    "file": "bed/bed_0088.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 87,
+    "aligned": true
+  },
+  "toilet/toilet_0107.ply": {
+    "file": "toilet/toilet_0107.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 106,
+    "aligned": true
+  },
+  "toilet/toilet_0058.ply": {
+    "file": "toilet/toilet_0058.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 57,
+    "aligned": true
+  },
+  "toilet/toilet_0101.ply": {
+    "file": "toilet/toilet_0101.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 100,
+    "aligned": true
+  },
+  "bed/bed_0044.ply": {
+    "file": "bed/bed_0044.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 43,
+    "aligned": true
+  },
+  "sofa/sofa_0046.ply": {
+    "file": "sofa/sofa_0046.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 45,
+    "aligned": false
+  },
+  "table/table_0011.ply": {
+    "file": "table/table_0011.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 10,
+    "aligned": true
+  },
+  "table/table_0135.ply": {
+    "file": "table/table_0135.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 134,
+    "aligned": false
+  },
+  "table/table_0106.ply": {
+    "file": "table/table_0106.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 105,
+    "aligned": false
+  },
+  "toilet/toilet_0067.ply": {
+    "file": "toilet/toilet_0067.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 66,
+    "aligned": true
+  },
+  "bed/bed_0053.ply": {
+    "file": "bed/bed_0053.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 52,
+    "aligned": true
+  },
+  "table/table_0030.ply": {
+    "file": "table/table_0030.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 29,
+    "aligned": true
+  },
+  "sofa/sofa_0014.ply": {
+    "file": "sofa/sofa_0014.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 13,
+    "aligned": false
+  },
+  "table/table_0134.ply": {
+    "file": "table/table_0134.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 133,
+    "aligned": false
+  },
+  "bed/bed_0031.ply": {
+    "file": "bed/bed_0031.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "dresser/dresser_0015.ply": {
+    "file": "dresser/dresser_0015.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 14,
+    "aligned": false
+  },
+  "table/table_0076.ply": {
+    "file": "table/table_0076.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 75,
+    "aligned": false
+  },
+  "sofa/sofa_0061.ply": {
+    "file": "sofa/sofa_0061.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 60,
+    "aligned": false
+  },
+  "toilet/toilet_0025.ply": {
+    "file": "toilet/toilet_0025.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 24,
+    "aligned": true
+  },
+  "sofa/sofa_0039.ply": {
+    "file": "sofa/sofa_0039.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 38,
+    "aligned": false
+  },
+  "toilet/toilet_0066.ply": {
+    "file": "toilet/toilet_0066.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 65,
+    "aligned": true
+  },
+  "bed/bed_0096.ply": {
+    "file": "bed/bed_0096.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 95,
+    "aligned": true
+  },
+  "dresser/dresser_0007.ply": {
+    "file": "dresser/dresser_0007.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 6,
+    "aligned": false
+  },
+  "table/table_0115.ply": {
+    "file": "table/table_0115.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 114,
+    "aligned": false
+  },
+  "curtain/curtain_0027.ply": {
+    "file": "curtain/curtain_0027.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "bed/bed_0065.ply": {
+    "file": "bed/bed_0065.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 64,
+    "aligned": true
+  },
+  "table/table_0092.ply": {
+    "file": "table/table_0092.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 91,
+    "aligned": false
+  },
+  "toilet/toilet_0061.ply": {
+    "file": "toilet/toilet_0061.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 60,
+    "aligned": true
+  },
+  "table/table_0144.ply": {
+    "file": "table/table_0144.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 143,
+    "aligned": false
+  },
+  "toilet/toilet_0106.ply": {
+    "file": "toilet/toilet_0106.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 105,
+    "aligned": true
+  },
+  "bed/bed_0108.ply": {
+    "file": "bed/bed_0108.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 107,
+    "aligned": true
+  },
+  "curtain/curtain_0013.ply": {
+    "file": "curtain/curtain_0013.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "OBLIQUE",
+    "index": 12,
+    "aligned": false
+  },
+  "bed/bed_0090.ply": {
+    "file": "bed/bed_0090.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 89,
+    "aligned": true
+  },
+  "dresser/dresser_0021.ply": {
+    "file": "dresser/dresser_0021.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 20,
+    "aligned": false
+  },
+  "table/table_0079.ply": {
+    "file": "table/table_0079.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 78,
+    "aligned": false
+  },
+  "bed/bed_0069.ply": {
+    "file": "bed/bed_0069.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 68,
+    "aligned": true
+  },
+  "bed/bed_0106.ply": {
+    "file": "bed/bed_0106.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 105,
+    "aligned": true
+  },
+  "table/table_0129.ply": {
+    "file": "table/table_0129.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 128,
+    "aligned": false
+  },
+  "bed/bed_0041.ply": {
+    "file": "bed/bed_0041.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 40,
+    "aligned": true
+  },
+  "bed/bed_0054.ply": {
+    "file": "bed/bed_0054.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 53,
+    "aligned": true
+  },
+  "toilet/toilet_0095.ply": {
+    "file": "toilet/toilet_0095.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 94,
+    "aligned": true
+  },
+  "bed/bed_0005.ply": {
+    "file": "bed/bed_0005.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 4,
+    "aligned": true
+  },
+  "curtain/curtain_0030.ply": {
+    "file": "curtain/curtain_0030.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 29,
+    "aligned": false
+  },
+  "bed/bed_0022.ply": {
+    "file": "bed/bed_0022.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 21,
+    "aligned": true
+  },
+  "bed/bed_0086.ply": {
+    "file": "bed/bed_0086.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 85,
+    "aligned": true
+  },
+  "toilet/toilet_0028.ply": {
+    "file": "toilet/toilet_0028.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 27,
+    "aligned": true
+  },
+  "bed/bed_0077.ply": {
+    "file": "bed/bed_0077.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 76,
+    "aligned": true
+  },
+  "toilet/toilet_0062.ply": {
+    "file": "toilet/toilet_0062.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 61,
+    "aligned": true
+  },
+  "table/table_0009.ply": {
+    "file": "table/table_0009.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 8,
+    "aligned": false
+  },
+  "table/table_0121.ply": {
+    "file": "table/table_0121.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 120,
+    "aligned": true
+  },
+  "table/table_0012.ply": {
+    "file": "table/table_0012.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 11,
+    "aligned": true
+  },
+  "sofa/sofa_0011.ply": {
+    "file": "sofa/sofa_0011.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 10,
+    "aligned": false
+  },
+  "toilet/toilet_0037.ply": {
+    "file": "toilet/toilet_0037.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 36,
+    "aligned": true
+  },
+  "sofa/sofa_0057.ply": {
+    "file": "sofa/sofa_0057.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 56,
+    "aligned": false
+  },
+  "toilet/toilet_0068.ply": {
+    "file": "toilet/toilet_0068.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 67,
+    "aligned": true
+  },
+  "bed/bed_0013.ply": {
+    "file": "bed/bed_0013.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "bed/bed_0043.ply": {
+    "file": "bed/bed_0043.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 42,
+    "aligned": true
+  },
+  "dresser/dresser_0020.ply": {
+    "file": "dresser/dresser_0020.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 19,
+    "aligned": false
+  },
+  "sofa/sofa_0036.ply": {
+    "file": "sofa/sofa_0036.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-X",
+    "index": 35,
+    "aligned": false
+  },
+  "toilet/toilet_0116.ply": {
+    "file": "toilet/toilet_0116.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 115,
+    "aligned": true
+  },
+  "sofa/sofa_0055.ply": {
+    "file": "sofa/sofa_0055.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 54,
+    "aligned": false
+  },
+  "dresser/dresser_0030.ply": {
+    "file": "dresser/dresser_0030.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 29,
+    "aligned": false
+  },
+  "bed/bed_0059.ply": {
+    "file": "bed/bed_0059.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 58,
+    "aligned": true
+  },
+  "bed/bed_0067.ply": {
+    "file": "bed/bed_0067.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 66,
+    "aligned": true
+  },
+  "toilet/toilet_0093.ply": {
+    "file": "toilet/toilet_0093.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 92,
+    "aligned": true
+  },
+  "table/table_0033.ply": {
+    "file": "table/table_0033.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 32,
+    "aligned": true
+  },
+  "night_stand/night_stand_0003.ply": {
+    "file": "night_stand/night_stand_0003.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "table/table_0005.ply": {
+    "file": "table/table_0005.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 4,
+    "aligned": false
+  },
+  "bed/bed_0014.ply": {
+    "file": "bed/bed_0014.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 13,
+    "aligned": true
+  },
+  "bed/bed_0020.ply": {
+    "file": "bed/bed_0020.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 19,
+    "aligned": true
+  },
+  "table/table_0147.ply": {
+    "file": "table/table_0147.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 146,
+    "aligned": false
+  },
+  "table/table_0127.ply": {
+    "file": "table/table_0127.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 126,
+    "aligned": true
+  },
+  "sofa/sofa_0043.ply": {
+    "file": "sofa/sofa_0043.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 42,
+    "aligned": false
+  },
+  "curtain/curtain_0003.ply": {
+    "file": "curtain/curtain_0003.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "toilet/toilet_0110.ply": {
+    "file": "toilet/toilet_0110.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 109,
+    "aligned": true
+  },
+  "bed/bed_0104.ply": {
+    "file": "bed/bed_0104.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 103,
+    "aligned": true
+  },
+  "toilet/toilet_0111.ply": {
+    "file": "toilet/toilet_0111.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 110,
+    "aligned": true
+  },
+  "bed/bed_0070.ply": {
+    "file": "bed/bed_0070.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 69,
+    "aligned": true
+  },
+  "table/table_0139.ply": {
+    "file": "table/table_0139.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 138,
+    "aligned": false
+  },
+  "toilet/toilet_0031.ply": {
+    "file": "toilet/toilet_0031.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "table/table_0131.ply": {
+    "file": "table/table_0131.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 130,
+    "aligned": false
+  },
+  "toilet/toilet_0081.ply": {
+    "file": "toilet/toilet_0081.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 80,
+    "aligned": true
+  },
+  "table/table_0025.ply": {
+    "file": "table/table_0025.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 24,
+    "aligned": true
+  },
+  "bed/bed_0081.ply": {
+    "file": "bed/bed_0081.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 80,
+    "aligned": true
+  },
+  "table/table_0063.ply": {
+    "file": "table/table_0063.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 62,
+    "aligned": false
+  },
+  "table/table_0080.ply": {
+    "file": "table/table_0080.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 79,
+    "aligned": false
+  },
+  "toilet/toilet_0099.ply": {
+    "file": "toilet/toilet_0099.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 98,
+    "aligned": true
+  },
+  "toilet/toilet_0059.ply": {
+    "file": "toilet/toilet_0059.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 58,
+    "aligned": true
+  },
+  "bed/bed_0050.ply": {
+    "file": "bed/bed_0050.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 49,
+    "aligned": true
+  },
+  "tv_stand/tv_stand_0003.ply": {
+    "file": "tv_stand/tv_stand_0003.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "sofa/sofa_0009.ply": {
+    "file": "sofa/sofa_0009.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 8,
+    "aligned": false
+  },
+  "table/table_0111.ply": {
+    "file": "table/table_0111.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 110,
+    "aligned": true
+  },
+  "toilet/toilet_0036.ply": {
+    "file": "toilet/toilet_0036.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 35,
+    "aligned": true
+  },
+  "table/table_0067.ply": {
+    "file": "table/table_0067.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 66,
+    "aligned": true
+  },
+  "tv_stand/tv_stand_0006.ply": {
+    "file": "tv_stand/tv_stand_0006.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+Z",
+    "index": 5,
+    "aligned": false
+  },
+  "table/table_0142.ply": {
+    "file": "table/table_0142.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 141,
+    "aligned": false
+  },
+  "bed/bed_0009.ply": {
+    "file": "bed/bed_0009.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 8,
+    "aligned": true
+  },
+  "sofa/sofa_0003.ply": {
+    "file": "sofa/sofa_0003.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 2,
+    "aligned": false
+  },
+  "bed/bed_0089.ply": {
+    "file": "bed/bed_0089.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 88,
+    "aligned": true
+  },
+  "sofa/sofa_0027.ply": {
+    "file": "sofa/sofa_0027.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 26,
+    "aligned": false
+  },
+  "table/table_0034.ply": {
+    "file": "table/table_0034.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 33,
+    "aligned": true
+  },
+  "table/table_0114.ply": {
+    "file": "table/table_0114.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 113,
+    "aligned": false
+  },
+  "table/table_0027.ply": {
+    "file": "table/table_0027.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "table/table_0148.ply": {
+    "file": "table/table_0148.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 147,
+    "aligned": true
+  },
+  "bed/bed_0030.ply": {
+    "file": "bed/bed_0030.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 29,
+    "aligned": true
+  },
+  "table/table_0057.ply": {
+    "file": "table/table_0057.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 56,
+    "aligned": true
+  },
+  "dresser/dresser_0017.ply": {
+    "file": "dresser/dresser_0017.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 16,
+    "aligned": false
+  },
+  "sofa/sofa_0019.ply": {
+    "file": "sofa/sofa_0019.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 18,
+    "aligned": false
+  },
+  "night_stand/night_stand_0004.ply": {
+    "file": "night_stand/night_stand_0004.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 3,
+    "aligned": true
+  },
+  "toilet/toilet_0008.ply": {
+    "file": "toilet/toilet_0008.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 7,
+    "aligned": true
+  },
+  "curtain/curtain_0024.ply": {
+    "file": "curtain/curtain_0024.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 23,
+    "aligned": true
+  },
+  "dresser/dresser_0027.ply": {
+    "file": "dresser/dresser_0027.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 26,
+    "aligned": false
+  },
+  "table/table_0102.ply": {
+    "file": "table/table_0102.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 101,
+    "aligned": false
+  },
+  "bed/bed_0055.ply": {
+    "file": "bed/bed_0055.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 54,
+    "aligned": true
+  },
+  "tv_stand/tv_stand_0004.ply": {
+    "file": "tv_stand/tv_stand_0004.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 3,
+    "aligned": false
+  },
+  "table/table_0081.ply": {
+    "file": "table/table_0081.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 80,
+    "aligned": false
+  },
+  "sofa/sofa_0024.ply": {
+    "file": "sofa/sofa_0024.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 23,
+    "aligned": false
+  },
+  "bed/bed_0083.ply": {
+    "file": "bed/bed_0083.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 82,
+    "aligned": true
+  },
+  "table/table_0037.ply": {
+    "file": "table/table_0037.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 36,
+    "aligned": false
+  },
+  "toilet/toilet_0009.ply": {
+    "file": "toilet/toilet_0009.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 8,
+    "aligned": true
+  },
+  "table/table_0047.ply": {
+    "file": "table/table_0047.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 46,
+    "aligned": false
+  },
+  "bed/bed_0057.ply": {
+    "file": "bed/bed_0057.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 56,
+    "aligned": true
+  },
+  "table/table_0010.ply": {
+    "file": "table/table_0010.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 9,
+    "aligned": false
+  },
+  "table/table_0058.ply": {
+    "file": "table/table_0058.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 57,
+    "aligned": true
+  },
+  "toilet/toilet_0022.ply": {
+    "file": "toilet/toilet_0022.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 21,
+    "aligned": true
+  },
+  "dresser/dresser_0009.ply": {
+    "file": "dresser/dresser_0009.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 8,
+    "aligned": false
+  },
+  "sofa/sofa_0030.ply": {
+    "file": "sofa/sofa_0030.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 29,
+    "aligned": false
+  },
+  "bed/bed_0042.ply": {
+    "file": "bed/bed_0042.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 41,
+    "aligned": true
+  },
+  "toilet/toilet_0097.ply": {
+    "file": "toilet/toilet_0097.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 96,
+    "aligned": true
+  },
+  "bed/bed_0093.ply": {
+    "file": "bed/bed_0093.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 92,
+    "aligned": true
+  },
+  "bed/bed_0107.ply": {
+    "file": "bed/bed_0107.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 106,
+    "aligned": true
+  },
+  "bed/bed_0091.ply": {
+    "file": "bed/bed_0091.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 90,
+    "aligned": true
+  },
+  "toilet/toilet_0052.ply": {
+    "file": "toilet/toilet_0052.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 51,
+    "aligned": true
+  },
+  "toilet/toilet_0087.ply": {
+    "file": "toilet/toilet_0087.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 86,
+    "aligned": true
+  },
+  "toilet/toilet_0044.ply": {
+    "file": "toilet/toilet_0044.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 43,
+    "aligned": true
+  },
+  "bed/bed_0076.ply": {
+    "file": "bed/bed_0076.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 75,
+    "aligned": true
+  },
+  "table/table_0046.ply": {
+    "file": "table/table_0046.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 45,
+    "aligned": true
+  },
+  "table/table_0001.ply": {
+    "file": "table/table_0001.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "table/table_0072.ply": {
+    "file": "table/table_0072.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 71,
+    "aligned": true
+  },
+  "toilet/toilet_0032.ply": {
+    "file": "toilet/toilet_0032.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 31,
+    "aligned": true
+  },
+  "sofa/sofa_0017.ply": {
+    "file": "sofa/sofa_0017.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 16,
+    "aligned": false
+  },
+  "sofa/sofa_0021.ply": {
+    "file": "sofa/sofa_0021.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 20,
+    "aligned": false
+  },
+  "toilet/toilet_0086.ply": {
+    "file": "toilet/toilet_0086.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 85,
+    "aligned": true
+  },
+  "table/table_0056.ply": {
+    "file": "table/table_0056.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 55,
+    "aligned": false
+  },
+  "table/table_0070.ply": {
+    "file": "table/table_0070.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 69,
+    "aligned": true
+  },
+  "toilet/toilet_0094.ply": {
+    "file": "toilet/toilet_0094.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 93,
+    "aligned": true
+  },
+  "bed/bed_0047.ply": {
+    "file": "bed/bed_0047.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 46,
+    "aligned": true
+  },
+  "bed/bed_0085.ply": {
+    "file": "bed/bed_0085.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 84,
+    "aligned": true
+  },
+  "table/table_0071.ply": {
+    "file": "table/table_0071.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 70,
+    "aligned": true
+  },
+  "table/table_0013.ply": {
+    "file": "table/table_0013.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "bed/bed_0002.ply": {
+    "file": "bed/bed_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "dresser/dresser_0002.ply": {
+    "file": "dresser/dresser_0002.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 1,
+    "aligned": false
+  },
+  "sofa/sofa_0034.ply": {
+    "file": "sofa/sofa_0034.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 33,
+    "aligned": false
+  },
+  "tv_stand/tv_stand_0001.ply": {
+    "file": "tv_stand/tv_stand_0001.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "toilet/toilet_0019.ply": {
+    "file": "toilet/toilet_0019.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 18,
+    "aligned": true
+  },
+  "sofa/sofa_0010.ply": {
+    "file": "sofa/sofa_0010.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 9,
+    "aligned": false
+  },
+  "toilet/toilet_0020.ply": {
+    "file": "toilet/toilet_0020.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 19,
+    "aligned": true
+  },
+  "curtain/curtain_0018.ply": {
+    "file": "curtain/curtain_0018.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "dresser/dresser_0003.ply": {
+    "file": "dresser/dresser_0003.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 2,
+    "aligned": false
+  },
+  "bed/bed_0078.ply": {
+    "file": "bed/bed_0078.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 77,
+    "aligned": true
+  },
+  "toilet/toilet_0098.ply": {
+    "file": "toilet/toilet_0098.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 97,
+    "aligned": true
+  },
+  "table/table_0096.ply": {
+    "file": "table/table_0096.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 95,
+    "aligned": true
+  },
+  "table/table_0085.ply": {
+    "file": "table/table_0085.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 84,
+    "aligned": false
+  },
+  "dresser/dresser_0005.ply": {
+    "file": "dresser/dresser_0005.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 4,
+    "aligned": false
+  },
+  "sofa/sofa_0051.ply": {
+    "file": "sofa/sofa_0051.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 50,
+    "aligned": false
+  },
+  "toilet/toilet_0005.ply": {
+    "file": "toilet/toilet_0005.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 4,
+    "aligned": true
+  },
+  "table/table_0041.ply": {
+    "file": "table/table_0041.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 40,
+    "aligned": true
+  },
+  "table/table_0094.ply": {
+    "file": "table/table_0094.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 93,
+    "aligned": false
+  },
+  "bed/bed_0023.ply": {
+    "file": "bed/bed_0023.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 22,
+    "aligned": true
+  },
+  "table/table_0109.ply": {
+    "file": "table/table_0109.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 108,
+    "aligned": false
+  },
+  "toilet/toilet_0021.ply": {
+    "file": "toilet/toilet_0021.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 20,
+    "aligned": true
+  },
+  "bed/bed_0007.ply": {
+    "file": "bed/bed_0007.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 6,
+    "aligned": true
+  },
+  "toilet/toilet_0070.ply": {
+    "file": "toilet/toilet_0070.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 69,
+    "aligned": true
+  },
+  "table/table_0119.ply": {
+    "file": "table/table_0119.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 118,
+    "aligned": false
+  },
+  "toilet/toilet_0051.ply": {
+    "file": "toilet/toilet_0051.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 50,
+    "aligned": true
+  },
+  "sofa/sofa_0004.ply": {
+    "file": "sofa/sofa_0004.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 3,
+    "aligned": false
+  },
+  "bed/bed_0011.ply": {
+    "file": "bed/bed_0011.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 10,
+    "aligned": true
+  },
+  "table/table_0007.ply": {
+    "file": "table/table_0007.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 6,
+    "aligned": true
+  },
+  "bed/bed_0024.ply": {
+    "file": "bed/bed_0024.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 23,
+    "aligned": true
+  },
+  "dresser/dresser_0016.ply": {
+    "file": "dresser/dresser_0016.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 15,
+    "aligned": false
+  },
+  "bed/bed_0036.ply": {
+    "file": "bed/bed_0036.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 35,
+    "aligned": true
+  },
+  "curtain/curtain_0016.ply": {
+    "file": "curtain/curtain_0016.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 15,
+    "aligned": true
+  },
+  "table/table_0084.ply": {
+    "file": "table/table_0084.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 83,
+    "aligned": false
+  },
+  "toilet/toilet_0115.ply": {
+    "file": "toilet/toilet_0115.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 114,
+    "aligned": true
+  },
+  "sofa/sofa_0002.ply": {
+    "file": "sofa/sofa_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 1,
+    "aligned": false
+  },
+  "dresser/dresser_0029.ply": {
+    "file": "dresser/dresser_0029.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 28,
+    "aligned": false
+  },
+  "table/table_0098.ply": {
+    "file": "table/table_0098.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 97,
+    "aligned": false
+  },
+  "table/table_0146.ply": {
+    "file": "table/table_0146.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 145,
+    "aligned": true
+  },
+  "toilet/toilet_0041.ply": {
+    "file": "toilet/toilet_0041.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 40,
+    "aligned": true
+  },
+  "toilet/toilet_0023.ply": {
+    "file": "toilet/toilet_0023.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 22,
+    "aligned": true
+  },
+  "dresser/dresser_0018.ply": {
+    "file": "dresser/dresser_0018.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 17,
+    "aligned": false
+  },
+  "sofa/sofa_0007.ply": {
+    "file": "sofa/sofa_0007.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "MULTI",
+    "index": 6,
+    "aligned": false
+  },
+  "sofa/sofa_0056.ply": {
+    "file": "sofa/sofa_0056.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 55,
+    "aligned": false
+  },
+  "toilet/toilet_0035.ply": {
+    "file": "toilet/toilet_0035.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 34,
+    "aligned": true
+  },
+  "bed/bed_0045.ply": {
+    "file": "bed/bed_0045.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 44,
+    "aligned": true
+  },
+  "sofa/sofa_0060.ply": {
+    "file": "sofa/sofa_0060.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 59,
+    "aligned": false
+  },
+  "toilet/toilet_0027.ply": {
+    "file": "toilet/toilet_0027.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "dresser/dresser_0001.ply": {
+    "file": "dresser/dresser_0001.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 0,
+    "aligned": false
+  },
+  "table/table_0028.ply": {
+    "file": "table/table_0028.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 27,
+    "aligned": true
+  },
+  "bed/bed_0026.ply": {
+    "file": "bed/bed_0026.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 25,
+    "aligned": true
+  },
+  "table/table_0078.ply": {
+    "file": "table/table_0078.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 77,
+    "aligned": false
+  },
+  "table/table_0089.ply": {
+    "file": "table/table_0089.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 88,
+    "aligned": true
+  },
+  "toilet/toilet_0043.ply": {
+    "file": "toilet/toilet_0043.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 42,
+    "aligned": true
+  },
+  "dresser/dresser_0013.ply": {
+    "file": "dresser/dresser_0013.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "toilet/toilet_0042.ply": {
+    "file": "toilet/toilet_0042.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 41,
+    "aligned": true
+  },
+  "table/table_0042.ply": {
+    "file": "table/table_0042.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 41,
+    "aligned": false
+  },
+  "sofa/sofa_0020.ply": {
+    "file": "sofa/sofa_0020.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 19,
+    "aligned": false
+  },
+  "sofa/sofa_0054.ply": {
+    "file": "sofa/sofa_0054.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 53,
+    "aligned": false
+  },
+  "bed/bed_0105.ply": {
+    "file": "bed/bed_0105.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 104,
+    "aligned": true
+  },
+  "toilet/toilet_0105.ply": {
+    "file": "toilet/toilet_0105.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 104,
+    "aligned": true
+  },
+  "bed/bed_0062.ply": {
+    "file": "bed/bed_0062.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 61,
+    "aligned": true
+  },
+  "table/table_0145.ply": {
+    "file": "table/table_0145.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 144,
+    "aligned": true
+  },
+  "toilet/toilet_0072.ply": {
+    "file": "toilet/toilet_0072.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 71,
+    "aligned": true
+  },
+  "table/table_0035.ply": {
+    "file": "table/table_0035.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 34,
+    "aligned": false
+  },
+  "bed/bed_0064.ply": {
+    "file": "bed/bed_0064.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 63,
+    "aligned": true
+  },
+  "table/table_0002.ply": {
+    "file": "table/table_0002.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 1,
+    "aligned": false
+  },
+  "table/table_0032.ply": {
+    "file": "table/table_0032.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 31,
+    "aligned": false
+  },
+  "toilet/toilet_0016.ply": {
+    "file": "toilet/toilet_0016.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 15,
+    "aligned": true
+  },
+  "sofa/sofa_0022.ply": {
+    "file": "sofa/sofa_0022.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "MULTI",
+    "index": 21,
+    "aligned": false
+  },
+  "table/table_0048.ply": {
+    "file": "table/table_0048.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 47,
+    "aligned": false
+  },
+  "curtain/curtain_0001.ply": {
+    "file": "curtain/curtain_0001.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "tv_stand/tv_stand_0005.ply": {
+    "file": "tv_stand/tv_stand_0005.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "+X",
+    "index": 4,
+    "aligned": false
+  },
+  "bed/bed_0019.ply": {
+    "file": "bed/bed_0019.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 18,
+    "aligned": true
+  },
+  "curtain/curtain_0012.ply": {
+    "file": "curtain/curtain_0012.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 11,
+    "aligned": true
+  },
+  "bed/bed_0035.ply": {
+    "file": "bed/bed_0035.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 34,
+    "aligned": true
+  },
+  "sofa/sofa_0035.ply": {
+    "file": "sofa/sofa_0035.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 34,
+    "aligned": true
+  },
+  "table/table_0099.ply": {
+    "file": "table/table_0099.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 98,
+    "aligned": false
+  },
+  "table/table_0105.ply": {
+    "file": "table/table_0105.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 104,
+    "aligned": false
+  },
+  "table/table_0130.ply": {
+    "file": "table/table_0130.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 129,
+    "aligned": false
+  },
+  "toilet/toilet_0007.ply": {
+    "file": "toilet/toilet_0007.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 6,
+    "aligned": true
+  },
+  "table/table_0049.ply": {
+    "file": "table/table_0049.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 48,
+    "aligned": true
+  },
+  "vase/vase_0049.ply": {
+    "file": "vase/vase_0049.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 48,
+    "aligned": true
+  },
+  "bed/bed_0008.ply": {
+    "file": "bed/bed_0008.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 7,
+    "aligned": true
+  },
+  "toilet/toilet_0006.ply": {
+    "file": "toilet/toilet_0006.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 5,
+    "aligned": true
+  },
+  "sofa/sofa_0042.ply": {
+    "file": "sofa/sofa_0042.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 41,
+    "aligned": false
+  },
+  "bed/bed_0056.ply": {
+    "file": "bed/bed_0056.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 55,
+    "aligned": true
+  },
+  "bed/bed_0066.ply": {
+    "file": "bed/bed_0066.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 65,
+    "aligned": true
+  },
+  "toilet/toilet_0063.ply": {
+    "file": "toilet/toilet_0063.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 62,
+    "aligned": true
+  },
+  "toilet/toilet_0055.ply": {
+    "file": "toilet/toilet_0055.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 54,
+    "aligned": true
+  },
+  "table/table_0077.ply": {
+    "file": "table/table_0077.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 76,
+    "aligned": false
+  },
+  "table/table_0018.ply": {
+    "file": "table/table_0018.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "curtain/curtain_0007.ply": {
+    "file": "curtain/curtain_0007.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 6,
+    "aligned": false
+  },
+  "bed/bed_0006.ply": {
+    "file": "bed/bed_0006.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 5,
+    "aligned": true
+  },
+  "toilet/toilet_0002.ply": {
+    "file": "toilet/toilet_0002.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "table/table_0062.ply": {
+    "file": "table/table_0062.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 61,
+    "aligned": false
+  },
+  "toilet/toilet_0085.ply": {
+    "file": "toilet/toilet_0085.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 84,
+    "aligned": true
+  },
+  "dresser/dresser_0033.ply": {
+    "file": "dresser/dresser_0033.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 32,
+    "aligned": false
+  },
+  "table/table_0104.ply": {
+    "file": "table/table_0104.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 103,
+    "aligned": false
+  },
+  "bed/bed_0010.ply": {
+    "file": "bed/bed_0010.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 9,
+    "aligned": true
+  },
+  "toilet/toilet_0050.ply": {
+    "file": "toilet/toilet_0050.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 49,
+    "aligned": true
+  },
+  "table/table_0086.ply": {
+    "file": "table/table_0086.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 85,
+    "aligned": false
+  },
+  "table/table_0019.ply": {
+    "file": "table/table_0019.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 18,
+    "aligned": true
+  },
+  "bed/bed_0095.ply": {
+    "file": "bed/bed_0095.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 94,
+    "aligned": true
+  },
+  "toilet/toilet_0060.ply": {
+    "file": "toilet/toilet_0060.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 59,
+    "aligned": true
+  },
+  "sofa/sofa_0038.ply": {
+    "file": "sofa/sofa_0038.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 37,
+    "aligned": false
+  },
+  "dresser/dresser_0011.ply": {
+    "file": "dresser/dresser_0011.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 10,
+    "aligned": false
+  },
+  "bed/bed_0037.ply": {
+    "file": "bed/bed_0037.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 36,
+    "aligned": true
+  },
+  "table/table_0068.ply": {
+    "file": "table/table_0068.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 67,
+    "aligned": false
+  },
+  "toilet/toilet_0024.ply": {
+    "file": "toilet/toilet_0024.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 23,
+    "aligned": true
+  },
+  "curtain/curtain_0028.ply": {
+    "file": "curtain/curtain_0028.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 27,
+    "aligned": true
+  },
+  "sofa/sofa_0033.ply": {
+    "file": "sofa/sofa_0033.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 32,
+    "aligned": false
+  },
+  "table/table_0021.ply": {
+    "file": "table/table_0021.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 20,
+    "aligned": false
+  },
+  "toilet/toilet_0030.ply": {
+    "file": "toilet/toilet_0030.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 29,
+    "aligned": true
+  },
+  "table/table_0040.ply": {
+    "file": "table/table_0040.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 39,
+    "aligned": false
+  },
+  "table/table_0003.ply": {
+    "file": "table/table_0003.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "table/table_0043.ply": {
+    "file": "table/table_0043.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 42,
+    "aligned": true
+  },
+  "table/table_0008.ply": {
+    "file": "table/table_0008.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 7,
+    "aligned": false
+  },
+  "table/table_0093.ply": {
+    "file": "table/table_0093.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 92,
+    "aligned": true
+  },
+  "toilet/toilet_0073.ply": {
+    "file": "toilet/toilet_0073.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 72,
+    "aligned": true
+  },
+  "dresser/dresser_0006.ply": {
+    "file": "dresser/dresser_0006.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 5,
+    "aligned": false
+  },
+  "toilet/toilet_0045.ply": {
+    "file": "toilet/toilet_0045.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 44,
+    "aligned": true
+  },
+  "toilet/toilet_0080.ply": {
+    "file": "toilet/toilet_0080.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 79,
+    "aligned": true
+  },
+  "toilet/toilet_0079.ply": {
+    "file": "toilet/toilet_0079.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 78,
+    "aligned": true
+  },
+  "bed/bed_0016.ply": {
+    "file": "bed/bed_0016.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 15,
+    "aligned": true
+  },
+  "table/table_0029.ply": {
+    "file": "table/table_0029.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 28,
+    "aligned": true
+  },
+  "table/table_0128.ply": {
+    "file": "table/table_0128.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 127,
+    "aligned": false
+  },
+  "dresser/dresser_0023.ply": {
+    "file": "dresser/dresser_0023.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 22,
+    "aligned": false
+  },
+  "toilet/toilet_0057.ply": {
+    "file": "toilet/toilet_0057.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 56,
+    "aligned": true
+  },
+  "table/table_0006.ply": {
+    "file": "table/table_0006.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 5,
+    "aligned": false
+  },
+  "toilet/toilet_0075.ply": {
+    "file": "toilet/toilet_0075.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 74,
+    "aligned": true
+  },
+  "bed/bed_0075.ply": {
+    "file": "bed/bed_0075.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 74,
+    "aligned": true
+  },
+  "curtain/curtain_0008.ply": {
+    "file": "curtain/curtain_0008.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 7,
+    "aligned": true
+  },
+  "table/table_0140.ply": {
+    "file": "table/table_0140.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 139,
+    "aligned": false
+  },
+  "toilet/toilet_0018.ply": {
+    "file": "toilet/toilet_0018.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "dresser/dresser_0004.ply": {
+    "file": "dresser/dresser_0004.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 3,
+    "aligned": false
+  },
+  "table/table_0050.ply": {
+    "file": "table/table_0050.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 49,
+    "aligned": false
+  },
+  "sofa/sofa_0018.ply": {
+    "file": "sofa/sofa_0018.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 17,
+    "aligned": false
+  },
+  "table/table_0124.ply": {
+    "file": "table/table_0124.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 123,
+    "aligned": true
+  },
+  "table/table_0020.ply": {
+    "file": "table/table_0020.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 19,
+    "aligned": true
+  },
+  "toilet/toilet_0083.ply": {
+    "file": "toilet/toilet_0083.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 82,
+    "aligned": true
+  },
+  "curtain/curtain_0006.ply": {
+    "file": "curtain/curtain_0006.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 5,
+    "aligned": true
+  },
+  "table/table_0143.ply": {
+    "file": "table/table_0143.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 142,
+    "aligned": false
+  },
+  "sofa/sofa_0006.ply": {
+    "file": "sofa/sofa_0006.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 5,
+    "aligned": false
+  },
+  "table/table_0024.ply": {
+    "file": "table/table_0024.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 23,
+    "aligned": false
+  },
+  "table/table_0074.ply": {
+    "file": "table/table_0074.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "+Z",
+    "index": 73,
+    "aligned": false
+  },
+  "sofa/sofa_0062.ply": {
+    "file": "sofa/sofa_0062.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 61,
+    "aligned": false
+  },
+  "curtain/curtain_0023.ply": {
+    "file": "curtain/curtain_0023.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 22,
+    "aligned": true
+  },
+  "curtain/curtain_0026.ply": {
+    "file": "curtain/curtain_0026.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 25,
+    "aligned": false
+  },
+  "curtain/curtain_0032.ply": {
+    "file": "curtain/curtain_0032.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 31,
+    "aligned": false
+  },
+  "sofa/sofa_0029.ply": {
+    "file": "sofa/sofa_0029.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 28,
+    "aligned": false
+  },
+  "curtain/curtain_0033.ply": {
+    "file": "curtain/curtain_0033.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 32,
+    "aligned": false
+  },
+  "toilet/toilet_0003.ply": {
+    "file": "toilet/toilet_0003.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "bed/bed_0080.ply": {
+    "file": "bed/bed_0080.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 79,
+    "aligned": true
+  },
+  "sofa/sofa_0041.ply": {
+    "file": "sofa/sofa_0041.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-X",
+    "index": 40,
+    "aligned": false
+  },
+  "vase/vase_0001.ply": {
+    "file": "vase/vase_0001.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "table/table_0123.ply": {
+    "file": "table/table_0123.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "OBLIQUE",
+    "index": 122,
+    "aligned": false
+  },
+  "toilet/toilet_0102.ply": {
+    "file": "toilet/toilet_0102.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 101,
+    "aligned": true
+  },
+  "table/table_0036.ply": {
+    "file": "table/table_0036.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 35,
+    "aligned": false
+  },
+  "bed/bed_0049.ply": {
+    "file": "bed/bed_0049.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 48,
+    "aligned": true
+  },
+  "bed/bed_0084.ply": {
+    "file": "bed/bed_0084.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 83,
+    "aligned": true
+  },
+  "table/table_0149.ply": {
+    "file": "table/table_0149.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 148,
+    "aligned": false
+  },
+  "table/table_0151.ply": {
+    "file": "table/table_0151.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 150,
+    "aligned": true
+  },
+  "table/table_0150.ply": {
+    "file": "table/table_0150.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 149,
+    "aligned": false
+  },
+  "table/table_0155.ply": {
+    "file": "table/table_0155.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 154,
+    "aligned": false
+  },
+  "table/table_0152.ply": {
+    "file": "table/table_0152.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 151,
+    "aligned": false
+  },
+  "table/table_0153.ply": {
+    "file": "table/table_0153.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 152,
+    "aligned": false
+  },
+  "table/table_0154.ply": {
+    "file": "table/table_0154.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 153,
+    "aligned": false
+  },
+  "table/table_0156.ply": {
+    "file": "table/table_0156.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 155,
+    "aligned": false
+  },
+  "table/table_0157.ply": {
+    "file": "table/table_0157.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 156,
+    "aligned": true
+  },
+  "table/table_0159.ply": {
+    "file": "table/table_0159.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 158,
+    "aligned": false
+  },
+  "table/table_0160.ply": {
+    "file": "table/table_0160.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 159,
+    "aligned": true
+  },
+  "table/table_0158.ply": {
+    "file": "table/table_0158.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 157,
+    "aligned": false
+  },
+  "table/table_0161.ply": {
+    "file": "table/table_0161.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 160,
+    "aligned": false
+  },
+  "table/table_0162.ply": {
+    "file": "table/table_0162.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 161,
+    "aligned": true
+  },
+  "table/table_0163.ply": {
+    "file": "table/table_0163.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 162,
+    "aligned": false
+  },
+  "table/table_0164.ply": {
+    "file": "table/table_0164.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 163,
+    "aligned": false
+  },
+  "table/table_0165.ply": {
+    "file": "table/table_0165.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 164,
+    "aligned": false
+  },
+  "table/table_0167.ply": {
+    "file": "table/table_0167.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 166,
+    "aligned": true
+  },
+  "table/table_0166.ply": {
+    "file": "table/table_0166.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 165,
+    "aligned": true
+  },
+  "table/table_0170.ply": {
+    "file": "table/table_0170.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 169,
+    "aligned": false
+  },
+  "table/table_0171.ply": {
+    "file": "table/table_0171.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 170,
+    "aligned": false
+  },
+  "table/table_0168.ply": {
+    "file": "table/table_0168.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 167,
+    "aligned": false
+  },
+  "table/table_0169.ply": {
+    "file": "table/table_0169.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 168,
+    "aligned": false
+  },
+  "table/table_0172.ply": {
+    "file": "table/table_0172.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 171,
+    "aligned": false
+  },
+  "table/table_0174.ply": {
+    "file": "table/table_0174.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 173,
+    "aligned": true
+  },
+  "table/table_0173.ply": {
+    "file": "table/table_0173.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 172,
+    "aligned": false
+  },
+  "table/table_0176.ply": {
+    "file": "table/table_0176.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 175,
+    "aligned": true
+  },
+  "table/table_0175.ply": {
+    "file": "table/table_0175.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 174,
+    "aligned": true
+  },
+  "table/table_0177.ply": {
+    "file": "table/table_0177.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 176,
+    "aligned": true
+  },
+  "table/table_0178.ply": {
+    "file": "table/table_0178.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 177,
+    "aligned": false
+  },
+  "table/table_0179.ply": {
+    "file": "table/table_0179.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 178,
+    "aligned": true
+  },
+  "table/table_0180.ply": {
+    "file": "table/table_0180.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 179,
+    "aligned": false
+  },
+  "table/table_0182.ply": {
+    "file": "table/table_0182.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 181,
+    "aligned": true
+  },
+  "table/table_0181.ply": {
+    "file": "table/table_0181.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 180,
+    "aligned": true
+  },
+  "table/table_0185.ply": {
+    "file": "table/table_0185.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 184,
+    "aligned": true
+  },
+  "table/table_0183.ply": {
+    "file": "table/table_0183.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 182,
+    "aligned": true
+  },
+  "table/table_0184.ply": {
+    "file": "table/table_0184.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 183,
+    "aligned": true
+  },
+  "table/table_0187.ply": {
+    "file": "table/table_0187.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 186,
+    "aligned": true
+  },
+  "table/table_0186.ply": {
+    "file": "table/table_0186.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 185,
+    "aligned": true
+  },
+  "table/table_0188.ply": {
+    "file": "table/table_0188.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 187,
+    "aligned": true
+  },
+  "table/table_0189.ply": {
+    "file": "table/table_0189.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 188,
+    "aligned": false
+  },
+  "table/table_0190.ply": {
+    "file": "table/table_0190.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 189,
+    "aligned": true
+  },
+  "table/table_0194.ply": {
+    "file": "table/table_0194.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 193,
+    "aligned": false
+  },
+  "table/table_0193.ply": {
+    "file": "table/table_0193.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 192,
+    "aligned": false
+  },
+  "table/table_0192.ply": {
+    "file": "table/table_0192.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 191,
+    "aligned": false
+  },
+  "table/table_0196.ply": {
+    "file": "table/table_0196.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 195,
+    "aligned": true
+  },
+  "table/table_0198.ply": {
+    "file": "table/table_0198.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 197,
+    "aligned": false
+  },
+  "table/table_0195.ply": {
+    "file": "table/table_0195.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 194,
+    "aligned": true
+  },
+  "table/table_0197.ply": {
+    "file": "table/table_0197.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 196,
+    "aligned": false
+  },
+  "table/table_0199.ply": {
+    "file": "table/table_0199.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 198,
+    "aligned": true
+  },
+  "table/table_0200.ply": {
+    "file": "table/table_0200.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 199,
+    "aligned": false
+  },
+  "table/table_0203.ply": {
+    "file": "table/table_0203.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 202,
+    "aligned": true
+  },
+  "table/table_0202.ply": {
+    "file": "table/table_0202.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 201,
+    "aligned": false
+  },
+  "table/table_0207.ply": {
+    "file": "table/table_0207.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 206,
+    "aligned": false
+  },
+  "table/table_0204.ply": {
+    "file": "table/table_0204.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 203,
+    "aligned": false
+  },
+  "table/table_0206.ply": {
+    "file": "table/table_0206.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 205,
+    "aligned": false
+  },
+  "table/table_0205.ply": {
+    "file": "table/table_0205.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 204,
+    "aligned": false
+  },
+  "table/table_0208.ply": {
+    "file": "table/table_0208.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-X",
+    "index": 207,
+    "aligned": false
+  },
+  "table/table_0209.ply": {
+    "file": "table/table_0209.ply",
+    "K": 2,
+    "symmetry_name": "2个正面",
+    "front_direction": "-Z",
+    "index": 208,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0001.ply": {
+    "file": "flower_pot/flower_pot_0001.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 0,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0002.ply": {
+    "file": "flower_pot/flower_pot_0002.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 1,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0003.ply": {
+    "file": "flower_pot/flower_pot_0003.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 2,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0005.ply": {
+    "file": "flower_pot/flower_pot_0005.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 4,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0006.ply": {
+    "file": "flower_pot/flower_pot_0006.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 5,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0004.ply": {
+    "file": "flower_pot/flower_pot_0004.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 3,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0010.ply": {
+    "file": "flower_pot/flower_pot_0010.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 9,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0009.ply": {
+    "file": "flower_pot/flower_pot_0009.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 8,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0007.ply": {
+    "file": "flower_pot/flower_pot_0007.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 6,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0008.ply": {
+    "file": "flower_pot/flower_pot_0008.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 7,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0011.ply": {
+    "file": "flower_pot/flower_pot_0011.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 10,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0012.ply": {
+    "file": "flower_pot/flower_pot_0012.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 11,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0013.ply": {
+    "file": "flower_pot/flower_pot_0013.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 12,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0014.ply": {
+    "file": "flower_pot/flower_pot_0014.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 13,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0015.ply": {
+    "file": "flower_pot/flower_pot_0015.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 14,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0016.ply": {
+    "file": "flower_pot/flower_pot_0016.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 15,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0017.ply": {
+    "file": "flower_pot/flower_pot_0017.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 16,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0021.ply": {
+    "file": "flower_pot/flower_pot_0021.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 20,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0019.ply": {
+    "file": "flower_pot/flower_pot_0019.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 18,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0020.ply": {
+    "file": "flower_pot/flower_pot_0020.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 19,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0018.ply": {
+    "file": "flower_pot/flower_pot_0018.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 17,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0022.ply": {
+    "file": "flower_pot/flower_pot_0022.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 21,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0023.ply": {
+    "file": "flower_pot/flower_pot_0023.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
+    "front_direction": "-Z",
+    "index": 22,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0024.ply": {
+    "file": "flower_pot/flower_pot_0024.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 23,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0025.ply": {
+    "file": "flower_pot/flower_pot_0025.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 24,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0028.ply": {
+    "file": "flower_pot/flower_pot_0028.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 27,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0026.ply": {
+    "file": "flower_pot/flower_pot_0026.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 25,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0027.ply": {
+    "file": "flower_pot/flower_pot_0027.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 26,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0031.ply": {
+    "file": "flower_pot/flower_pot_0031.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 30,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0029.ply": {
+    "file": "flower_pot/flower_pot_0029.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 28,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0035.ply": {
+    "file": "flower_pot/flower_pot_0035.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 34,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0036.ply": {
+    "file": "flower_pot/flower_pot_0036.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 35,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0033.ply": {
+    "file": "flower_pot/flower_pot_0033.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 32,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0037.ply": {
+    "file": "flower_pot/flower_pot_0037.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 36,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0040.ply": {
+    "file": "flower_pot/flower_pot_0040.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 39,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0039.ply": {
+    "file": "flower_pot/flower_pot_0039.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 38,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0038.ply": {
+    "file": "flower_pot/flower_pot_0038.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 37,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0041.ply": {
+    "file": "flower_pot/flower_pot_0041.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
+    "front_direction": "-Z",
+    "index": 40,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0044.ply": {
+    "file": "flower_pot/flower_pot_0044.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 43,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0043.ply": {
+    "file": "flower_pot/flower_pot_0043.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 42,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0042.ply": {
+    "file": "flower_pot/flower_pot_0042.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 41,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0045.ply": {
+    "file": "flower_pot/flower_pot_0045.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 44,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0047.ply": {
+    "file": "flower_pot/flower_pot_0047.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 46,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0053.ply": {
+    "file": "flower_pot/flower_pot_0053.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 52,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0052.ply": {
+    "file": "flower_pot/flower_pot_0052.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 51,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0055.ply": {
+    "file": "flower_pot/flower_pot_0055.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 54,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0057.ply": {
+    "file": "flower_pot/flower_pot_0057.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 56,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0064.ply": {
+    "file": "flower_pot/flower_pot_0064.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 63,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0063.ply": {
+    "file": "flower_pot/flower_pot_0063.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 62,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0061.ply": {
+    "file": "flower_pot/flower_pot_0061.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 60,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0062.ply": {
+    "file": "flower_pot/flower_pot_0062.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 61,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0068.ply": {
+    "file": "flower_pot/flower_pot_0068.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 67,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0071.ply": {
+    "file": "flower_pot/flower_pot_0071.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 70,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0072.ply": {
+    "file": "flower_pot/flower_pot_0072.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 71,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0073.ply": {
+    "file": "flower_pot/flower_pot_0073.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 72,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0078.ply": {
+    "file": "flower_pot/flower_pot_0078.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 77,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0077.ply": {
+    "file": "flower_pot/flower_pot_0077.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 76,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0084.ply": {
+    "file": "flower_pot/flower_pot_0084.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 83,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0081.ply": {
+    "file": "flower_pot/flower_pot_0081.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 80,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0088.ply": {
+    "file": "flower_pot/flower_pot_0088.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 87,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0092.ply": {
+    "file": "flower_pot/flower_pot_0092.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 91,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0093.ply": {
+    "file": "flower_pot/flower_pot_0093.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 92,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0090.ply": {
+    "file": "flower_pot/flower_pot_0090.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 89,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0091.ply": {
+    "file": "flower_pot/flower_pot_0091.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 90,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0106.ply": {
+    "file": "flower_pot/flower_pot_0106.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 105,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0108.ply": {
+    "file": "flower_pot/flower_pot_0108.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 107,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0099.ply": {
+    "file": "flower_pot/flower_pot_0099.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 98,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0095.ply": {
+    "file": "flower_pot/flower_pot_0095.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 94,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0103.ply": {
+    "file": "flower_pot/flower_pot_0103.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 102,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0110.ply": {
+    "file": "flower_pot/flower_pot_0110.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 109,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0107.ply": {
+    "file": "flower_pot/flower_pot_0107.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 106,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0097.ply": {
+    "file": "flower_pot/flower_pot_0097.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 96,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0109.ply": {
+    "file": "flower_pot/flower_pot_0109.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 108,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0112.ply": {
+    "file": "flower_pot/flower_pot_0112.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 111,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0111.ply": {
+    "file": "flower_pot/flower_pot_0111.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 110,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0113.ply": {
+    "file": "flower_pot/flower_pot_0113.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 112,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0114.ply": {
+    "file": "flower_pot/flower_pot_0114.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 113,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0117.ply": {
+    "file": "flower_pot/flower_pot_0117.ply",
+    "K": 1,
+    "symmetry_name": "1个正面",
+    "front_direction": "-Z",
+    "index": 116,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0116.ply": {
+    "file": "flower_pot/flower_pot_0116.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 115,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0115.ply": {
+    "file": "flower_pot/flower_pot_0115.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 114,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0119.ply": {
+    "file": "flower_pot/flower_pot_0119.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 118,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0120.ply": {
+    "file": "flower_pot/flower_pot_0120.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 119,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0122.ply": {
+    "file": "flower_pot/flower_pot_0122.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 121,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0123.ply": {
+    "file": "flower_pot/flower_pot_0123.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 122,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0128.ply": {
+    "file": "flower_pot/flower_pot_0128.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 127,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0126.ply": {
+    "file": "flower_pot/flower_pot_0126.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 125,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0127.ply": {
+    "file": "flower_pot/flower_pot_0127.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 126,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0130.ply": {
+    "file": "flower_pot/flower_pot_0130.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 129,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0131.ply": {
+    "file": "flower_pot/flower_pot_0131.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
+    "front_direction": "-Z",
+    "index": 130,
+    "aligned": true
+  },
+  "flower_pot/flower_pot_0133.ply": {
+    "file": "flower_pot/flower_pot_0133.ply",
+    "K": 4,
+    "symmetry_name": "4个正面",
     "front_direction": "-Z",
     "index": 132,
     "aligned": true
   },
-  "bookshelf/bookshelf_0252.ply": {
-    "file": "bookshelf/bookshelf_0252.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0132.ply": {
+    "file": "flower_pot/flower_pot_0132.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 251,
+    "index": 131,
     "aligned": true
   },
-  "bookshelf/bookshelf_0253.ply": {
-    "file": "bookshelf/bookshelf_0253.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0138.ply": {
+    "file": "flower_pot/flower_pot_0138.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 252,
+    "index": 137,
     "aligned": true
   },
-  "bookshelf/bookshelf_0254.ply": {
-    "file": "bookshelf/bookshelf_0254.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-X",
-    "index": 253,
-    "aligned": false
-  },
-  "bookshelf/bookshelf_0256.ply": {
-    "file": "bookshelf/bookshelf_0256.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 255,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0255.ply": {
-    "file": "bookshelf/bookshelf_0255.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 254,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0257.ply": {
-    "file": "bookshelf/bookshelf_0257.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 256,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0258.ply": {
-    "file": "bookshelf/bookshelf_0258.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 257,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0259.ply": {
-    "file": "bookshelf/bookshelf_0259.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 258,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0261.ply": {
-    "file": "bookshelf/bookshelf_0261.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 260,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0260.ply": {
-    "file": "bookshelf/bookshelf_0260.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 259,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0262.ply": {
-    "file": "bookshelf/bookshelf_0262.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 261,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0263.ply": {
-    "file": "bookshelf/bookshelf_0263.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 262,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0264.ply": {
-    "file": "bookshelf/bookshelf_0264.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 263,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0265.ply": {
-    "file": "bookshelf/bookshelf_0265.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 264,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0267.ply": {
-    "file": "bookshelf/bookshelf_0267.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 266,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0266.ply": {
-    "file": "bookshelf/bookshelf_0266.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 265,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0269.ply": {
-    "file": "bookshelf/bookshelf_0269.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 268,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0268.ply": {
-    "file": "bookshelf/bookshelf_0268.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 267,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0271.ply": {
-    "file": "bookshelf/bookshelf_0271.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "index": 270,
-    "aligned": true
-  },
-  "bookshelf/bookshelf_0270.ply": {
-    "file": "bookshelf/bookshelf_0270.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "-Z",
-    "index": 269,
-    "aligned": true
-  },
-  "chair/chair_0083.ply": {
-    "file": "chair/chair_0083.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0143.ply": {
-    "file": "chair/chair_0143.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0178.ply": {
-    "file": "chair/chair_0178.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0242.ply": {
-    "file": "chair/chair_0242.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0258.ply": {
-    "file": "chair/chair_0258.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0260.ply": {
-    "file": "chair/chair_0260.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0269.ply": {
-    "file": "chair/chair_0269.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0271.ply": {
-    "file": "chair/chair_0271.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0273.ply": {
-    "file": "chair/chair_0273.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0288.ply": {
-    "file": "chair/chair_0288.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0296.ply": {
-    "file": "chair/chair_0296.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0391.ply": {
-    "file": "chair/chair_0391.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0422.ply": {
-    "file": "chair/chair_0422.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0483.ply": {
-    "file": "chair/chair_0483.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0497.ply": {
-    "file": "chair/chair_0497.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0545.ply": {
-    "file": "chair/chair_0545.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0550.ply": {
-    "file": "chair/chair_0550.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0616.ply": {
-    "file": "chair/chair_0616.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0629.ply": {
-    "file": "chair/chair_0629.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0637.ply": {
-    "file": "chair/chair_0637.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0683.ply": {
-    "file": "chair/chair_0683.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0719.ply": {
-    "file": "chair/chair_0719.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0731.ply": {
-    "file": "chair/chair_0731.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0765.ply": {
-    "file": "chair/chair_0765.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "-Z",
-    "aligned": true
-  },
-  "chair/chair_0774.ply": {
-    "file": "chair/chair_0774.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0135.ply": {
+    "file": "flower_pot/flower_pot_0135.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
+    "index": 134,
     "aligned": true
   },
-  "chair/chair_0820.ply": {
-    "file": "chair/chair_0820.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0139.ply": {
+    "file": "flower_pot/flower_pot_0139.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
+    "index": 138,
     "aligned": true
   },
-  "chair/chair_0825.ply": {
-    "file": "chair/chair_0825.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0141.ply": {
+    "file": "flower_pot/flower_pot_0141.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
+    "index": 140,
     "aligned": true
   },
-  "chair/chair_0830.ply": {
-    "file": "chair/chair_0830.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0140.ply": {
+    "file": "flower_pot/flower_pot_0140.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
+    "index": 139,
     "aligned": true
   },
-  "chair/chair_0840.ply": {
-    "file": "chair/chair_0840.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0143.ply": {
+    "file": "flower_pot/flower_pot_0143.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
+    "index": 142,
     "aligned": true
   },
-  "chair/chair_0917.ply": {
-    "file": "chair/chair_0917.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0144.ply": {
+    "file": "flower_pot/flower_pot_0144.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
     "front_direction": "-Z",
+    "index": 143,
     "aligned": true
   },
-  "chair/chair_0952.ply": {
-    "file": "chair/chair_0952.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0145.ply": {
+    "file": "flower_pot/flower_pot_0145.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
     "front_direction": "-Z",
+    "index": 144,
     "aligned": true
   },
-  "chair/chair_0971.ply": {
-    "file": "chair/chair_0971.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0146.ply": {
+    "file": "flower_pot/flower_pot_0146.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
     "front_direction": "-Z",
+    "index": 145,
     "aligned": true
   },
-  "chair/chair_0976.ply": {
-    "file": "chair/chair_0976.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0147.ply": {
+    "file": "flower_pot/flower_pot_0147.ply",
+    "K": -1,
+    "symmetry_name": "旋转对称",
     "front_direction": "-Z",
+    "index": 146,
     "aligned": true
-  },
-  "bookshelf/bookshelf_0272.ply": {
-    "file": "bookshelf/bookshelf_0272.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
-    "front_direction": "+Z",
-    "index": 271,
-    "aligned": false
   },
-  "bookshelf/bookshelf_0273.ply": {
-    "file": "bookshelf/bookshelf_0273.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0148.ply": {
+    "file": "flower_pot/flower_pot_0148.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 272,
+    "index": 147,
     "aligned": true
   },
-  "bookshelf/bookshelf_0274.ply": {
-    "file": "bookshelf/bookshelf_0274.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0150.ply": {
+    "file": "flower_pot/flower_pot_0150.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 273,
+    "index": 149,
     "aligned": true
   },
-  "bookshelf/bookshelf_0276.ply": {
-    "file": "bookshelf/bookshelf_0276.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0152.ply": {
+    "file": "flower_pot/flower_pot_0152.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 275,
+    "index": 151,
     "aligned": true
   },
-  "bookshelf/bookshelf_0277.ply": {
-    "file": "bookshelf/bookshelf_0277.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0149.ply": {
+    "file": "flower_pot/flower_pot_0149.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 276,
+    "index": 148,
     "aligned": true
   },
-  "bookshelf/bookshelf_0275.ply": {
-    "file": "bookshelf/bookshelf_0275.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0151.ply": {
+    "file": "flower_pot/flower_pot_0151.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 274,
+    "index": 150,
     "aligned": true
   },
-  "bookshelf/bookshelf_0278.ply": {
-    "file": "bookshelf/bookshelf_0278.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0154.ply": {
+    "file": "flower_pot/flower_pot_0154.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 277,
+    "index": 153,
     "aligned": true
   },
-  "bookshelf/bookshelf_0279.ply": {
-    "file": "bookshelf/bookshelf_0279.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0156.ply": {
+    "file": "flower_pot/flower_pot_0156.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 278,
+    "index": 155,
     "aligned": true
   },
-  "bookshelf/bookshelf_0280.ply": {
-    "file": "bookshelf/bookshelf_0280.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0157.ply": {
+    "file": "flower_pot/flower_pot_0157.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 279,
+    "index": 156,
     "aligned": true
   },
-  "bookshelf/bookshelf_0282.ply": {
-    "file": "bookshelf/bookshelf_0282.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0158.ply": {
+    "file": "flower_pot/flower_pot_0158.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 281,
+    "index": 157,
     "aligned": true
   },
-  "bookshelf/bookshelf_0281.ply": {
-    "file": "bookshelf/bookshelf_0281.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "+Z",
-    "index": 280,
-    "aligned": false
-  },
-  "bookshelf/bookshelf_0284.ply": {
-    "file": "bookshelf/bookshelf_0284.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0164.ply": {
+    "file": "flower_pot/flower_pot_0164.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 283,
+    "index": 163,
     "aligned": true
   },
-  "bookshelf/bookshelf_0283.ply": {
-    "file": "bookshelf/bookshelf_0283.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0161.ply": {
+    "file": "flower_pot/flower_pot_0161.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 282,
+    "index": 160,
     "aligned": true
-  },
-  "bookshelf/bookshelf_0285.ply": {
-    "file": "bookshelf/bookshelf_0285.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
-    "front_direction": "+Z",
-    "index": 284,
-    "aligned": false
   },
-  "bookshelf/bookshelf_0288.ply": {
-    "file": "bookshelf/bookshelf_0288.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0165.ply": {
+    "file": "flower_pot/flower_pot_0165.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 287,
+    "index": 164,
     "aligned": true
   },
-  "bookshelf/bookshelf_0286.ply": {
-    "file": "bookshelf/bookshelf_0286.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0166.ply": {
+    "file": "flower_pot/flower_pot_0166.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 285,
+    "index": 165,
     "aligned": true
   },
-  "bookshelf/bookshelf_0287.ply": {
-    "file": "bookshelf/bookshelf_0287.ply",
-    "K": 2,
-    "symmetry_name": "2个正面",
+  "flower_pot/flower_pot_0167.ply": {
+    "file": "flower_pot/flower_pot_0167.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 286,
+    "index": 166,
     "aligned": true
   },
-  "bookshelf/bookshelf_0289.ply": {
-    "file": "bookshelf/bookshelf_0289.ply",
-    "K": 1,
-    "symmetry_name": "1个正面",
+  "flower_pot/flower_pot_0169.ply": {
+    "file": "flower_pot/flower_pot_0169.ply",
+    "K": 0,
+    "symmetry_name": "无正面",
     "front_direction": "-Z",
-    "index": 288,
+    "index": 168,
     "aligned": true
   }
 }

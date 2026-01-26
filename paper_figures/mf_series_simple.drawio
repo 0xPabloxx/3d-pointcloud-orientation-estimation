@@ -1,0 +1,161 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- Title -->
+    <mxCell id="title" value="MF Series: Mixture of von Mises" style="text;fontSize=16;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="250" y="10" width="300" height="30" as="geometry" />
+    </mxCell>
+    
+    <!-- Input: Point Cloud -->
+    <mxCell id="input" value="Point Cloud
+(B×N×3)" style="rounded=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="40" y="180" width="90" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- PointNet++ Encoder -->
+    <mxCell id="encoder" value="PointNet++
+Encoder" style="rounded=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="160" y="180" width="90" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- MixturePeakHead -->
+    <mxCell id="head" value="MixturePeak
+Head" style="rounded=1;fillColor=#90CAF9;strokeColor=#1565C0;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="280" y="180" width="90" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Predicted (μ,κ) pairs - vertical -->
+    <mxCell id="pred1" value="(μ₁, κ₁)" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="400" y="80" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="pred2" value="(μ₂, κ₂)" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="400" y="118" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="pred3" value="(μ₃, κ₃)" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="400" y="156" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="pred4" value="(μ₄, κ₄)" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="400" y="194" width="60" height="28" as="geometry" />
+    </mxCell>
+    
+    <!-- Predicted p(θ) -->
+    <mxCell id="pred_p" value="4-Peak von Mises
+p̂(θ)" style="rounded=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;fontSize=10;" vertex="1" parent="1"><mxGeometry x="385" y="235" width="90" height="38" as="geometry" /></mxCell>
+    
+    <!-- Hungarian Matching -->
+    <mxCell id="hungarian" value="Hungarian
+Matching" style="rounded=1;fillColor=#FFF3E0;strokeColor=#E65100;fontStyle=1;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="510" y="130" width="80" height="45" as="geometry" />
+    </mxCell>
+    
+    <!-- GT (μ,κ) pairs - vertical -->
+    <mxCell id="gt1" value="(μ₁, κ₁)" style="rounded=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="640" y="80" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="gt2" value="(μ₂, κ₂)" style="rounded=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="640" y="118" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="gt3" value="(μ₃, κ₃)" style="rounded=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="640" y="156" width="60" height="28" as="geometry" />
+    </mxCell>
+    <mxCell id="gt4" value="(μ₄, κ₄)" style="rounded=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="640" y="194" width="60" height="28" as="geometry" />
+    </mxCell>
+    
+    <!-- GT p(θ) -->
+    <mxCell id="gt_p" value="4-Peak von Mises
+p*(θ)" style="rounded=1;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=10;" vertex="1" parent="1"><mxGeometry x="625" y="235" width="90" height="38" as="geometry" /></mxCell>
+    
+    <!-- GT Label -->
+    <mxCell id="gt_label" value="Ground Truth" style="text;fontSize=11;fontStyle=1;fillColor=#C8E6C9;strokeColor=#388E3C;align=center;" vertex="1" parent="1">
+      <mxGeometry x="625" y="50" width="90" height="22" as="geometry" />
+    </mxCell>
+    
+    <!-- Pred Label -->
+    <mxCell id="pred_label" value="Predicted" style="text;fontSize=11;fontStyle=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;align=center;" vertex="1" parent="1">
+      <mxGeometry x="385" y="50" width="90" height="22" as="geometry" />
+    </mxCell>
+    
+    <!-- Loss components -->
+    <mxCell id="loss_mu" value="&lt;span&gt;ℒ&lt;sub&gt;μ&lt;/sub&gt;&lt;/span&gt;" style="rounded=1;fillColor=#FFCDD2;strokeColor=#C62828;fontStyle=1;fontSize=12;html=1;" vertex="1" parent="1"><mxGeometry x="470" y="300" width="50" height="30" as="geometry" /></mxCell>
+    <mxCell id="loss_kappa" value="&lt;span&gt;ℒ&lt;sub&gt;κ&lt;/sub&gt;&lt;/span&gt;" style="rounded=1;fillColor=#FFCDD2;strokeColor=#C62828;fontStyle=1;fontSize=12;html=1;" vertex="1" parent="1"><mxGeometry x="540" y="300" width="50" height="30" as="geometry" /></mxCell>
+    <mxCell id="loss_kl" value="&lt;span&gt;ℒ&lt;sub&gt;kl&lt;/sub&gt;&lt;/span&gt;" style="rounded=1;fillColor=#FFCDD2;strokeColor=#C62828;fontStyle=1;fontSize=12;html=1;" vertex="1" parent="1"><mxGeometry x="610" y="300" width="50" height="30" as="geometry" /></mxCell>
+    
+    <!-- Total Loss -->
+    <mxCell id="total_loss" value="&lt;span&gt;ℒ = λ&lt;sub&gt;kl&lt;/sub&gt;·ℒ&lt;sub&gt;kl&lt;/sub&gt; + λ&lt;sub&gt;μ&lt;/sub&gt;·ℒ&lt;sub&gt;μ&lt;/sub&gt; + λ&lt;sub&gt;κ&lt;/sub&gt;·ℒ&lt;sub&gt;κ&lt;/sub&gt;&lt;/span&gt;" style="rounded=1;fillColor=#FFEBEE;strokeColor=#C62828;fontStyle=1;fontSize=11;html=1;" vertex="1" parent="1"><mxGeometry x="460" y="360" width="210" height="30" as="geometry" /></mxCell>
+    
+    <!-- Edges -->
+    <!-- Input to Encoder -->
+    <mxCell id="e1" style="endArrow=classic;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="1" source="input" target="encoder">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <!-- Encoder to Head -->
+    <mxCell id="e2" style="endArrow=classic;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="1" source="encoder" target="head">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <!-- Head to pred pairs -->
+    <mxCell id="e3" style="endArrow=classic;strokeColor=#7B1FA2;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" edge="1" parent="1" source="head" target="pred1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" style="endArrow=classic;strokeColor=#7B1FA2;exitX=1;exitY=0.4;entryX=0;entryY=0.5;" edge="1" parent="1" source="head" target="pred2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e5" style="endArrow=classic;strokeColor=#7B1FA2;exitX=1;exitY=0.6;entryX=0;entryY=0.5;" edge="1" parent="1" source="head" target="pred3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e6" style="endArrow=classic;strokeColor=#7B1FA2;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="head" target="pred4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e7" style="endArrow=classic;strokeColor=#7B1FA2;exitX=1;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="head" target="pred_p">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <!-- Pred pairs to Hungarian -->
+    <mxCell id="e8" style="endArrow=classic;strokeColor=#E65100;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="pred1" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e9" style="endArrow=classic;strokeColor=#E65100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="pred2" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e10" style="endArrow=classic;strokeColor=#E65100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="pred3" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e11" style="endArrow=classic;strokeColor=#E65100;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="1" source="pred4" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <!-- GT pairs to Hungarian -->
+    <mxCell id="e12" style="endArrow=classic;strokeColor=#E65100;exitX=0;exitY=0.5;entryX=1;entryY=0.3;" edge="1" parent="1" source="gt1" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e13" style="endArrow=classic;strokeColor=#E65100;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="gt2" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e14" style="endArrow=classic;strokeColor=#E65100;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="gt3" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e15" style="endArrow=classic;strokeColor=#E65100;exitX=0;exitY=0.5;entryX=1;entryY=0.7;" edge="1" parent="1" source="gt4" target="hungarian">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <!-- Hungarian to losses -->
+    <mxCell id="e16" style="endArrow=classic;strokeColor=#C62828;exitX=0.3;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="hungarian" target="loss_mu"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e17" style="endArrow=classic;strokeColor=#C62828;exitX=0.7;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="hungarian" target="loss_kappa"><mxGeometry relative="1" as="geometry" /></mxCell>
+    
+    <!-- p(θ) to KL loss -->
+    <mxCell id="e18" style="endArrow=classic;strokeColor=#C62828;exitX=1;exitY=0.5;entryX=0;entryY=0.5;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="pred_p" target="loss_kl"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e19" style="endArrow=classic;strokeColor=#C62828;exitX=0;exitY=0.5;entryX=1;entryY=0.5;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="gt_p" target="loss_kl"><mxGeometry relative="1" as="geometry" /></mxCell>
+    
+    <!-- Losses to total -->
+    <mxCell id="e20" style="endArrow=classic;strokeColor=#C62828;exitX=0.5;exitY=1;entryX=0.2;entryY=0;" edge="1" parent="1" source="loss_mu" target="total_loss"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e21" style="endArrow=classic;strokeColor=#C62828;exitX=0.5;exitY=1;entryX=0.8;entryY=0;" edge="1" parent="1" source="loss_kl" target="total_loss"><mxGeometry relative="1" as="geometry" /></mxCell>
+    
+    <!-- Direct KL label -->
+    
+    
+  <mxCell id="e22" style="endArrow=classic;strokeColor=#C62828;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="loss_kappa" target="total_loss"><mxGeometry relative="1" as="geometry" /></mxCell></root>
+</mxGraphModel>

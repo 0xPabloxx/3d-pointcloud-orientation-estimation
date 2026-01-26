@@ -1,0 +1,45 @@
+======================================================================
+Evaluating D16a, MF_mu_only, P2v2_Clean on Training Set
+======================================================================
+
+Loading models...
+  Models loaded.
+
+Loading training samples...
+  Found 1556 training samples
+    1_front: 1085
+    2_fronts: 280
+    4_fronts: 191
+
+  Evaluating 200 samples...
+  Progress: 50/200
+  Progress: 100/200
+  Progress: 150/200
+  Progress: 200/200
+
+======================================================================
+RESULTS SUMMARY
+======================================================================
+
+Overall (n=200):
+  D16a:  mean=40.22°, median=13.22°, std=50.22°
+  MF:    mean=29.65°, median=10.10°, std=37.90°
+  P2v2:  mean=21.12°, median=2.80°, std=47.42°
+
+1_front (n=131):
+  D16a:  mean=30.98°, median=9.28°
+  MF:    mean=16.89°, median=7.80°
+  P2v2:  mean=30.89°, median=3.80°
+
+2_fronts (n=42):
+  D16a:  mean=75.64°, median=81.47°
+  MF:    mean=80.82°, median=88.02°
+  P2v2:  mean=2.91°, median=2.38°
+
+4_fronts (n=27):
+  D16a:  mean=29.96°, median=37.54°
+  MF:    mean=11.91°, median=4.63°
+  P2v2:  mean=2.03°, median=1.81°
+
+CSV saved to: paper_figures/three_models_comparison_20260108_220536.csv
+JSON saved to: paper_figures/three_models_comparison_20260108_220536.json
